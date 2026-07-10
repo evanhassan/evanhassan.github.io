@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Tracking Mac Miller's Emotional Evolution Across Albums</title>
+  <link rel="stylesheet" href="assets/article.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <main class="workbook">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <div class="file-pill">Mac Miller</div>
+        </div>
+        <div class="topbar-right">Article view</div>
+      </header>
+      <div class="formula-wrap">
+        <div class="formula-bar">
+          <div class="name-box">A4</div>
+          <div class="formula-icon">ƒx</div>
+          <div class="formula-input">="Tracking Mac Miller's Emotional Evolution Across Albums"</div>
+        </div>
+      </div>
+      <section class="article-shell">
+        <article class="article-page">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <h1 class="article-title">Tracking Mac Miller's Emotional Evolution Across Albums</h1>
+          <p>Any Gen Z music fan knows that Mac Miller’s lyrical content becomes measurably sadder, more introspective, and less dense over his career. I wanted to test whether that feeling actually shows up in the data instead of just being repeated as a fan narrative.</p>
+
+          <p>I used a GitHub dataset of 390 Mac Miller songs with full lyrics and metadata, then narrowed it to 163 songs across his 10 main studio albums, including the posthumous album <em>Circles</em>. The album and release-date metadata mattered because the core question is chronological: does the writing change as the discography moves forward?</p>
+
+          <p>To clean the data, I removed bracketed tags like [Verse 1] and [Chorus], stripped special characters, lowercased the lyrics, and calculated word count per song. I then normalized by average album song duration to create a words-per-minute measure so longer tracks would not inflate the analysis unfairly. For emotional analysis, I built five manual keyword buckets: sad, happy, drugs, ambition, and introspective.</p>
+          <div class="figure-block">
+            <img src="assets/projects/mac-miller/emotional-evolution.png" alt="Trend lines showing Mac Miller lyrical themes across albums" />
+          </div>
+
+          <p>The line plot makes the high-level trend clear. Sad and introspective density both rise across the albums, while drug and ambition themes fade in the later projects. <em>The Divine Feminine</em> stands out as both one of the happiest and one of the most introspective albums, while <em>Circles</em> looks like a distinctly more reflective period.</p>
+          <div class="figure-block">
+            <img src="assets/projects/mac-miller/heatmap.png" alt="Heatmap comparing Mac Miller lyrical theme density across albums" />
+          </div>
+
+          <p>The heatmap is useful because it makes cross-category comparisons easier without forcing the reader to hunt through the numbers. It reinforces <em>Circles</em> as a low-drug, low-ambition, more reflective album, and it shows <em>Watching Movies with the Sound Off</em> standing out as one of the lyrically saddest points in the catalog.</p>
+          <div class="figure-block">
+            <img src="assets/projects/mac-miller/word-count-comparison.png" alt="Word count and words per minute comparison across Mac Miller albums" />
+          </div>
+
+          <p>The word-count charts tell a second part of the story. Earlier albums like <em>GOOD: AM</em> and <em>Macadelic</em> carry some of the highest lyrical density, while <em>Circles</em> sits at the bottom. Once normalized to words per minute, the gap between the early and late albums looks even sharper.</p>
+
+          <p>The statistical tests supported the visual read. An ANOVA rejected the null hypothesis for mean word count across albums, the first-versus-last-album t-test showed a significant drop in word count, and the sad-density t-test showed that later albums have materially higher sad-keyword density than earlier ones. Taken together, the differences look real rather than anecdotal.</p>
+
+          <p>The biggest limitation is context. A phrase like “sunshine never stays” can feel sad, but a word-bucket method may still count “sunshine” as happy. The bucket construction is also subjective, song release dates do not perfectly match recording chronology, and this is a lyrics-only study even though instrumentation plays a huge role in how albums like <em>Swimming</em> and <em>Circles</em> feel emotionally. Still, the overall result is clear: Mac Miller’s music genuinely reflects an emotional evolution over time.</p>
+
+          <div class="downloads">
+            <div class="download-links">
+              <a href="assets/projects/mac-miller/mac-miller-original-paper.pdf" download>Download PDF</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer class="sheet-footer">
+        <nav class="sheet-tabs" aria-label="Workbook tabs">
+          <a class="sheet-tab" href="index.html#overview">Home</a>
+          <a class="sheet-tab active" href="index.html#projects">Projects</a>
+        </nav>
+        <div class="footer-note">2026 Evan Hassan</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

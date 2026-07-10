@@ -3,132 +3,1197 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Evan Hassan</title>
-  <link rel="stylesheet" href="styles.css" />
+  <title>Evan Hassan | Investment Banking x Technical Projects</title>
+  <meta
+    name="description"
+    content="A clean personal website for Evan Hassan"
+  />
+  <style>
+    :root {
+      --bg: #e9ece8;
+      --surface: #f5f7f4;
+      --sheet: #ffffff;
+      --grid: #d5ddd1;
+      --grid-strong: #b8c5b1;
+      --excel-green: #1f6f43;
+      --excel-green-dark: #155233;
+      --excel-green-soft: #e8f2eb;
+      --ink: #182018;
+      --muted: #536156;
+      --header: #eef3ec;
+      --rowhead: #f3f5f2;
+      --accent-fill: #f8fbf8;
+      --shadow: 0 24px 60px rgba(31, 42, 32, 0.12);
+      --max-width: 1240px;
+      --cell-pad: 18px;
+      --font-ui: "Segoe UI", "Helvetica Neue", Arial, sans-serif;
+      --font-serif: Georgia, "Times New Roman", serif;
+    }
+
+    * { box-sizing: border-box; }
+    html { scroll-behavior: auto; }
+    body {
+      margin: 0;
+      background:
+        linear-gradient(to bottom, rgba(255,255,255,0.42), rgba(255,255,255,0.42)),
+        var(--bg);
+      color: var(--ink);
+      font-family: var(--font-ui);
+      line-height: 1.5;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    button,
+    a,
+    input {
+      font: inherit;
+    }
+
+    .site-shell {
+      min-height: 100vh;
+      padding: 28px;
+    }
+
+    .workbook {
+      max-width: var(--max-width);
+      margin: 0 auto;
+      background: var(--sheet);
+      border: 1px solid var(--grid-strong);
+      box-shadow: var(--shadow);
+      overflow: hidden;
+    }
+
+    .topbar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 10px 16px;
+      background: #f0f2ef;
+      border-bottom: 1px solid var(--grid);
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .topbar-left,
+    .topbar-right,
+    .ribbon-group,
+    .sheet-tabs,
+    .formula-bar {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+
+    .window-dots {
+      display: flex;
+      gap: 6px;
+      margin-right: 8px;
+    }
+
+    .window-dots span {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: #c1cbc1;
+      display: inline-block;
+    }
+
+    .window-dots span:nth-child(1) { background: #d6a19d; }
+    .window-dots span:nth-child(2) { background: #e0c784; }
+    .window-dots span:nth-child(3) { background: #8bb28f; }
+
+    .file-pill {
+      padding: 7px 12px;
+      border-radius: 999px;
+      background: var(--excel-green-soft);
+      color: var(--excel-green-dark);
+      font-weight: 600;
+    }
+
+    .ribbon {
+      display: grid;
+      grid-template-columns: repeat(4, minmax(0, 1fr));
+      gap: 1px;
+      background: var(--grid);
+      border-bottom: 1px solid var(--grid);
+    }
+
+    .ribbon-group {
+      justify-content: space-between;
+      padding: 10px 14px;
+      background: var(--header);
+      min-height: 64px;
+    }
+
+    .ribbon-group.menu-group {
+      padding: 8px;
+    }
+
+    .ribbon-label {
+      font-size: 11px;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      color: var(--muted);
+      font-weight: 700;
+    }
+
+    .ribbon-value {
+      font-family: var(--font-serif);
+      font-size: 18px;
+      line-height: 1.1;
+      color: var(--ink);
+      text-align: right;
+    }
+
+    .menu-button {
+      width: 100%;
+      min-height: 64px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0;
+      padding: 12px 14px;
+      border: 1px solid var(--grid-strong);
+      background: linear-gradient(to bottom, #fbfcfa, #f0f4ef);
+      box-shadow: inset 0 1px 0 rgba(255,255,255,0.9);
+      transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+    }
+
+    .menu-button:hover {
+      transform: translateY(-1px);
+      border-color: var(--excel-green);
+      background: linear-gradient(to bottom, #ffffff, #edf5ef);
+    }
+
+    .menu-button.active {
+      border-color: var(--excel-green);
+      background: linear-gradient(to bottom, #f7fbf8, #e5f0e8);
+    }
+
+    .menu-button .ribbon-label {
+      display: none;
+    }
+
+    .menu-button .ribbon-value {
+      margin: 0;
+      text-align: center;
+    }
+
+    .formula-wrap {
+      padding: 12px 14px;
+      background: var(--surface);
+      border-bottom: 1px solid var(--grid);
+    }
+
+    .name-box {
+      min-width: 70px;
+      justify-content: center;
+      padding: 10px 12px;
+      border: 1px solid var(--grid);
+      background: var(--sheet);
+      font-size: 13px;
+      font-weight: 700;
+      color: var(--excel-green-dark);
+    }
+
+    .formula-icon {
+      padding: 0 4px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 22px;
+      color: var(--excel-green);
+    }
+
+    .formula-input {
+      flex: 1;
+      min-width: 0;
+      padding: 11px 14px;
+      border: 1px solid var(--grid);
+      background: var(--sheet);
+      font-family: "Consolas", "SFMono-Regular", Menlo, monospace;
+      font-size: 13px;
+      color: var(--ink);
+      overflow: auto;
+      white-space: nowrap;
+    }
+
+    .formula-input.is-live {
+      color: var(--excel-green-dark);
+    }
+
+    .sheet {
+      overflow-x: auto;
+      background: var(--sheet);
+    }
+
+    .sheet-grid {
+      display: grid;
+      grid-template-columns: 56px repeat(8, minmax(120px, 1fr));
+      min-width: 1040px;
+      border-bottom: 1px solid var(--grid);
+    }
+
+    .corner,
+    .col-head,
+    .row-head,
+    .cell {
+      border-right: 1px solid var(--grid);
+      border-bottom: 1px solid var(--grid);
+      background: var(--sheet);
+    }
+
+    .corner,
+    .col-head,
+    .row-head {
+      background: var(--rowhead);
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      min-height: 44px;
+    }
+
+    .row-head {
+      text-transform: none;
+      letter-spacing: 0;
+      font-size: 12px;
+      font-weight: 600;
+    }
+
+    .cell {
+      padding: var(--cell-pad);
+      min-height: 72px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      position: relative;
+      overflow: hidden;
+    }
+
+    .cell-muted { background: var(--accent-fill); }
+    .cell-green { background: var(--excel-green-soft); }
+    .cell-dark {
+      background: var(--excel-green);
+      color: #ffffff;
+    }
+
+    .cell-label {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      color: var(--muted);
+    }
+
+    .cell-dark .cell-label,
+    .cell-dark .meta-label,
+    .cell-dark .body-copy,
+    .cell-dark .project-meta,
+    .cell-dark .sheet-link,
+    .cell-dark .cta,
+    .cell-dark .kpi-note,
+    .cell-dark .tag {
+      color: rgba(255, 255, 255, 0.88);
+    }
+
+    .cell-dark .body-copy strong,
+    .cell-dark .project-copy strong,
+    .cell-dark .contact-title,
+    .cell-dark .hero-title {
+      color: #ffffff;
+    }
+
+    .hero-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      font-size: clamp(42px, 4.8vw, 74px);
+      line-height: 1.02;
+      letter-spacing: -0.04em;
+      text-wrap: pretty;
+      max-width: 10ch;
+    }
+
+    .body-copy,
+    .project-copy,
+    .note-copy {
+      margin: 0;
+      font-size: 15px;
+      color: var(--ink);
+      max-width: 66ch;
+    }
+
+    .body-copy strong,
+    .project-copy strong {
+      font-weight: 700;
+      color: var(--excel-green-dark);
+    }
+
+    .meta-pill,
+    .tag {
+      display: inline-flex;
+      align-items: center;
+      min-height: 34px;
+      padding: 0 12px;
+      border: 1px solid var(--grid-strong);
+      background: var(--sheet);
+      font-size: 12px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--excel-green-dark);
+    }
+
+    .cell-dark .meta-pill {
+      border-color: rgba(255, 255, 255, 0.28);
+      background: rgba(255,255,255,0.09);
+      color: #fff;
+    }
+
+    .hero-actions,
+    .sheet-links,
+    .contact-links,
+    .project-links {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 10px;
+    }
+
+    .sheet-link,
+    .cta,
+    .project-link {
+      min-height: 44px;
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0 16px;
+      border: 1px solid var(--grid-strong);
+      background: var(--sheet);
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 0.04em;
+      text-transform: uppercase;
+      transition: background 120ms ease, color 120ms ease, border-color 120ms ease, transform 120ms ease;
+    }
+
+    .sheet-link:hover,
+    .cta:hover,
+    .project-link:hover {
+      transform: translateY(-1px);
+      border-color: var(--excel-green);
+      color: var(--excel-green-dark);
+    }
+
+    .cta-primary {
+      background: var(--excel-green);
+      border-color: var(--excel-green);
+      color: #fff;
+    }
+
+    .cell-dark .cta {
+      border-color: rgba(255, 255, 255, 0.38);
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+    }
+
+    .cell-dark .cta:hover {
+      border-color: #ffffff;
+      color: #ffffff;
+      background: rgba(255, 255, 255, 0.16);
+    }
+
+    .cell-dark .cta-primary {
+      background: #ffffff;
+      border-color: #ffffff;
+      color: var(--excel-green-dark);
+    }
+
+    .cell-dark .cta-primary:hover {
+      background: var(--excel-green-soft);
+      border-color: var(--excel-green-soft);
+      color: var(--excel-green-dark);
+    }
+
+    .cta-primary:hover {
+      background: var(--excel-green-dark);
+      color: #fff;
+      border-color: var(--excel-green-dark);
+    }
+
+    .section-title,
+    .project-title,
+    .kpi-value,
+    .contact-title {
+      margin: 0;
+      font-family: var(--font-serif);
+      color: var(--ink);
+      letter-spacing: -0.03em;
+    }
+
+    .section-title { font-size: clamp(24px, 2vw, 34px); }
+    .project-title { font-size: 24px; line-height: 1.15; }
+    .contact-title { font-size: clamp(24px, 2vw, 34px); }
+
+    .kpi-value {
+      font-size: 32px;
+      line-height: 1;
+      color: var(--excel-green-dark);
+    }
+
+    .kpi-note,
+    .project-meta,
+    .meta-label {
+      margin: 0;
+      font-size: 12px;
+      line-height: 1.45;
+      color: var(--muted);
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      font-weight: 700;
+    }
+
+    .project-card {
+      display: flex;
+      flex-direction: column;
+      gap: 14px;
+      height: 100%;
+    }
+
+    .project-compact .project-copy {
+      max-width: 40ch;
+    }
+
+    .project-compact .project-links,
+    .project-compact .tag-row {
+      margin-top: auto;
+    }
+
+    .project-copy { font-size: 14px; }
+
+    .tag-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 0;
+      row-gap: 6px;
+    }
+
+    .project-card .tag {
+      min-height: auto;
+      padding: 0 10px 0 0;
+      border: none;
+      background: transparent;
+      font-size: 11px;
+      font-weight: 600;
+      letter-spacing: 0.04em;
+      color: #6b786d;
+    }
+
+    .project-card .tag + .tag {
+      position: relative;
+      padding-left: 12px;
+    }
+
+    .project-card .tag + .tag::before {
+      content: "/";
+      position: absolute;
+      left: 2px;
+      color: #a1ada1;
+    }
+
+    .project-links {
+      gap: 12px;
+    }
+
+    .project-link {
+      min-width: 140px;
+      border-color: var(--ink);
+      color: var(--ink);
+      background: #ffffff;
+      box-shadow: 0 1px 0 rgba(24, 32, 24, 0.08);
+    }
+
+    .project-link:first-child {
+      background: var(--excel-green);
+      border-color: var(--excel-green);
+      color: #ffffff;
+      min-width: 178px;
+    }
+
+    .project-link:first-child:hover {
+      background: var(--excel-green-dark);
+      border-color: var(--excel-green-dark);
+      color: #ffffff;
+    }
+
+    .project-link:first-child::after {
+      content: " →";
+      font-size: 14px;
+    }
+
+    .project-link:last-child {
+      background: #ffffff;
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .project-link:last-child:hover {
+      background: #f4f6f3;
+      border-color: var(--ink);
+      color: var(--ink);
+    }
+
+    .resume-list {
+      margin: 0;
+      padding-left: 18px;
+      color: var(--ink);
+      font-size: 15px;
+    }
+
+    .resume-list li + li { margin-top: 8px; }
+
+    .tabs-bar {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      padding: 12px 16px;
+      background: #f0f2ef;
+      border-top: 1px solid var(--grid);
+    }
+
+    .sheet-tabs {
+      flex-wrap: wrap;
+    }
+
+    .tabs-bar .sheet-tab {
+      min-height: 36px;
+      padding: 0 14px;
+      border: 1px solid transparent;
+      border-radius: 10px 10px 0 0;
+      color: var(--muted);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+    }
+
+    .tabs-bar .sheet-tab.active {
+      background: var(--sheet);
+      border-color: var(--grid-strong);
+      border-bottom-color: var(--sheet);
+      color: var(--excel-green-dark);
+    }
+
+    .footer-note {
+      font-size: 12px;
+      color: var(--muted);
+      text-align: right;
+    }
+
+    .sr-only {
+      position: absolute;
+      width: 1px;
+      height: 1px;
+      padding: 0;
+      margin: -1px;
+      overflow: hidden;
+      clip: rect(0, 0, 0, 0);
+      border: 0;
+    }
+
+    .sheet-link:focus-visible,
+    .cta:focus-visible,
+    .project-link:focus-visible,
+    .sheet-tab:focus-visible,
+    .menu-button:focus-visible {
+      outline: 3px solid rgba(31, 111, 67, 0.28);
+      outline-offset: 2px;
+    }
+
+    .section-frame {
+      --ants-inset: -2px -6px;
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 10px;
+      width: 100%;
+      min-height: 100%;
+      height: 100%;
+      padding: var(--cell-pad);
+    }
+
+    .section-frame.section-highlight {
+      overflow: visible;
+      z-index: 5;
+    }
+
+    #projects .section-frame {
+      --ants-inset: 3px -14px;
+    }
+
+    #resume .section-frame,
+    #contact .section-frame {
+      --ants-inset: 0 -14px;
+    }
+
+    @media (min-width: 1400px) {
+      #projects .section-frame {
+        --ants-inset: 3px -15px;
+      }
+
+      #resume .section-frame,
+      #contact .section-frame {
+        --ants-inset: 0 -15px;
+      }
+    }
+
+    @keyframes ants-fade {
+      0% { opacity: 0; }
+      12% { opacity: 1; }
+      78% { opacity: 1; }
+      100% { opacity: 0; }
+    }
+
+    .ants-overlay {
+      position: absolute;
+      inset: var(--ants-inset);
+      pointer-events: none;
+      z-index: 3;
+      opacity: 0;
+      animation: ants-fade 3s ease forwards;
+    }
+
+    .ants-overlay svg {
+      width: 100%;
+      height: 100%;
+      display: block;
+    }
+
+    .ants-overlay rect {
+      fill: none;
+      stroke: var(--ink);
+      stroke-width: 3;
+      stroke-linecap: square;
+      stroke-dasharray: 10 8;
+      stroke-dashoffset: 0;
+      animation: ants-stroke 700ms linear infinite;
+      vector-effect: non-scaling-stroke;
+    }
+
+    .cell-dark .ants-overlay rect {
+      stroke: #dfe8de;
+    }
+
+    @keyframes ants-stroke {
+      to { stroke-dashoffset: -18; }
+    }
+
+    .hero-portrait-shell {
+      height: 100%;
+      min-height: 276px;
+      padding: 0;
+      overflow: hidden;
+    }
+
+    .hero-meta-strip {
+      display: flex;
+      justify-content: flex-end;
+      margin-top: auto;
+      width: 100%;
+      padding-top: 6px;
+    }
+
+    .hero-intro-shell {
+      background: linear-gradient(180deg, #fbfcfa 0%, #f2f6f1 100%);
+    }
+
+    .hero-intro-shell .section-frame {
+      padding: 24px 22px;
+      gap: 14px;
+    }
+
+    .hero-intro-shell .hero-title,
+    .hero-intro-shell .body-copy {
+      color: var(--ink);
+    }
+
+    .hero-intro-shell .body-copy {
+      max-width: 56ch;
+      font-size: 16px;
+      line-height: 1.72;
+    }
+
+    #projects .section-frame,
+    #contact .section-frame {
+      padding-top: calc(var(--cell-pad) + 2px);
+      padding-bottom: calc(var(--cell-pad) + 2px);
+    }
+
+    .utah-logo {
+      display: block;
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      filter: saturate(0.95) contrast(1.02);
+    }
+
+    .hero-portrait {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      object-position: center top;
+      display: block;
+      filter: saturate(0.96) contrast(1.02);
+    }
+
+    @media (max-width: 960px) {
+      .site-shell { padding: 12px; }
+      .ribbon { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .project-link {
+        flex: 1 1 160px;
+      }
+      .tabs-bar {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      .footer-note { text-align: left; }
+    }
+
+    @media (max-width: 720px) {
+      .topbar,
+      .formula-bar {
+        flex-wrap: wrap;
+      }
+
+      .ribbon { grid-template-columns: 1fr; }
+      .sheet-grid {
+        grid-template-columns: 44px repeat(3, minmax(0, 1fr));
+        min-width: 0;
+      }
+      .sheet-grid > .col-head:nth-child(n + 5) {
+        display: none;
+      }
+      .sheet-grid > section#overview,
+      .sheet-grid > aside.hero-portrait-shell,
+      .sheet-grid > section#projects,
+      .sheet-grid > section#resume,
+      .sheet-grid > section#contact,
+      .sheet-grid > article.cell {
+        grid-column: 2 / span 3 !important;
+      }
+      .hero-title { font-size: 42px; }
+      .project-card {
+        gap: 12px;
+      }
+      .project-links {
+        flex-direction: column;
+      }
+      .project-link {
+        width: 100%;
+      }
+      .tag-row {
+        row-gap: 4px;
+      }
+    }
+
+    @media (prefers-reduced-motion: reduce) {
+      .sheet-link,
+      .cta,
+      .project-link { transition: none; }
+      .ants-overlay,
+      .ants-overlay rect { animation: none; opacity: 1; }
+    }
+  </style>
 </head>
 <body>
-  <main class="page-shell">
-    <header class="hero">
-      <nav class="nav" aria-label="Main navigation">
-        <a class="brand" href="#">Evan Hassan</a>
-        <div class="nav-links">
-          <a href="#projects">Projects</a>
-          <a href="#about">About</a>
-          <a href="mailto:evanhassan487@gmail.com">Email</a>
-          <a href="https://github.com/evanhassan487">GitHub</a>
+  <div class="site-shell">
+    <main class="workbook" aria-label="Evan Hassan personal website in an Excel-inspired layout">
+      <header>
+        <div class="topbar">
+          <div class="topbar-left">
+            <div class="window-dots" aria-hidden="true">
+              <span></span><span></span><span></span>
+            </div>
+            <span class="file-pill">Evan_Hassan_PersonalSite.xlsx</span>
+          </div>
+          <div class="topbar-right">
+            <span>University of Utah / Data Science B.S. &amp; Economics B.A.</span>
+          </div>
         </div>
-      </nav>
 
-      <section class="hero-copy">
-        <p class="eyebrow">Data · Backend · Finance</p>
-        <h1>lorem ipsum dolor</h1>
-        <p class="lead">
-          I’m a University of Utah student focused on backend engineering, data ingestion,
-          and finance-related software. This site collects the projects I would want an
-          interviewer to actually click through.
-        </p>
-        <div class="hero-actions">
-          <a class="button primary" href="#projects">View projects</a>
-          <a class="button secondary" href="mailto:evanhassan487@gmail.com">Contact me</a>
+        <div class="ribbon" aria-hidden="true">
+          <div class="ribbon-group menu-group">
+            <a class="menu-button active" href="#overview" data-section="overview">
+              <span class="ribbon-label">Home</span>
+              <span class="ribbon-value">Home</span>
+            </a>
+          </div>
+          <div class="ribbon-group menu-group">
+            <a class="menu-button" href="#projects" data-section="projects">
+              <span class="ribbon-label">Projects</span>
+              <span class="ribbon-value">Projects</span>
+            </a>
+          </div>
+          <div class="ribbon-group menu-group">
+            <a class="menu-button" href="#resume" data-section="resume">
+              <span class="ribbon-label">Resume</span>
+              <span class="ribbon-value">Resume</span>
+            </a>
+          </div>
+          <div class="ribbon-group menu-group">
+            <a class="menu-button" href="#contact" data-section="contact">
+              <span class="ribbon-label">Contact</span>
+              <span class="ribbon-value">Contact</span>
+            </a>
+          </div>
+        </div>
+
+        <div class="formula-wrap">
+          <div class="formula-bar" aria-label="Formula bar">
+            <div class="name-box" id="name-box">A1</div>
+            <div class="formula-icon">fx</div>
+            <div class="formula-input is-live" id="formula-input">=PROFILE("General overview")</div>
+          </div>
+        </div>
+      </header>
+
+      <section class="sheet" aria-label="Workbook sheet">
+        <div class="sheet-grid">
+          <div class="corner"></div>
+          <div class="col-head">A</div>
+          <div class="col-head">B</div>
+          <div class="col-head">C</div>
+          <div class="col-head">D</div>
+          <div class="col-head">E</div>
+          <div class="col-head">F</div>
+          <div class="col-head">G</div>
+          <div class="col-head">H</div>
+
+          <div class="row-head">1</div>
+          <section class="cell cell-muted hero-intro-shell" style="grid-column: 2 / span 5; min-height: 276px; padding: 0;" id="overview">
+            <div class="section-frame">
+              <h1 class="hero-title">Hello, I am Evan.</h1>
+              <p class="body-copy">
+                I am a University of Utah student who loves to uncover insights and evaluate ideas. That interest gradually pulled me toward finance, where I’ve been working for the past couple of years. I love analyzing companies, developing my own perspectives, and using data to support them.
+              </p>
+              <div class="hero-meta-strip">
+                <img class="utah-logo" src="assets/utah-logo-cropped.png" alt="University of Utah logo" />
+              </div>
+            </div>
+          </section>
+          <aside class="cell cell-green hero-portrait-shell" style="grid-column: 7 / span 3; min-height: 276px;">
+            <img class="hero-portrait" src="assets/evan-portrait.png" alt="Portrait of Evan Hassan with arms crossed" />
+          </aside>
+
+          <div class="row-head">2</div>
+          <section class="cell cell-green" style="grid-column: 2 / span 8; min-height: 98px; padding: 0;" id="projects">
+            <div class="section-frame">
+              <h2 class="section-title">Personal Projects</h2>
+            </div>
+          </section>
+
+          <div class="row-head">3</div>
+          <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Investment Banking</p>
+                <h3 class="project-title">Horwitz / Truelink LBO Lite</h3>
+              </div>
+              <p class="project-copy">EV/EBITDA sensitivity model and simplified LBO for Truelink Capital acquiring Horwitz. Sell-side advised by William Blair.</p>
+              <div class="tag-row">
+                <span class="tag">EV Sensitivity</span>
+                <span class="tag">LBO Lite</span>
+                <span class="tag">Excel Model</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="horwitz-truelink-case-study.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/horwitz-truelink/Horwitz_LBO_EVsensitivity_Hassan.xlsx" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+          <article class="cell" style="grid-column: 5 / span 2; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Investment Banking</p>
+                <h3 class="project-title">Clean Harbors / Terra Nova</h3>
+              </div>
+              <p class="project-copy">Precedent transaction analysis and accretion/dilution for Clean Harbors acquiring Terra Nova. Sell-side advised by Raymond James.</p>
+              <div class="tag-row">
+                <span class="tag">Precedent Transactions</span>
+                <span class="tag">Accretion / Dilution</span>
+                <span class="tag">Excel Model</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="clean-harbors-terra-nova.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/clean-harbors-terra-nova/Clean_Harbors_Terra_Nova_Hassan.xlsx" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+          <article class="cell" style="grid-column: 7 / span 3; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Investment Banking</p>
+                <h3 class="project-title">Roper / CentralReach</h3>
+              </div>
+              <p class="project-copy">Public comps analysis for Roper Technologies acquiring CentralReach. Sell-side advised by William Blair.</p>
+              <div class="tag-row">
+                <span class="tag">Public Comps</span>
+                <span class="tag">Healthcare IT</span>
+                <span class="tag">Excel Model</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="roper-centralreach.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/roper-centralreach/CentralReach_EvanHassan.xlsx" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="row-head">4</div>
+          <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Passion Project</p>
+                <h3 class="project-title">Mac Miller Emotional Evolution</h3>
+              </div>
+              <p class="project-copy">Lyrical analysis of Mac Miller's discography through the years.</p>
+              <div class="tag-row">
+                <span class="tag">Text Analysis</span>
+                <span class="tag">Writing Sample</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="mac-miller-analysis.html">Read Analysis</a>
+              </div>
+            </div>
+          </article>
+          <article class="cell" style="grid-column: 5 / span 2; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Passion Project</p>
+                <h3 class="project-title">Tracking Kalshi during Trump's State of the Union Address</h3>
+              </div>
+              <p class="project-copy">Determining how well efficient prediction markets were in Trump's 2026 State of the Union address.</p>
+              <div class="tag-row">
+                <span class="tag">Prediction Markets</span>
+                <span class="tag">Calibration</span>
+                <span class="tag">Workbook</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="kalshi-speech-markets.html">Read Analysis</a>
+              </div>
+            </div>
+          </article>
+          <article class="cell" style="grid-column: 7 / span 3; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Labor Market</p>
+                <h3 class="project-title">Fintech Hiring Market Read</h3>
+              </div>
+              <p class="project-copy">Looking at fintech hiring, specifically in Utah.</p>
+              <div class="tag-row">
+                <span class="tag">Labor Market</span>
+                <span class="tag">Career Pages</span>
+                <span class="tag">Workbook</span>
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="fintech-hiring-analysis.html">Read Analysis</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="row-head">5</div>
+          <section class="cell cell-muted" style="grid-column: 2 / span 8; min-height: 180px; padding: 0;" id="resume">
+            <div class="section-frame">
+              <h2 class="section-title">Resume</h2>
+              <div class="project-links">
+                <a class="project-link" href="assets/EvanHassan_Resume.pdf" target="_blank" rel="noopener">View PDF</a>
+              </div>
+            </div>
+          </section>
+
+          <div class="row-head">6</div>
+          <section class="cell cell-dark" style="grid-column: 2 / span 8; min-height: 164px; padding: 0;" id="contact">
+            <div class="section-frame">
+              <h2 class="contact-title">Contact</h2>
+              <p class="body-copy">Email is the best way to get in contact with me.</p>
+              <div class="contact-links">
+                <a class="cta cta-primary" href="mailto:evanhassan487@gmail.com">evanhassan487@gmail.com</a>
+                <a class="cta" href="https://linkedin.com/in/evan-hassan/" target="_blank" rel="noopener">LinkedIn</a>
+              </div>
+            </div>
+          </section>
         </div>
       </section>
-    </header>
 
-    <section id="projects" class="section">
-      <div class="section-heading">
-        <p class="eyebrow">Selected Work</p>
-        <h2>Projects</h2>
-      </div>
+      <footer class="tabs-bar">
+        <nav class="sheet-tabs" aria-label="Workbook tabs">
+          <a class="sheet-tab active" href="#overview">Home</a>
+          <a class="sheet-tab" href="#projects">Projects</a>
+          <a class="sheet-tab" href="#resume">Resume</a>
+          <a class="sheet-tab" href="#contact">Contact</a>
+        </nav>
+        <div class="footer-note">Evan Hassan</div>
+      </footer>
+    </main>
+  </div>
+  <script>
+    (() => {
+      const prefersReducedMotion = window.matchMedia('(prefers-reduced-motion: reduce)');
+      const scrollDuration = 900;
+      const nameBox = document.getElementById('name-box');
+      const formulaInput = document.getElementById('formula-input');
+      const menuButtons = Array.from(document.querySelectorAll('.menu-button'));
+      const tabButtons = Array.from(document.querySelectorAll('.sheet-tab'));
+      let activeHighlight = null;
+      let highlightTimer = null;
+      let activeOverlay = null;
 
-      <div class="project-list">
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">Backend / Data</p>
-            <h3>Investment Banker Deal Database</h3>
-            <p>
-              A searchable database for investment bankers and verified transaction history,
-              focused on ranking MDs by activity, sector focus, and deal patterns.
-            </p>
-          </div>
-          <ul class="tags">
-            <li>Python</li>
-            <li>FastAPI</li>
-            <li>Postgres</li>
-            <li>Scraping</li>
-          </ul>
-          <div class="card-links">
-            <a href="#">Case study coming soon</a>
-            <a href="#">GitHub</a>
-          </div>
-        </article>
+      const formulaMap = {
+        overview: {
+          cell: 'A1',
+          formula: '=PROFILE("General overview")'
+        },
+        projects: {
+          cell: 'A2',
+          formula: '=PROJECTS("Personal projects")'
+        },
+        resume: {
+          cell: 'A5',
+          formula: '=RESUME("Resume")'
+        },
+        contact: {
+          cell: 'A6',
+          formula: '=CONTACT("Email is the best way to get in contact with me.")'
+        }
+      };
 
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">Systems</p>
-            <h3>Redis Clone</h3>
-            <p>
-              A from-scratch Redis implementation used to learn protocol parsing, streams,
-              persistence basics, and server behavior without hiding behind a framework.
-            </p>
-          </div>
-          <ul class="tags">
-            <li>Python</li>
-            <li>TCP</li>
-            <li>RESP</li>
-            <li>Systems</li>
-          </ul>
-          <div class="card-links">
-            <a href="#">Writeup coming soon</a>
-            <a href="#">GitHub</a>
-          </div>
-        </article>
+      const easeInOutCubic = (t) => (t < 0.5)
+        ? 4 * t * t * t
+        : 1 - Math.pow(-2 * t + 2, 3) / 2;
 
-        <article class="project-card">
-          <div>
-            <p class="project-kicker">Data Analysis</p>
-            <h3>Mac Miller Lyric Analysis</h3>
-            <p>
-              Album-level analysis of word counts, pace, and theme density using simple
-              statistical comparisons and clear plots.
-            </p>
-          </div>
-          <ul class="tags">
-            <li>Python</li>
-            <li>Pandas</li>
-            <li>Matplotlib</li>
-            <li>Stats</li>
-          </ul>
-          <div class="card-links">
-            <a href="#">Notebook coming soon</a>
-            <a href="#">GitHub</a>
-          </div>
-        </article>
-      </div>
-    </section>
+      const clearHighlight = () => {
+        if (activeHighlight) {
+          activeHighlight.classList.remove('section-highlight');
+          activeHighlight = null;
+        }
+        if (activeOverlay) {
+          activeOverlay.remove();
+          activeOverlay = null;
+        }
+        if (highlightTimer) {
+          clearTimeout(highlightTimer);
+          highlightTimer = null;
+        }
+      };
 
-    <section id="about" class="section split-section">
-      <div>
-        <p class="eyebrow">About</p>
-        <h2>What I’m working toward</h2>
-      </div>
-      <p>
-        I am learning the backend side of building useful software: APIs, databases,
-        scraping pipelines, queues, deployment, and monitoring. I like projects where
-        the hard part is making messy information reliable enough for someone to use.
-      </p>
-    </section>
+      const updateFormulaBar = (sectionId) => {
+        const next = formulaMap[sectionId] || formulaMap.overview;
+        nameBox.textContent = next.cell;
+        formulaInput.textContent = next.formula;
+      };
 
-    <section class="section contact-box">
-      <p class="eyebrow">Contact</p>
-      <h2>Want to talk projects or internships?</h2>
-      <p>Email is best. I’m also adding project writeups as I finish them.</p>
-      <a class="button primary" href="mailto:evanhassan487@gmail.com">evanhassan487@gmail.com</a>
-    </section>
+      const updateActiveNav = (sectionId) => {
+        menuButtons.forEach((button) => {
+          button.classList.toggle('active', button.dataset.section === sectionId);
+        });
+        tabButtons.forEach((button) => {
+          const href = button.getAttribute('href');
+          button.classList.toggle('active', href === `#${sectionId}`);
+        });
+      };
 
-    <footer class="footer">
-      <span>© 2026 Evan Hassan</span>
-      <span>Built for GitHub Pages</span>
-    </footer>
-  </main>
+      const buildOverlay = () => {
+        const overlay = document.createElement('div');
+        overlay.className = 'ants-overlay';
+        overlay.innerHTML = `
+          <svg viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true" focusable="false">
+            <rect x="1.5" y="1.5" width="97" height="97"></rect>
+          </svg>
+        `;
+        return overlay;
+      };
+
+      const highlightSection = (element) => {
+        const frame = element.querySelector('.section-frame') || element;
+        clearHighlight();
+        activeHighlight = frame;
+        frame.classList.add('section-highlight');
+        activeOverlay = buildOverlay();
+        frame.appendChild(activeOverlay);
+        highlightTimer = window.setTimeout(() => {
+          if (activeHighlight === frame) {
+            frame.classList.remove('section-highlight');
+            if (activeOverlay) {
+              activeOverlay.remove();
+              activeOverlay = null;
+            }
+            activeHighlight = null;
+          }
+        }, 3000);
+      };
+
+      const animateScrollTo = (targetElement) => {
+        const targetY = Math.max(targetElement.getBoundingClientRect().top + window.scrollY - 20, 0);
+
+        if (prefersReducedMotion.matches) {
+          window.scrollTo(0, targetY);
+          updateFormulaBar(targetElement.id);
+          updateActiveNav(targetElement.id);
+          highlightSection(targetElement);
+          return;
+        }
+
+        const startY = window.scrollY;
+        const distance = targetY - startY;
+        const startTime = performance.now();
+
+        const step = (now) => {
+          const elapsed = now - startTime;
+          const progress = Math.min(elapsed / scrollDuration, 1);
+          const eased = easeInOutCubic(progress);
+          window.scrollTo(0, startY + (distance * eased));
+
+          if (progress < 1) {
+            window.requestAnimationFrame(step);
+          } else {
+            updateFormulaBar(targetElement.id);
+            updateActiveNav(targetElement.id);
+            highlightSection(targetElement);
+          }
+        };
+
+        window.requestAnimationFrame(step);
+      };
+
+      document.addEventListener('click', (event) => {
+        const link = event.target.closest('a[href^="#"]');
+        if (!link) return;
+
+        const targetId = link.getAttribute('href');
+        if (!targetId || targetId === '#') return;
+
+        const targetElement = document.querySelector(targetId);
+        if (!targetElement) return;
+
+        event.preventDefault();
+        history.replaceState(null, '', targetId);
+        animateScrollTo(targetElement);
+      });
+
+      const bootId = (location.hash || '#overview').slice(1);
+      updateFormulaBar(bootId || 'overview');
+      updateActiveNav(bootId || 'overview');
+    })();
+  </script>
 </body>
 </html>

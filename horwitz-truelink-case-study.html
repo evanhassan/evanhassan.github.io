@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Horwitz / Truelink LBO Lite</title>
+  <link rel="stylesheet" href="assets/article.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <main class="workbook">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <div class="file-pill">Horwitz / Truelink</div>
+        </div>
+        <div class="topbar-right">Article view</div>
+      </header>
+      <div class="formula-wrap">
+        <div class="formula-bar">
+          <div class="name-box">A3</div>
+          <div class="formula-icon">ƒx</div>
+          <div class="formula-input">="Horwitz / Truelink LBO Lite"</div>
+        </div>
+      </div>
+      <section class="article-shell">
+        <article class="article-page">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <h1 class="article-title">Horwitz / Truelink LBO Lite</h1>
+
+          <p>Truelink Capital acquiring Horwitz teaches us about synergy, LBOs, and the current PE environment.</p>
+
+          <p>On June 16th of this year, private equity firm Truelink Capital invested in mechanical, electrical, and plumbing services provider Horwitz. Horwitz provides MEP services across the twin cities, especially in high-growth markets like data centers, medtech, and advanced manufacturing.</p>
+
+          <p>Despite the financials of the deal not being disclosed, I'm testing whether Horwitz deserves to be scaled like a scalable commercial services platform rather than a regional platform. I intend to learn how William Blair could defend that positioning in a sell-side process. The question is as follows: what would have to be true in order to defend Horwitz as a scalable regional platform, and have it hit that higher valuation bucket?</p>
+
+          <p>In order to do this, I will be building an EV/EBITDA sensitivity model and a simplified LBO model. The LBO case assumes that Horwitz grows organically in order to determine whether organic growth can create a high enough IRR for Truelink Capital. Because Horwitz does not disclose revenue, I estimated revenue using a peer set of MEP / specialty contractors with known revenue and employee counts, then applied the implied revenue-per-employee range to Horwitz’s ~720 employees.</p>
+
+          <p>The first step of this process is finding the revenue. Unfortunately, company revenue was not disclosed, however employee count was. Scraping information from the internet, I was able to gather just over 100 datapoints of companies revenue/employee counts. Below is a regression of the 100 companies across a scatterplot. On the X axis is the number of employees per company. On the Y axis is the revenue per company. Plotting a regression across data points allows us to estimate Horwitz’ revenue; at 720 employees, Horwitz should have around $263M in revenue.</p>
+          <div class="figure-block">
+            <img src="assets/projects/horwitz-truelink/enterprise-value-sensitivity.png" alt="Enterprise value sensitivity table for Horwitz / Truelink" />
+          </div>
+
+          <p>Now that we have revenue, the EV can now be built. Because EBITDA valuations are more standard than revenue, I built out an EBITDA sensitivity enterprise value sensitivity model for varying EBITDA multiples and EBITDA margins. Based on public comps and referencing PrivCo companies (I would use PrivCo for data but I only have a limited amount of company views), an EBITDA margin of 7-13% seems plausible for a regional MEP services platform, with base case being around 9-11%.</p>
+          <div class="figure-block">
+            <img src="assets/projects/horwitz-truelink/lbo-assumptions.png" alt="LBO assumptions and sources and uses for Horwitz / Truelink" />
+          </div>
+
+          <p>Next, I built out an LBO model for this transaction. 2.0% is a standard transaction fee; I use 2.0% as a standard percent for all of my models. A debt multiple of 4x is reasonable via Q1 2026 lower-middle-market data. EBITDA growth of 5% is another reasonable assumption, reflecting its recurring service base, exposure to high-growth markets, and potential operating improvements under Truelink. I also referenced comparables to come up with this figure. Cash flow available for debt paydown is modeled as 35% of EBITDA, reflecting a simplified levered FCF conversion assumption. Finally, a base case exit multiple of 10x is used, as returns will be factored without valuation uplifts. However, multiple expansion could occur given Truelink’s strategy of building Horwitz into a larger, diversified MEP platform through primarily M&amp;A in a fragmented regional market.</p>
+          <div class="figure-block">
+            <img src="assets/projects/horwitz-truelink/ebitda-debt-paydown.png" alt="Five-year EBITDA and debt paydown table for Horwitz / Truelink" />
+          </div>
+
+          <p>Model Conclusion: please keep in mind that I made many assumptions due to financials not being disclosed. Horwitz can be defended as a scalable regional MEP platform, but the LBO suggests Truelink likely needs more than just organic growth to earn a strong sponsor return. At a 10.0x entry / 10.0x exit, 5.0% EBITDA growth, and 35% cash conversion, the model produces about an 11.7% IRR. The real sponsor thesis then is likely regional consolidation, mix shift, margin expansion, and eventual multiple expansion.</p>
+          <div class="figure-block">
+            <img src="assets/projects/horwitz-truelink/exit-multiple-sensitivity.png" alt="Exit multiple sensitivity for Horwitz / Truelink" />
+          </div>
+
+          <p>This checks out with the official press release, as Truelink Capital makes note of their operation within a “large and fragmented regional MEP services market with strong demand”. Strategic rationale is important here, and the upside case banks on Truelink using Horwitz as a regional consolidation platform instead of just growing it organically. Without M&amp;A, margin improvement, or multiple expansion, the base-case return is pretty modest. However, if margins are closer to 10% and the fragmented market can create add-on acquisition runaway, then Horwitz can certainly be defended as a scalable commercial services platform rather than a traditional regional contractor.</p>
+
+          <div class="downloads">
+            <div class="download-links">
+              <a href="assets/projects/horwitz-truelink/Horwitz_LBO_EVsensitivity_Hassan.xlsx" download>Download Excel</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer class="sheet-footer">
+        <nav class="sheet-tabs" aria-label="Workbook tabs">
+          <a class="sheet-tab" href="index.html#overview">Home</a>
+          <a class="sheet-tab active" href="index.html#projects">Projects</a>
+        </nav>
+        <div class="footer-note">2026 Evan Hassan</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

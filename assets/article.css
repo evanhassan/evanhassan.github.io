@@ -195,11 +195,105 @@ img {
   margin: 28px 0 24px;
 }
 
+.figure-block.figure-full-bleed {
+  overflow: visible;
+}
+
 .figure-block img {
   width: 90%;
   margin: 0 auto;
   border: 1px solid var(--grid);
   background: var(--surface);
+}
+
+.zoom-teaser {
+  position: relative;
+  width: 90%;
+  margin: 0 auto;
+  cursor: zoom-in;
+}
+
+.figure-block.figure-full-bleed img {
+  width: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  transform: none;
+  filter: blur(2.2px);
+  transition: filter 180ms ease, transform 180ms ease, opacity 180ms ease;
+}
+
+.zoom-teaser:hover img {
+  filter: blur(1.6px);
+}
+
+.zoom-teaser::after {
+  content: "Click to expand";
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  padding: 10px 14px;
+  border: 1px solid rgba(17, 24, 18, 0.18);
+  background: rgba(247, 248, 244, 0.9);
+  color: var(--excel-green-dark);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  pointer-events: none;
+  box-shadow: 0 8px 24px rgba(17, 24, 18, 0.08);
+}
+
+.zoomable-img {
+  cursor: zoom-in;
+}
+
+.zoom-caption {
+  margin: 10px auto 0;
+  width: 90%;
+  max-width: 100%;
+  font-size: 12px !important;
+  color: var(--muted) !important;
+  line-height: 1.45 !important;
+}
+
+.image-lightbox {
+  position: fixed;
+  inset: 0;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  padding: 24px;
+  background: rgba(16, 21, 17, 0.9);
+  z-index: 9999;
+  cursor: zoom-out;
+}
+
+.image-lightbox.open {
+  display: flex;
+}
+
+.image-lightbox img {
+  max-width: min(96vw, 1800px);
+  max-height: 92vh;
+  border: 1px solid rgba(255,255,255,0.16);
+  box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+  background: #fff;
+}
+
+.image-lightbox-close {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  border: 1px solid rgba(255,255,255,0.22);
+  background: rgba(255,255,255,0.08);
+  color: #fff;
+  font: inherit;
+  font-size: 12px;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  padding: 9px 12px;
 }
 
 .downloads {
@@ -291,6 +385,13 @@ img {
   }
 
   .figure-block img {
+    width: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    transform: none;
+  }
+
+  .zoom-caption {
     width: 100%;
   }
 }

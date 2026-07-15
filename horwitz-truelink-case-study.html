@@ -38,20 +38,23 @@
 
           <p>The first step of this process is finding the revenue. Unfortunately, company revenue was not disclosed, however employee count was. Scraping information from the internet, I was able to gather just over 100 datapoints of companies revenue/employee counts. Below is a regression of the 100 companies across a scatterplot. On the X axis is the number of employees per company. On the Y axis is the revenue per company. Plotting a regression across data points allows us to estimate Horwitz’ revenue; at 720 employees, Horwitz should have around $263M in revenue.</p>
           <div class="figure-block">
-            <img src="assets/projects/horwitz-truelink/enterprise-value-sensitivity.png" alt="Enterprise value sensitivity table for Horwitz / Truelink" />
+            <img src="assets/projects/horwitz-truelink/revenue_regression.jpg" alt="Revenue regression scatterplot for Horwitz / Truelink" />
           </div>
 
-          <p>Now that we have revenue, the EV can now be built. Because EBITDA valuations are more standard than revenue, I built out an EBITDA sensitivity enterprise value sensitivity model for varying EBITDA multiples and EBITDA margins. Based on public comps and referencing PrivCo companies (I would use PrivCo for data but I only have a limited amount of company views), an EBITDA margin of 7-13% seems plausible for a regional MEP services platform, with base case being around 9-11%.</p>
+          <p>Now that we have revenue, the model can be constructed. Because EBITDA valuations are more standard than revenue, I built out an EBITDA sensitivity enterprise value sensitivity model for varying EBITDA multiples and EBITDA margins. Based on public comps and referencing PrivCo companies (I would use PrivCo for data but I only have a limited amount of company views), an EBITDA margin of 7-13% seems plausible for a regional MEP services platform, with base case being around 9-11%.</p>
           <div class="figure-block">
-            <img src="assets/projects/horwitz-truelink/lbo-assumptions.png" alt="LBO assumptions and sources and uses for Horwitz / Truelink" />
+            <img src="assets/projects/horwitz-truelink/enterprise-value-sensitivity.png" alt="Enterprise value sensitivity table for Horwitz / Truelink" />
           </div>
 
           <p>Next, I built out an LBO model for this transaction. 2.0% is a standard transaction fee; I use 2.0% as a standard percent for all of my models. A debt multiple of 4x is reasonable via Q1 2026 lower-middle-market data. EBITDA growth of 5% is another reasonable assumption, reflecting its recurring service base, exposure to high-growth markets, and potential operating improvements under Truelink. I also referenced comparables to come up with this figure. Cash flow available for debt paydown is modeled as 35% of EBITDA, reflecting a simplified levered FCF conversion assumption. Finally, a base case exit multiple of 10x is used, as returns will be factored without valuation uplifts. However, multiple expansion could occur given Truelink’s strategy of building Horwitz into a larger, diversified MEP platform through primarily M&amp;A in a fragmented regional market.</p>
           <div class="figure-block">
-            <img src="assets/projects/horwitz-truelink/ebitda-debt-paydown.png" alt="Five-year EBITDA and debt paydown table for Horwitz / Truelink" />
+            <img src="assets/projects/horwitz-truelink/lbo-assumptions.png" alt="LBO assumptions and sources and uses for Horwitz / Truelink" />
           </div>
 
           <p>Model Conclusion: please keep in mind that I made many assumptions due to financials not being disclosed. Horwitz can be defended as a scalable regional MEP platform, but the LBO suggests Truelink likely needs more than just organic growth to earn a strong sponsor return. At a 10.0x entry / 10.0x exit, 5.0% EBITDA growth, and 35% cash conversion, the model produces about an 11.7% IRR. The real sponsor thesis then is likely regional consolidation, mix shift, margin expansion, and eventual multiple expansion.</p>
+          <div class="figure-block">
+            <img src="assets/projects/horwitz-truelink/ebitda-debt-paydown.png" alt="Five-year EBITDA and debt paydown table for Horwitz / Truelink" />
+          </div>
           <div class="figure-block">
             <img src="assets/projects/horwitz-truelink/exit-multiple-sensitivity.png" alt="Exit multiple sensitivity for Horwitz / Truelink" />
           </div>

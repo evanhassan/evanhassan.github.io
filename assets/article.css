@@ -206,6 +206,10 @@ img {
   background: var(--surface);
 }
 
+.figure-block.figure-compact img {
+  width: min(56%, 480px);
+}
+
 .zoom-teaser {
   position: relative;
   width: 90%;

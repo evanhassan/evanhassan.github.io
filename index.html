@@ -511,55 +511,50 @@
     }
 
     .project-links {
-      gap: 12px;
+      gap: 18px;
+      align-items: flex-end;
     }
 
     .project-link {
-      min-width: 140px;
-      border-color: var(--ink);
+      position: relative;
+      min-width: 0;
+      min-height: auto;
+      padding: 0 0 8px;
+      border: none;
+      background: transparent;
+      box-shadow: none;
       color: var(--ink);
-      background: #ffffff;
-      box-shadow: 0 1px 0 rgba(24, 32, 24, 0.08);
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 0.08em;
+      text-transform: uppercase;
+      justify-content: flex-start;
+      transition: color 140ms ease, font-weight 140ms ease;
     }
 
-    .project-link:first-child {
-      background: var(--excel-green);
-      border-color: var(--excel-green);
-      color: #ffffff;
-      min-width: 178px;
-    }
-
-    .project-link:first-child:hover {
-      background: var(--excel-green-dark);
-      border-color: var(--excel-green-dark);
-      color: #ffffff;
-    }
-
-    .project-link:first-child::after {
-      content: "↗";
-      margin-left: 10px;
-      font-size: 14px;
-    }
-
-    .project-link[download]::after {
+    .project-link::after {
       content: "";
-      width: 14px;
-      height: 14px;
-      margin-left: 10px;
-      background: center / contain no-repeat url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%23182018' stroke-width='1.8' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M12 3v12M7.5 10.5 12 15l4.5-4.5M5 20h14'/%3E%3C/svg%3E");
-      flex: 0 0 auto;
+      position: absolute;
+      left: 0;
+      bottom: 0;
+      width: 100%;
+      height: 2px;
+      background: var(--excel-green);
+      transform: scaleX(0);
+      transform-origin: left center;
+      transition: transform 180ms ease;
     }
 
-    .project-link:last-child {
-      background: #ffffff;
-      border-color: var(--ink);
-      color: var(--ink);
+    .project-link:hover {
+      transform: none;
+      border-color: transparent;
+      color: var(--excel-green-dark);
+      font-weight: 800;
     }
 
-    .project-link:last-child:hover {
-      background: #f4f6f3;
-      border-color: var(--ink);
-      color: var(--ink);
+    .project-link:hover::after,
+    .project-link:focus-visible::after {
+      transform: scaleX(1);
     }
 
     .resume-list {
@@ -709,19 +704,12 @@
       to { stroke-dashoffset: -18; }
     }
 
-    .hero-portrait-shell {
-      height: 100%;
-      min-height: 276px;
-      padding: 0;
-      overflow: hidden;
-    }
-
     .hero-meta-strip {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       margin-top: auto;
       width: 100%;
-      padding-top: 6px;
+      padding-top: 10px;
     }
 
     .hero-intro-shell {
@@ -729,8 +717,10 @@
     }
 
     .hero-intro-shell .section-frame {
-      padding: 24px 22px;
+      align-items: center;
+      padding: 28px 22px;
       gap: 14px;
+      text-align: center;
     }
 
     .hero-intro-shell .hero-title,
@@ -739,9 +729,13 @@
     }
 
     .hero-intro-shell .body-copy {
-      max-width: 56ch;
+      max-width: 62ch;
       font-size: 16px;
       line-height: 1.72;
+    }
+
+    .hero-intro-shell .hero-title {
+      max-width: none;
     }
 
     #projects .section-frame,
@@ -758,20 +752,12 @@
       filter: saturate(0.95) contrast(1.02);
     }
 
-    .hero-portrait {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
-      object-position: center top;
-      display: block;
-      filter: saturate(0.96) contrast(1.02);
-    }
 
     @media (max-width: 960px) {
       .site-shell { padding: 12px; }
       .ribbon { grid-template-columns: repeat(2, minmax(0, 1fr)); }
       .project-link {
-        flex: 1 1 160px;
+        flex: 0 0 auto;
       }
       .tabs-bar {
         align-items: flex-start;
@@ -891,9 +877,9 @@
           <div class="col-head">H</div>
 
           <div class="row-head">1</div>
-          <section class="cell cell-muted hero-intro-shell" style="grid-column: 2 / span 5; min-height: 276px; padding: 0;" id="overview">
+          <section class="cell cell-muted hero-intro-shell" style="grid-column: 2 / span 8; min-height: 276px; padding: 0;" id="overview">
             <div class="section-frame">
-              <h1 class="hero-title">Hello, I am Evan.</h1>
+              <h1 class="hero-title">Evan's Portfolio</h1>
               <p class="body-copy">
                 I am a University of Utah student who loves to uncover insights and evaluate ideas. That interest gradually pulled me toward finance, where I’ve been working for the past couple of years. I love analyzing companies, developing my own perspectives, and using data to support them.
               </p>
@@ -902,9 +888,6 @@
               </div>
             </div>
           </section>
-          <aside class="cell cell-green hero-portrait-shell" style="grid-column: 7 / span 3; min-height: 276px;">
-            <img class="hero-portrait" src="assets/evan-portrait.png" alt="Portrait of Evan Hassan with arms crossed" />
-          </aside>
 
           <div class="row-head">2</div>
           <section class="cell cell-green" style="grid-column: 2 / span 8; min-height: 98px; padding: 0;" id="projects">

@@ -712,6 +712,29 @@
       padding-top: 10px;
     }
 
+    .advisor-logos {
+      display: flex;
+      flex-wrap: nowrap;
+      align-items: center;
+      justify-content: flex-start;
+      gap: 16px;
+      min-height: 30px;
+      margin: 10px 0 12px;
+      overflow: hidden;
+    }
+
+    .advisor-logo {
+      display: block;
+      height: 42px;
+      width: auto;
+      max-width: 100%;
+      object-fit: contain;
+    }
+
+    .advisor-logo-wb {
+      height: 50px;
+    }
+
     .hero-intro-shell {
       background: linear-gradient(180deg, #fbfcfa 0%, #f2f6f1 100%);
     }
@@ -897,39 +920,19 @@
           </section>
 
           <div class="row-head">3</div>
-          <article class="cell" style="grid-column: 2 / span 4; min-height: 252px;">
+          <article class="cell" style="grid-column: 2 / span 8; min-height: 252px;">
             <div class="project-card project-compact">
               <div>
                 <p class="project-meta">Investment Banking</p>
-                <h3 class="project-title">365 Retail Markets / Cantaloupe</h3>
+                <h3 class="project-title">The EPS Impact of Broadridge’s Itiviti Acquisition</h3>
               </div>
-              <p class="project-copy">DCF analysis for 365 Retail Markets acquiring Cantaloupe. Sell-side advised by William Blair.</p>
-              <!-- <div class="tag-row">
-                <span class="tag">DCF</span>
-                <span class="tag">Retail Technology</span>
-                <span class="tag">Excel Model</span>
-              </div> -->
+              <p class="project-copy">Accretion / dilution analysis for Broadridge acquiring Itiviti. Buy-side advised by Houlihan Lokey.</p>
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo" src="assets/advisor-logos/houlihan.png" alt="Houlihan logo" />
+              </div>
               <div class="project-links">
-                <a class="project-link" href="cantaloupe-365-retail.html">Read Analysis</a>
-                <a class="project-link" href="assets/projects/cantaloupe-365-retail/Cantaloupe_DCF_Hassan.xlsx" download>Download Excel</a>
-              </div>
-            </div>
-          </article>
-          <article class="cell" style="grid-column: 6 / span 4; min-height: 252px;">
-            <div class="project-card project-compact">
-              <div>
-                <p class="project-meta">Investment Banking</p>
-                <h3 class="project-title">Everbridge / Thoma Bravo</h3>
-              </div>
-              <p class="project-copy">DCF and simplified LBO read on Thoma Bravo acquiring Everbridge. Sell-side advised by Qatalyst Partners; sponsor advised by Raymond James.</p>
-              <!-- <div class="tag-row">
-                <span class="tag">DCF</span>
-                <span class="tag">LBO Lite</span>
-                <span class="tag">Excel Model</span>
-              </div> -->
-              <div class="project-links">
-                <a class="project-link" href="everbridge-thoma-bravo.html">Read Analysis</a>
-                <a class="project-link" href="assets/projects/everbridge-thoma-bravo/Everbridge_ThomaBravo_Hassan.xlsx" download>Download Excel</a>
+                <a class="project-link" href="broadridge-itiviti.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/broadridge-itiviti/Broadridge_Itiviti_Hassan.xlsx" download>Download Excel</a>
               </div>
             </div>
           </article>
@@ -939,14 +942,60 @@
             <div class="project-card project-compact">
               <div>
                 <p class="project-meta">Investment Banking</p>
-                <h3 class="project-title">Horwitz / Truelink LBO Lite</h3>
+                <h3 class="project-title">Was Cantaloupe Worth $848 Million?</h3>
+              </div>
+              <p class="project-copy">DCF analysis for 365 Retail Markets acquiring Cantaloupe. Sell-side advised by William Blair.</p>
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo advisor-logo-wb" src="assets/advisor-logos/william-blair.png" alt="William Blair logo" />
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="cantaloupe-365-retail.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/cantaloupe-365-retail/Cantaloupe_DCF_Hassan.xlsx" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+          <article class="cell" style="grid-column: 5 / span 2; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Investment Banking</p>
+                <h3 class="project-title">Thoma Bravo Acquires Everbridge</h3>
+              </div>
+              <p class="project-copy">DCF and simplified LBO read on Thoma Bravo acquiring Everbridge. Sell-side advised by Qatalyst Partners; sponsor advised by Raymond James.</p>
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo" src="assets/advisor-logos/qatalyst.webp" alt="Qatalyst logo" />
+                <img class="advisor-logo" src="assets/advisor-logos/raymondjames.png" alt="Raymond James logo" />
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="everbridge-thoma-bravo.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/everbridge-thoma-bravo/Everbridge_ThomaBravo_Hassan.xlsx" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+          <article class="cell" style="grid-column: 7 / span 3; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Passion Project</p>
+                <h3 class="project-title">Valuing the Michael Scott Paper Company</h3>
+              </div>
+              <p class="project-copy">Attempting to value the Michael Scott Paper Company's standalone and strategic value to Dunder Mifflin</p>
+              <div class="project-links">
+                <a class="project-link" href="dunder-mifflin-mspc.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/dunder-mifflin-mspc/DunderMifflin_Hassan.xlsx" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="row-head">5</div>
+          <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
+            <div class="project-card project-compact">
+              <div>
+                <p class="project-meta">Investment Banking</p>
+                <h3 class="project-title">What Returns Could Truelink Earn on Horwitz?</h3>
               </div>
               <p class="project-copy">EV/EBITDA sensitivity model and simplified LBO for Truelink Capital acquiring Horwitz. Sell-side advised by William Blair.</p>
-              <!-- <div class="tag-row">
-                <span class="tag">EV Sensitivity</span>
-                <span class="tag">LBO Lite</span>
-                <span class="tag">Excel Model</span>
-              </div> -->
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo advisor-logo-wb" src="assets/advisor-logos/william-blair.png" alt="William Blair logo" />
+              </div>
               <div class="project-links">
                 <a class="project-link" href="horwitz-truelink-case-study.html">Read Analysis</a>
                 <a class="project-link" href="assets/projects/horwitz-truelink/Horwitz_LBO_EVsensitivity_Hassan.xlsx" download>Download Excel</a>
@@ -957,14 +1006,12 @@
             <div class="project-card project-compact">
               <div>
                 <p class="project-meta">Investment Banking</p>
-                <h3 class="project-title">Clean Harbors / Terra Nova</h3>
+                <h3 class="project-title">Clean Harbors Acquires Terra Nova</h3>
               </div>
               <p class="project-copy">Precedent transaction analysis and accretion/dilution for Clean Harbors acquiring Terra Nova. Sell-side advised by Raymond James.</p>
-              <!-- <div class="tag-row">
-                <span class="tag">Precedent Transactions</span>
-                <span class="tag">Accretion / Dilution</span>
-                <span class="tag">Excel Model</span>
-              </div> -->
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo" src="assets/advisor-logos/raymondjames.png" alt="Raymond James logo" />
+              </div>
               <div class="project-links">
                 <a class="project-link" href="clean-harbors-terra-nova.html">Read Analysis</a>
                 <a class="project-link" href="assets/projects/clean-harbors-terra-nova/Clean_Harbors_Terra_Nova_Hassan.xlsx" download>Download Excel</a>
@@ -975,14 +1022,12 @@
             <div class="project-card project-compact">
               <div>
                 <p class="project-meta">Investment Banking</p>
-                <h3 class="project-title">Roper / CentralReach</h3>
+                <h3 class="project-title">Why Roper Paid a Premium for CentralReach</h3>
               </div>
               <p class="project-copy">Public comps analysis for Roper Technologies acquiring CentralReach. Sell-side advised by William Blair.</p>
-              <!-- <div class="tag-row">
-                <span class="tag">Public Comps</span>
-                <span class="tag">Healthcare IT</span>
-                <span class="tag">Excel Model</span>
-              </div> -->
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo advisor-logo-wb" src="assets/advisor-logos/william-blair.png" alt="William Blair logo" />
+              </div>
               <div class="project-links">
                 <a class="project-link" href="roper-centralreach.html">Read Analysis</a>
                 <a class="project-link" href="assets/projects/roper-centralreach/CentralReach_EvanHassan.xlsx" download>Download Excel</a>
@@ -990,7 +1035,7 @@
             </div>
           </article>
 
-          <div class="row-head">5</div>
+          <div class="row-head">6</div>
           <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
             <div class="project-card project-compact">
               <div>
@@ -1042,7 +1087,7 @@
             </div>
           </article>
 
-          <div class="row-head">6</div>
+          <div class="row-head">7</div>
           <section class="cell cell-muted" style="grid-column: 2 / span 8; min-height: 180px; padding: 0;" id="resume">
             <div class="section-frame">
               <h2 class="section-title">Resume</h2>
@@ -1052,7 +1097,7 @@
             </div>
           </section>
 
-          <div class="row-head">7</div>
+          <div class="row-head">8</div>
           <section class="cell cell-dark" style="grid-column: 2 / span 8; min-height: 164px; padding: 0;" id="contact">
             <div class="section-frame">
               <h2 class="contact-title">Contact</h2>
@@ -1099,11 +1144,11 @@
           formula: '=PROJECTS("Personal projects")'
         },
         resume: {
-          cell: 'A6',
+          cell: 'A7',
           formula: '=RESUME("Resume")'
         },
         contact: {
-          cell: 'A7',
+          cell: 'A8',
           formula: '=CONTACT("Email is the best way to get in contact with me.")'
         }
       };

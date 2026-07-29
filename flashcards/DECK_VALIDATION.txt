@@ -1,0 +1,25 @@
+DECK VALIDATION
+Total cards: 1360
+Unique IDs: 1360
+Unique questions: 1360
+
+Deck counts:
+- Model Review - Core: 400
+- Model Review - Today: 160
+- M&I 400 - Real: 400
+- M&I 400 - Applied: 400
+
+Custom maximum question length: 211
+Custom maximum option length: 182
+Custom maximum explanation length: 121
+Cards with non-4 option count: 0
+Cards with invalid answer index: 0
+Duplicate custom option sets within a card: 0
+
+M&I 400 Real preservation check:
+- Count preserved: True
+- IDs preserved R001-R400: True
+- Objects preserved from prior app: True
+
+HTML full-text protections added: yes
+FSRS-style scheduler preserved: yes

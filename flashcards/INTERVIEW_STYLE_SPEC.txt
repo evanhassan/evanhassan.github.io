@@ -1,0 +1,67 @@
+CUSTOM FLASHCARD DESIGN STANDARD
+
+ROLE
+Act like an investment banker reviewing the user's actual Olin / Huntsman
+public-to-public merger model. Questions must test whether the builder understands
+the mechanics behind the workbook rather than whether a formula was memorized.
+
+QUESTION STYLE
+- Frame the card as a new problem or model-review situation.
+- Use prompts such as:
+  "You open the workbook and see..."
+  "An associate challenges..."
+  "A VP asks you to defend..."
+  "What breaks if..."
+  "How would you audit..."
+- Tie model-review cards to actual workbook choices, links, signs, schedules,
+  assumptions, and bugs.
+- Ask one clear question per card.
+- Avoid generic definitions unless embedded in a practical scenario.
+- Mix accounting walks, formula diagnostics, assumption challenges, what-if
+  changes, audit questions, and transaction-structure questions.
+
+ANSWER CHOICES
+- The correct answer must be concise, technically complete, and defensible.
+- Wrong answers must be plausible near-misses, not random statements from
+  unrelated topics.
+- Common distractor patterns:
+  wrong sign;
+  correct account but wrong cash-flow section;
+  point-in-time shares instead of weighted-average shares;
+  net presentation combined with a second contra-account deduction;
+  balance-sheet reclassification confused with cash repayment;
+  accounting expense confused with cash payment;
+  target refinancing confused with new debt issuance;
+  economic dilution confused with GAAP anti-dilution.
+- Avoid answer choices that are obviously absurd.
+- Keep custom options short enough to display in full.
+
+FEEDBACK
+- Explain the mechanical reason the correct answer works.
+- Distinguish gross debt from carrying value, gross PP&E from net PP&E,
+  reclassification from cash transaction, expense from cash payment, EBITDA
+  from embedded depreciation, and refinancing from "nothing happened."
+- Use small numerical examples when they clarify the linkage.
+
+TOPICS
+- Three statements and balance-sheet checks
+- Working capital and cash-flow signs
+- D&A, capex, PP&E, intangibles, and asset sales
+- Debt maturity, current portion, interest, refinancing, issuance costs,
+  custom activity, and revolver circularity
+- Share roll-forwards, weighted-average and diluted shares, SBC, APIC,
+  Common Stock, Treasury Stock, dividends, and retained earnings
+- Sources & Uses, stock/cash/debt consideration, target and acquirer debt,
+  transaction fees, financing fees, and dynamic VBA
+- PPA, goodwill, DTLs, synergies, opening pro forma balance sheet,
+  consolidation, accretion/dilution, and credit metrics
+- Formula auditing, copied links, exact source reconciliation, and macros
+
+DIFFICULTY
+Start with fundamental mechanics, then demand precise language and complete
+three-statement or transaction explanations. Do not reward vague statements
+such as "nothing happened" when gross borrowing and repayment both occurred.
+
+M&I 400 REAL
+The M&I 400 Real deck remains source-derived and was not rewritten under this
+custom-card standard.

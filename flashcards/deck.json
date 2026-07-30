@@ -1,29 +1,29 @@
 {
   "title": "Olin / Huntsman Model Review & Investment Banking Flashcards",
-  "version": "2026-07-28 Rebuilt Contextual FSRS",
-  "created": "2026-07-28",
-  "question_count": 1360,
+  "version": "2026-07-29 PPA / Refi / Opening BS Expansion",
+  "created": "2026-07-29",
+  "question_count": 1500,
   "category_count": 4,
-  "description": "Four rebuilt decks: 400 contextual model-review cards, 160 cards from the July 28 equity and Sources & Uses build, 400 source-derived M&I cards preserved from the prior app, and 400 applied technical-interview cards. Includes the existing FSRS-style scheduler.",
+  "description": "Four decks: 400 contextual model-review cards, 300 cards from the July 28-29 Olin / Huntsman build, 400 source-derived M&I cards, and 400 applied technical-interview cards. Includes the FSRS-style scheduler.",
   "model_status": {
-    "estimated_completion": "Both standalone three-statement models and Sources & Uses are substantially complete. PPA / Goodwill is next.",
+    "estimated_completion": "Standalone models, Sources & Uses, the PPA / Goodwill skeleton, joint transaction / refinancing debt schedule, and pro forma opening balance-sheet architecture are built. Critical formula verification remains before synergies and consolidation.",
     "next_focus": [
-      "Build PPA / Goodwill from consideration and closing target balances.",
-      "Build incremental PP&E depreciation and identifiable-intangible amortization.",
-      "Build Synergies & Integration and the Pro Forma Opening Balance Sheet.",
-      "Build consolidated three statements, accretion / dilution, credit metrics, sensitivities, and checks."
+      "Correct and verify the incremental PPA D&A useful-life links and closing-year stub formulas.",
+      "Verify every pro forma opening balance-sheet transaction adjustment and recomputed subtotal under both switch scenarios.",
+      "Build Pro Forma D&A and Synergies & Integration.",
+      "Build the consolidated three statements and GAAP / adjusted accretion and dilution."
     ]
   },
   "sources": [
-    "new broken(1).xlsm - latest inspected workbook snapshot",
-    "Olin_Huntsman_Full_Merger_Model_Checkpoint_2026-07-25(2)(2)(2).txt",
-    "July 28 conversation decisions on Olin assumptions, equity, Sources & Uses, and VBA",
-    "index(6).html - prior FSRS app and unchanged M&I 400 Real deck",
-    "Combination Model(5).xls",
-    "Consolidation-Structuring-Example(2).xlsm",
-    "Kitty-Hawk-and-Kalitta-Merger-Model-1-1(3).xlsm"
+    "new broken(10).xlsm - latest inspected workbook snapshot before final user-applied subtotal fixes",
+    "Olin_Huntsman_Full_Merger_Model_Checkpoint_2026-07-29_FINAL.txt",
+    "July 29 decisions on share activity, PPA / Goodwill, incremental PPA D&A, joint refinancing debt, Sources & Uses VBA, and the pro forma opening balance sheet",
+    "index(9).html - prior self-contained FSRS + Model Builder app",
+    "Combination Model(6).xls",
+    "Consolidation-Structuring-Example(3).xlsm",
+    "Kitty-Hawk-and-Kalitta-Merger-Model-1-1(4).xlsm"
   ],
-  "usage_note": "The 400 M&I Real cards are preserved from the prior app. Every other deck was rewritten into concise, workbook-specific or applied interview scenarios with plausible near-miss distractors. Custom questions and options were length-limited so the app can display them in full.",
+  "usage_note": "The 400 M&I Real cards remain unchanged. The Today deck now includes the July 29 PPA, refinancing, opening-balance-sheet, and share-activity work. Existing IDs were preserved so prior progress exports remain compatible.",
   "categories": [
     {
       "name": "Model Review - Core",
@@ -31,7 +31,7 @@
     },
     {
       "name": "Model Review - Today",
-      "count": 160
+      "count": 300
     },
     {
       "name": "M&I 400 - Real",
@@ -29684,6 +29684,3226 @@
       ],
       "source_basis": "Applied technical interview practice derived from M&I topic coverage",
       "study_day": "M&I 400 - Applied"
+    },
+    {
+      "id": "T161",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption. Which treatment is correct?",
+      "options": [
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Multiply the net share movement by the current share price and record the result as cash.",
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback.",
+        "Use par value to estimate the full cash proceeds or repurchase cost."
+      ],
+      "answer_index": 0,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T162",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption. What should you say?",
+      "options": [
+        "Multiply the net share movement by the current share price and record the result as cash.",
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback.",
+        "Use par value to estimate the full cash proceeds or repurchase cost."
+      ],
+      "answer_index": 1,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T163",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption. Which answer is most accurate?",
+      "options": [
+        "Multiply the net share movement by the current share price and record the result as cash.",
+        "Use par value to estimate the full cash proceeds or repurchase cost.",
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback."
+      ],
+      "answer_index": 2,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T164",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption, what is the right approach?",
+      "options": [
+        "Use par value to estimate the full cash proceeds or repurchase cost.",
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback.",
+        "Multiply the net share movement by the current share price and record the result as cash."
+      ],
+      "answer_index": 1,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T165",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption. Which explanation is strongest?",
+      "options": [
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback.",
+        "Multiply the net share movement by the current share price and record the result as cash.",
+        "Use par value to estimate the full cash proceeds or repurchase cost."
+      ],
+      "answer_index": 0,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T166",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption. What conclusion is correct?",
+      "options": [
+        "Multiply the net share movement by the current share price and record the result as cash.",
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Use par value to estimate the full cash proceeds or repurchase cost.",
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback."
+      ],
+      "answer_index": 1,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T167",
+      "category": "Model Review - Today",
+      "subcategory": "Share count versus cash activity",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the forecast has a net share-count movement but no separate cash stock-issuance or repurchase assumption?",
+      "options": [
+        "Record every positive share movement as cash issuance and every negative movement as a cash buyback.",
+        "Use par value to estimate the full cash proceeds or repurchase cost.",
+        "Use the share-count movement for shares only; do not infer a financing cash flow because it may reflect SBC, treasury activity, or offsetting issuance and repurchases.",
+        "Multiply the net share movement by the current share price and record the result as cash."
+      ],
+      "answer_index": 2,
+      "explanation": "Share count and cash dollars are separate inputs. Net shares alone do not reveal the transaction type or its cash cost.",
+      "tags": [
+        "shares",
+        "cash-flow",
+        "template",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T168",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares. Which treatment is correct?",
+      "options": [
+        "Use current-year net debt so the estimated price reacts to ending cash.",
+        "Keep it because valuation algebra makes the stock cash flow exact.",
+        "Divide the result by par value to convert it into Treasury Stock.",
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution."
+      ],
+      "answer_index": 3,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T169",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares. What should you say?",
+      "options": [
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution.",
+        "Use current-year net debt so the estimated price reacts to ending cash.",
+        "Divide the result by par value to convert it into Treasury Stock.",
+        "Keep it because valuation algebra makes the stock cash flow exact."
+      ],
+      "answer_index": 0,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T170",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares. Which answer is most accurate?",
+      "options": [
+        "Keep it because valuation algebra makes the stock cash flow exact.",
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution.",
+        "Use current-year net debt so the estimated price reacts to ending cash.",
+        "Divide the result by par value to convert it into Treasury Stock."
+      ],
+      "answer_index": 1,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T171",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares, what is the right approach?",
+      "options": [
+        "Keep it because valuation algebra makes the stock cash flow exact.",
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution.",
+        "Use current-year net debt so the estimated price reacts to ending cash.",
+        "Divide the result by par value to convert it into Treasury Stock."
+      ],
+      "answer_index": 1,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T172",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares. Which explanation is strongest?",
+      "options": [
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution.",
+        "Keep it because valuation algebra makes the stock cash flow exact.",
+        "Divide the result by par value to convert it into Treasury Stock.",
+        "Use current-year net debt so the estimated price reacts to ending cash."
+      ],
+      "answer_index": 0,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T173",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares. What conclusion is correct?",
+      "options": [
+        "Keep it because valuation algebra makes the stock cash flow exact.",
+        "Divide the result by par value to convert it into Treasury Stock.",
+        "Use current-year net debt so the estimated price reacts to ending cash.",
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution."
+      ],
+      "answer_index": 3,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T174",
+      "category": "Model Review - Today",
+      "subcategory": "Implied stock-activity price",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: the template multiplies net shares by an implied share price derived from EBITDA, net debt, and diluted shares?",
+      "options": [
+        "Divide the result by par value to convert it into Treasury Stock.",
+        "Remove that as the default cash-flow logic; it creates fake precision, can create circularity, and still cannot distinguish cash activity from noncash dilution.",
+        "Keep it because valuation algebra makes the stock cash flow exact.",
+        "Use current-year net debt so the estimated price reacts to ending cash."
+      ],
+      "answer_index": 1,
+      "explanation": "The valuation bridge cannot identify whether the net share movement was cash or noncash, and same-year net debt can feed back through cash.",
+      "tags": [
+        "shares",
+        "valuation",
+        "circularity",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T175",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, a company repurchases $50mm of stock and holds the shares in treasury. Which treatment is correct?",
+      "options": [
+        "Reduce APIC by $50mm and leave cash unchanged.",
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost.",
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged."
+      ],
+      "answer_index": 2,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T176",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that a company repurchases $50mm of stock and holds the shares in treasury. What should you say?",
+      "options": [
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost.",
+        "Reduce APIC by $50mm and leave cash unchanged.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged.",
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change."
+      ],
+      "answer_index": 3,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T177",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: a company repurchases $50mm of stock and holds the shares in treasury. Which answer is most accurate?",
+      "options": [
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost.",
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged.",
+        "Reduce APIC by $50mm and leave cash unchanged."
+      ],
+      "answer_index": 1,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T178",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that a company repurchases $50mm of stock and holds the shares in treasury, what is the right approach?",
+      "options": [
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged.",
+        "Reduce APIC by $50mm and leave cash unchanged.",
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost."
+      ],
+      "answer_index": 0,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T179",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that a company repurchases $50mm of stock and holds the shares in treasury. Which explanation is strongest?",
+      "options": [
+        "Reduce APIC by $50mm and leave cash unchanged.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged.",
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost.",
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change."
+      ],
+      "answer_index": 3,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T180",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because a company repurchases $50mm of stock and holds the shares in treasury. What conclusion is correct?",
+      "options": [
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change.",
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost.",
+        "Reduce APIC by $50mm and leave cash unchanged.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged."
+      ],
+      "answer_index": 0,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T181",
+      "category": "Model Review - Today",
+      "subcategory": "Treasury-stock buyback",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: a company repurchases $50mm of stock and holds the shares in treasury?",
+      "options": [
+        "Reduce cash by $50mm and make Treasury Stock $50mm more negative; Common Stock and APIC do not change.",
+        "Reduce Common Stock by $50mm and leave Treasury Stock unchanged.",
+        "Reduce Common Stock by par value and ignore the remaining repurchase cost.",
+        "Reduce APIC by $50mm and leave cash unchanged."
+      ],
+      "answer_index": 0,
+      "explanation": "Treasury shares are recorded at repurchase cost. Retirement accounting is different and can reduce Common Stock, APIC, and retained earnings.",
+      "tags": [
+        "treasury-stock",
+        "equity",
+        "buybacks",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T182",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt. Which treatment is correct?",
+      "options": [
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration.",
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Use enterprise value because all assumed target debt is part of goodwill."
+      ],
+      "answer_index": 2,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T183",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt. What should you say?",
+      "options": [
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration.",
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use enterprise value because all assumed target debt is part of goodwill."
+      ],
+      "answer_index": 0,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T184",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt. Which answer is most accurate?",
+      "options": [
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration.",
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use enterprise value because all assumed target debt is part of goodwill."
+      ],
+      "answer_index": 1,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T185",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt, what is the right approach?",
+      "options": [
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use enterprise value because all assumed target debt is part of goodwill.",
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration."
+      ],
+      "answer_index": 0,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T186",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt. Which explanation is strongest?",
+      "options": [
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use enterprise value because all assumed target debt is part of goodwill.",
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration."
+      ],
+      "answer_index": 2,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T187",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt. What conclusion is correct?",
+      "options": [
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration.",
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Use enterprise value because all assumed target debt is part of goodwill."
+      ],
+      "answer_index": 2,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T188",
+      "category": "Model Review - Today",
+      "subcategory": "Purchase consideration versus EV",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: equity consideration is about $2.101bn, other purchase consideration is $17mm, and transaction enterprise value also includes target net debt?",
+      "options": [
+        "Use enterprise value because all assumed target debt is part of goodwill.",
+        "Add transaction fees and financing fees to enterprise value, then use that total.",
+        "Use about $2.118bn as total purchase consideration for goodwill; do not use enterprise value.",
+        "Use only the $2.101bn equity consideration and ignore all other purchase consideration."
+      ],
+      "answer_index": 2,
+      "explanation": "Goodwill starts from consideration transferred. Enterprise value is a valuation measure that adds net debt, not the PPA purchase-price input.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "enterprise-value",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T189",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the model has $56mm of transaction fees and a separate financing-fee input. Which treatment is correct?",
+      "options": [
+        "Add transaction fees to new debt principal and ignore financing-fee amortization.",
+        "Capitalize both fee types into goodwill.",
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense.",
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect."
+      ],
+      "answer_index": 2,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T190",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the model has $56mm of transaction fees and a separate financing-fee input. What should you say?",
+      "options": [
+        "Capitalize both fee types into goodwill.",
+        "Add transaction fees to new debt principal and ignore financing-fee amortization.",
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect.",
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense."
+      ],
+      "answer_index": 3,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T191",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the model has $56mm of transaction fees and a separate financing-fee input. Which answer is most accurate?",
+      "options": [
+        "Add transaction fees to new debt principal and ignore financing-fee amortization.",
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense.",
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect.",
+        "Capitalize both fee types into goodwill."
+      ],
+      "answer_index": 1,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T192",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the model has $56mm of transaction fees and a separate financing-fee input, what is the right approach?",
+      "options": [
+        "Add transaction fees to new debt principal and ignore financing-fee amortization.",
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense.",
+        "Capitalize both fee types into goodwill.",
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect."
+      ],
+      "answer_index": 1,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T193",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the model has $56mm of transaction fees and a separate financing-fee input. Which explanation is strongest?",
+      "options": [
+        "Add transaction fees to new debt principal and ignore financing-fee amortization.",
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect.",
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense.",
+        "Capitalize both fee types into goodwill."
+      ],
+      "answer_index": 2,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T194",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the model has $56mm of transaction fees and a separate financing-fee input. What conclusion is correct?",
+      "options": [
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect.",
+        "Capitalize both fee types into goodwill.",
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense.",
+        "Add transaction fees to new debt principal and ignore financing-fee amortization."
+      ],
+      "answer_index": 2,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T195",
+      "category": "Model Review - Today",
+      "subcategory": "Transaction versus financing fees",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the model has $56mm of transaction fees and a separate financing-fee input?",
+      "options": [
+        "Exclude transaction fees from goodwill and expense them; capitalize financing fees against new debt and amortize them through interest expense.",
+        "Add transaction fees to new debt principal and ignore financing-fee amortization.",
+        "Capitalize both fee types into goodwill.",
+        "Expense both fee types immediately through retained earnings with no debt balance-sheet effect."
+      ],
+      "answer_index": 0,
+      "explanation": "Transaction costs and debt financing costs have different accounting and cash-flow treatment.",
+      "tags": [
+        "fees",
+        "ppa",
+        "debt",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T196",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, target book equity already contains Huntsman's historical goodwill and identifiable intangibles. Which treatment is correct?",
+      "options": [
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill.",
+        "Add target book equity because the target's net assets increase purchase consideration.",
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it."
+      ],
+      "answer_index": 1,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T197",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that target book equity already contains Huntsman's historical goodwill and identifiable intangibles. What should you say?",
+      "options": [
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill.",
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it.",
+        "Add target book equity because the target's net assets increase purchase consideration."
+      ],
+      "answer_index": 1,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T198",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: target book equity already contains Huntsman's historical goodwill and identifiable intangibles. Which answer is most accurate?",
+      "options": [
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill.",
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it.",
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Add target book equity because the target's net assets increase purchase consideration."
+      ],
+      "answer_index": 0,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T199",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that target book equity already contains Huntsman's historical goodwill and identifiable intangibles, what is the right approach?",
+      "options": [
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Add target book equity because the target's net assets increase purchase consideration.",
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill.",
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it."
+      ],
+      "answer_index": 2,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T200",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that target book equity already contains Huntsman's historical goodwill and identifiable intangibles. Which explanation is strongest?",
+      "options": [
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it.",
+        "Add target book equity because the target's net assets increase purchase consideration.",
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill."
+      ],
+      "answer_index": 3,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T201",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because target book equity already contains Huntsman's historical goodwill and identifiable intangibles. What conclusion is correct?",
+      "options": [
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill.",
+        "Add target book equity because the target's net assets increase purchase consideration.",
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it."
+      ],
+      "answer_index": 1,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T202",
+      "category": "Model Review - Today",
+      "subcategory": "Goodwill bridge signs",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: target book equity already contains Huntsman's historical goodwill and identifiable intangibles?",
+      "options": [
+        "Add target book equity because the target's net assets increase purchase consideration.",
+        "Subtract target book equity and subtract historical goodwill and intangibles again.",
+        "Carry historical goodwill forward unchanged and add new goodwill on top of it.",
+        "Subtract target book equity, add back historical goodwill and intangibles, subtract new asset step-ups, and add new liabilities and the incremental DTL to solve for new goodwill."
+      ],
+      "answer_index": 3,
+      "explanation": "Historical goodwill and intangibles are embedded in book equity but are eliminated or remeasured in purchase accounting.",
+      "tags": [
+        "ppa",
+        "goodwill",
+        "signs",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T203",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, Huntsman's existing deferred-tax balance is already included in target book net assets. Which treatment is correct?",
+      "options": [
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "Use the target tax provision from the income statement as the DTL.",
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again.",
+        "Set deferred taxes to zero because purchase accounting is tax-free."
+      ],
+      "answer_index": 2,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T204",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that Huntsman's existing deferred-tax balance is already included in target book net assets. What should you say?",
+      "options": [
+        "Use the target tax provision from the income statement as the DTL.",
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "Set deferred taxes to zero because purchase accounting is tax-free.",
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again."
+      ],
+      "answer_index": 3,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T205",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: Huntsman's existing deferred-tax balance is already included in target book net assets. Which answer is most accurate?",
+      "options": [
+        "Use the target tax provision from the income statement as the DTL.",
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again.",
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "Set deferred taxes to zero because purchase accounting is tax-free."
+      ],
+      "answer_index": 1,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T206",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that Huntsman's existing deferred-tax balance is already included in target book net assets, what is the right approach?",
+      "options": [
+        "Use the target tax provision from the income statement as the DTL.",
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again.",
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "Set deferred taxes to zero because purchase accounting is tax-free."
+      ],
+      "answer_index": 1,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T207",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that Huntsman's existing deferred-tax balance is already included in target book net assets. Which explanation is strongest?",
+      "options": [
+        "Use the target tax provision from the income statement as the DTL.",
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again.",
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "Set deferred taxes to zero because purchase accounting is tax-free."
+      ],
+      "answer_index": 1,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T208",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because Huntsman's existing deferred-tax balance is already included in target book net assets. What conclusion is correct?",
+      "options": [
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again.",
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "Set deferred taxes to zero because purchase accounting is tax-free.",
+        "Use the target tax provision from the income statement as the DTL."
+      ],
+      "answer_index": 0,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T209",
+      "category": "Model Review - Today",
+      "subcategory": "Incremental PPA DTL",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: Huntsman's existing deferred-tax balance is already included in target book net assets?",
+      "options": [
+        "Set deferred taxes to zero because purchase accounting is tax-free.",
+        "Add the full existing deferred-tax balance to goodwill a second time.",
+        "The PPA deferred-tax row should include only the incremental tax effect created by fair-value adjustments, not the existing deferred-tax balance again.",
+        "Use the target tax provision from the income statement as the DTL."
+      ],
+      "answer_index": 2,
+      "explanation": "Adding the existing balance again would double count it. The PPA adjustment captures only new book-tax basis differences.",
+      "tags": [
+        "ppa",
+        "taxes",
+        "dtl",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T210",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions. Which treatment is correct?",
+      "options": [
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both.",
+        "Put both the amounts and useful lives in the standalone D&A schedules.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs.",
+        "Hardcode the useful lives inside every annual depreciation and amortization formula."
+      ],
+      "answer_index": 0,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T211",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions. What should you say?",
+      "options": [
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs.",
+        "Hardcode the useful lives inside every annual depreciation and amortization formula.",
+        "Put both the amounts and useful lives in the standalone D&A schedules."
+      ],
+      "answer_index": 0,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T212",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions. Which answer is most accurate?",
+      "options": [
+        "Hardcode the useful lives inside every annual depreciation and amortization formula.",
+        "Put both the amounts and useful lives in the standalone D&A schedules.",
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs."
+      ],
+      "answer_index": 2,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T213",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions, what is the right approach?",
+      "options": [
+        "Put both the amounts and useful lives in the standalone D&A schedules.",
+        "Hardcode the useful lives inside every annual depreciation and amortization formula.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs.",
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both."
+      ],
+      "answer_index": 3,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T214",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions. Which explanation is strongest?",
+      "options": [
+        "Put both the amounts and useful lives in the standalone D&A schedules.",
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs.",
+        "Hardcode the useful lives inside every annual depreciation and amortization formula."
+      ],
+      "answer_index": 1,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T215",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions. What conclusion is correct?",
+      "options": [
+        "Put both the amounts and useful lives in the standalone D&A schedules.",
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both.",
+        "Hardcode the useful lives inside every annual depreciation and amortization formula.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs."
+      ],
+      "answer_index": 1,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T216",
+      "category": "Model Review - Today",
+      "subcategory": "PPA assumption ownership",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: PP&E step-up and new identifiable intangibles are valuation assumptions, while their useful lives are transaction timing assumptions?",
+      "options": [
+        "Keep the step-up amounts as blue inputs on PPA & Goodwill and the useful lives as blue inputs on Main Page & Assumptions; the PPA schedule links to both.",
+        "Put both the amounts and useful lives in the standalone D&A schedules.",
+        "Derive every step-up amount from standalone net PP&E and keep no user inputs.",
+        "Hardcode the useful lives inside every annual depreciation and amortization formula."
+      ],
+      "answer_index": 0,
+      "explanation": "The PPA tab owns valuation amounts, while the central assumptions page owns reusable scenario drivers such as useful lives.",
+      "tags": [
+        "ppa",
+        "assumptions",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T217",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies. Which treatment is correct?",
+      "options": [
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life.",
+        "Both expenses should divide by the same refinancing rate.",
+        "Depreciation should use the tax rate and amortization should use the exchange ratio.",
+        "The links are correct because all four assumptions are transaction-related."
+      ],
+      "answer_index": 0,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T218",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies. What should you say?",
+      "options": [
+        "Both expenses should divide by the same refinancing rate.",
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life.",
+        "The links are correct because all four assumptions are transaction-related.",
+        "Depreciation should use the tax rate and amortization should use the exchange ratio."
+      ],
+      "answer_index": 1,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T219",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies. Which answer is most accurate?",
+      "options": [
+        "Depreciation should use the tax rate and amortization should use the exchange ratio.",
+        "The links are correct because all four assumptions are transaction-related.",
+        "Both expenses should divide by the same refinancing rate.",
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life."
+      ],
+      "answer_index": 3,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T220",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies, what is the right approach?",
+      "options": [
+        "Depreciation should use the tax rate and amortization should use the exchange ratio.",
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life.",
+        "Both expenses should divide by the same refinancing rate.",
+        "The links are correct because all four assumptions are transaction-related."
+      ],
+      "answer_index": 1,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T221",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies. Which explanation is strongest?",
+      "options": [
+        "Both expenses should divide by the same refinancing rate.",
+        "The links are correct because all four assumptions are transaction-related.",
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life.",
+        "Depreciation should use the tax rate and amortization should use the exchange ratio."
+      ],
+      "answer_index": 2,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T222",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies. What conclusion is correct?",
+      "options": [
+        "Both expenses should divide by the same refinancing rate.",
+        "Depreciation should use the tax rate and amortization should use the exchange ratio.",
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life.",
+        "The links are correct because all four assumptions are transaction-related."
+      ],
+      "answer_index": 2,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T223",
+      "category": "Model Review - Today",
+      "subcategory": "PPA useful-life links",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: incremental depreciation divides by the refinancing rate and incremental amortization divides by additional synergies?",
+      "options": [
+        "Depreciation should use the tax rate and amortization should use the exchange ratio.",
+        "Those links are wrong; depreciation must use PP&E Step-Up Life and amortization must use Intangible Amortization Life.",
+        "The links are correct because all four assumptions are transaction-related.",
+        "Both expenses should divide by the same refinancing rate."
+      ],
+      "answer_index": 1,
+      "explanation": "A correct formula can still be economically wrong when it points to the wrong assumptions. The useful-life cells must drive the annual expense.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T224",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E. Which treatment is correct?",
+      "options": [
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter.",
+        "Start full-year PPA D&A in 2026 because it is the first projected year.",
+        "Wait until 2028 and omit all closing-year expense.",
+        "Start full-year PPA D&A in 2027 because the deal closes during that year."
+      ],
+      "answer_index": 0,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T225",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E. What should you say?",
+      "options": [
+        "Start full-year PPA D&A in 2026 because it is the first projected year.",
+        "Start full-year PPA D&A in 2027 because the deal closes during that year.",
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter.",
+        "Wait until 2028 and omit all closing-year expense."
+      ],
+      "answer_index": 2,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T226",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E. Which answer is most accurate?",
+      "options": [
+        "Wait until 2028 and omit all closing-year expense.",
+        "Start full-year PPA D&A in 2027 because the deal closes during that year.",
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter.",
+        "Start full-year PPA D&A in 2026 because it is the first projected year."
+      ],
+      "answer_index": 2,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T227",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E, what is the right approach?",
+      "options": [
+        "Wait until 2028 and omit all closing-year expense.",
+        "Start full-year PPA D&A in 2027 because the deal closes during that year.",
+        "Start full-year PPA D&A in 2026 because it is the first projected year.",
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter."
+      ],
+      "answer_index": 3,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T228",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E. Which explanation is strongest?",
+      "options": [
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter.",
+        "Start full-year PPA D&A in 2027 because the deal closes during that year.",
+        "Wait until 2028 and omit all closing-year expense.",
+        "Start full-year PPA D&A in 2026 because it is the first projected year."
+      ],
+      "answer_index": 0,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T229",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E. What conclusion is correct?",
+      "options": [
+        "Start full-year PPA D&A in 2027 because the deal closes during that year.",
+        "Wait until 2028 and omit all closing-year expense.",
+        "Start full-year PPA D&A in 2026 because it is the first projected year.",
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter."
+      ],
+      "answer_index": 3,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T230",
+      "category": "Model Review - Today",
+      "subcategory": "Close-date PPA D&A",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the deal closes June 30, 2027 and the incremental PPA D&A schedule runs from 2026E through 2031E?",
+      "options": [
+        "Start full-year PPA D&A in 2026 because it is the first projected year.",
+        "Wait until 2028 and omit all closing-year expense.",
+        "Show zero in 2026, a transaction-date-driven partial year in 2027, and full annual expense thereafter.",
+        "Start full-year PPA D&A in 2027 because the deal closes during that year."
+      ],
+      "answer_index": 2,
+      "explanation": "Purchase-accounting expense begins at close. YEARFRAC or an equivalent stub convention should determine the closing-year fraction.",
+      "tags": [
+        "ppa",
+        "d&a",
+        "stub-period",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T231",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, both standalone D&A schedules are complete and the PPA creates new depreciation and amortization. Which treatment is correct?",
+      "options": [
+        "Insert the PPA step-up into both standalone D&A schedules.",
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A.",
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule."
+      ],
+      "answer_index": 2,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T232",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that both standalone D&A schedules are complete and the PPA creates new depreciation and amortization. What should you say?",
+      "options": [
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A.",
+        "Insert the PPA step-up into both standalone D&A schedules.",
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule."
+      ],
+      "answer_index": 0,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T233",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: both standalone D&A schedules are complete and the PPA creates new depreciation and amortization. Which answer is most accurate?",
+      "options": [
+        "Insert the PPA step-up into both standalone D&A schedules.",
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A.",
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule."
+      ],
+      "answer_index": 2,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T234",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that both standalone D&A schedules are complete and the PPA creates new depreciation and amortization, what is the right approach?",
+      "options": [
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule.",
+        "Insert the PPA step-up into both standalone D&A schedules.",
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A."
+      ],
+      "answer_index": 3,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T235",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that both standalone D&A schedules are complete and the PPA creates new depreciation and amortization. Which explanation is strongest?",
+      "options": [
+        "Insert the PPA step-up into both standalone D&A schedules.",
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A.",
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule."
+      ],
+      "answer_index": 1,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T236",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because both standalone D&A schedules are complete and the PPA creates new depreciation and amortization. What conclusion is correct?",
+      "options": [
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A.",
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule.",
+        "Insert the PPA step-up into both standalone D&A schedules."
+      ],
+      "answer_index": 0,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T237",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma D&A architecture",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: both standalone D&A schedules are complete and the PPA creates new depreciation and amortization?",
+      "options": [
+        "Add PPA D&A directly to Sources & Uses and skip a pro forma schedule.",
+        "Replace Huntsman's entire standalone D&A schedule with Olin's schedule.",
+        "Leave the standalone schedules unchanged and build a separate pro forma D&A bridge that combines legacy D&A, reverses any eliminated target amortization, and adds incremental PPA D&A.",
+        "Insert the PPA step-up into both standalone D&A schedules."
+      ],
+      "answer_index": 2,
+      "explanation": "Standalone schedules remain sources of truth for standalone assets; transaction-created accounting belongs in consolidation.",
+      "tags": [
+        "d&a",
+        "ppa",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T238",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics. Which treatment is correct?",
+      "options": [
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt.",
+        "Make the joint debt tab replace both standalone schedules.",
+        "Let the pro forma opening balance sheet calculate debt repayment directly.",
+        "Rebuild all custom debt mechanics inside Sources & Uses."
+      ],
+      "answer_index": 0,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T239",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics. What should you say?",
+      "options": [
+        "Make the joint debt tab replace both standalone schedules.",
+        "Rebuild all custom debt mechanics inside Sources & Uses.",
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt.",
+        "Let the pro forma opening balance sheet calculate debt repayment directly."
+      ],
+      "answer_index": 2,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T240",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics. Which answer is most accurate?",
+      "options": [
+        "Rebuild all custom debt mechanics inside Sources & Uses.",
+        "Make the joint debt tab replace both standalone schedules.",
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt.",
+        "Let the pro forma opening balance sheet calculate debt repayment directly."
+      ],
+      "answer_index": 2,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T241",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics, what is the right approach?",
+      "options": [
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt.",
+        "Make the joint debt tab replace both standalone schedules.",
+        "Let the pro forma opening balance sheet calculate debt repayment directly.",
+        "Rebuild all custom debt mechanics inside Sources & Uses."
+      ],
+      "answer_index": 0,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T242",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics. Which explanation is strongest?",
+      "options": [
+        "Make the joint debt tab replace both standalone schedules.",
+        "Let the pro forma opening balance sheet calculate debt repayment directly.",
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt.",
+        "Rebuild all custom debt mechanics inside Sources & Uses."
+      ],
+      "answer_index": 2,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T243",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics. What conclusion is correct?",
+      "options": [
+        "Let the pro forma opening balance sheet calculate debt repayment directly.",
+        "Rebuild all custom debt mechanics inside Sources & Uses.",
+        "Make the joint debt tab replace both standalone schedules.",
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt."
+      ],
+      "answer_index": 3,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T244",
+      "category": "Model Review - Today",
+      "subcategory": "Joint debt architecture",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the standalone debt schedules already contain custom-loan, maturity, revolver, and interest mechanics?",
+      "options": [
+        "Use them as sources of closing balances; the joint transaction/refinancing tab decides what is repaid, remains outstanding, or is newly issued, then feeds Sources & Uses and pro forma debt.",
+        "Make the joint debt tab replace both standalone schedules.",
+        "Rebuild all custom debt mechanics inside Sources & Uses.",
+        "Let the pro forma opening balance sheet calculate debt repayment directly."
+      ],
+      "answer_index": 0,
+      "explanation": "The joint tab is a transaction bridge, not a second set of standalone debt schedules.",
+      "tags": [
+        "debt",
+        "refinancing",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T245",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual. Which treatment is correct?",
+      "options": [
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Average the 2026 and 2027 year-end balances.",
+        "Pull December 31, 2027 because the transaction occurs in 2027.",
+        "Always pull the latest historical year even when forecasts exist."
+      ],
+      "answer_index": 0,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T246",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual. What should you say?",
+      "options": [
+        "Pull December 31, 2027 because the transaction occurs in 2027.",
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Always pull the latest historical year even when forecasts exist.",
+        "Average the 2026 and 2027 year-end balances."
+      ],
+      "answer_index": 1,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T247",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual. Which answer is most accurate?",
+      "options": [
+        "Pull December 31, 2027 because the transaction occurs in 2027.",
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Always pull the latest historical year even when forecasts exist.",
+        "Average the 2026 and 2027 year-end balances."
+      ],
+      "answer_index": 1,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T248",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual, what is the right approach?",
+      "options": [
+        "Pull December 31, 2027 because the transaction occurs in 2027.",
+        "Always pull the latest historical year even when forecasts exist.",
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Average the 2026 and 2027 year-end balances."
+      ],
+      "answer_index": 2,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T249",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual. Which explanation is strongest?",
+      "options": [
+        "Pull December 31, 2027 because the transaction occurs in 2027.",
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Always pull the latest historical year even when forecasts exist.",
+        "Average the 2026 and 2027 year-end balances."
+      ],
+      "answer_index": 1,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T250",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual. What conclusion is correct?",
+      "options": [
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Always pull the latest historical year even when forecasts exist.",
+        "Average the 2026 and 2027 year-end balances.",
+        "Pull December 31, 2027 because the transaction occurs in 2027."
+      ],
+      "answer_index": 0,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T251",
+      "category": "Model Review - Today",
+      "subcategory": "Latest pre-close year end",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the transaction date is June 30, 2027 and the debt and balance-sheet schedules are annual?",
+      "options": [
+        "Dynamically pull December 31, 2026, the latest fiscal year-end before close; do not hardcode the 2027 year-end.",
+        "Average the 2026 and 2027 year-end balances.",
+        "Always pull the latest historical year even when forecasts exist.",
+        "Pull December 31, 2027 because the transaction occurs in 2027."
+      ],
+      "answer_index": 0,
+      "explanation": "The annual model uses the latest pre-close year-end as a practical proxy for the day-one closing balance.",
+      "tags": [
+        "dates",
+        "debt",
+        "opening-balance-sheet",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T252",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0. Which treatment is correct?",
+      "options": [
+        "The instrument remains outstanding but new debt is automatically issued.",
+        "Half of the balance is repaid because one of two switches is on.",
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on.",
+        "The instrument is repaid because its individual toggle overrides the global switch."
+      ],
+      "answer_index": 2,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T253",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0. What should you say?",
+      "options": [
+        "The instrument remains outstanding but new debt is automatically issued.",
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on.",
+        "Half of the balance is repaid because one of two switches is on.",
+        "The instrument is repaid because its individual toggle overrides the global switch."
+      ],
+      "answer_index": 1,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T254",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0. Which answer is most accurate?",
+      "options": [
+        "Half of the balance is repaid because one of two switches is on.",
+        "The instrument is repaid because its individual toggle overrides the global switch.",
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on.",
+        "The instrument remains outstanding but new debt is automatically issued."
+      ],
+      "answer_index": 2,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T255",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0, what is the right approach?",
+      "options": [
+        "Half of the balance is repaid because one of two switches is on.",
+        "The instrument is repaid because its individual toggle overrides the global switch.",
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on.",
+        "The instrument remains outstanding but new debt is automatically issued."
+      ],
+      "answer_index": 2,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T256",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0. Which explanation is strongest?",
+      "options": [
+        "Half of the balance is repaid because one of two switches is on.",
+        "The instrument is repaid because its individual toggle overrides the global switch.",
+        "The instrument remains outstanding but new debt is automatically issued.",
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on."
+      ],
+      "answer_index": 3,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T257",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0. What conclusion is correct?",
+      "options": [
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on.",
+        "Half of the balance is repaid because one of two switches is on.",
+        "The instrument is repaid because its individual toggle overrides the global switch.",
+        "The instrument remains outstanding but new debt is automatically issued."
+      ],
+      "answer_index": 0,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T258",
+      "category": "Model Review - Today",
+      "subcategory": "Close-debt switch logic",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: an instrument's close-treatment toggle is 1 but the global Close Debt Treatment Switch is 0?",
+      "options": [
+        "The instrument is repaid because its individual toggle overrides the global switch.",
+        "Half of the balance is repaid because one of two switches is on.",
+        "Debt repaid or refinanced is zero; both the instrument toggle and the global switch must be on.",
+        "The instrument remains outstanding but new debt is automatically issued."
+      ],
+      "answer_index": 2,
+      "explanation": "The individual toggle selects the instrument; the global switch activates or deactivates the entire close-debt scenario.",
+      "tags": [
+        "debt",
+        "switches",
+        "scenario",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T259",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input. Which treatment is correct?",
+      "options": [
+        "Multiply new debt by the Close Debt Treatment Switch instead.",
+        "Ignore financing fees whenever the current base case input is zero.",
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately.",
+        "Apply financing fees to debt that remains outstanding from the standalone schedules."
+      ],
+      "answer_index": 2,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T260",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input. What should you say?",
+      "options": [
+        "Ignore financing fees whenever the current base case input is zero.",
+        "Multiply new debt by the Close Debt Treatment Switch instead.",
+        "Apply financing fees to debt that remains outstanding from the standalone schedules.",
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately."
+      ],
+      "answer_index": 3,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T261",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input. Which answer is most accurate?",
+      "options": [
+        "Apply financing fees to debt that remains outstanding from the standalone schedules.",
+        "Ignore financing fees whenever the current base case input is zero.",
+        "Multiply new debt by the Close Debt Treatment Switch instead.",
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately."
+      ],
+      "answer_index": 3,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T262",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input, what is the right approach?",
+      "options": [
+        "Multiply new debt by the Close Debt Treatment Switch instead.",
+        "Apply financing fees to debt that remains outstanding from the standalone schedules.",
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately.",
+        "Ignore financing fees whenever the current base case input is zero."
+      ],
+      "answer_index": 2,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T263",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input. Which explanation is strongest?",
+      "options": [
+        "Apply financing fees to debt that remains outstanding from the standalone schedules.",
+        "Ignore financing fees whenever the current base case input is zero.",
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately.",
+        "Multiply new debt by the Close Debt Treatment Switch instead."
+      ],
+      "answer_index": 2,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T264",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input. What conclusion is correct?",
+      "options": [
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately.",
+        "Multiply new debt by the Close Debt Treatment Switch instead.",
+        "Ignore financing fees whenever the current base case input is zero.",
+        "Apply financing fees to debt that remains outstanding from the standalone schedules."
+      ],
+      "answer_index": 0,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T265",
+      "category": "Model Review - Today",
+      "subcategory": "New debt and financing fees",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: the new-debt table has a base amount, Debt Financing Switch, rate, and aggregate financing-fee input?",
+      "options": [
+        "Ignore financing fees whenever the current base case input is zero.",
+        "Amount Issued equals Base Amount times the global switch; allocate the financing-fee total across active issued tranches and calculate new-debt interest separately.",
+        "Multiply new debt by the Close Debt Treatment Switch instead.",
+        "Apply financing fees to debt that remains outstanding from the standalone schedules."
+      ],
+      "answer_index": 1,
+      "explanation": "The template must remain wired for nonzero financing scenarios even when the current case has no fees.",
+      "tags": [
+        "debt",
+        "financing-fees",
+        "switches",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T266",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees. Which treatment is correct?",
+      "options": [
+        "The macro should hardcode every active debt amount into Sources & Uses.",
+        "The macro should calculate goodwill and the pro forma opening balance sheet.",
+        "The macro should continue reaching directly into both standalone debt schedules.",
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics."
+      ],
+      "answer_index": 3,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T267",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees. What should you say?",
+      "options": [
+        "The macro should hardcode every active debt amount into Sources & Uses.",
+        "The macro should calculate goodwill and the pro forma opening balance sheet.",
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics.",
+        "The macro should continue reaching directly into both standalone debt schedules."
+      ],
+      "answer_index": 2,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T268",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees. Which answer is most accurate?",
+      "options": [
+        "The macro should calculate goodwill and the pro forma opening balance sheet.",
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics.",
+        "The macro should continue reaching directly into both standalone debt schedules.",
+        "The macro should hardcode every active debt amount into Sources & Uses."
+      ],
+      "answer_index": 1,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T269",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees, what is the right approach?",
+      "options": [
+        "The macro should continue reaching directly into both standalone debt schedules.",
+        "The macro should calculate goodwill and the pro forma opening balance sheet.",
+        "The macro should hardcode every active debt amount into Sources & Uses.",
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics."
+      ],
+      "answer_index": 3,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T270",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees. Which explanation is strongest?",
+      "options": [
+        "The macro should calculate goodwill and the pro forma opening balance sheet.",
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics.",
+        "The macro should hardcode every active debt amount into Sources & Uses.",
+        "The macro should continue reaching directly into both standalone debt schedules."
+      ],
+      "answer_index": 1,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T271",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees. What conclusion is correct?",
+      "options": [
+        "The macro should continue reaching directly into both standalone debt schedules.",
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics.",
+        "The macro should hardcode every active debt amount into Sources & Uses.",
+        "The macro should calculate goodwill and the pro forma opening balance sheet."
+      ],
+      "answer_index": 1,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T272",
+      "category": "Model Review - Today",
+      "subcategory": "Sources & Uses macro role",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the joint debt tab now owns closing balances, repayment logic, new debt, and financing fees?",
+      "options": [
+        "The Sources & Uses macro should only rebuild detail rows and live links from the joint tab; it should not recalculate years or debt mechanics.",
+        "The macro should hardcode every active debt amount into Sources & Uses.",
+        "The macro should calculate goodwill and the pro forma opening balance sheet.",
+        "The macro should continue reaching directly into both standalone debt schedules."
+      ],
+      "answer_index": 0,
+      "explanation": "One schedule should own each mechanic. The macro is now a presentation and linkage tool.",
+      "tags": [
+        "vba",
+        "sources-and-uses",
+        "architecture",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T273",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller. Which treatment is correct?",
+      "options": [
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug.",
+        "Set Existing Cash Used to the negative surplus.",
+        "Hide the surplus inside transaction fees.",
+        "Increase equity consideration until Sources and Uses balance."
+      ],
+      "answer_index": 0,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T274",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller. What should you say?",
+      "options": [
+        "Increase equity consideration until Sources and Uses balance.",
+        "Set Existing Cash Used to the negative surplus.",
+        "Hide the surplus inside transaction fees.",
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug."
+      ],
+      "answer_index": 3,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T275",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller. Which answer is most accurate?",
+      "options": [
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug.",
+        "Hide the surplus inside transaction fees.",
+        "Set Existing Cash Used to the negative surplus.",
+        "Increase equity consideration until Sources and Uses balance."
+      ],
+      "answer_index": 0,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T276",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller, what is the right approach?",
+      "options": [
+        "Increase equity consideration until Sources and Uses balance.",
+        "Hide the surplus inside transaction fees.",
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug.",
+        "Set Existing Cash Used to the negative surplus."
+      ],
+      "answer_index": 2,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T277",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller. Which explanation is strongest?",
+      "options": [
+        "Hide the surplus inside transaction fees.",
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug.",
+        "Set Existing Cash Used to the negative surplus.",
+        "Increase equity consideration until Sources and Uses balance."
+      ],
+      "answer_index": 1,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T278",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller. What conclusion is correct?",
+      "options": [
+        "Set Existing Cash Used to the negative surplus.",
+        "Increase equity consideration until Sources and Uses balance.",
+        "Hide the surplus inside transaction fees.",
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug."
+      ],
+      "answer_index": 3,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T279",
+      "category": "Model Review - Today",
+      "subcategory": "Overfunded Sources & Uses",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: Sources exceed Uses because $1.1bn of new debt is active while the transaction's cash requirement is smaller?",
+      "options": [
+        "Hide the surplus inside transaction fees.",
+        "Increase equity consideration until Sources and Uses balance.",
+        "Set Existing Cash Used to the negative surplus.",
+        "Keep Existing Cash Used floored at zero and either reduce or turn off new debt or add a real explicit use; do not use negative cash as a plug."
+      ],
+      "answer_index": 3,
+      "explanation": "A negative cash-use plug is economically nonsensical. Excess financing must be resolved transparently.",
+      "tags": [
+        "sources-and-uses",
+        "cash",
+        "funding",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T280",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "In today's Olin / Huntsman build, the model needs a day-one balance sheet at close but only annual standalone balances are available. Which treatment is correct?",
+      "options": [
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Use the 2027 year-end standalones because the deal closes in 2027.",
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances.",
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill."
+      ],
+      "answer_index": 0,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T281",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "A VP opens the updated workbook and notices that the model needs a day-one balance sheet at close but only annual standalone balances are available. What should you say?",
+      "options": [
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances.",
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Use the 2027 year-end standalones because the deal closes in 2027.",
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill."
+      ],
+      "answer_index": 1,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T282",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "You are checking today's formula changes: the model needs a day-one balance sheet at close but only annual standalone balances are available. Which answer is most accurate?",
+      "options": [
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Use the 2027 year-end standalones because the deal closes in 2027.",
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill.",
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances."
+      ],
+      "answer_index": 0,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T283",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "The template must remain reusable after today's work. Given that the model needs a day-one balance sheet at close but only annual standalone balances are available, what is the right approach?",
+      "options": [
+        "Use the 2027 year-end standalones because the deal closes in 2027.",
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill.",
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances."
+      ],
+      "answer_index": 2,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T284",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "An associate asks why today's model shows that the model needs a day-one balance sheet at close but only annual standalone balances are available. Which explanation is strongest?",
+      "options": [
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill.",
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances.",
+        "Use the 2027 year-end standalones because the deal closes in 2027."
+      ],
+      "answer_index": 0,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T285",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "You need to audit the change made today because the model needs a day-one balance sheet at close but only annual standalone balances are available. What conclusion is correct?",
+      "options": [
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill.",
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Use the 2027 year-end standalones because the deal closes in 2027.",
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances."
+      ],
+      "answer_index": 1,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T286",
+      "category": "Model Review - Today",
+      "subcategory": "Opening balance-sheet architecture",
+      "difficulty": 2,
+      "question": "Which formula or accounting treatment follows from today's situation: the model needs a day-one balance sheet at close but only annual standalone balances are available?",
+      "options": [
+        "Use the latest pre-close year-end as a proxy, then add Olin, Huntsman, purchase-accounting adjustments, and transaction adjustments to calculate Pro Forma Opening.",
+        "Duplicate Olin's full standalone forecast and overwrite balances until it balances.",
+        "Use the 2027 year-end standalones because the deal closes in 2027.",
+        "Use only Olin's balance sheet and record Huntsman entirely as goodwill."
+      ],
+      "answer_index": 0,
+      "explanation": "The opening balance sheet is a close-date bridge, not another standalone forecast.",
+      "tags": [
+        "opening-balance-sheet",
+        "architecture",
+        "dates",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T287",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees. Which treatment is correct?",
+      "options": [
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction.",
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments.",
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Leave target equity in place and offset it with a goodwill plug."
+      ],
+      "answer_index": 1,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T288",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees. What should you say?",
+      "options": [
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Leave target equity in place and offset it with a goodwill plug.",
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction.",
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments."
+      ],
+      "answer_index": 3,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T289",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees. Which answer is most accurate?",
+      "options": [
+        "Leave target equity in place and offset it with a goodwill plug.",
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments.",
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction."
+      ],
+      "answer_index": 2,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T290",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees, what is the right approach?",
+      "options": [
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction.",
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments.",
+        "Leave target equity in place and offset it with a goodwill plug."
+      ],
+      "answer_index": 2,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T291",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees. Which explanation is strongest?",
+      "options": [
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments.",
+        "Leave target equity in place and offset it with a goodwill plug.",
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction."
+      ],
+      "answer_index": 0,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T292",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees. What conclusion is correct?",
+      "options": [
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction.",
+        "Leave target equity in place and offset it with a goodwill plug.",
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments."
+      ],
+      "answer_index": 3,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T293",
+      "category": "Model Review - Today",
+      "subcategory": "Opening BS adjustment columns",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: the opening balance sheet contains target goodwill and intangibles, target equity, debt repayment, new shares, and transaction fees?",
+      "options": [
+        "Leave target equity in place and offset it with a goodwill plug.",
+        "Put every adjustment in Purchase Accounting because all items arise from the transaction.",
+        "Put target equity elimination in Transaction Adjustments and new goodwill in financing.",
+        "Put fair-value resets and target equity elimination in Purchase Accounting Adjustments; put cash, debt, new-share, and fee mechanics in Transaction Adjustments."
+      ],
+      "answer_index": 3,
+      "explanation": "Separating acquisition accounting from funding mechanics makes the opening balance sheet auditable.",
+      "tags": [
+        "opening-balance-sheet",
+        "ppa",
+        "transaction-adjustments",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T294",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "In today's Olin / Huntsman build, the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances. Which treatment is correct?",
+      "options": [
+        "Plug the difference to cash after all subtotal rows are linked.",
+        "Keep the standalone subtotals because they already balance individually.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero.",
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman."
+      ],
+      "answer_index": 2,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T295",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "A VP opens the updated workbook and notices that the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances. What should you say?",
+      "options": [
+        "Keep the standalone subtotals because they already balance individually.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero.",
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman.",
+        "Plug the difference to cash after all subtotal rows are linked."
+      ],
+      "answer_index": 1,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T296",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "You are checking today's formula changes: the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances. Which answer is most accurate?",
+      "options": [
+        "Keep the standalone subtotals because they already balance individually.",
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman.",
+        "Plug the difference to cash after all subtotal rows are linked.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero."
+      ],
+      "answer_index": 3,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T297",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "The template must remain reusable after today's work. Given that the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances, what is the right approach?",
+      "options": [
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman.",
+        "Plug the difference to cash after all subtotal rows are linked.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero.",
+        "Keep the standalone subtotals because they already balance individually."
+      ],
+      "answer_index": 2,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T298",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "An associate asks why today's model shows that the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances. Which explanation is strongest?",
+      "options": [
+        "Plug the difference to cash after all subtotal rows are linked.",
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman.",
+        "Keep the standalone subtotals because they already balance individually.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero."
+      ],
+      "answer_index": 3,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T299",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "You need to audit the change made today because the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances. What conclusion is correct?",
+      "options": [
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman.",
+        "Plug the difference to cash after all subtotal rows are linked.",
+        "Keep the standalone subtotals because they already balance individually.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero."
+      ],
+      "answer_index": 3,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
+    },
+    {
+      "id": "T300",
+      "category": "Model Review - Today",
+      "subcategory": "Pro forma subtotal integrity",
+      "difficulty": 3,
+      "question": "Which formula or accounting treatment follows from today's situation: the pro forma line items include adjustments but subtotal rows still sum the two standalone subtotal balances?",
+      "options": [
+        "Plug the difference to cash after all subtotal rows are linked.",
+        "Keep the standalone subtotals because they already balance individually.",
+        "Recalculate every pro forma subtotal from the adjusted pro forma line items; otherwise the balance check can show a false zero.",
+        "Use Total Assets from Olin plus Total Liabilities and Equity from Huntsman."
+      ],
+      "answer_index": 2,
+      "explanation": "Subtotals must own the adjusted line items. Summing unadjusted standalone totals can hide missing transaction entries.",
+      "tags": [
+        "opening-balance-sheet",
+        "checks",
+        "debugging",
+        "contextual"
+      ],
+      "source_basis": "July 29 PPA, joint refinancing debt, Sources & Uses, pro forma opening balance sheet, and share-activity build",
+      "study_day": "Model Review - Today"
     }
   ]
 }

@@ -1,0 +1,770 @@
+OLIN / HUNTSMAN FULL MERGER MODEL — END-OF-SESSION LOCKED CHECKPOINT
+Created: July 29, 2026
+Purpose: Resume from the post-PPA / refinancing / opening-balance-sheet build without reopening settled architecture, losing the new joint-debt flow, or trusting a zero check that is not built from adjusted line items.
+
+======================================================================
+1. CORE MANDATE — DO NOT DOWNGRADE THE PROJECT
+======================================================================
+
+Build a reusable public-to-public merger model and a credible Olin / Huntsman case study.
+
+Minimum intended finish:
+- Olin standalone three statements
+- Huntsman standalone three statements
+- Standalone D&A, debt, and equity schedules
+- Transaction assumptions
+- Sources & Uses
+- PPA / Goodwill
+- Incremental PPA depreciation and amortization
+- Transaction & Refinancing Debt
+- Pro Forma Opening Balance Sheet
+- Pro Forma D&A
+- Synergies & Integration
+- Consolidated Income Statement
+- Consolidated Balance Sheet
+- Consolidated Cash Flow Statement
+- GAAP / adjusted accretion and dilution
+- Core model checks
+
+Credit metrics, sensitivities, and a polished summary remain useful but can follow the minimum credible merger-model finish.
+
+Do not:
+- rebuild completed standalone schedules;
+- put transaction-created accounting into the standalone models;
+- let Sources & Uses or the opening balance sheet become a second source of debt mechanics;
+- infer cash stock issuance / repurchase dollars from net share-count movement alone;
+- plug cash or equity merely to force a balance-sheet check to zero.
+
+======================================================================
+2. CURRENT WORKBOOK SNAPSHOT AND IMPORTANT LIMITATION
+======================================================================
+
+Latest inspected workbook:
+- new broken(10).xlsm
+
+Important:
+- The user applied additional subtotal / opening-balance-sheet formulas after uploading new broken(10).xlsm.
+- Therefore, the uploaded snapshot does not necessarily contain the final formulas the user reported as working.
+- At the start of the next session, save and upload the newest workbook before auditing further.
+- Treat the critical verification list in Section 12 as mandatory.
+
+Current physical transaction tabs in the inspected workbook:
+- Main Page & Assumptions
+- Sources and Uses
+- PPA & Goodwill
+- Transaction & Refinancing Debt
+- Standalone BS
+
+“Standalone BS” is functioning as the Pro Forma Opening Balance Sheet. Rename it later only if doing so will not break links or VBA.
+
+======================================================================
+3. CURRENT COMPLETION STATUS
+======================================================================
+
+Substantially complete:
+- Olin standalone three statements
+- Olin D&A schedule
+- Olin debt schedule, including custom debt and revolver mechanics
+- Olin equity schedule
+- Huntsman standalone three statements
+- Huntsman D&A schedule
+- Huntsman debt schedule
+- Huntsman equity schedule
+- Transaction Assumptions framework
+- Sources & Uses structure
+- Dynamic Sources & Uses detail-row VBA
+- PPA / Goodwill bridge skeleton
+- Incremental PPA D&A skeleton
+- Joint Transaction & Refinancing Debt schedule
+- Pro Forma Opening Balance Sheet architecture
+
+Still required:
+- Correct and verify the PPA D&A useful-life links
+- Verify the final Pro Forma Opening Balance Sheet formulas in the newest saved workbook
+- Build Pro Forma D&A
+- Build Synergies & Integration
+- Build consolidated three statements
+- Build GAAP / adjusted accretion and dilution
+- Add core model-wide checks
+- Optional afterward: credit metrics, sensitivities, summary
+
+Approximate project status:
+- Roughly 70%–75% of the minimum credible merger model is built.
+- The remaining work is highly connected but no longer requires rebuilding the standalone foundation.
+
+======================================================================
+4. LOCKED TRANSACTION FACTS AND CURRENT SCENARIO
+======================================================================
+
+Target:
+- Huntsman Corporation
+
+Acquirer / accounting acquirer:
+- Olin Corporation
+
+Announcement date:
+- June 16, 2026
+
+Expected close:
+- June 30, 2027
+
+Consideration:
+- All Stock
+
+Exchange ratio:
+- 0.5476 Olin shares per Huntsman share
+
+Target diluted shares:
+- 178.1mm
+
+New Olin consideration shares:
+- approximately 97.5276mm
+
+Olin reference share price:
+- $21.54
+
+Equity consideration:
+- approximately $2,100.7mm
+
+Other Purchase Consideration:
+- $17mm
+
+Total Purchase Consideration:
+- approximately $2,117.7mm
+
+Transaction fees:
+- $56mm
+
+Current inspected scenario inputs:
+- Close Debt Treatment Switch = 1
+- Debt Financing Switch = 1
+- New Senior Notes base amount = $1,100mm
+- Financing Fees input = $0
+- Other Cash Consideration = $0
+
+Current selected existing-debt close treatment:
+- Olin selected debt repaid = $0
+- Huntsman selected debt repaid = approximately $366.9mm
+  - Revolver: approximately $214.9mm
+  - U.S. A/R Program: $93.0mm
+  - EU A/R Program: $59.0mm
+
+Current Sources & Uses under that scenario:
+- Total Uses: approximately $2,523.6mm
+- Total Sources: approximately $3,200.7mm
+- Sources - Uses: approximately $677.1mm
+
+This is an overfunded financing scenario, not a balanced base case.
+
+Do not force Existing Cash Used negative.
+Resolve the scenario by:
+- turning off or reducing new debt;
+- adding a real, explicit use for excess financing; or
+- deliberately modeling excess cash / debt paydown.
+
+======================================================================
+5. SHARE / EQUITY RABBIT HOLE — FINAL CONCLUSION
+======================================================================
+
+Rejected default approach:
+- Net Shares Issued / (Repurchased)
+  x an implied market price
+  = Stock Issuance / (Repurchase) cash flow
+
+Why it was rejected:
+- net share movement does not identify whether activity was cash issuance, SBC, treasury reissuance, retirement, or offsetting gross issuance and repurchases;
+- an EBITDA / net-debt implied price creates fake precision;
+- using same-year net debt can create a circularity through ending cash;
+- it can turn noncash SBC dilution into fake financing proceeds.
+
+Locked template principle:
+- share-count activity and cash stock activity are separate concepts;
+- do not infer exact cash from net shares alone;
+- if the template later needs an exact $50mm buyback, it needs a separate cash-dollar assumption or an explicit capital-allocation rule.
+
+Equity accounting:
+- Common Stock records par value, not market value.
+- New issuance:
+  - Common Stock increases by new shares x par value.
+  - APIC receives the residual equity credit / proceeds.
+- Treasury-stock buyback:
+  - cash decreases by repurchase cost;
+  - Treasury Stock becomes more negative by repurchase cost;
+  - Common Stock and APIC generally do not change.
+- Retirement:
+  - Common Stock decreases by par value;
+  - the remaining cost reduces APIC and potentially retained earnings.
+- Exact treasury-share reissuance accounting requires historical treasury cost basis.
+
+Standalone base-case convention:
+- do not fabricate forecast cash issuance proceeds merely because forecast shares increase;
+- SBC remains a separate noncash expense / APIC driver.
+
+Huntsman repair completed during the session:
+- APIC had accidentally linked to Dividends Paid after a row shift.
+- The correct stock-activity row was restored.
+- Other Equity and Total Equity links were repaired.
+- Verify this remains correct in the newest saved workbook.
+
+======================================================================
+6. PPA / GOODWILL — LOCKED ARCHITECTURE
+======================================================================
+
+Purchase consideration:
+Equity Consideration
++ Other Purchase Consideration
+= Total Purchase Consideration
+
+Do not use transaction enterprise value as Total Purchase Consideration.
+
+Transaction fees:
+- excluded from goodwill;
+- treated as acquisition-related expense / transaction cash use.
+
+PPA inputs flowing in:
+From Main Page & Assumptions:
+- Equity Consideration
+- Other Purchase Consideration
+- Transaction Date
+- Tax Rate
+- PP&E Step-Up Life
+- Intangible Amortization Life
+
+From Huntsman Standalone, using the latest pre-close year-end:
+- Target Book Equity
+- Existing Goodwill
+- Existing Intangibles
+
+Blue PPA-tab assumptions:
+- PP&E Step-Up
+- New Identifiable Intangibles
+- New Identifiable Liabilities
+- Other Fair Value Adjustments
+
+Current test inputs in the inspected workbook:
+- PP&E Step-Up = $100mm
+- New Identifiable Intangibles = $200mm
+- New Identifiable Liabilities = $0
+- Other Adjustments = $0
+- Incremental DTL = $72mm
+- New Goodwill = approximately $100.7mm
+
+These $100mm / $200mm amounts are placeholder valuation assumptions, not sourced final PPA values.
+
+Goodwill bridge:
+New Goodwill =
+Total Purchase Consideration
+- Target Book Equity
++ Existing Goodwill
++ Existing Intangibles
+- PP&E Step-Up
+- New Identifiable Intangibles
++ New Identifiable Liabilities
++ Incremental Deferred Tax Liability
++ Other Fair Value Adjustments
+
+Incremental DTL:
+- use only the incremental tax effect created by PPA fair-value adjustments;
+- do not add Huntsman’s existing deferred-tax balance again.
+
+Latest pre-close year-end convention:
+- Close date = June 30, 2027
+- Annual proxy = December 31, 2026
+- Do not use December 31, 2027 because it is after close.
+
+======================================================================
+7. CRITICAL PPA D&A FORMULA FIX
+======================================================================
+
+The inspected workbook contains wrong useful-life references.
+
+Main Page & Assumptions:
+- J20 = PP&E Step-Up Life
+- J21 = Refinancing Rate
+- J23 = Intangible Amortization Life
+- J24 = Additional Synergies
+
+The PPA formulas in the inspected snapshot incorrectly use:
+- J21 for PP&E depreciation
+- J24 for intangible amortization
+
+Correct them to:
+- PP&E depreciation life = J20
+- Intangible amortization life = J23
+
+Correct closing-year depreciation structure:
+=IF(
+    Forecast_Date < Transaction_Date,
+    0,
+    IF(
+        YEAR(Forecast_Date)=YEAR(Transaction_Date),
+        (PP&E_Step_Up / PP&E_Step_Up_Life)
+        * YEARFRAC(Transaction_Date, Forecast_Date, 1),
+        PP&E_Step_Up / PP&E_Step_Up_Life
+    )
+)
+
+Correct closing-year amortization structure:
+=IF(
+    Forecast_Date < Transaction_Date,
+    0,
+    IF(
+        YEAR(Forecast_Date)=YEAR(Transaction_Date),
+        (New_Identifiable_Intangibles / Intangible_Amortization_Life)
+        * YEARFRAC(Transaction_Date, Forecast_Date, 1),
+        New_Identifiable_Intangibles / Intangible_Amortization_Life
+    )
+)
+
+Expected pattern for a June 30, 2027 close:
+- 2026E = zero
+- 2027E = partial year
+- 2028E onward = full annual amount
+
+The inspected workbook’s cached 2027 incremental depreciation was approximately $672mm because $100mm was divided by the 7.5% refinancing rate. That is plainly wrong and must be fixed before consolidation.
+
+======================================================================
+8. TRANSACTION & REFINANCING DEBT — FINAL ARCHITECTURE
+======================================================================
+
+Locked flow:
+
+Olin Debt Schedule -----------------                                     > Transaction & Refinancing Debt
+Huntsman Debt Schedule -------------/
+                                              |
+                                              v
+                                      Sources & Uses
+                                              |
+                                              v
+                              Pro Forma Debt / Interest
+
+Standalone debt schedules remain the source of:
+- instrument names;
+- pre-close balances;
+- rates;
+- maturities;
+- custom repayment mechanics;
+- revolver mechanics;
+- standalone interest.
+
+The joint tab owns:
+- selected pre-close date;
+- close-treatment toggles;
+- debt repaid / refinanced;
+- debt remaining;
+- surviving existing-debt interest;
+- new debt issued;
+- financing fees;
+- new-debt interest;
+- total pro forma opening debt.
+
+Latest Pre-Close Year End:
+=DATE(YEAR(Transaction_Date)-1,12,31)
+
+For June 30, 2027:
+- Latest Pre-Close Year End = December 31, 2026
+
+Existing debt rows:
+Closing Balance
+Close Treatment Toggle
+Debt Repaid / Refinanced
+Debt Remaining
+Existing Interest Rate
+Pro Forma Interest Rate
+Pro Forma Interest Expense
+
+Core formulas:
+Debt Repaid / Refinanced =
+Closing Balance
+x Instrument Close Toggle
+x Global Close Debt Treatment Switch
+
+Debt Remaining =
+Closing Balance
+- Debt Repaid / Refinanced
+
+Simple existing-debt interest =
+-Debt Remaining
+x Pro Forma Interest Rate
+
+New debt block:
+Debt Instrument
+Base Amount
+Debt Financing Switch
+Amount Issued
+Interest Rate
+Financing Fees
+Pro Forma Interest Expense
+
+Core formulas:
+Amount Issued =
+Base Amount
+x Debt Financing Switch
+
+New-debt interest =
+-Amount Issued
+x Interest Rate
+
+Financing fees:
+- Main Page & Assumptions owns the aggregate blue input.
+- The joint debt tab allocates the total across active issued tranches.
+- The allocated rows must sum to the aggregate financing-fee input.
+- Sources & Uses links to Total Financing Fees.
+- The opening balance sheet records them as a contra-debt amount.
+- Consolidated interest later includes their amortization.
+
+Summary labels:
+- C45 should represent Total Existing Debt Interest Expense.
+- C64 should represent Total New Debt Interest Expense.
+- Do not call both rows “Total Pro Forma Interest Expense.”
+- Consolidated interest later combines:
+  - surviving existing-debt interest;
+  - new-debt interest;
+  - financing-fee amortization;
+  - any modeled interest income.
+
+======================================================================
+9. SOURCES & USES AND VBA — FINAL FLOW
+======================================================================
+
+The macro was rewritten so Sources & Uses no longer reaches directly into Olin Debt and Huntsman Debt.
+
+Final macro flow:
+Transaction & Refinancing Debt
+-> Sources & Uses detail rows
+-> parent subtotals
+-> Sources - Uses check
+
+The macro should:
+- find the assumptions, Sources & Uses, and joint debt tabs by stable labels;
+- rebuild target-debt, acquirer-debt, and new-debt detail rows;
+- create live formulas to the joint debt tab;
+- link financing fees from the joint debt tab;
+- preserve parent subtotal formulas;
+- use black formula text, not green.
+
+The macro should not:
+- select a forecast year;
+- calculate closing balances;
+- apply debt switches;
+- size new debt;
+- calculate financing fees;
+- calculate goodwill;
+- hardcode displayed amounts.
+
+Refresh is required after:
+- adding an instrument;
+- deleting an instrument;
+- renaming an instrument;
+- changing table structure.
+
+Refresh is not required after:
+- changing a debt amount;
+- changing an instrument toggle;
+- changing a global switch;
+- changing a rate;
+- changing financing-fee inputs.
+
+Installation check:
+- only one Public Sub RefreshSourcesUses should exist;
+- delete or rename the old module to avoid duplicate procedure names;
+- the Sources & Uses button should remain assigned to RefreshSourcesUses.
+
+Formatting:
+- macro-generated labels and values should be black;
+- indentation and number formatting remain.
+
+Known Sources & Uses issue to verify:
+- Other Cash Consideration and Other Cash Uses must not both link to the same Main Page input.
+- In the inspected snapshot, both lines point to G10.
+- Keep Other Cash Uses at zero or create a genuinely separate input; do not double count a nonzero Other Cash Consideration.
+
+======================================================================
+10. PRO FORMA OPENING BALANCE SHEET — LOCKED ARCHITECTURE
+======================================================================
+
+Columns:
+- Balance Sheet Line Item
+- Olin Corporation
+- Huntsman Corporation
+- Purchase Accounting Adjustments
+- Transaction Adjustments
+- Pro Forma Opening
+
+Conceptual formula:
+Pro Forma Opening =
+Olin
++ Huntsman
++ Purchase Accounting Adjustments
++ Transaction Adjustments
+
+The opening balance sheet represents the transaction close date.
+
+Annual proxy:
+- dynamically pull the latest fiscal year-end before close;
+- for a June 30, 2027 close, pull December 31, 2026;
+- do not hardcode 2027 year-end.
+
+Purchase Accounting Adjustments:
+- PP&E step-up
+- eliminate Huntsman historical goodwill
+- add new goodwill
+- eliminate Huntsman historical intangibles
+- add new identifiable intangibles
+- add incremental DTL
+- add new identifiable liabilities
+- eliminate all Huntsman historical equity accounts
+
+Transaction Adjustments:
+- reduce cash by Existing Cash Used
+- remove current debt repaid
+- remove long-term debt repaid
+- add new debt issued
+- record new financing fees as contra-debt
+- add new Olin Common Stock at par
+- add APIC as Value of Shares Issued less Common Stock
+- reduce retained earnings for transaction fees
+
+Target equity elimination:
+- Common Stock: eliminate Huntsman balance
+- APIC: eliminate Huntsman balance
+- Retained Earnings: eliminate Huntsman balance
+- Treasury Stock: eliminate Huntsman balance
+- Other Equity: eliminate Huntsman balance
+- Do not carry target historical equity into the combined company.
+
+New Olin equity:
+Common Stock adjustment =
+New Consideration Shares
+x Olin Par Value Per Share
+
+APIC adjustment =
+Value of Shares Issued
+- Common Stock adjustment
+
+Debt classification:
+- current versus long-term depends on the selected pre-close year;
+- for the current selected Huntsman repayments, approximately $59mm is current and approximately $307.9mm is long-term;
+- the current $1,100mm new notes scenario is treated as long-term.
+
+======================================================================
+11. PRO FORMA OPENING BALANCE SHEET — REQUIRED SUBTOTALS
+======================================================================
+
+A zero balance-sheet check is only valid if every subtotal is rebuilt from adjusted Pro Forma Opening line items.
+
+Required formulas in the current layout:
+
+Total Current Assets
+= SUM(Pro Forma Cash : Pro Forma Other Current Assets)
+
+Net PP&E
+= Pro Forma Gross PP&E
++ Pro Forma Accumulated Depreciation
+
+Total Assets
+= Total Current Assets
++ Net PP&E
++ Goodwill
++ Intangible Assets
++ Long-Term Investments
++ Other Long-Term Assets
++ Other Assets
+
+Total Current Liabilities
+= SUM(Pro Forma Accounts Payable : Pro Forma Other Current Liabilities)
+
+Total Long-Term Debt
+= Pro Forma Long-Term Debt
++ Pro Forma Less: Debt Issuance Costs
++ Pro Forma Lease Obligations
+
+Total Liabilities
+= Total Current Liabilities
++ Total Long-Term Debt
++ Deferred Taxes
++ Other Long-Term Liabilities
++ Noncontrolling Interest
+
+Total Equity
+= Common Stock
++ APIC
++ Retained Earnings
++ Treasury Stock
++ Other Equity
+
+Total Liabilities and Equity
+= Total Liabilities
++ Total Equity
+
+Balance Check
+= Total Assets
+- Total Liabilities and Equity
+
+Critical:
+- Do not calculate pro forma subtotals by summing the two standalone subtotal rows.
+- That can omit transaction adjustments and still display a false zero check.
+
+The inspected new broken(10).xlsm snapshot still showed the old subtotal architecture, but the user reported applying the corrected formulas afterward. Verify the newest saved workbook.
+
+Additional opening-BS items to verify:
+1. Retained Earnings transaction adjustment should use Transaction Fees, not Financing Fees.
+2. In the inspected snapshot, F40 linked to Main Page G9, which is Financing Fees. The intended transaction-fee input is Main Page G8.
+3. Less: Debt Issuance Costs should include:
+   - old unamortized costs written off on repaid debt, if modeled;
+   - minus new financing fees.
+4. In the current selected repaid facilities, old debt issuance costs may be zero, but the template still needs the formula.
+5. Cash adjustment should link to Existing Cash Used; it is currently zero only because the active $1.1bn new-debt scenario overfunds the deal.
+
+======================================================================
+12. MANDATORY NEXT-SESSION VERIFICATION LIST
+======================================================================
+
+1. Open and save the newest workbook version; do not rely on new broken(10).xlsm if later edits were not saved there.
+2. Correct PPA incremental depreciation to use Main Page J20, not J21.
+3. Correct PPA incremental amortization to use Main Page J23, not J24.
+4. Confirm 2026 PPA D&A is zero, 2027 is partial-year, and later years are full-year.
+5. Confirm the PPA $100mm / $200mm amounts are deliberately retained as placeholder assumptions or replace them.
+6. Confirm Pro Forma Opening retained earnings reduces by transaction fees, not financing fees.
+7. Confirm Pro Forma Opening debt issuance costs include new financing fees and any old-cost writeoff.
+8. Confirm every pro forma subtotal is rebuilt from adjusted line items.
+9. Test the opening balance-sheet check with:
+   - Close Debt Treatment Switch on and off;
+   - Debt Financing Switch on and off;
+   - a nonzero financing-fee input.
+10. Confirm Other Cash Consideration and Other Cash Uses are not double-linked to the same input.
+11. Confirm Sources & Uses detail rows and parent totals update from the joint debt tab after RefreshSourcesUses.
+12. Confirm the macro uses black text and there is no duplicate RefreshSourcesUses procedure.
+13. Rename the two joint-debt interest summary rows so existing-debt interest and new-debt interest are not confused.
+14. Decide the presentation base case:
+   - Debt Financing Switch = 0 for the clean all-stock base case; or
+   - keep new debt active only with an explicit use for the surplus.
+15. Save a clean backup before building consolidation.
+
+======================================================================
+13. NEXT BUILD — PRO FORMA D&A AND SYNERGIES
+======================================================================
+
+Do not modify Olin D&A or Huntsman D&A.
+
+Build a separate Pro Forma D&A schedule:
+
+Olin Standalone D&A
++ post-close Huntsman Standalone D&A
+- target legacy amortization eliminated by the PPA, where applicable
++ incremental PP&E step-up depreciation
++ new identifiable-intangible amortization
+= Pro Forma D&A
+
+Use transaction-date timing:
+- pre-close years: Olin standalone only
+- close year: include post-close target / PPA portions
+- full post-close years: full combined treatment
+
+Then build Synergies & Integration:
+- Run-Rate Synergies
+- Synergy Ramp %
+- Realized Synergies
+- Integration Costs
+- Integration-Cost Timing %
+- Realized Integration Costs
+- Net Pre-Tax Impact
+- Tax Effect
+- Net Income Impact
+
+Then build:
+- Consolidated Income Statement
+- Consolidated Balance Sheet
+- Consolidated Cash Flow Statement
+- GAAP / adjusted accretion and dilution
+
+======================================================================
+14. FLASHCARD / MODEL-BUILDER APP — JULY 29 UPDATE
+======================================================================
+
+Flashcards:
+- Model Review - Core: 400
+- Model Review - Today: 300
+- M&I 400 - Real: 400
+- M&I 400 - Applied: 400
+- Total: 1,500
+
+New Today-card topics:
+- share count versus cash stock activity
+- rejected implied-price stock cash-flow approach
+- treasury-stock versus retirement accounting
+- purchase consideration versus enterprise value
+- transaction fees versus financing fees
+- goodwill bridge signs
+- incremental PPA DTL
+- PPA assumption ownership
+- wrong useful-life references
+- close-date PPA D&A
+- pro forma D&A architecture
+- joint debt architecture
+- latest pre-close year-end
+- close-debt switch logic
+- new debt and financing fees
+- Sources & Uses macro role
+- overfunded Sources & Uses
+- opening balance-sheet architecture
+- purchase accounting versus transaction adjustments
+- pro forma subtotal integrity
+
+Model Builder:
+- 6 schedules
+- 32 schedule blocks
+- 138 mechanics / linkage questions
+
+New drag-and-drop modules:
+- PPA & Goodwill
+- Transaction & Refinancing Debt
+- Sources & Uses — Joint Debt Flow
+- Pro Forma Opening Balance Sheet
+
+Existing modules preserved:
+- Huntsman — Depreciation And Amoritization Schedule
+- Olin — Share Schedule
+
+Existing question IDs and module IDs were preserved so prior progress exports remain compatible.
+
+======================================================================
+15. EXACT NEXT-SESSION ORDER
+======================================================================
+
+1. Upload the newest saved workbook.
+2. Fix and test the two PPA useful-life references.
+3. Verify the Pro Forma Opening Balance Sheet fee links, debt-issuance-cost link, subtotals, and check.
+4. Test both global debt switches and a nonzero financing-fee scenario.
+5. Run RefreshSourcesUses and confirm all detail rows match the joint debt tab.
+6. Save a clean backup.
+7. Build Pro Forma D&A.
+8. Build Synergies & Integration.
+9. Build the Consolidated Income Statement.
+10. Build the Consolidated Balance Sheet.
+11. Build the Consolidated Cash Flow Statement.
+12. Build GAAP / adjusted accretion and dilution.
+13. Add model-wide checks.
+14. Finish optional credit metrics, sensitivities, and summary only after the core merger model works.
+
+======================================================================
+16. RESUME PHRASE
+======================================================================
+
+“Continue from the July 29 Olin / Huntsman checkpoint. The standalone models, PPA / Goodwill skeleton, joint Transaction & Refinancing Debt schedule, Sources & Uses reroute, and Pro Forma Opening Balance Sheet architecture are built. Do not rebuild the standalones. First correct the PPA D&A life references, verify transaction-fee and financing-fee treatment, and prove every opening-balance-sheet subtotal under both debt switches. Then build Pro Forma D&A, Synergies & Integration, the consolidated three statements, and accretion / dilution.”
+
+======================================================================
+17. FILES TO KEEP AVAILABLE
+======================================================================
+
+- Newest saved Olin / Huntsman .xlsm workbook
+- This July 29 checkpoint
+- Updated self-contained flashcard / Model Builder folder
+- RefreshSourcesUses_FromJointDebt.bas with black formula formatting
+- Consolidation-Structuring-Example(3).xlsm
+- Kitty-Hawk-and-Kalitta-Merger-Model-1-1(4).xlsm
+- Combination Model(6).xls
+- Olin and Huntsman filings / S-4
+- Mergent raw data
+
+END OF CHECKPOINT

@@ -1,0 +1,48 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Run this from inside the app folder after it is placed at:
+# <repo>/olin-huntsman-study/
+# Usage:
+#   bash scripts/codex_update.sh.example SESSION_NOTES.md
+
+NOTES_FILE="${1:-SESSION_NOTES.md}"
+APP_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
+REPO_ROOT="$(git -C "$APP_DIR" rev-parse --show-toplevel)"
+STAMP="$(date +%Y%m%d-%H%M%S)"
+BRANCH="codex/study-app-update-$STAMP"
+
+if [[ ! -f "$APP_DIR/$NOTES_FILE" ]]; then
+  echo "Missing notes file: $APP_DIR/$NOTES_FILE" >&2
+  exit 1
+fi
+
+if [[ -n "$(git -C "$REPO_ROOT" status --porcelain)" ]]; then
+  echo "Working tree is not clean. Commit or stash existing changes first." >&2
+  exit 1
+fi
+
+git -C "$REPO_ROOT" switch -c "$BRANCH"
+
+cd "$APP_DIR"
+PROMPT=$(cat <<PROMPT_EOF
+Update only this Olin / Huntsman study-app folder using $NOTES_FILE and the newest checkpoint.
+Follow AGENTS.md exactly. Preserve every existing flashcard ID, module ID, block ID, progress schema, and local-storage key. Add high-quality contextual cards and drag-and-drop practice only where supported by the notes. Preserve the Interview Focus - Basic deck and update the final assumptions checklist when assumptions change. Update the checkpoint, README, and MANIFEST. Run python3 scripts/sync_app.py and python3 scripts/validate_app.py. Do not touch files outside this folder. Stop with a clear summary of files changed and validation results.
+PROMPT_EOF
+)
+
+codex exec --sandbox workspace-write "$PROMPT"
+python3 scripts/sync_app.py
+python3 scripts/validate_app.py
+
+cd "$REPO_ROOT"
+git add olin-huntsman-study
+git commit -m "Update Olin Huntsman study app"
+git push -u origin "$BRANCH"
+gh pr create \
+  --title "Update Olin Huntsman study app" \
+  --body "Automated Codex update. Validation passed locally." \
+  --base main \
+  --head "$BRANCH"
+
+echo "Pull request created from $BRANCH"

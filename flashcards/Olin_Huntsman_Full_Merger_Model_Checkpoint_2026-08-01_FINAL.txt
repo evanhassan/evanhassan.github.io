@@ -1,0 +1,728 @@
+OLIN / HUNTSMAN FULL MERGER MODEL — FINAL ASSUMPTIONS CHECKPOINT
+Created: August 1, 2026
+Purpose: Resume from the completed full-year pro forma merger model without reopening the standalone models, transaction architecture, purchase accounting, debt treatment, three-statement roll-forward, or accretion / dilution. The only substantive work remaining is the final assumption audit, sourcing, and presentation freeze.
+
+======================================================================
+1. CURRENT STATUS — CORE MODEL IS COMPLETE
+======================================================================
+
+The reusable public-to-public merger model is structurally complete.
+
+Completed:
+- Olin standalone three statements
+- Olin D&A, debt, and equity schedules
+- Huntsman standalone three statements
+- Huntsman D&A, debt, and equity schedules
+- Main Page & Assumptions framework
+- Sources & Uses
+- PPA & Goodwill
+- Transaction & Refinancing Debt
+- Pro Forma Opening Balance Sheet
+- Pro Forma D&A
+- Synergies & Integration
+- Full-Year Pro Forma Income Statement
+- Full-Year Pro Forma Balance Sheet
+- Full-Year Pro Forma Cash Flow Statement
+- Summary
+- EPS accretion / dilution
+- Core three-statement and balance-sheet checks
+
+Only substantive work remaining:
+- Finalize, source, and label assumptions
+- Decide the treatment of excess cash / capital allocation
+- Reconcile any remaining presentation-only output timing choices
+- Save and freeze the newest workbook version
+
+Approximate status:
+- Core model architecture: complete
+- Remaining work: assumptions and final presentation discipline
+- Do not rebuild any completed schedule
+
+======================================================================
+2. FILE / VERSION CONTROL
+======================================================================
+
+Last programmatically validated base workbook:
+- copy_3_repaired_3_fixed.xlsm
+
+That validated base showed:
+- Pro Forma Opening Balance Sheet check = 0
+- Combined / Pro Forma Balance Sheet checks = 0 across the forecast
+- No visible formula-error values in the audited ranges
+- VBA project preserved
+
+Important:
+- The user made later manual edits in Excel to convert the final statements to a full-year pro forma presentation and to build the Summary / Accretion-Dilution output.
+- Those later edits may not all exist in copy_3_repaired_3_fixed.xlsm.
+- At the next session, upload the newest saved workbook rather than reverting to the older validated base.
+
+Do not revert to:
+- the old actual-GAAP close-year consolidated presentation;
+- partial-year target earnings in the selected full-year Pro Forma Year;
+- a balance sheet built by simply replacing the pro forma opening balances with standalone ending balances;
+- the stale standalone-interest sum;
+- misaligned full-column INDEX ranges.
+
+======================================================================
+3. LOCKED TRANSACTION FACTS AND BASE CASE
+======================================================================
+
+Target:
+- Huntsman Corporation
+
+Acquirer / accounting acquirer:
+- Olin Corporation
+
+Announcement date:
+- June 16, 2026
+
+Expected legal close:
+- June 30, 2027
+
+Selected full-year Pro Forma Year:
+- 2027
+
+Consideration:
+- All stock
+
+Exchange ratio:
+- 0.5476 Olin shares per Huntsman share
+
+Target diluted shares:
+- 178.1mm
+
+New Olin consideration shares:
+- approximately 97.5mm
+
+Olin reference share price:
+- $21.54
+
+Target reference share price:
+- $11.50
+
+Stock value per target share:
+- approximately $11.80
+
+Equity consideration:
+- approximately $2,100.7mm
+
+Other purchase consideration:
+- $17mm
+
+Total purchase consideration:
+- approximately $2,117.7mm
+
+Target net debt:
+- approximately $1,685mm
+
+Target enterprise value:
+- approximately $3,786mm
+
+Transaction fees:
+- $56mm
+
+Current clean base financing case:
+- Close Debt Treatment Switch = 1
+- Debt Financing Switch = 0
+- New debt issued = $0
+- Existing cash used = approximately $423mm
+- Selected Huntsman debt repaid / refinanced at close = approximately $366.9mm
+- Sources = Uses
+
+Selected Huntsman close repayments:
+- Revolver: approximately $214.9mm
+- U.S. A/R Program: $93.0mm
+- EU A/R Program: $59.0mm
+
+Do not reactivate the prior $1.1bn new-debt scenario without an explicit use for the excess financing.
+
+======================================================================
+4. FINAL PRESENTATION ARCHITECTURE
+======================================================================
+
+The final analytical output is a FULL-YEAR PRO FORMA presentation.
+
+Main Page & Assumptions:
+- D9 = legal transaction date
+- D14 = first full-year Pro Forma Year
+
+With D14 = 2027:
+- 2025-2026 remain pre-pro-forma / Olin standalone periods
+- 2027-2031 show full-year combined pro forma results
+- Do not apply the June 30 close-date stub to the final Pro Forma Financials or Summary
+
+The legal transaction date still controls:
+- Latest pre-close year-end
+- Pro Forma Opening Balance Sheet date
+- Debt close treatment
+- Purchase-accounting opening adjustments
+- Legal-close mechanics
+
+The selected Pro Forma Year controls:
+- Full-year target inclusion
+- Full-year consideration shares
+- Full-year synergy / integration / PPA presentation
+- Summary year headers
+- EPS accretion / dilution years
+
+This is the correct banker-style analytical output for the final summary.
+
+======================================================================
+5. PRO FORMA OPENING BALANCE SHEET
+======================================================================
+
+The Pro Forma Opening Balance Sheet is the transaction-adjusted starting snapshot.
+
+For the June 30, 2027 close:
+- Latest pre-close annual proxy = December 31, 2026
+
+Conceptual formula:
+Pro Forma Opening =
+Olin 12/31/26
++ Huntsman 12/31/26
++ Purchase Accounting Adjustments
++ Transaction Adjustments
+
+Purchase Accounting Adjustments include:
+- PP&E step-up
+- elimination of Huntsman historical goodwill
+- addition of new goodwill
+- elimination of Huntsman historical intangibles
+- addition of new identifiable intangibles
+- incremental deferred-tax liability
+- any new identifiable liabilities
+- elimination of all Huntsman historical equity
+
+Transaction Adjustments include:
+- existing cash used
+- debt repaid / refinanced
+- new debt issued, if any
+- financing fees
+- new Olin Common Stock at par
+- APIC for the residual value of consideration shares
+- transaction-fee reduction to retained earnings
+
+Target historical shareholders' equity does not survive the transaction.
+
+Opening balance-sheet subtotals must be rebuilt from adjusted line items.
+Never sum the two standalone subtotal rows and call that the pro forma subtotal.
+
+======================================================================
+6. PRO FORMA BALANCE-SHEET PROJECTION
+======================================================================
+
+The forecast projects FROM the Pro Forma Opening Balance Sheet.
+
+Correct architecture for ordinary operating accounts:
+Ending Pro Forma Balance
+=
+Prior Pro Forma Balance
++ Olin annual movement
++ Huntsman annual movement
++ any account-specific transaction / PPA movement
+
+For the first pro forma forecast year:
+2027 Ending Balance
+=
+12/31/26 Pro Forma Opening Balance
++ 2027 Olin movement
++ 2027 Huntsman movement
++ 2027 PPA / debt / equity movements
+
+For later years:
+Current-Year Ending Balance
+=
+Prior-Year Pro Forma Ending Balance
++ current-year combined movements
+
+Why:
+- The opening balance may include transaction adjustments, eliminations, and reclassifications.
+- Directly replacing it with Olin current-year balance + Huntsman current-year balance can erase those adjustments.
+- Direct addition is equivalent only for accounts with no opening adjustment.
+
+Account-specific treatment:
+
+Cash:
+- same-year CFS Ending Cash is the source of truth
+
+Operating current accounts:
+- roll from the opening balance using combined annual changes
+
+Gross PP&E:
+- prior Gross PP&E
+- minus negative capex
+- plus disposals / other movements
+
+Accumulated Depreciation:
+- prior negative balance
+- minus current depreciation
+- plus disposal / other adjustments
+
+Goodwill:
+- hold constant absent impairment or another acquisition
+
+Intangible Assets:
+- opening acquired intangibles
+- less cumulative new amortization
+- plus any supported additions
+
+Deferred Taxes:
+- unwind the incremental PPA DTL through the book-versus-cash tax schedule
+
+Debt:
+- roll from the opening pro forma debt balances using the detailed debt schedules
+- current versus long-term classification is noncash
+- principal issuance / repayment drives financing cash flow
+
+Retained Earnings:
+- prior retained earnings
++ parent-attributable net income
++ signed dividends
++ any explicit direct adjustment
+
+Common Shares Outstanding:
+- Olin ending shares
++ full consideration shares after close
+
+======================================================================
+7. TRANSACTION & REFINANCING DEBT / INTEREST
+======================================================================
+
+Standalone debt schedules remain the source of:
+- instrument names
+- forecast principal balances
+- rates
+- maturities
+- repayments
+- revolver mechanics
+- standalone interest
+
+Transaction & Refinancing Debt owns:
+- selected close treatment
+- debt repaid / refinanced
+- debt remaining
+- optional new debt
+- financing fees
+- pro forma existing-debt interest
+- pro forma new-debt interest
+- financing-fee amortization
+- opening pro forma debt
+
+Final full-year pro forma interest rows:
+- Stand Alone Interest Expense
+- Pro Forma Existing Debt Interest
+- Pro Forma New Debt Interest
+- Debt Issuance Cost Amortization
+- Interest Expense, Net
+
+From the Pro Forma Year onward:
+- remove interest on debt repaid at close
+- include surviving Olin and Huntsman debt interest
+- include new-debt interest only when new debt is issued
+- include financing-fee amortization separately
+- include interest income only if the model deliberately adds an excess-cash yield assumption
+
+Do not:
+- rebuild every instrument inside one enormous LET formula;
+- use a static opening-debt balance times one rate forever;
+- add both standalone interest lines without transaction adjustments.
+
+======================================================================
+8. PRO FORMA INCOME STATEMENT
+======================================================================
+
+Final operating bridge:
+Revenue
+- Total Operating Costs & Expenses
++ Realized Synergies
++ Realized Integration Costs
++ Target Legacy Amortization Eliminated
+- Incremental PPA D&A
+= Operating Income
+
+Sign rules:
+- Cost of Revenue, SG&A, and R&D are positive expense rows
+- Realized Synergies are positive
+- Realized Integration Costs are negative
+- Target Legacy Amortization Eliminated is positive
+- Incremental PPA D&A is positive and subtracted
+- Interest expense rows are negative
+- Income-tax expense is positive when pre-tax income is positive
+
+Legacy D&A:
+- remains embedded in Cost of Revenue and operating expenses
+- is not added as a second operating expense
+- is added back in the CFS and EBITDA calculation
+
+Below-the-line:
+Pre-Tax Income
+=
+Operating Income
++ Interest Expense, Net
++ Gain / Loss on Asset Sales
++ Other Non-Operating Income / Expense
+
+Income Taxes
+=
+Pre-Tax Income x Tax Rate
+subject to any separate NOL / cash-tax schedule
+
+Net Income Attributable to Parent
+=
+Net Income
+- Net Income Attributable to NCI
+
+======================================================================
+9. PRO FORMA SHARES, EPS, AND ACCRETION / DILUTION
+======================================================================
+
+In the selected full-year Pro Forma Year:
+- include the full approximately 97.5mm consideration shares
+- do not use the legal close-date share stub
+- do not add Huntsman's historical shares
+
+Basic Weighted Average Shares:
+= Olin standalone basic shares
++ full consideration shares
++ any other supported pro forma share movement
+
+Diluted Shares:
+= Basic Weighted Average Shares
++ Dilutive Effect
+
+Diluted EPS:
+= Net Income Attributable to Parent
+/ Diluted Shares
+
+EPS Accretion / Dilution:
+= Pro Forma Diluted EPS
+/ Olin Standalone Diluted EPS
+- 1
+
+Positive result:
+- accretive
+
+Negative result:
+- dilutive
+
+======================================================================
+10. PRO FORMA CASH FLOW STATEMENT
+======================================================================
+
+Cash Flow from Operations:
+Net Income
++ D&A
++ Stock-Based Compensation
++ Debt Issuance Cost Amortization
++ Change in Working Capital
+- Gain on Asset Sales
++ Change in Other Operating Assets & Liabilities
+= CFO
+
+Operating NWC:
+Operating Current Assets excluding Cash
+- Operating Current Liabilities excluding Debt
+
+Change in Working Capital convention:
+Prior-Year ONWC
+- Current-Year ONWC
+
+Cash Flow from Investing:
+- Capital Expenditures
++ Investments, Net
++ Proceeds from Asset Sales
++ Acquisitions
++ Other Investing Activities
+= CFI
+
+Cash Flow from Financing:
++ Change in Short-Term Debt
++ Debt Issuance / Repayment
++ Stock Issuance / Repurchases
++ Dividends Paid
+= CFF
+
+Net Change in Cash:
+= CFO + CFI + CFF + FX Effects
+
+Ending Cash:
+= Beginning Cash + Net Change in Cash
+
+The balance-sheet cash line links to same-year Ending Cash.
+
+Free Cash Flow:
+= CFO + Capital Expenditures
+because Capex is stored as a negative number
+
+Net Debt:
+= Gross Debt - Cash
+
+Net Leverage:
+= Net Debt / Normalized EBITDA
+
+======================================================================
+11. CURRENT SUMMARY OUTPUTS
+======================================================================
+
+Current displayed full-year pro forma summary:
+
+Metric                         2027E     2028E     2029E     2030E     2031E
+Pro Forma Revenue             13,781    14,845    15,497    16,480    17,301
+Pro Forma EBITDA               1,454     2,117     2,569     3,167     3,623
+Pro Forma Net Income             332       828     1,180     1,669     2,032
+Pro Forma Diluted EPS           1.55      3.86      5.49      7.75      9.41
+Olin Standalone Diluted EPS     1.20      3.07      4.72      7.16      8.80
+EPS Accretion / Dilution       29.44%    25.92%    16.38%     8.19%     6.89%
+Realized Synergies                 0       150       285       300       300
+Net Debt                       3,502     2,442     1,027      (868)   (3,123)
+Free Cash Flow                   797     1,236     1,591     2,069     2,429
+
+Important assumption / presentation check:
+- The current Summary screenshot shows Realized Synergies of 0 / 150 / 285 / 300 / 300.
+- Earlier working schedules displayed 150 in 2027.
+- Confirm the intended first-year synergy timing and make the Summary agree with the Synergies & Integration schedule.
+- This is an assumption / presentation alignment issue, not a reason to rebuild the model.
+
+======================================================================
+12. NET DEBT INTERPRETATION
+======================================================================
+
+The modeled net-debt path is not a solvency concern.
+
+It shows:
+- rapid deleveraging;
+- net cash by 2030;
+- approximately $3.1bn of net cash by 2031.
+
+The issue is model realism:
+- Free cash flow is large.
+- Scheduled debt is repaid.
+- Dividends remain modest.
+- No buybacks are modeled.
+- No acquisitions are modeled.
+- No explicit excess-cash deployment is modeled.
+
+Therefore cash accumulates indefinitely.
+
+Final assumption required:
+Choose one of the following as the explicit capital-allocation policy:
+- maintain unallocated excess cash;
+- additional debt repayment;
+- share repurchases;
+- higher dividends;
+- acquisitions / strategic investment;
+- a combination.
+
+Do not manipulate Free Cash Flow or debt merely to avoid negative net debt.
+
+======================================================================
+13. ONLY REMAINING WORK — FINAL ASSUMPTIONS AUDIT
+======================================================================
+
+A. PPA assumptions
+- PP&E Step-Up: currently $100mm placeholder
+- New Identifiable Intangibles: currently $200mm placeholder
+- New Identifiable Liabilities: currently $0
+- Other Fair Value Adjustments: currently $0
+- PP&E Step-Up Life: 10 years
+- Intangible Amortization Life: 10 years
+
+Required:
+- source the values if transaction disclosure exists;
+- otherwise label them clearly as illustrative analyst assumptions;
+- do not present placeholders as disclosed facts.
+
+B. Synergy assumptions
+- Run-Rate Synergies: $300mm
+- Additional Synergies: $100mm
+- Integration Costs: $175mm
+- Near-term ramp: confirm final timing
+- Additional synergy timing: confirm final timing
+- Integration-cost allocation: confirm percentages sum to 100%
+
+Required:
+- make the Summary, Synergies & Integration, and Pro Forma Financials use the same timing.
+
+C. Tax assumptions
+- Tax Rate: 24%
+- Incremental PPA DTL
+- NOL / cash-tax benefit
+- Interest deductibility
+- Optional interest income on excess cash
+
+Required:
+- distinguish book-tax expense from any separate cash-tax benefit;
+- do not bury tax benefits inside operating synergies.
+
+D. Financing assumptions
+- Debt Financing Switch = 0 base case
+- Refinancing Rate = 7.50% where applicable
+- Financing Fees = 0 in the active base case
+- Existing debt close treatment remains selected
+
+Required:
+- keep optional financing inactive unless there is a real use for the proceeds.
+
+E. Share assumptions
+- Exchange Ratio = 0.5476
+- Target Diluted Shares = 178.1mm
+- Consideration Shares = approximately 97.5mm
+- Olin Dilutive Effect remains the simplified forecast assumption
+
+Required:
+- do not infer cash issuance proceeds from net share-count movement;
+- do not add Huntsman historical shares after close.
+
+F. Capital-allocation assumption
+- Required because Net Debt becomes negative in 2030-2031
+- Decide whether the model should show unallocated cash or deploy it
+
+G. Source notes / presentation
+- Blue = user inputs
+- Black = formulas
+- Green = links from other schedules, if that convention remains
+- Clearly label analyst assumptions
+- Keep one source of truth for every output
+- Add comments or source notes for major assumptions
+
+======================================================================
+14. FINAL MODEL CHECKS
+======================================================================
+
+Required:
+- Sources - Uses = 0
+- Pro Forma Opening BS check = 0
+- Pro Forma Balance Sheet check = 0 in every year
+- CFS Ending Cash = Balance Sheet Cash
+- Net Income ties from IS to CFS
+- D&A ties to Pro Forma D&A
+- Debt balances and interest tie to Transaction & Refinancing Debt
+- Retained Earnings roll-forward ties
+- Common Shares Outstanding ties
+- Diluted Shares tie
+- Olin Standalone EPS ties
+- EPS Accretion / Dilution recomputes
+- Summary year headers stop at 2031
+- Summary INDEX / MATCH ranges are aligned
+- No #REF!, #VALUE!, #N/A, or #DIV/0! values in the presentation case
+
+Do not plug cash, equity, or another account to force a check to zero.
+
+======================================================================
+15. RECOMMENDED FINAL TAB ORDER
+======================================================================
+
+1. Table of Contents
+2. Main Page & Assumptions
+3. Summary
+4. Sources & Uses
+5. Pro Forma IS
+6. Pro Forma Opening BS
+7. PPA & Goodwill
+8. Synergies & Integration
+9. Pro Forma D&A
+10. Transaction & Refinancing Debt
+11. Pro Forma Financials
+12. Olin Standalone
+13. Olin D&A
+14. Olin Debt
+15. Olin Equity / Share Schedule
+16. Huntsman Standalone
+17. Huntsman D&A
+18. Huntsman Debt
+19. Huntsman Equity / Share Schedule
+20. Raw Data / Supporting Materials
+
+Keep transaction outputs before detailed standalone schedules.
+
+======================================================================
+16. STUDY APP — AUGUST 1 FINAL UPDATE
+======================================================================
+
+Flashcard decks:
+- Model Review - Core: 400
+- Model Review - Today: 516
+- M&I 400 - Real: 400
+- M&I 400 - Applied: 400
+- Interview Focus - Basic: 95
+- Total: 1,811
+
+August 1 Today-card topics:
+- full-year pro forma architecture
+- opening-balance-sheet roll-forward
+- operating balance-sheet movements
+- cash source of truth
+- full-year debt interest
+- debt classification and repayment
+- PPA asset roll-forwards
+- pro forma shares and accretion
+- INDEX / MATCH alignment
+- dynamic summary years
+- negative net debt and capital allocation
+- final assumption audit
+
+Interview Focus - Basic:
+- 34 Accounting questions
+- 15 Enterprise / Equity Value questions
+- 24 Merger Model questions
+- 22 LBO Model questions
+- 95 total
+
+Model Builder:
+- 13 schedules
+- 70 drag-and-drop blocks
+- 308 mechanics / linkage questions
+
+New or finalized schedules:
+- Pro Forma Financials — Income Statement
+- Main Page & Assumptions — Final Audit
+- Pro Forma Financials — Balance Sheet
+- Pro Forma Financials — Cash Flow Statement
+- Summary & Accretion / Dilution
+
+Existing flashcard, module, and block IDs were preserved.
+New IDs:
+- T421-T516
+- I001-I095
+
+======================================================================
+17. EXACT NEXT-SESSION ORDER
+======================================================================
+
+1. Upload the newest saved workbook.
+2. Run the final assumption checklist.
+3. Confirm PPA placeholders are sourced or clearly labeled.
+4. Confirm synergy and integration timing across all schedules and the Summary.
+5. Decide the capital-allocation / excess-cash assumption.
+6. Confirm tax / NOL and optional interest-income assumptions.
+7. Run every final model check.
+8. Review the Summary and Main Page for presentation quality.
+9. Save a clean final version and a backup.
+10. Freeze the model architecture.
+
+Do not reopen completed mechanics unless a check fails.
+
+======================================================================
+18. RESUME PHRASE
+======================================================================
+
+“Continue from the August 1 final Olin / Huntsman checkpoint. The standalone models, transaction mechanics, Sources & Uses, PPA / Goodwill, refinancing debt, Pro Forma Opening Balance Sheet, Pro Forma D&A, Synergies & Integration, full-year Pro Forma Income Statement, Balance Sheet, Cash Flow Statement, Summary, and EPS accretion / dilution are built. D14 controls the full-year pro forma presentation; D9 controls the legal close and opening-balance-sheet date. Do not revert to close-year stub accounting or direct standalone balance replacement. The only remaining task is the final assumptions audit: source or label the PPA values, confirm synergy / integration / tax timing, decide the excess-cash policy, run the checks, and freeze the final workbook.”
+
+======================================================================
+19. FILES TO KEEP AVAILABLE
+======================================================================
+
+- Newest saved Olin / Huntsman .xlsm workbook
+- copy_3_repaired_3_fixed.xlsm as the last programmatically validated base
+- Olin_Huntsman_Full_Merger_Model_Checkpoint_2026-08-01_FINAL.txt
+- FINAL_ASSUMPTIONS_CHECKLIST.md
+- Updated Olin_Huntsman_Study_App_2026-08-01_FINAL folder / ZIP
+- RefreshSourcesUses_FromJointDebt.bas
+- Combination Model(8).xls
+- Consolidation-Structuring-Example(5).xlsm
+- Kitty-Hawk-and-Kalitta-Merger-Model-1-1(6).xlsm
+- Olin and Huntsman filings / S-4
+- Mergent raw data
+- M&I 400 uploaded guide
+
+END OF CHECKPOINT

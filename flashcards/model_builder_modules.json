@@ -2005,6 +2005,2465 @@
           ]
         }
       ]
+    },
+    {
+      "id": "pro-forma-da",
+      "title": "Pro Forma D&A",
+      "description": "Rebuild the close-timed depreciation and amortization bridge without double-counting legacy D&A.",
+      "blocks": [
+        {
+          "id": "pfda-assumptions",
+          "title": "Assumptions and Close Timing",
+          "rows": [
+            "Post-Close Period",
+            "PP&E Step-Up",
+            "PP&E Step-Up Life",
+            "New Identifiable Intangibles",
+            "Intangible Amortization Life"
+          ],
+          "questions": [
+            {
+              "question": "Why is Post-Close Period zero before the close year?",
+              "options": [
+                "The transaction has not occurred, so target and PPA D&A are excluded.",
+                "The target has no fixed assets.",
+                "The tax rate is zero.",
+                "The model uses full-year pro forma results in every column."
+              ],
+              "answer_index": 0,
+              "explanation": "The consolidated forecast follows the actual assumed close date."
+            },
+            {
+              "question": "Which useful-life links are correct?",
+              "options": [
+                "PP&E J20 and Intangibles J23",
+                "PP&E J21 and Intangibles J24",
+                "Both use J17",
+                "Both use D9"
+              ],
+              "answer_index": 0,
+              "explanation": "J20 and J23 are the actual useful-life assumptions."
+            },
+            {
+              "question": "What does repeating the $200mm intangible assumption across post-close columns mean?",
+              "options": [
+                "The same close-date asset is displayed for reference.",
+                "A new $200mm asset is acquired every year.",
+                "The asset becomes revenue.",
+                "The amount is financing fees."
+              ],
+              "answer_index": 0,
+              "explanation": "Only the expense repeats; the asset is recognized once."
+            },
+            {
+              "question": "Why include 2025A in the schedule?",
+              "options": [
+                "It provides a historical anchor and lets timing formulas zero out irrelevant periods.",
+                "It creates purchase accounting in 2025.",
+                "It is required for goodwill.",
+                "It makes target shares historical."
+              ],
+              "answer_index": 0,
+              "explanation": "The anchor improves traceability and template reusability."
+            }
+          ]
+        },
+        {
+          "id": "pfda-depreciation",
+          "title": "Depreciation Bridge",
+          "rows": [
+            "Olin Standalone Depreciation",
+            "Huntsman Standalone Depreciation",
+            "Post-Close Huntsman Depreciation",
+            "Incremental PP&E Step-Up Depreciation",
+            "Pro Forma Depreciation"
+          ],
+          "questions": [
+            {
+              "question": "How is Post-Close Huntsman Depreciation calculated?",
+              "options": [
+                "Huntsman standalone depreciation × Post-Close Period",
+                "Huntsman depreciation × tax rate",
+                "Olin depreciation × Pre-Close Period",
+                "Step-up ÷ shares"
+              ],
+              "answer_index": 0,
+              "explanation": "Target flow items are stubbed from the close date."
+            },
+            {
+              "question": "How is incremental step-up depreciation calculated?",
+              "options": [
+                "PP&E Step-Up ÷ life × Post-Close Period",
+                "PP&E Step-Up × tax rate",
+                "Gross PP&E - net PP&E",
+                "Capex + amortization"
+              ],
+              "answer_index": 0,
+              "explanation": "The close-year amount is a straight-line annual expense multiplied by the stub."
+            },
+            {
+              "question": "What is full-year depreciation on a $100mm step-up with a 10-year life?",
+              "options": [
+                "$10mm",
+                "$5mm",
+                "$100mm",
+                "$20mm"
+              ],
+              "answer_index": 0,
+              "explanation": "Straight-line depreciation is $100mm / 10."
+            },
+            {
+              "question": "What is Pro Forma Depreciation?",
+              "options": [
+                "Olin full-year + post-close Huntsman + incremental step-up depreciation",
+                "Full Olin + full Huntsman in every year",
+                "Only step-up depreciation",
+                "Olin less target depreciation"
+              ],
+              "answer_index": 0,
+              "explanation": "The bridge follows the actual close date."
+            }
+          ]
+        },
+        {
+          "id": "pfda-amortization",
+          "title": "Amortization Bridge",
+          "rows": [
+            "Olin Existing Amortization",
+            "Huntsman Existing Amortization",
+            "Post-Close Huntsman Amortization",
+            "Less: Eliminated Huntsman Legacy Amortization",
+            "New Identifiable Intangible Amortization",
+            "Pro Forma Amortization"
+          ],
+          "questions": [
+            {
+              "question": "Why is target legacy amortization eliminated?",
+              "options": [
+                "PPA removes the old target intangible balance and replaces it with newly valued identifiable intangibles.",
+                "Goodwill is amortized instead.",
+                "The target has no historical intangibles.",
+                "Amortization is a financing cost."
+              ],
+              "answer_index": 0,
+              "explanation": "The old carrying-value expense does not survive the purchase-accounting reset."
+            },
+            {
+              "question": "What sign should the elimination row use?",
+              "options": [
+                "Negative",
+                "Positive",
+                "Zero",
+                "The same sign as revenue"
+              ],
+              "answer_index": 0,
+              "explanation": "It offsets the positive post-close target legacy expense."
+            },
+            {
+              "question": "How is new identifiable-intangible amortization calculated?",
+              "options": [
+                "New intangibles ÷ life × Post-Close Period",
+                "Goodwill ÷ tax rate",
+                "Target revenue × ramp",
+                "Debt fees ÷ maturity"
+              ],
+              "answer_index": 0,
+              "explanation": "The PPA asset is amortized straight-line from the close date."
+            },
+            {
+              "question": "What does Pro Forma Amortization simplify to economically?",
+              "options": [
+                "Olin existing amortization + new PPA amortization",
+                "Olin + full target legacy amortization + goodwill amortization",
+                "Target amortization only",
+                "Zero"
+              ],
+              "answer_index": 0,
+              "explanation": "The visible target add and elimination cancel."
+            }
+          ]
+        },
+        {
+          "id": "pfda-summary",
+          "title": "Pro Forma D&A Summary and Links",
+          "rows": [
+            "Pro Forma Depreciation",
+            "Pro Forma Amortization",
+            "Total Pro Forma D&A"
+          ],
+          "questions": [
+            {
+              "question": "What is Total Pro Forma D&A?",
+              "options": [
+                "Pro Forma Depreciation + Pro Forma Amortization",
+                "Gross PP&E + intangibles",
+                "Operating income + interest",
+                "Capex - debt repayment"
+              ],
+              "answer_index": 0,
+              "explanation": "The summary combines the two noncash expense categories."
+            },
+            {
+              "question": "What does the consolidated CFS add back?",
+              "options": [
+                "Total Pro Forma D&A",
+                "Only PPA amortization",
+                "Only Olin depreciation",
+                "Goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "The CFS reverses all noncash D&A included in consolidated net income."
+            },
+            {
+              "question": "What should the consolidated income statement subtract separately?",
+              "options": [
+                "Only incremental PPA D&A when legacy D&A is already embedded",
+                "All Pro Forma D&A again",
+                "No transaction-created D&A",
+                "Capex"
+              ],
+              "answer_index": 0,
+              "explanation": "This avoids double-counting legacy D&A."
+            },
+            {
+              "question": "What schedule later rolls the combined PP&E and intangible balances?",
+              "options": [
+                "The consolidated balance sheet / asset roll-forward",
+                "Sources & Uses",
+                "The share schedule",
+                "The exchange-ratio block"
+              ],
+              "answer_index": 0,
+              "explanation": "Ongoing asset balances must reflect post-close depreciation and amortization."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "synergies-integration",
+      "title": "Synergies & Integration",
+      "description": "Rebuild the headline synergy assumptions, timing ramps, one-time integration costs, and after-tax impact.",
+      "blocks": [
+        {
+          "id": "si-headline-assumptions",
+          "title": "Headline Assumptions",
+          "rows": [
+            "Post-Close Period",
+            "Run-Rate Synergies",
+            "Additional Synergies",
+            "Integration Costs",
+            "Tax Rate"
+          ],
+          "questions": [
+            {
+              "question": "Where should headline dollar assumptions live?",
+              "options": [
+                "Main Page & Assumptions",
+                "Target standalone",
+                "Consolidated balance sheet",
+                "Debt detail rows"
+              ],
+              "answer_index": 0,
+              "explanation": "The Main Page is the transaction control panel."
+            },
+            {
+              "question": "What near-term synergy amount is modeled?",
+              "options": [
+                "$300mm",
+                "$100mm",
+                "$175mm",
+                "$10mm"
+              ],
+              "answer_index": 0,
+              "explanation": "Management disclosed more than $300mm of near-term cost synergies."
+            },
+            {
+              "question": "What additional long-dated benefit is modeled?",
+              "options": [
+                "$100mm beginning in 2031",
+                "$300mm beginning in 2025",
+                "$175mm of annual interest",
+                "$56mm of goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "The extra $100mm is separate from the near-term target."
+            },
+            {
+              "question": "What total integration-cost assumption is supported by the disclosed range midpoint?",
+              "options": [
+                "$175mm",
+                "$10mm",
+                "$300mm",
+                "$400mm"
+              ],
+              "answer_index": 0,
+              "explanation": "The disclosed range is $150mm-$200mm."
+            }
+          ]
+        },
+        {
+          "id": "si-timing-ramps",
+          "title": "Timing Assumptions",
+          "rows": [
+            "Near-Term Synergy Ramp %",
+            "Additional Synergy Ramp %",
+            "Integration-Cost Timing %"
+          ],
+          "questions": [
+            {
+              "question": "What near-term ramp is used?",
+              "options": [
+                "50% / 95% / 100%",
+                "100% before close",
+                "40% / 40% / 20%",
+                "0% forever"
+              ],
+              "answer_index": 0,
+              "explanation": "It matches the disclosed 24-month and year-three realization language."
+            },
+            {
+              "question": "When does the Additional Synergy Ramp reach 100%?",
+              "options": [
+                "2031",
+                "2027",
+                "2028",
+                "2025"
+              ],
+              "answer_index": 0,
+              "explanation": "The long-dated benefit is modeled as beginning in 2031."
+            },
+            {
+              "question": "What must integration-cost timing sum to?",
+              "options": [
+                "100%",
+                "24%",
+                "50%",
+                "300%"
+              ],
+              "answer_index": 0,
+              "explanation": "It allocates a finite total pool."
+            },
+            {
+              "question": "Why are pre-close ramp cells zero?",
+              "options": [
+                "No transaction benefits or costs are recognized before close.",
+                "Synergies are historical.",
+                "The tax rate is zero.",
+                "The target is already consolidated."
+              ],
+              "answer_index": 0,
+              "explanation": "The schedule follows the assumed close date."
+            }
+          ]
+        },
+        {
+          "id": "si-realized-benefits",
+          "title": "Realized Synergies",
+          "rows": [
+            "Run-Rate Cost Synergies",
+            "Realized Cost Synergies",
+            "Additional Synergies",
+            "Realized Additional Synergies",
+            "Total Realized Synergies"
+          ],
+          "questions": [
+            {
+              "question": "How are realized near-term synergies calculated?",
+              "options": [
+                "Run-rate × ramp × Post-Close Period",
+                "Run-rate × tax rate",
+                "Run-rate + debt",
+                "Run-rate ÷ shares"
+              ],
+              "answer_index": 0,
+              "explanation": "Both achievement and ownership timing matter in the close year."
+            },
+            {
+              "question": "What are approximate 2027 synergies at $300mm, 50%, and 50.4%?",
+              "options": [
+                "$75.6mm",
+                "$150mm",
+                "$300mm",
+                "$50.4mm"
+              ],
+              "answer_index": 0,
+              "explanation": "The three factors multiply to about $75.6mm."
+            },
+            {
+              "question": "What are 2028 synergies at a 95% ramp and full post-close year?",
+              "options": [
+                "$285mm",
+                "$270mm",
+                "$150mm",
+                "$300mm"
+              ],
+              "answer_index": 0,
+              "explanation": "$300mm × 95% = $285mm."
+            },
+            {
+              "question": "How is Total Realized Synergies calculated?",
+              "options": [
+                "Realized Cost Synergies + Realized Additional Synergies",
+                "Run-rate + integration costs",
+                "Synergies - tax rate",
+                "Revenue + debt"
+              ],
+              "answer_index": 0,
+              "explanation": "The two benefit buckets are added after their separate timing."
+            }
+          ]
+        },
+        {
+          "id": "si-integration-aftertax",
+          "title": "Integration Costs and After-Tax Impact",
+          "rows": [
+            "Total Integration Costs",
+            "Realized Integration Costs",
+            "Net Pre-Tax Impact",
+            "Tax Effect",
+            "Net Income Impact"
+          ],
+          "questions": [
+            {
+              "question": "How are realized integration costs calculated?",
+              "options": [
+                "Negative total cost × timing %",
+                "Positive total cost × post-close period only",
+                "Synergies × tax rate",
+                "Debt × interest rate"
+              ],
+              "answer_index": 0,
+              "explanation": "The timing row allocates the full one-time pool and the realized expense is negative."
+            },
+            {
+              "question": "Why should the finite cost pool not be multiplied by Post-Close Period again?",
+              "options": [
+                "The timing percentages already allocate 100% of the total.",
+                "It would increase goodwill.",
+                "It would create cash.",
+                "It would change the exchange ratio."
+              ],
+              "answer_index": 0,
+              "explanation": "An extra stub factor would leave part of the disclosed cost unmodeled."
+            },
+            {
+              "question": "How is Net Pre-Tax Impact calculated?",
+              "options": [
+                "Total Realized Synergies + Realized Integration Costs",
+                "Synergies + positive taxes",
+                "Costs - revenue",
+                "Goodwill + DTL"
+              ],
+              "answer_index": 0,
+              "explanation": "The cost row is already negative."
+            },
+            {
+              "question": "How is Net Income Impact calculated?",
+              "options": [
+                "Net Pre-Tax Impact + negative Tax Effect",
+                "Net Pre-Tax Impact + revenue",
+                "Synergies ÷ shares",
+                "Costs + debt"
+              ],
+              "answer_index": 0,
+              "explanation": "The tax expense reduces the pre-tax benefit."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "consolidated-income-statement",
+      "title": "Pro Forma Financials — Income Statement",
+      "description": "Rebuild the final full-year pro forma income statement, interest bridge, shares, EPS, and accretion / dilution using the selected Pro Forma Year rather than the legal close-date stub.",
+      "blocks": [
+        {
+          "id": "cis-timing",
+          "title": "Full-Year Pro Forma Architecture",
+          "rows": [
+            "Full-Year Transaction Factor",
+            "Olin Standalone Result",
+            "Huntsman Standalone Result",
+            "Full-Year Transaction Adjustments",
+            "Pro Forma Combined Result"
+          ],
+          "questions": [
+            {
+              "question": "What should the Full-Year Transaction Factor equal before the selected Pro Forma Year?",
+              "options": [
+                "0",
+                "The legal close-date stub",
+                "1",
+                "The exchange ratio"
+              ],
+              "answer_index": 0,
+              "explanation": "The full-year pro forma presentation is inactive before the year selected in Main Page D14."
+            },
+            {
+              "question": "What should the Full-Year Transaction Factor equal from the selected Pro Forma Year onward?",
+              "options": [
+                "0",
+                "1",
+                "The post-close fraction only",
+                "The tax rate"
+              ],
+              "answer_index": 1,
+              "explanation": "From the selected year onward, the full-year pro forma statements assume the transaction is in effect for the entire year."
+            },
+            {
+              "question": "Which date input selects the first full-year pro forma column?",
+              "options": [
+                "Transaction Date in D9",
+                "Pro Forma Year in D14",
+                "Announcement Date",
+                "Latest Pre-Close Year End"
+              ],
+              "answer_index": 1,
+              "explanation": "D14 controls the full-year pro forma presentation; D9 still controls the legal close and opening-balance-sheet date."
+            },
+            {
+              "question": "Should 2027 target earnings be stub-weighted when D14 is 2027?",
+              "options": [
+                "Yes, because the deal closes June 30",
+                "No; 2027 is shown as a full-year pro forma period",
+                "Only revenue is full-year",
+                "Only EPS is full-year"
+              ],
+              "answer_index": 1,
+              "explanation": "The final pro forma statements are a full-year analytical presentation, not the actual GAAP close-year consolidation."
+            }
+          ]
+        },
+        {
+          "id": "cis-operating",
+          "title": "Operating Statement",
+          "rows": [
+            "Revenue",
+            "Cost of Revenue",
+            "Gross Profit",
+            "SG&A",
+            "R&D",
+            "Unusual Expense (Income)",
+            "Other Operating Expenses",
+            "Total Operating Costs & Expenses",
+            "Realized Synergies",
+            "Realized Integration Costs",
+            "Target Legacy Amortization Eliminated",
+            "Incremental PPA D&A",
+            "Operating Income"
+          ],
+          "questions": [
+            {
+              "question": "How should full-year pro forma Revenue be calculated from the Pro Forma Year onward?",
+              "options": [
+                "Olin Revenue only",
+                "Olin Revenue + Huntsman Revenue",
+                "Olin Revenue + half of Huntsman Revenue",
+                "Olin Revenue + synergies only"
+              ],
+              "answer_index": 1,
+              "explanation": "The full-year pro forma operating statement combines both standalone businesses for the entire selected year."
+            },
+            {
+              "question": "Why is Target Legacy Amortization Eliminated shown as a positive operating adjustment?",
+              "options": [
+                "It reverses target legacy amortization that purchase accounting replaces",
+                "It is cash interest income",
+                "It creates goodwill",
+                "It increases debt"
+              ],
+              "answer_index": 0,
+              "explanation": "The target's old finite-lived intangible amortization is eliminated before adding the new PPA amortization."
+            },
+            {
+              "question": "How do negative Realized Integration Costs affect Operating Income?",
+              "options": [
+                "They are added as a signed negative number and reduce Operating Income",
+                "They are subtracted twice",
+                "They increase EBITDA and Net Income",
+                "They are excluded from every earnings measure"
+              ],
+              "answer_index": 0,
+              "explanation": "The row already carries a negative sign, so adding it to the operating bridge reduces earnings."
+            },
+            {
+              "question": "What belongs in Incremental PPA D&A on the operating statement?",
+              "options": [
+                "Only new PP&E step-up depreciation and new identifiable-intangible amortization",
+                "Total legacy D&A from both companies",
+                "Debt issuance-cost amortization",
+                "Capital expenditures"
+              ],
+              "answer_index": 0,
+              "explanation": "Legacy D&A is already embedded in standalone operating expenses; only transaction-created incremental PPA D&A is a separate adjustment."
+            },
+            {
+              "question": "Which formula correctly calculates Operating Income?",
+              "options": [
+                "Revenue - Total Operating Costs & Expenses + Synergies + Integration Costs + Legacy Amortization Eliminated - Incremental PPA D&A",
+                "Revenue - Cost of Revenue only",
+                "EBITDA - Capex",
+                "Net Income + Taxes"
+              ],
+              "answer_index": 0,
+              "explanation": "Operating Income follows the signed operating bridge and separately reflects PPA and synergy adjustments."
+            }
+          ]
+        },
+        {
+          "id": "cis-interest",
+          "title": "Full-Year Pro Forma Interest Bridge",
+          "rows": [
+            "Stand Alone Interest Expense",
+            "Pro Forma Existing Debt Interest",
+            "Pro Forma New Debt Interest",
+            "Debt Issuance Cost Amortization",
+            "Interest Expense, Net"
+          ],
+          "questions": [
+            {
+              "question": "What should Stand Alone Interest Expense show before the Pro Forma Year?",
+              "options": [
+                "Olin standalone interest expense",
+                "Olin plus Huntsman interest",
+                "Zero",
+                "New debt interest only"
+              ],
+              "answer_index": 0,
+              "explanation": "Before the pro forma year, the statements remain Olin standalone."
+            },
+            {
+              "question": "What should Pro Forma Existing Debt Interest reflect from the Pro Forma Year onward?",
+              "options": [
+                "Interest on debt that survives close, using the standalone debt schedules and transaction treatment",
+                "The unadjusted sum of both standalone interest lines",
+                "Only Olin revolver interest",
+                "A single opening-debt blended rate forever"
+              ],
+              "answer_index": 0,
+              "explanation": "The transaction schedule removes repaid facilities and keeps the surviving tranches' year-specific interest."
+            },
+            {
+              "question": "When should Pro Forma New Debt Interest be nonzero?",
+              "options": [
+                "Only when the Debt Financing Switch issues new debt",
+                "Whenever target debt is repaid",
+                "Whenever cash is positive",
+                "In every all-stock deal"
+              ],
+              "answer_index": 0,
+              "explanation": "New-debt interest depends on actual new financing, not on the existence of the merger itself."
+            },
+            {
+              "question": "Why is Debt Issuance Cost Amortization separate from operating D&A?",
+              "options": [
+                "It is a financing expense tied to debt fees",
+                "It is PP&E depreciation",
+                "It is a working-capital change",
+                "It is purchase consideration"
+              ],
+              "answer_index": 0,
+              "explanation": "Financing-fee amortization belongs below operating income in interest expense."
+            },
+            {
+              "question": "How is Interest Expense, Net calculated in the final pro forma statement?",
+              "options": [
+                "Existing-debt interest + new-debt interest + debt-cost amortization + any interest income",
+                "EBITDA - debt",
+                "Debt repayment + dividends",
+                "Tax expense - cash"
+              ],
+              "answer_index": 0,
+              "explanation": "The line combines all signed financing-income and financing-expense components."
+            }
+          ]
+        },
+        {
+          "id": "cis-below-line",
+          "title": "Below-the-Line, Taxes, and Parent Earnings",
+          "rows": [
+            "Gain (Loss) on Asset Sales",
+            "Other Non-Operating Income (Expense)",
+            "Pre-Tax Income",
+            "Income Taxes",
+            "Net Income",
+            "Standalone Net Income",
+            "Net Income Attributable to NCI",
+            "Net Income Attributable to Parent"
+          ],
+          "questions": [
+            {
+              "question": "Which formula correctly calculates Pre-Tax Income?",
+              "options": [
+                "Operating Income + Interest Expense, Net + Gain / Loss + Other Non-Operating Income / Expense",
+                "Revenue - Capex",
+                "EBITDA - Net Debt",
+                "Cash Flow from Operations - Dividends"
+              ],
+              "answer_index": 0,
+              "explanation": "All below-the-line items are added using their displayed signs."
+            },
+            {
+              "question": "Under the model's presentation, how is Income Taxes calculated?",
+              "options": [
+                "Pre-Tax Income × Tax Rate",
+                "Revenue × Tax Rate",
+                "EBITDA × Tax Rate",
+                "Cash × Tax Rate"
+              ],
+              "answer_index": 0,
+              "explanation": "The tax provision is applied to pre-tax income, subject to any separately modeled NOL or cash-tax adjustments."
+            },
+            {
+              "question": "What is the purpose of Standalone Net Income on the pro forma statement?",
+              "options": [
+                "It provides the Olin no-deal earnings comparison used in accretion / dilution",
+                "It replaces parent net income",
+                "It is a cash-flow subtotal",
+                "It calculates goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "The standalone earnings line supports the no-deal comparison and EPS bridge."
+            },
+            {
+              "question": "Which earnings figure belongs in the pro forma EPS numerator?",
+              "options": [
+                "Net Income Attributable to Parent",
+                "Total Net Income before NCI",
+                "EBITDA",
+                "Cash Flow from Operations"
+              ],
+              "answer_index": 0,
+              "explanation": "Public-company EPS uses earnings attributable to the parent company's common shareholders."
+            },
+            {
+              "question": "How is Net Income Attributable to Parent calculated?",
+              "options": [
+                "Net Income - Net Income Attributable to NCI",
+                "Net Income + NCI",
+                "Pre-Tax Income + Taxes",
+                "Operating Income - Capex"
+              ],
+              "answer_index": 0,
+              "explanation": "The NCI share of earnings is removed from consolidated net income."
+            }
+          ]
+        },
+        {
+          "id": "cis-eps",
+          "title": "Shares, EPS, and Accretion / Dilution",
+          "rows": [
+            "Basic Weighted Average Shares",
+            "Dilutive Effect",
+            "Diluted Shares",
+            "Diluted EPS",
+            "Olin Standalone Diluted EPS",
+            "Accretion / Dilution %"
+          ],
+          "questions": [
+            {
+              "question": "How should consideration shares be treated in the full-year Pro Forma Year?",
+              "options": [
+                "Include the full consideration share count",
+                "Include only the legal close-date fraction",
+                "Add Huntsman's old shares instead",
+                "Exclude all new shares"
+              ],
+              "answer_index": 0,
+              "explanation": "The full-year pro forma presentation assumes the stock consideration was outstanding for the entire selected year."
+            },
+            {
+              "question": "Should Huntsman's standalone shares be added to Olin's shares?",
+              "options": [
+                "No; Huntsman shares are exchanged and replaced by new Olin consideration shares",
+                "Yes, in every year",
+                "Only in the balance sheet",
+                "Only for basic EPS"
+              ],
+              "answer_index": 0,
+              "explanation": "The target shares cease to exist in the exchange."
+            },
+            {
+              "question": "How is Diluted EPS calculated?",
+              "options": [
+                "Net Income Attributable to Parent / Diluted Shares",
+                "EBITDA / Basic Shares",
+                "Net Income / Ending Shares only",
+                "Revenue / Dilutive Effect"
+              ],
+              "answer_index": 0,
+              "explanation": "EPS uses parent-attributable earnings and the period's diluted weighted-average shares."
+            },
+            {
+              "question": "How is EPS Accretion / Dilution calculated?",
+              "options": [
+                "Pro Forma Diluted EPS / Olin Standalone Diluted EPS - 1",
+                "Pro Forma Net Income / Olin Net Income",
+                "Olin EPS / Pro Forma EPS - 1",
+                "Synergies / Purchase Price"
+              ],
+              "answer_index": 0,
+              "explanation": "Accretion compares EPS, not aggregate net income."
+            },
+            {
+              "question": "Why can an all-stock deal be accretive even though the buyer issues many shares?",
+              "options": [
+                "The target's incremental earnings and synergies can exceed the dilution from the new share count",
+                "Issuing shares always increases EPS",
+                "Goodwill is counted as earnings",
+                "Debt repayment creates revenue"
+              ],
+              "answer_index": 0,
+              "explanation": "Accretion depends on the relationship between incremental earnings and incremental shares."
+            }
+          ]
+        },
+        {
+          "id": "cis-checks",
+          "title": "Income Statement and Accretion Checks",
+          "rows": [
+            "Pro Forma Year Factor Check",
+            "Operating Statement Tie",
+            "Interest Schedule Tie",
+            "Parent Net Income Tie",
+            "Standalone EPS Tie",
+            "Accretion / Dilution Tie"
+          ],
+          "questions": [
+            {
+              "question": "What should the Pro Forma Year Factor Check prove?",
+              "options": [
+                "It is 0 before D14 and 1 from D14 onward",
+                "It equals the tax rate",
+                "It equals the exchange ratio",
+                "It equals the legal close-date stub in every period"
+              ],
+              "answer_index": 0,
+              "explanation": "The check confirms that the full-year pro forma switch is working."
+            },
+            {
+              "question": "What should the Interest Schedule Tie compare?",
+              "options": [
+                "Pro forma interest rows to the full-year outputs of Transaction & Refinancing Debt",
+                "Revenue to cash",
+                "Goodwill to APIC",
+                "Capex to dividends"
+              ],
+              "answer_index": 0,
+              "explanation": "The joint debt schedule is the source of truth for post-transaction interest."
+            },
+            {
+              "question": "What should the Standalone EPS Tie compare?",
+              "options": [
+                "The pro forma statement's Olin Standalone Diluted EPS to Olin Standalone",
+                "Pro forma EPS to share price",
+                "Olin EPS to Huntsman EPS",
+                "Net debt to EBITDA"
+              ],
+              "answer_index": 0,
+              "explanation": "The no-deal EPS comparison must link directly to the standalone source."
+            },
+            {
+              "question": "What should the Accretion / Dilution Tie recompute?",
+              "options": [
+                "Pro Forma EPS / Standalone EPS - 1",
+                "Revenue growth",
+                "Debt repayment",
+                "Goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "The final output should be independently reproducible from the two EPS rows."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "main-page-assumptions",
+      "title": "Main Page & Assumptions — Final Audit",
+      "description": "Rebuild the transaction assumptions and headline outputs, then distinguish user inputs, linked calculations, transaction switches, and the final assumptions that still require sourcing.",
+      "blocks": [
+        {
+          "id": "mpa-overview",
+          "title": "Transaction Overview",
+          "rows": [
+            "Target Company Name",
+            "Acquirer Company Name",
+            "Transaction Announcement",
+            "Transaction Date (or expected)",
+            "Consideration Type",
+            "Offer Price / Exchange Ratio",
+            "Close Debt Treatment Switch (0/1)",
+            "Debt Financing Switch (0/1)",
+            "Pro Forma Year"
+          ],
+          "questions": [
+            {
+              "question": "Which company is the accounting acquirer in the model?",
+              "options": [
+                "Olin Corporation",
+                "Huntsman Corporation",
+                "Both companies equally",
+                "The new holding company only"
+              ],
+              "answer_index": 0,
+              "explanation": "Olin is the accounting acquirer and its standalone shareholders' equity survives the purchase accounting."
+            },
+            {
+              "question": "What does the Transaction Date control?",
+              "options": [
+                "The legal close timing and latest pre-close year-end",
+                "The first full-year pro forma summary column only",
+                "The target share price",
+                "The tax rate"
+              ],
+              "answer_index": 0,
+              "explanation": "The legal close date drives the opening balance sheet and transaction-date mechanics."
+            },
+            {
+              "question": "What does the Pro Forma Year control?",
+              "options": [
+                "The first year shown with full-year combined treatment",
+                "The legal announcement date",
+                "The debt maturity date",
+                "The target diluted share count"
+              ],
+              "answer_index": 0,
+              "explanation": "The pro forma year controls the analytical full-year presentation."
+            },
+            {
+              "question": "What does Close Debt Treatment Switch = 1 mean?",
+              "options": [
+                "Selected existing debt is repaid or refinanced at close",
+                "All debt is automatically issued",
+                "No debt can ever mature",
+                "Cash consideration becomes 100%"
+              ],
+              "answer_index": 0,
+              "explanation": "The global switch activates the instrument-level close-treatment toggles."
+            },
+            {
+              "question": "What does Debt Financing Switch = 0 mean in the current all-stock base case?",
+              "options": [
+                "No new transaction debt is issued",
+                "All existing debt is forgiven",
+                "The target debt is ignored",
+                "Interest expense is zero"
+              ],
+              "answer_index": 0,
+              "explanation": "The clean base case uses stock and existing cash without issuing the optional new debt tranches."
+            }
+          ]
+        },
+        {
+          "id": "mpa-consideration",
+          "title": "Consideration Assumptions",
+          "rows": [
+            "Exchange Ratio",
+            "Acquirer Share Price",
+            "Target Share Price",
+            "Target Diluted Shares",
+            "Cash Per Target Share",
+            "Stock Per Target Share",
+            "Offer Price Per Share",
+            "Cash Consideration %",
+            "Stock Consideration %",
+            "Equity Consideration",
+            "Target Net Debt",
+            "Enterprise Value"
+          ],
+          "questions": [
+            {
+              "question": "How is Stock Per Target Share calculated in an exchange-ratio deal?",
+              "options": [
+                "Exchange Ratio × Acquirer Share Price",
+                "Target Share Price × Target Diluted Shares",
+                "Equity Consideration / Acquirer Shares",
+                "Target Net Debt / Target Shares"
+              ],
+              "answer_index": 0,
+              "explanation": "The exchange ratio specifies how many acquirer shares each target share receives."
+            },
+            {
+              "question": "How is Equity Consideration calculated?",
+              "options": [
+                "Offer Price Per Share × Target Diluted Shares",
+                "Enterprise Value + Target Net Debt",
+                "Acquirer Share Price × Acquirer Basic Shares",
+                "Revenue × EV / EBITDA"
+              ],
+              "answer_index": 0,
+              "explanation": "The target's fully diluted share count is valued at the offer price."
+            },
+            {
+              "question": "How is Enterprise Value calculated from the transaction consideration?",
+              "options": [
+                "Equity Consideration + Target Net Debt",
+                "Equity Consideration - Target Debt",
+                "Offer Price + Fees",
+                "Goodwill + Intangibles"
+              ],
+              "answer_index": 0,
+              "explanation": "Enterprise value bridges from the target equity value to the value of the operating business."
+            },
+            {
+              "question": "Why should Target Net Debt not be added to Total Purchase Consideration in the goodwill calculation?",
+              "options": [
+                "It belongs in the enterprise-value bridge, not consideration transferred for the target equity",
+                "Debt is never relevant",
+                "It is already a transaction fee",
+                "It is part of APIC"
+              ],
+              "answer_index": 0,
+              "explanation": "Purchase accounting begins with consideration transferred to the target equity holders."
+            },
+            {
+              "question": "What should Cash Consideration % plus Stock Consideration % equal?",
+              "options": [
+                "100%",
+                "The tax rate",
+                "The exchange ratio",
+                "The ownership split only"
+              ],
+              "answer_index": 0,
+              "explanation": "The form-of-consideration percentages must account for the entire equity purchase price."
+            }
+          ]
+        },
+        {
+          "id": "mpa-uses",
+          "title": "Uses of Funds",
+          "rows": [
+            "Equity Consideration",
+            "Debt Refinanced or Repaid",
+            "Transaction Fees",
+            "Financing Fees",
+            "Other Cash Consideration",
+            "Total Uses"
+          ],
+          "questions": [
+            {
+              "question": "What belongs in Debt Refinanced or Repaid?",
+              "options": [
+                "Only debt selected for repayment under the close-treatment switches",
+                "All reported target liabilities",
+                "All future debt maturities",
+                "The target net-debt figure from valuation"
+              ],
+              "answer_index": 0,
+              "explanation": "Sources & Uses should reflect the actual close treatment selected in the joint debt schedule."
+            },
+            {
+              "question": "How are transaction fees treated in Sources & Uses?",
+              "options": [
+                "As a cash use at close",
+                "As goodwill",
+                "As a noncash source",
+                "As equity consideration"
+              ],
+              "answer_index": 0,
+              "explanation": "Transaction fees consume cash and are expensed rather than capitalized into goodwill."
+            },
+            {
+              "question": "How are financing fees treated in Sources & Uses?",
+              "options": [
+                "As a use tied to new financing and later amortized",
+                "As target equity value",
+                "As operating synergies",
+                "As cash interest income"
+              ],
+              "answer_index": 0,
+              "explanation": "Financing fees are paid at close and capitalized as a contra-debt or deferred financing cost."
+            },
+            {
+              "question": "Which formula calculates Total Uses?",
+              "options": [
+                "Sum of all signed use rows",
+                "Equity Consideration only",
+                "Total Sources + Difference",
+                "Enterprise Value - Cash"
+              ],
+              "answer_index": 0,
+              "explanation": "Every cash and noncash consideration use must be included once."
+            }
+          ]
+        },
+        {
+          "id": "mpa-sources",
+          "title": "Sources of Funds",
+          "rows": [
+            "Value of Shares Issued",
+            "Number of Shares",
+            "Existing Cash Used",
+            "New Debt",
+            "Other Sources",
+            "Total Sources"
+          ],
+          "questions": [
+            {
+              "question": "How is Number of Shares issued calculated in the all-stock deal?",
+              "options": [
+                "Exchange Ratio × Target Diluted Shares",
+                "Equity Consideration × Share Price",
+                "Target Net Debt / Exchange Ratio",
+                "Target Basic Shares - Options"
+              ],
+              "answer_index": 0,
+              "explanation": "The fixed exchange ratio converts target diluted shares into new Olin consideration shares."
+            },
+            {
+              "question": "How is Value of Shares Issued calculated?",
+              "options": [
+                "Number of Shares × Acquirer Share Price",
+                "Target Net Debt + Fees",
+                "New Debt - Cash",
+                "Goodwill × Tax Rate"
+              ],
+              "answer_index": 0,
+              "explanation": "The accounting value of the stock consideration is based on the issued share count and the acquirer reference price."
+            },
+            {
+              "question": "What should Existing Cash Used do when stock plus new debt already exceed Total Uses?",
+              "options": [
+                "Never become negative; reduce financing or create an explicit use for the excess",
+                "Become a negative source automatically",
+                "Increase transaction fees",
+                "Reduce equity consideration"
+              ],
+              "answer_index": 0,
+              "explanation": "Negative cash used would hide an overfunded Sources & Uses case."
+            },
+            {
+              "question": "What must the Sources - Uses check equal in the base case?",
+              "options": [
+                "0",
+                "The transaction fee",
+                "The target net debt",
+                "The exchange ratio"
+              ],
+              "answer_index": 0,
+              "explanation": "A balanced transaction model has equal total sources and total uses."
+            }
+          ]
+        },
+        {
+          "id": "mpa-goodwill",
+          "title": "Headline Goodwill Calculation",
+          "rows": [
+            "Equity Consideration",
+            "Other Purchase Consideration",
+            "Total Purchase Consideration",
+            "New Goodwill"
+          ],
+          "questions": [
+            {
+              "question": "How is Total Purchase Consideration calculated?",
+              "options": [
+                "Equity Consideration + Other Purchase Consideration",
+                "Enterprise Value + Fees",
+                "Equity Consideration + Target Net Debt",
+                "New Debt + Cash"
+              ],
+              "answer_index": 0,
+              "explanation": "The total is the consideration transferred to acquire the target equity."
+            },
+            {
+              "question": "Should transaction fees be included in New Goodwill?",
+              "options": [
+                "No",
+                "Yes, always",
+                "Only in stock deals",
+                "Only when financing fees are zero"
+              ],
+              "answer_index": 0,
+              "explanation": "Acquisition-related transaction fees are expensed and excluded from purchase consideration."
+            },
+            {
+              "question": "Where should the detailed New Goodwill calculation live?",
+              "options": [
+                "PPA & Goodwill",
+                "Sources & Uses",
+                "Olin Standalone",
+                "Cash Flow Statement"
+              ],
+              "answer_index": 0,
+              "explanation": "The Main Page should display a linked output rather than duplicate the PPA mechanics."
+            },
+            {
+              "question": "What is the key presentation rule for the Main Page goodwill number?",
+              "options": [
+                "Link to the PPA schedule's output; do not independently recalculate it",
+                "Hardcode the displayed amount",
+                "Use enterprise value as goodwill",
+                "Set goodwill equal to target book equity"
+              ],
+              "answer_index": 0,
+              "explanation": "One source of truth prevents the headline output from drifting from the detailed schedule."
+            }
+          ]
+        },
+        {
+          "id": "mpa-ongoing",
+          "title": "Ongoing and Remaining Assumptions",
+          "rows": [
+            "Tax Rate",
+            "Run-Rate Synergies",
+            "Integration Costs",
+            "PP&E Step-Up Life",
+            "Refinancing Rate",
+            "Intangible Amortization Life",
+            "Additional Synergies"
+          ],
+          "questions": [
+            {
+              "question": "Which assumption drives incremental PP&E step-up depreciation?",
+              "options": [
+                "PP&E Step-Up Life",
+                "Refinancing Rate",
+                "Tax Rate",
+                "Exchange Ratio"
+              ],
+              "answer_index": 0,
+              "explanation": "The PP&E step-up is depreciated over its assumed useful life."
+            },
+            {
+              "question": "Which assumption drives new identifiable-intangible amortization?",
+              "options": [
+                "Intangible Amortization Life",
+                "PP&E Step-Up Life",
+                "Run-Rate Synergies",
+                "Target Net Debt"
+              ],
+              "answer_index": 0,
+              "explanation": "Finite-lived transaction intangibles are amortized over the selected life."
+            },
+            {
+              "question": "What is the correct role of Refinancing Rate?",
+              "options": [
+                "It prices refinanced or new debt interest",
+                "It is a useful life",
+                "It is the tax rate",
+                "It determines the exchange ratio"
+              ],
+              "answer_index": 0,
+              "explanation": "The rate is a financing assumption and must never be used as a depreciation or amortization life."
+            },
+            {
+              "question": "Which assumptions remain analytically important to source or clearly label?",
+              "options": [
+                "PPA step-ups, synergy timing, integration costs, tax / NOL treatment, and capital allocation",
+                "Only company names",
+                "Only the title font",
+                "None; every assumption is disclosed fact"
+              ],
+              "answer_index": 0,
+              "explanation": "The remaining work is assumption quality and transparency."
+            },
+            {
+              "question": "Why should the $100mm PP&E step-up and $200mm new-intangible amounts be labeled clearly?",
+              "options": [
+                "They are analyst placeholder PPA assumptions unless supported by a filing or valuation",
+                "They are reported historical values",
+                "They are transaction fees",
+                "They are debt maturities"
+              ],
+              "answer_index": 0,
+              "explanation": "The model should never present illustrative fair-value allocations as disclosed facts."
+            },
+            {
+              "question": "What assumption is needed once net debt becomes negative?",
+              "options": [
+                "An excess-cash / capital-allocation policy",
+                "A higher tax rate",
+                "A lower exchange ratio",
+                "A goodwill impairment"
+              ],
+              "answer_index": 0,
+              "explanation": "The company must eventually deploy surplus cash through buybacks, dividends, acquisitions, or other uses."
+            }
+          ]
+        },
+        {
+          "id": "mpa-debt",
+          "title": "Optional New Debt Issued",
+          "rows": [
+            "Debt Instrument",
+            "Base Amount",
+            "Debt Financing Switch",
+            "Amount Issued",
+            "Interest Rate",
+            "Financing Fees",
+            "Annual Fee Amortization"
+          ],
+          "questions": [
+            {
+              "question": "How is Amount Issued calculated?",
+              "options": [
+                "Base Amount × Debt Financing Switch",
+                "Base Amount + Existing Cash",
+                "Equity Consideration × Tax Rate",
+                "Target Debt - Fees"
+              ],
+              "answer_index": 0,
+              "explanation": "The switch activates or deactivates each optional new financing tranche."
+            },
+            {
+              "question": "What is the base-case Amount Issued when Debt Financing Switch = 0?",
+              "options": [
+                "0",
+                "The full Base Amount",
+                "Target Net Debt",
+                "Transaction Fees"
+              ],
+              "answer_index": 0,
+              "explanation": "The current clean all-stock base case does not issue optional transaction debt."
+            },
+            {
+              "question": "How should Annual Fee Amortization be calculated?",
+              "options": [
+                "Allocated financing fees / appropriate debt life",
+                "Financing fees × tax rate",
+                "Amount issued / interest rate",
+                "Target shares × par value"
+              ],
+              "answer_index": 0,
+              "explanation": "Capitalized financing fees are amortized over the life of the related debt."
+            },
+            {
+              "question": "Why should this block link to Transaction & Refinancing Debt?",
+              "options": [
+                "The joint debt schedule owns issuance, fees, interest, and debt balances",
+                "The Main Page should own all detailed debt mechanics",
+                "Sources & Uses calculates interest",
+                "The PPA schedule owns debt maturities"
+              ],
+              "answer_index": 0,
+              "explanation": "The Main Page is a summary and input surface, not a second debt schedule."
+            }
+          ]
+        },
+        {
+          "id": "mpa-multiples-summary",
+          "title": "Multiples and Headline Outputs",
+          "rows": [
+            "Enterprise Value (Target)",
+            "EV / EBITDA",
+            "Pro Forma Revenue",
+            "Pro Forma EBITDA",
+            "Pro Forma Diluted EPS",
+            "EPS Accretion / (Dilution)",
+            "Net Debt",
+            "Free Cash Flow"
+          ],
+          "questions": [
+            {
+              "question": "How is target EV / EBITDA calculated?",
+              "options": [
+                "Target Enterprise Value / Target EBITDA",
+                "Equity Consideration / Pro Forma EPS",
+                "Net Debt / Free Cash Flow",
+                "Goodwill / Revenue"
+              ],
+              "answer_index": 0,
+              "explanation": "The valuation multiple compares target enterprise value with target EBITDA."
+            },
+            {
+              "question": "Where should the headline pro forma outputs link from?",
+              "options": [
+                "Summary / Pro Forma Financials",
+                "Hardcoded assumptions",
+                "Olin historical statements only",
+                "PPA & Goodwill only"
+              ],
+              "answer_index": 0,
+              "explanation": "The Main Page should display model outputs from the final statements and summary."
+            },
+            {
+              "question": "Why is EPS Accretion / Dilution more decision-useful than Pro Forma Net Income alone?",
+              "options": [
+                "It accounts for both incremental earnings and the new share count",
+                "It ignores financing",
+                "It equals revenue growth",
+                "It measures goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "Shareholders care about earnings per share, not only aggregate earnings."
+            },
+            {
+              "question": "What should negative Net Debt in later years signal on this page?",
+              "options": [
+                "Excess cash accumulation and a missing capital-allocation assumption",
+                "A debt default",
+                "Negative equity value",
+                "A broken tax formula by definition"
+              ],
+              "answer_index": 0,
+              "explanation": "The business is modeled to generate surplus cash faster than it deploys it."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pro-forma-balance-sheet",
+      "title": "Pro Forma Financials — Balance Sheet",
+      "description": "Rebuild the transaction-adjusted opening balance sheet and roll it forward with standalone annual movements, PPA schedules, debt schedules, retained earnings, and CFS ending cash.",
+      "blocks": [
+        {
+          "id": "pfbs-opening",
+          "title": "Opening Balance and Annual Movement Architecture",
+          "rows": [
+            "Pro Forma Opening Balance",
+            "Prior-Year Pro Forma Balance",
+            "Olin Annual Movement",
+            "Huntsman Annual Movement",
+            "PPA Roll-Forward",
+            "Transaction / Financing Movement",
+            "Ending Pro Forma Balance"
+          ],
+          "questions": [
+            {
+              "question": "What is the starting point for the first pro forma forecast year?",
+              "options": [
+                "The Pro Forma Opening Balance Sheet",
+                "Olin current-year ending balance only",
+                "The sum of the historical subtotal rows",
+                "The Sources & Uses difference"
+              ],
+              "answer_index": 0,
+              "explanation": "The opening balance sheet contains the transaction-adjusted starting accounts."
+            },
+            {
+              "question": "How should an ordinary operating account be projected from the opening balance?",
+              "options": [
+                "Opening balance + Olin annual change + Huntsman annual change",
+                "Current Olin balance + half the target balance",
+                "Opening balance held constant",
+                "Current standalone subtotal sum only"
+              ],
+              "answer_index": 0,
+              "explanation": "The standalone models provide annual movements while the opening balance preserves transaction adjustments."
+            },
+            {
+              "question": "Why is simple current-year standalone addition not universally correct?",
+              "options": [
+                "It can erase opening purchase-accounting, refinancing, or reclassification adjustments",
+                "It always creates a circularity",
+                "Standalone statements never forecast operating accounts",
+                "It double counts revenue"
+              ],
+              "answer_index": 0,
+              "explanation": "Transaction-created opening differences must survive the roll-forward."
+            },
+            {
+              "question": "Should year-end target balance-sheet accounts be time-weighted in the legal close year?",
+              "options": [
+                "No; balance sheets are point-in-time snapshots",
+                "Yes, by the post-close fraction",
+                "Only debt should be time-weighted",
+                "Only cash should be time-weighted"
+              ],
+              "answer_index": 0,
+              "explanation": "Once the deal has closed, the entire target balance sheet is consolidated at year-end."
+            },
+            {
+              "question": "What should later years use after the first pro forma forecast year?",
+              "options": [
+                "Prior-year pro forma ending balance plus current-year movements",
+                "The original opening balance every year",
+                "Only the target standalone balance",
+                "A cash plug"
+              ],
+              "answer_index": 0,
+              "explanation": "The combined balance sheet becomes the prior-year starting point."
+            }
+          ]
+        },
+        {
+          "id": "pfbs-operating-assets",
+          "title": "Cash and Operating Current Assets",
+          "rows": [
+            "Cash and Cash Equivalents",
+            "Accounts Receivable",
+            "Inventory",
+            "Prepaid Expenses",
+            "Other Current Assets",
+            "Total Current Assets"
+          ],
+          "questions": [
+            {
+              "question": "Where should forecast Cash and Cash Equivalents link from?",
+              "options": [
+                "Same-year CFS Ending Cash",
+                "Revenue",
+                "Sources & Uses Total Sources",
+                "Goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "The cash flow statement owns the cash roll-forward."
+            },
+            {
+              "question": "What does an increase in Accounts Receivable do to cash flow, all else equal?",
+              "options": [
+                "Uses cash",
+                "Provides cash",
+                "Has no effect",
+                "Increases debt"
+              ],
+              "answer_index": 0,
+              "explanation": "An increase in an operating asset ties up cash."
+            },
+            {
+              "question": "What does an increase in Inventory do to cash flow, all else equal?",
+              "options": [
+                "Uses cash",
+                "Provides cash",
+                "Raises APIC",
+                "Reduces goodwill"
+              ],
+              "answer_index": 0,
+              "explanation": "More cash is invested in inventory."
+            },
+            {
+              "question": "How should Total Current Assets be calculated?",
+              "options": [
+                "Sum the adjusted pro forma current-asset line items",
+                "Add the two standalone Total Current Assets rows",
+                "Use revenue × tax rate",
+                "Use Total Sources"
+              ],
+              "answer_index": 0,
+              "explanation": "Subtotals must be rebuilt from adjusted line items."
+            },
+            {
+              "question": "Why can summing standalone subtotal rows produce a false zero balance-sheet check?",
+              "options": [
+                "The subtotals may omit transaction adjustments that were applied only to underlying accounts",
+                "Subtotals are always negative",
+                "The target has no current assets",
+                "Excel ignores subtotal formulas"
+              ],
+              "answer_index": 0,
+              "explanation": "A zero check is meaningful only when every subtotal uses the adjusted pro forma accounts."
+            }
+          ]
+        },
+        {
+          "id": "pfbs-ppe-intangibles",
+          "title": "PP&E, Goodwill, Intangibles, and Deferred Taxes",
+          "rows": [
+            "Gross PP&E",
+            "Accumulated Depreciation",
+            "Net PP&E",
+            "Goodwill",
+            "Intangible Assets",
+            "Deferred Taxes"
+          ],
+          "questions": [
+            {
+              "question": "How should Gross PP&E roll forward?",
+              "options": [
+                "Prior Gross PP&E - negative CFS Capex + disposals / other movements",
+                "Prior Gross PP&E - depreciation only",
+                "Net PP&E + cash",
+                "Goodwill + intangibles"
+              ],
+              "answer_index": 0,
+              "explanation": "Capex is stored as a negative investing cash flow, so subtracting it adds the investment to gross PP&E."
+            },
+            {
+              "question": "How should negative Accumulated Depreciation roll forward?",
+              "options": [
+                "Prior balance - current depreciation + disposal adjustments",
+                "Prior balance + current depreciation",
+                "Equal current D&A only",
+                "Equal Gross PP&E - Capex"
+              ],
+              "answer_index": 0,
+              "explanation": "Positive depreciation makes the negative contra-asset more negative."
+            },
+            {
+              "question": "How should Goodwill behave absent impairment or another acquisition?",
+              "options": [
+                "Remain constant",
+                "Amortize over 10 years",
+                "Decline with debt repayment",
+                "Equal retained earnings"
+              ],
+              "answer_index": 0,
+              "explanation": "Goodwill is not amortized under GAAP."
+            },
+            {
+              "question": "How should new identifiable intangibles roll forward?",
+              "options": [
+                "Opening new intangibles - cumulative new amortization",
+                "Opening new intangibles + amortization",
+                "Hold constant forever",
+                "Reduce by capex"
+              ],
+              "answer_index": 0,
+              "explanation": "Finite-lived intangible assets decline through amortization."
+            },
+            {
+              "question": "How should the incremental deferred-tax liability roll forward?",
+              "options": [
+                "Through the book-versus-cash tax effect of the PPA D&A",
+                "With target debt principal",
+                "With dividends",
+                "With share repurchases only"
+              ],
+              "answer_index": 0,
+              "explanation": "The temporary basis difference reverses as the stepped-up assets are depreciated or amortized."
+            }
+          ]
+        },
+        {
+          "id": "pfbs-liabilities-debt",
+          "title": "Operating Liabilities and Debt",
+          "rows": [
+            "Accounts Payable",
+            "Accrued Expenses",
+            "Current Portion of Debt",
+            "Other Current Liabilities",
+            "Total Current Liabilities",
+            "Long-Term Debt",
+            "Less: Debt Issuance Costs",
+            "Total Long-Term Debt",
+            "Other Long-Term Liabilities",
+            "Noncontrolling Interest",
+            "Total Liabilities"
+          ],
+          "questions": [
+            {
+              "question": "What does an increase in Accounts Payable do to cash flow, all else equal?",
+              "options": [
+                "Provides cash",
+                "Uses cash",
+                "Reduces revenue",
+                "Increases capex"
+              ],
+              "answer_index": 0,
+              "explanation": "The company is delaying payment to suppliers."
+            },
+            {
+              "question": "What determines Current Portion of Debt?",
+              "options": [
+                "Principal due within the next twelve months",
+                "The current-year interest expense",
+                "The revolver commitment",
+                "The target enterprise value"
+              ],
+              "answer_index": 0,
+              "explanation": "Debt classification is based on the maturity schedule."
+            },
+            {
+              "question": "Does moving debt from long-term to current create a financing cash flow?",
+              "options": [
+                "No; it is a noncash reclassification",
+                "Yes; it is a repayment",
+                "Yes; it is new debt issued",
+                "Only when interest rates change"
+              ],
+              "answer_index": 0,
+              "explanation": "Cash changes only when principal is issued or repaid."
+            },
+            {
+              "question": "How should Less: Debt Issuance Costs roll forward?",
+              "options": [
+                "Opening contra-debt balance + amortization and any new or written-off fees",
+                "Equal current debt",
+                "Equal transaction fees",
+                "Remain zero in every case"
+              ],
+              "answer_index": 0,
+              "explanation": "The negative unamortized balance moves toward zero as the fees are amortized."
+            },
+            {
+              "question": "How should Total Liabilities be calculated?",
+              "options": [
+                "From adjusted current liabilities, total long-term debt, deferred taxes, other long-term liabilities, and NCI",
+                "By adding standalone Total Liabilities rows only",
+                "As Total Assets - Cash",
+                "As Net Debt + Equity"
+              ],
+              "answer_index": 0,
+              "explanation": "The subtotal must use the post-transaction liability accounts."
+            }
+          ]
+        },
+        {
+          "id": "pfbs-forecast-equity",
+          "title": "Equity and Shares Outstanding",
+          "rows": [
+            "Common Stock",
+            "Additional Paid-In Capital",
+            "Retained Earnings",
+            "Treasury Stock",
+            "Other Equity",
+            "Total Equity",
+            "Common Shares Outstanding"
+          ],
+          "questions": [
+            {
+              "question": "What happens to target historical equity in purchase accounting?",
+              "options": [
+                "It is eliminated",
+                "It is added to acquirer equity",
+                "It becomes goodwill",
+                "It becomes debt"
+              ],
+              "answer_index": 0,
+              "explanation": "The target's historical shareholders' equity does not survive the acquisition."
+            },
+            {
+              "question": "How is new Common Stock recorded for consideration shares?",
+              "options": [
+                "New shares × par value",
+                "New shares × market price",
+                "Equity consideration × tax rate",
+                "Target book value"
+              ],
+              "answer_index": 0,
+              "explanation": "Common Stock records par value; APIC receives the residual value."
+            },
+            {
+              "question": "How should Retained Earnings roll forward?",
+              "options": [
+                "Prior Retained Earnings + Parent Net Income + signed Dividends + other adjustments",
+                "Prior Retained Earnings + EBITDA",
+                "Cash - Debt",
+                "APIC + Common Stock"
+              ],
+              "answer_index": 0,
+              "explanation": "Retained earnings accumulates earnings and distributions."
+            },
+            {
+              "question": "What should Common Shares Outstanding include after close?",
+              "options": [
+                "Olin ending shares plus the full consideration shares",
+                "Olin shares plus Huntsman old shares",
+                "Only basic weighted-average shares",
+                "Only the dilutive effect"
+              ],
+              "answer_index": 0,
+              "explanation": "The point-in-time share count includes all new Olin consideration shares after closing."
+            }
+          ]
+        },
+        {
+          "id": "pfbs-checks",
+          "title": "Balance-Sheet Checks",
+          "rows": [
+            "Total Assets",
+            "Total Liabilities and Equity",
+            "Assets = Liabilities + Equity Check",
+            "Cash Tie",
+            "Debt Tie",
+            "Retained Earnings Tie"
+          ],
+          "questions": [
+            {
+              "question": "What should the Assets = Liabilities + Equity Check equal?",
+              "options": [
+                "0",
+                "The transaction fee",
+                "The tax rate",
+                "The exchange ratio"
+              ],
+              "answer_index": 0,
+              "explanation": "A balanced model has equal total assets and total liabilities plus equity."
+            },
+            {
+              "question": "What should the Cash Tie compare?",
+              "options": [
+                "Balance-sheet cash to CFS Ending Cash",
+                "Cash to revenue",
+                "Cash to goodwill",
+                "Cash to shares"
+              ],
+              "answer_index": 0,
+              "explanation": "The balance sheet and cash flow statement must use the same cash balance."
+            },
+            {
+              "question": "What should the Debt Tie compare?",
+              "options": [
+                "Current plus long-term debt to the transaction / debt schedule",
+                "Debt to equity value",
+                "Debt to revenue only",
+                "Debt to transaction fees"
+              ],
+              "answer_index": 0,
+              "explanation": "The supporting debt schedule is the source of truth for principal balances."
+            },
+            {
+              "question": "What should the Retained Earnings Tie recompute?",
+              "options": [
+                "Prior RE + parent net income + signed dividends + adjustments",
+                "Revenue - expenses",
+                "Cash + debt",
+                "Goodwill - amortization"
+              ],
+              "answer_index": 0,
+              "explanation": "The equity roll-forward should independently reproduce ending retained earnings."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "pro-forma-cash-flow-statement",
+      "title": "Pro Forma Financials — Cash Flow Statement",
+      "description": "Rebuild operating, investing, and financing cash flows, roll ending cash into the balance sheet, and calculate free cash flow, net debt, and leverage.",
+      "blocks": [
+        {
+          "id": "pfcfs-cfo",
+          "title": "Cash Flow from Operations",
+          "rows": [
+            "Net Income",
+            "D&A",
+            "Stock-Based Compensation",
+            "Debt Issuance Cost Amortization",
+            "Operating Net Working Capital",
+            "Change in Working Capital",
+            "Gain (Loss) on Asset Sales",
+            "Change in Other Operating Assets & Liabilities",
+            "Cash Flow from Operations"
+          ],
+          "questions": [
+            {
+              "question": "Where should Net Income at the top of the CFS link from?",
+              "options": [
+                "The pro forma income statement",
+                "The balance-sheet cash line",
+                "Sources & Uses",
+                "The PPA schedule"
+              ],
+              "answer_index": 0,
+              "explanation": "The CFS begins with the same net income produced by the income statement."
+            },
+            {
+              "question": "Why is D&A added back?",
+              "options": [
+                "It reduced earnings but did not use current-period cash",
+                "It is new debt",
+                "It is revenue",
+                "It is a dividend"
+              ],
+              "answer_index": 0,
+              "explanation": "D&A is a noncash expense."
+            },
+            {
+              "question": "Why is Stock-Based Compensation added back?",
+              "options": [
+                "It is a noncash expense in the period",
+                "It is a cash repurchase",
+                "It is capex",
+                "It is target debt"
+              ],
+              "answer_index": 0,
+              "explanation": "The income-statement expense does not consume current-period cash."
+            },
+            {
+              "question": "How is Operating Net Working Capital calculated?",
+              "options": [
+                "Operating current assets excluding cash less operating current liabilities excluding debt",
+                "Total assets - total liabilities",
+                "Cash + debt",
+                "Revenue - EBITDA"
+              ],
+              "answer_index": 0,
+              "explanation": "Operating NWC removes financing accounts such as cash and debt."
+            },
+            {
+              "question": "What is the cash-flow sign when Operating NWC increases?",
+              "options": [
+                "Negative",
+                "Positive",
+                "Zero",
+                "Equal to the tax rate"
+              ],
+              "answer_index": 0,
+              "explanation": "More cash is tied up in net operating assets."
+            },
+            {
+              "question": "Why is a gain on an asset sale subtracted in CFO?",
+              "options": [
+                "The gain is included in net income, but the full cash proceeds belong in CFI",
+                "The gain is a debt repayment",
+                "The gain is capex",
+                "The gain reduces revenue"
+              ],
+              "answer_index": 0,
+              "explanation": "The CFS removes the non-operating accounting gain to avoid double counting the sale proceeds."
+            }
+          ]
+        },
+        {
+          "id": "pfcfs-investing",
+          "title": "Cash Flow from Investing",
+          "rows": [
+            "Capital Expenditures",
+            "Investments, Net",
+            "Proceeds from Asset Sales",
+            "Acquisitions",
+            "Other Investing Activities",
+            "Cash Flow from Investing"
+          ],
+          "questions": [
+            {
+              "question": "What sign should Capital Expenditures carry on the CFS?",
+              "options": [
+                "Negative",
+                "Positive",
+                "Zero",
+                "The same as depreciation"
+              ],
+              "answer_index": 0,
+              "explanation": "Capex is an investing cash outflow."
+            },
+            {
+              "question": "Where do full asset-sale proceeds appear?",
+              "options": [
+                "Cash Flow from Investing",
+                "Revenue",
+                "Debt repayment",
+                "APIC"
+              ],
+              "answer_index": 0,
+              "explanation": "The full cash consideration received from the sale is an investing inflow."
+            },
+            {
+              "question": "How should Cash Flow from Investing be calculated?",
+              "options": [
+                "Sum of all signed investing rows",
+                "CFO - dividends",
+                "Net Income + D&A",
+                "Debt - cash"
+              ],
+              "answer_index": 0,
+              "explanation": "Each investing activity is included with its cash-flow sign."
+            },
+            {
+              "question": "Does ordinary capex immediately reduce Net Income?",
+              "options": [
+                "No; it is capitalized and depreciated over time",
+                "Yes, dollar for dollar",
+                "Only in a stock deal",
+                "Only when debt-funded"
+              ],
+              "answer_index": 0,
+              "explanation": "Capex affects cash and PP&E immediately, while depreciation affects earnings over time."
+            }
+          ]
+        },
+        {
+          "id": "pfcfs-financing",
+          "title": "Cash Flow from Financing",
+          "rows": [
+            "Change in Short-Term Debt",
+            "Debt Issuance (Repayment)",
+            "Stock Issuance (Repurchases)",
+            "Dividends Paid",
+            "Cash Flow from Financing"
+          ],
+          "questions": [
+            {
+              "question": "When does debt principal enter the CFS?",
+              "options": [
+                "When it is issued or repaid",
+                "When it becomes current",
+                "When interest accrues",
+                "When goodwill changes"
+              ],
+              "answer_index": 0,
+              "explanation": "Principal issuance and repayment are financing cash flows."
+            },
+            {
+              "question": "Should a current-versus-long-term debt reclassification enter CFF?",
+              "options": [
+                "No",
+                "Yes, as a repayment",
+                "Yes, as issuance",
+                "Only for notes"
+              ],
+              "answer_index": 0,
+              "explanation": "The reclassification is noncash."
+            },
+            {
+              "question": "Why should net share-count movement not automatically create Stock Issuance cash proceeds?",
+              "options": [
+                "Share movement may reflect SBC, treasury reissuance, retirement, or offsetting activity rather than cash issuance",
+                "Every share is always issued for cash",
+                "Shares are debt",
+                "EPS ignores shares"
+              ],
+              "answer_index": 0,
+              "explanation": "Cash stock activity requires its own explicit assumption."
+            },
+            {
+              "question": "What sign should Dividends Paid carry?",
+              "options": [
+                "Negative",
+                "Positive",
+                "Zero",
+                "The same as net income"
+              ],
+              "answer_index": 0,
+              "explanation": "Dividends are financing cash outflows."
+            },
+            {
+              "question": "How should Cash Flow from Financing be calculated?",
+              "options": [
+                "Sum of all signed financing rows",
+                "Net Income + D&A",
+                "Revenue - COGS",
+                "Total Assets - Equity"
+              ],
+              "answer_index": 0,
+              "explanation": "Debt, equity, and dividend cash flows are combined using their signs."
+            }
+          ]
+        },
+        {
+          "id": "pfcfs-cash",
+          "title": "Cash Roll-Forward",
+          "rows": [
+            "Foreign Exchange Effects",
+            "Net Change in Cash",
+            "Beginning Cash",
+            "Ending Cash"
+          ],
+          "questions": [
+            {
+              "question": "How is Net Change in Cash calculated?",
+              "options": [
+                "CFO + CFI + CFF + FX effects",
+                "Net Income - Capex only",
+                "Revenue - debt",
+                "Assets - liabilities"
+              ],
+              "answer_index": 0,
+              "explanation": "All three cash-flow sections and FX effects combine to produce the period change."
+            },
+            {
+              "question": "What should Beginning Cash equal after the first forecast year?",
+              "options": [
+                "Prior-year Ending Cash",
+                "Current-year revenue",
+                "Opening debt",
+                "Prior-year net income"
+              ],
+              "answer_index": 0,
+              "explanation": "Cash rolls forward cumulatively."
+            },
+            {
+              "question": "How is Ending Cash calculated?",
+              "options": [
+                "Beginning Cash + Net Change in Cash",
+                "CFO - CFI",
+                "Net Debt + Gross Debt",
+                "Revenue - expenses"
+              ],
+              "answer_index": 0,
+              "explanation": "The cash roll-forward connects the beginning and ending balance-sheet cash accounts."
+            },
+            {
+              "question": "Where should Ending Cash flow?",
+              "options": [
+                "The same-year pro forma balance-sheet Cash line",
+                "Goodwill",
+                "APIC",
+                "Equity consideration"
+              ],
+              "answer_index": 0,
+              "explanation": "The CFS ending balance is the balance-sheet cash source of truth."
+            }
+          ]
+        },
+        {
+          "id": "pfcfs-outputs",
+          "title": "EBITDA, Net Debt, Leverage, and Free Cash Flow",
+          "rows": [
+            "Normalized EBIT",
+            "Normalized EBITDA",
+            "Net Debt",
+            "Free Cash Flow",
+            "Net Leverage"
+          ],
+          "questions": [
+            {
+              "question": "How is Normalized EBITDA calculated in the model?",
+              "options": [
+                "Normalized EBIT + Total Pro Forma D&A",
+                "Net Income + debt",
+                "Revenue - capex",
+                "Cash + equity"
+              ],
+              "answer_index": 0,
+              "explanation": "EBITDA adds back operating depreciation and amortization to EBIT."
+            },
+            {
+              "question": "How is Net Debt calculated?",
+              "options": [
+                "Gross Debt - Cash",
+                "Cash - Gross Debt",
+                "Debt + Equity",
+                "Revenue - EBITDA"
+              ],
+              "answer_index": 0,
+              "explanation": "Net debt measures debt after available cash."
+            },
+            {
+              "question": "How is Free Cash Flow calculated in the summary convention?",
+              "options": [
+                "Cash Flow from Operations + negative Capital Expenditures",
+                "Net Income + debt issuance",
+                "EBITDA - taxes only",
+                "Revenue - dividends"
+              ],
+              "answer_index": 0,
+              "explanation": "With capex stored as a negative number, CFO plus capex yields free cash flow."
+            },
+            {
+              "question": "How is Net Leverage calculated?",
+              "options": [
+                "Net Debt / Normalized EBITDA",
+                "Gross Debt / Revenue",
+                "Cash / Net Income",
+                "EBITDA / Net Debt"
+              ],
+              "answer_index": 0,
+              "explanation": "Net leverage compares net borrowings with cash earnings capacity."
+            },
+            {
+              "question": "What does negative Net Debt indicate?",
+              "options": [
+                "Cash exceeds gross debt",
+                "The company defaulted",
+                "Equity value is negative",
+                "EBITDA is negative"
+              ],
+              "answer_index": 0,
+              "explanation": "The company has a net cash position."
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "id": "summary-accretion-dilution",
+      "title": "Summary & Accretion / Dilution",
+      "description": "Build the dynamic 2027-2031 output table, pull the correct rows with aligned INDEX / MATCH ranges, and present pro forma earnings, accretion, synergies, net debt, and free cash flow.",
+      "blocks": [
+        {
+          "id": "sum-years",
+          "title": "Dynamic Pro Forma Year Headers",
+          "rows": [
+            "Pro Forma Year Input",
+            "First Summary Date",
+            "Next Summary Date",
+            "2031 Cap",
+            "Blank Post-2031"
+          ],
+          "questions": [
+            {
+              "question": "How should the first summary date be calculated?",
+              "options": [
+                "December 31 of the year in Main Page D14",
+                "The legal close date in D9",
+                "The announcement date",
+                "The current system date"
+              ],
+              "answer_index": 0,
+              "explanation": "The summary begins with the selected full-year pro forma period."
+            },
+            {
+              "question": "How should the next summary date be calculated?",
+              "options": [
+                "Prior header plus 12 months",
+                "Prior header plus 1 day",
+                "D14 plus one Excel serial",
+                "Hardcode the next year"
+              ],
+              "answer_index": 0,
+              "explanation": "Using real dates keeps the year-header MATCH formulas reliable."
+            },
+            {
+              "question": "What should happen after the 2031 header?",
+              "options": [
+                "Return blank",
+                "Restart at 1901",
+                "Continue indefinitely",
+                "Repeat 2031"
+              ],
+              "answer_index": 0,
+              "explanation": "The summary is capped at the available forecast horizon."
+            },
+            {
+              "question": "Why should a blank guard check the prior header before calling YEAR?",
+              "options": [
+                "YEAR(\"\") can produce a 1900-era date sequence",
+                "YEAR cannot read dates",
+                "It changes the tax rate",
+                "It prevents INDEX from matching rows"
+              ],
+              "answer_index": 0,
+              "explanation": "The guard avoids the 12/31/01, 12/31/02 error pattern."
+            }
+          ]
+        },
+        {
+          "id": "sum-operating",
+          "title": "Headline Pro Forma Operating Outputs",
+          "rows": [
+            "Pro Forma Revenue",
+            "Pro Forma EBITDA",
+            "Pro Forma Net Income",
+            "Pro Forma Diluted EPS"
+          ],
+          "questions": [
+            {
+              "question": "Which source row should Pro Forma Revenue pull?",
+              "options": [
+                "Revenue",
+                "Gross Profit",
+                "Cash Flow from Operations",
+                "Equity Consideration"
+              ],
+              "answer_index": 0,
+              "explanation": "The summary label can differ, but the helper lookup must match the actual source row."
+            },
+            {
+              "question": "Which source row should Pro Forma EBITDA pull?",
+              "options": [
+                "Normalized EBITDA",
+                "Operating Income",
+                "D&A",
+                "Free Cash Flow"
+              ],
+              "answer_index": 0,
+              "explanation": "The detailed statements label the output Normalized EBITDA."
+            },
+            {
+              "question": "Why can Pro Forma Net Income be omitted from a very compact banker summary?",
+              "options": [
+                "EPS already incorporates net income and share dilution",
+                "Net income never matters",
+                "It is identical to EBITDA",
+                "It is a balance-sheet account"
+              ],
+              "answer_index": 0,
+              "explanation": "EPS and accretion often communicate the shareholder impact more directly."
+            },
+            {
+              "question": "What formatting should Pro Forma Diluted EPS use?",
+              "options": [
+                "A per-share number, typically two decimals",
+                "A percentage",
+                "A multiple",
+                "A date"
+              ],
+              "answer_index": 0,
+              "explanation": "EPS is a currency-per-share output."
+            }
+          ]
+        },
+        {
+          "id": "sum-accretion",
+          "title": "EPS Accretion / Dilution",
+          "rows": [
+            "Olin Standalone Diluted EPS",
+            "Pro Forma Diluted EPS",
+            "EPS Accretion / (Dilution) %",
+            "Standalone EPS Tie",
+            "Accretion / Dilution Recalculation"
+          ],
+          "questions": [
+            {
+              "question": "Which Olin row should the standalone EPS lookup use?",
+              "options": [
+                "Olin Standalone Diluted EPS",
+                "Diluted EPS on the pro forma statement",
+                "Basic Shares",
+                "Net Income"
+              ],
+              "answer_index": 0,
+              "explanation": "The no-deal comparison must pull the standalone diluted EPS row."
+            },
+            {
+              "question": "How is EPS Accretion / Dilution calculated?",
+              "options": [
+                "Pro Forma EPS / Standalone EPS - 1",
+                "Standalone EPS / Pro Forma EPS - 1",
+                "Pro Forma Net Income / Standalone Net Income",
+                "Synergies / Purchase Price"
+              ],
+              "answer_index": 0,
+              "explanation": "The calculation compares per-share earnings under the transaction and no-deal cases."
+            },
+            {
+              "question": "What does a positive accretion percentage mean?",
+              "options": [
+                "Pro forma EPS exceeds standalone EPS",
+                "The deal reduces EPS",
+                "Net debt increased",
+                "Goodwill is negative"
+              ],
+              "answer_index": 0,
+              "explanation": "Positive accretion means the buyer's shareholders receive higher modeled EPS."
+            },
+            {
+              "question": "Why did tiny values such as 0.035 appear in the standalone EPS row during the build?",
+              "options": [
+                "The INDEX and MATCH ranges were misaligned and returned the wrong worksheet row",
+                "Olin EPS was actually 3.5 cents",
+                "The share price was missing",
+                "The tax rate was 3.5%"
+              ],
+              "answer_index": 0,
+              "explanation": "A relative row position from B34:B59 was applied to an INDEX range with a different origin."
+            },
+            {
+              "question": "What should the Accretion / Dilution Recalculation check compare?",
+              "options": [
+                "The displayed percentage to Pro Forma EPS / Standalone EPS - 1",
+                "Revenue to EBITDA",
+                "Debt to cash",
+                "Goodwill to equity"
+              ],
+              "answer_index": 0,
+              "explanation": "The key shareholder output should be independently reproducible."
+            }
+          ]
+        },
+        {
+          "id": "sum-credit",
+          "title": "Synergies, Debt, and Cash-Flow Outputs",
+          "rows": [
+            "Realized Synergies",
+            "Gross Debt",
+            "Cash",
+            "Net Debt",
+            "Net Leverage",
+            "Free Cash Flow"
+          ],
+          "questions": [
+            {
+              "question": "How should Gross Debt be calculated for the summary?",
+              "options": [
+                "Current Portion of Debt + gross Long-Term Debt",
+                "Net Debt + EBITDA",
+                "Total Long-Term Debt after debt issuance costs only",
+                "Cash + equity"
+              ],
+              "answer_index": 0,
+              "explanation": "Gross debt excludes cash and generally excludes the contra-debt issuance-cost balance."
+            },
+            {
+              "question": "How should Net Debt be calculated?",
+              "options": [
+                "Gross Debt - Cash",
+                "Cash - Gross Debt",
+                "Gross Debt + Cash",
+                "Debt - EBITDA"
+              ],
+              "answer_index": 0,
+              "explanation": "Cash offsets debt in the net leverage calculation."
+            },
+            {
+              "question": "What should the summary do when Net Debt becomes negative?",
+              "options": [
+                "Show the net cash position and flag the capital-allocation assumption",
+                "Force it to zero",
+                "Increase debt",
+                "Delete cash"
+              ],
+              "answer_index": 0,
+              "explanation": "Negative net debt is informative but may require an explicit assumption for excess cash deployment."
+            },
+            {
+              "question": "Why is Free Cash Flow useful on the summary?",
+              "options": [
+                "It shows the cash available for debt repayment, dividends, buybacks, or acquisitions",
+                "It equals revenue",
+                "It calculates goodwill",
+                "It replaces EPS"
+              ],
+              "answer_index": 0,
+              "explanation": "Free cash flow explains the rapid deleveraging and cash accumulation."
+            }
+          ]
+        },
+        {
+          "id": "sum-lookups",
+          "title": "Aligned INDEX / MATCH Lookups",
+          "rows": [
+            "Helper Row Label",
+            "Source Label Range",
+            "INDEX Value Range",
+            "Year Header Range",
+            "IFERROR / Blank Guard"
+          ],
+          "questions": [
+            {
+              "question": "Why use a helper row label beside each summary metric?",
+              "options": [
+                "It can exactly match the source-sheet row even when the visible summary label is more polished",
+                "It creates a circularity",
+                "It replaces the year header",
+                "It calculates the tax rate"
+              ],
+              "answer_index": 0,
+              "explanation": "A hidden or adjacent helper label makes generic lookups reusable."
+            },
+            {
+              "question": "What alignment rule must the INDEX value range and source label range follow?",
+              "options": [
+                "They must start and end on corresponding worksheet rows",
+                "INDEX must use full columns",
+                "MATCH must begin seven rows later",
+                "The year range must include the label column"
+              ],
+              "answer_index": 0,
+              "explanation": "MATCH returns a relative position inside its range."
+            },
+            {
+              "question": "What alignment rule must the INDEX columns and year header range follow?",
+              "options": [
+                "They must begin on corresponding worksheet columns",
+                "The header range should start one column earlier",
+                "The year MATCH should use row labels",
+                "No alignment is required"
+              ],
+              "answer_index": 0,
+              "explanation": "The column position returned by MATCH must map to the same column inside INDEX."
+            },
+            {
+              "question": "Why can IFERROR be dangerous while building the summary?",
+              "options": [
+                "It can hide misspelled labels and broken date matches",
+                "It changes formulas into hardcodes",
+                "It increases debt",
+                "It deletes source rows"
+              ],
+              "answer_index": 0,
+              "explanation": "Use IFERROR only after validating the underlying row and year matches."
+            },
+            {
+              "question": "What should a lookup return for a summary year beyond 2031?",
+              "options": [
+                "Blank",
+                "The 2031 value repeated",
+                "#N/A displayed",
+                "Zero added to every metric"
+              ],
+              "answer_index": 0,
+              "explanation": "The summary should end cleanly at the available forecast horizon."
+            }
+          ]
+        }
+      ]
     }
   ]
 }

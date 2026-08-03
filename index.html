@@ -469,6 +469,56 @@
       height: 100%;
     }
 
+    .project-card-cornerstone {
+      position: relative;
+      gap: 16px;
+      padding: 26px 28px 28px;
+      border: 1px solid rgba(53, 101, 183, 0.2);
+      background: linear-gradient(180deg, rgba(247, 250, 255, 0.98) 0%, rgba(240, 246, 255, 0.94) 100%);
+      box-shadow: 0 18px 36px rgba(28, 54, 97, 0.06);
+      overflow: visible;
+    }
+
+    .project-card-cornerstone::before {
+      content: "";
+      position: absolute;
+      inset: -10px;
+      border: 1.5px solid rgba(78, 132, 211, 0.7);
+      pointer-events: none;
+    }
+
+    .project-card-cornerstone::after {
+      content: "Cornerstone";
+      position: absolute;
+      top: -16px;
+      right: 18px;
+      padding: 5px 10px;
+      border: 1px solid rgba(78, 132, 211, 0.6);
+      background: #f7fbff;
+      color: #245bb2;
+      font-size: 10px;
+      font-weight: 800;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+    }
+
+    .project-card-cornerstone .project-title {
+      font-size: clamp(30px, 3.5vw, 40px);
+      line-height: 1.06;
+      max-width: 18ch;
+    }
+
+    .project-card-cornerstone .project-copy {
+      max-width: 62ch;
+      font-size: 15px;
+    }
+
+    .project-card-cornerstone .advisor-logos {
+      flex-wrap: wrap;
+      gap: 18px;
+      margin: 2px 0 12px;
+    }
+
     .project-compact .project-copy {
       max-width: 40ch;
     }
@@ -735,6 +785,18 @@
       height: 50px;
     }
 
+    .advisor-logo-lazard {
+      height: 32px;
+    }
+
+    .advisor-logo-citi {
+      height: 34px;
+    }
+
+    .advisor-logo-ms {
+      height: 40px;
+    }
+
     .hero-intro-shell {
       background: linear-gradient(180deg, #fbfcfa 0%, #f2f6f1 100%);
     }
@@ -814,6 +876,9 @@
       .hero-title { font-size: 42px; }
       .project-card {
         gap: 12px;
+      }
+      .project-card-cornerstone {
+        padding: 22px 20px 24px;
       }
       .project-links {
         flex-direction: column;
@@ -920,6 +985,26 @@
           </section>
 
           <div class="row-head">3</div>
+          <article class="cell" style="grid-column: 2 / span 8; min-height: 286px;">
+            <div class="project-card project-card-cornerstone">
+              <div>
+                <p class="project-meta">Investment Banking</p>
+                <h3 class="project-title">Modeling the Merger between Olin and Huntsman</h3>
+              </div>
+              <p class="project-copy">In-depth workbook for the announced all-stock merger. Advised by Lazard, Morgan Stanley, and Citi.</p>
+              <div class="advisor-logos" aria-label="Transaction advisors">
+                <img class="advisor-logo advisor-logo-lazard" src="assets/advisor-logos/lazard-olin-huntsman.png" alt="Lazard logo" />
+                <img class="advisor-logo advisor-logo-ms" src="assets/advisor-logos/morgan-stanley-olin-huntsman.png" alt="Morgan Stanley logo" />
+                <img class="advisor-logo advisor-logo-citi" src="assets/advisor-logos/citi-olin-huntsman.png" alt="Citi logo" />
+              </div>
+              <div class="project-links">
+                <a class="project-link" href="olin-huntsman-merger.html">Read Analysis</a>
+                <a class="project-link" href="assets/projects/olin-huntsman-merger/Olin_Huntsman_Merger_Hassan.xlsm" download>Download Excel</a>
+              </div>
+            </div>
+          </article>
+
+          <div class="row-head">4</div>
           <article class="cell" style="grid-column: 2 / span 8; min-height: 252px;">
             <div class="project-card project-compact">
               <div>
@@ -937,7 +1022,7 @@
             </div>
           </article>
 
-          <div class="row-head">4</div>
+          <div class="row-head">5</div>
           <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
             <div class="project-card project-compact">
               <div>
@@ -985,7 +1070,7 @@
             </div>
           </article>
 
-          <div class="row-head">5</div>
+          <div class="row-head">6</div>
           <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
             <div class="project-card project-compact">
               <div>
@@ -1035,7 +1120,7 @@
             </div>
           </article>
 
-          <div class="row-head">6</div>
+          <div class="row-head">7</div>
           <article class="cell" style="grid-column: 2 / span 3; min-height: 252px;">
             <div class="project-card project-compact">
               <div>
@@ -1087,7 +1172,7 @@
             </div>
           </article>
 
-          <div class="row-head">7</div>
+          <div class="row-head">8</div>
           <section class="cell cell-muted" style="grid-column: 2 / span 8; min-height: 180px; padding: 0;" id="resume">
             <div class="section-frame">
               <h2 class="section-title">Resume</h2>
@@ -1097,7 +1182,7 @@
             </div>
           </section>
 
-          <div class="row-head">8</div>
+          <div class="row-head">9</div>
           <section class="cell cell-dark" style="grid-column: 2 / span 8; min-height: 164px; padding: 0;" id="contact">
             <div class="section-frame">
               <h2 class="contact-title">Contact</h2>
@@ -1144,11 +1229,11 @@
           formula: '=PROJECTS("Personal projects")'
         },
         resume: {
-          cell: 'A7',
+          cell: 'A8',
           formula: '=RESUME("Resume")'
         },
         contact: {
-          cell: 'A8',
+          cell: 'A9',
           formula: '=CONTACT("Email is the best way to get in contact with me.")'
         }
       };

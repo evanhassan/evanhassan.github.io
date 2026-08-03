@@ -29,28 +29,28 @@
           <a class="back-link" href="index.html#projects">← Back to projects</a>
           <h1 class="article-title">Modeling the Merger between Olin and Huntsman</h1>
 
-          <p>In June 2026, chemical giants Olin Corporation and Huntsman Corporation announced a massive $12.5 billion all-stock merger. Olin operates more upstream in basic chemicals and industrial materials, while Huntsman is more downstream in specialty chemicals and advanced formulations. The ownership split is 54.5% Olin and 45.5% Huntsman, and management outlined more than $400 million of cost synergies and raw-material integration benefits.</p>
+          <p>In June 2026, chemical giants Olin Corporation and Huntsman Corporation announced a massive $12.5 billion all-stock merger. Olin is more upstream in basic chemicals and industrial materials, while Huntsman is more downstream in specialty chemicals and advanced formulations. The ownership split is 54.5% Olin and 45.5% Huntsman, and over $400 million in cost synergies and raw material integration benefits are expected.</p>
 
-          <p>This transaction interested me because of how much information was actually disclosed. Both companies are public, which meant I could build something much more thorough than a quick headline reaction. I ended up creating a full merger model with standalone three-statement forecasts for both companies, D&amp;A, debt, and equity schedules, a pro forma opening balance sheet, synergies, consolidated financial statements, PPA &amp; goodwill, a transaction &amp; refinancing debt tab, and a summary tab at the end. This builds on models I had made before, but it also forced me to learn a few things I had never modeled in this much depth.</p>
+          <p>This transaction interested me because of how much information was disclosed. Both companies are public, so I decided to create a comprehensive merger model with standalone three-statement forecasts for both companies, D&amp;A, debt, and equity schedules, a pro forma opening balance sheet, synergies, consolidated financial statements, PPA &amp; goodwill, a transaction &amp; refinancing debt tab, and a summary tab at the end. This builds off models I’ve made in the past, but it also forced me to learn a couple new things.</p>
 
           <p class="spreadsheet-callout">It is highly recommended that you download this <a href="assets/projects/olin-huntsman-merger/Olin_Huntsman_Merger_Hassan.xlsm" download>spreadsheet</a>, as it showcases my full analyst ability.</p>
 
-          <p>Part of the reason I made the spreadsheet so extensive is that I want to use it as a template going forward. This particular spreadsheet took me nearly as long as the other projects combined. It was fun.</p>
+          <p>Part of the reason I made the spreadsheet so extensive is so that I can use it as a template going forward. This particular spreadsheet took me nearly as long as the other projects combined. It was fun.</p>
           <div class="figure-block figure-90">
             <img src="assets/projects/olin-huntsman-merger/flowchart.png" alt="Model flowchart for the Olin / Huntsman merger workbook" />
           </div>
 
-          <p>I’m going to partition this writeup into sections because, frankly, it became a leviathan. Most sections are broken into data, build, and results so it is easier to see what I found, what I did with it, and what actually came out of the model.</p>
+          <p>I’m going to partition this writeup into sections because frankly it became a leviathan. Most sections are broken into data, build, and results so it’s easier to see what I found, what I did with it, and what actually came out of the model.</p>
 
           <h2 class="article-subhead">Main Page &amp; Assumptions</h2>
           <p class="article-minorhead">Build</p>
-          <p>This page focuses on typical assumptions and model tweaks. There is a snapshot of sources and uses, a snapshot of the goodwill calculation, an ongoing assumptions tab primarily for PPA and D&amp;A, and of course a section for consideration assumptions.</p>
-          <p>I added a debt table at the bottom of the main page for debt financing. It can be toggled on and off with the Debt Financing switch in the top-left section, and debt refinancing can also be toggled on and off separately. The pro forma year is crucial because it represents the hypothetical first year of the combined company.</p>
+          <p>This page is mostly assumptions and model-tweak stuff. There is a snapshot of sources and uses, a snapshot of the goodwill calculation, an ongoing assumptions tab mostly for PPA and D&amp;A, and of course a section for consideration assumptions.</p>
+          <p>I also added a debt table at the bottom of the main page for debt financing. It can be turned on and off with the Debt Financing switch in the top-left section, and debt refinancing can be turned on and off separately. The pro forma year matters a lot because it basically represents the first year of the combined company in the model output.</p>
           <div class="figure-block figure-90">
             <img src="assets/projects/olin-huntsman-merger/main-page-assumptions.png" alt="Main page and assumptions tab for the Olin / Huntsman merger workbook" />
           </div>
           <p class="article-minorhead">Build / Results</p>
-          <p>For my model, the pro forma year is 2027. Although the closing date is projected to be around the first half of 2027, I still use 2027 as the pro forma year because it is the first forecast year that captures the combined company in the model output. The deal is all stock. Total sources in this deal equal $2,981, with roughly $500 of the additional funding coming primarily from debt refinancing, which was stated in the S-4.</p>
+          <p>For my model, the pro forma year is 2027. Even though the closing date is projected to be around the first half of 2027, I still use 2027 as the pro forma year because it is the first forecast year that actually shows the combined company in the output. The deal is all stock. Total sources in this deal are $2,981, with roughly $500 of that mostly coming from debt refinancing, which was stated in the S-4.</p>
 
           <h2 class="article-subhead">Standalone Schedules</h2>
           <p class="article-minorhead">Data</p>
@@ -136,11 +136,11 @@
           <p>Results-wise, roughly $495 million of debt is repaid at closing, leading to total sources and uses of about $2.98 billion in my setup. I assume that repayment is covered with cash rather than an additional financing layer.</p>
 
           <h2 class="article-subhead">Intermission: Merger Model Timing</h2>
-          <p>I’m giving timing its own section because I genuinely hated this part of the build. The income statement, cash flow statement, D&amp;A schedule, incremental PPA D&amp;A, and debt schedule all had to reflect a midstream closing date, which I unfortunately learned halfway through the model. I ended up building a reusable timing formula that determines whether a given forecast year falls before or after the pro forma year.</p>
+          <p>I’m giving timing its own section because I genuinely hated this part of the build. The income statement, cash flow statement, D&amp;A schedule, incremental PPA D&amp;A, and debt schedule all had to reflect a midstream closing date, which I unfortunately learned halfway through the model. I ended up building a reusable timing formula that basically determines whether a given forecast year falls before or after the pro forma year.</p>
           <div class="figure-block figure-90">
             <img src="assets/projects/olin-huntsman-merger/timing-equation.png" alt="Timing equation used throughout the Olin / Huntsman merger workbook" />
           </div>
-          <p>You’ll see that ugly equation all over the workbook. It lets the model recalculate based on the closing-date input, which was absolutely worth doing for template value even though it added a lot of lag and cost me hours on nitpicky logic.</p>
+          <p>You’ll see that ugly equation all over the workbook. It lets the model recalculate based on the closing-date input, which was worth doing for template value even though it added a lot of lag and cost me hours on nitpicky logic.</p>
 
           <h2 class="article-subhead">Pro Forma Opening Balance Sheet</h2>
           <p class="article-minorhead">Data / Build</p>

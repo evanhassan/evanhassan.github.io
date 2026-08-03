@@ -142,6 +142,9 @@
           <h2 class="article-subhead">Pro Forma Consolidated Financials</h2>
           <p class="article-minorhead">Data / Build</p>
           <p>All of the financial sheets feed the final output. The income statement combines the two standalone businesses, realized synergies, integration costs, incremental PPA D&amp;A, and pro forma interest expense. Huntsman’s legacy intangible amortization is removed because those assets are replaced in purchase accounting. The balance sheet rolls forward from the pro forma opening balance sheet using the consolidated cash flow statement and supporting schedules. I also calculate pro forma diluted EPS using Olin’s existing shares plus the shares issued in the transaction and compare that against Olin standalone EPS to measure accretion or dilution.</p>
+          <div class="figure-block figure-90">
+            <img src="assets/projects/olin-huntsman-merger/pro-forma-consolidated-financials.png" alt="Pro forma consolidated financials for the Olin / Huntsman merger model" />
+          </div>
           <p>One thing worth flagging is that the timing logic shows up all over this section. I did that on purpose because I wanted the pro forma year to feed cleanly into later forecast years instead of hardcoding one static close assumption and breaking the template value of the workbook.</p>
 
           <h2 class="article-subhead">Transaction &amp; Refinancing Debt</h2>
@@ -150,6 +153,9 @@
           <h2 class="article-subhead">Pro Forma D&amp;A</h2>
           <p class="article-minorhead">Data / Build</p>
           <p>This schedule combines each company’s standalone depreciation and amortization with the effects of purchase accounting. Incremental depreciation comes from dividing the PP&amp;E step-up by assumed useful life. Amortization is trickier because Huntsman’s legacy intangible assets are eliminated during purchase accounting, so I remove Huntsman’s historical amortization and replace it with amortization on the newly identified intangible assets.</p>
+          <div class="figure-block figure-90">
+            <img src="assets/projects/olin-huntsman-merger/combined-da.png" alt="Combined depreciation and amortization schedule for the Olin / Huntsman merger model" />
+          </div>
 
           <h2 class="article-subhead">PPA &amp; Goodwill</h2>
           <p class="article-minorhead">Data / Build</p>
@@ -211,7 +217,11 @@
         });
       });
 
-      closeBtn.addEventListener('click', closeLightbox);
+      closeBtn.addEventListener('click', (event) => {
+        event.stopPropagation();
+        closeLightbox();
+      });
+      lightboxImg.addEventListener('click', closeLightbox);
       lightbox.addEventListener('click', (event) => {
         if (event.target === lightbox) closeLightbox();
       });

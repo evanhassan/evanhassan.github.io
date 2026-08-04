@@ -132,6 +132,8 @@ select,input[type="number"],input[type="search"]{width:100%;padding:10px 11px;bo
 .builder-quiz-count{color:var(--muted);font-size:13px;font-weight:700;margin-top:12px}
 #builderQuizQuestion,#builderQuizOptions .option,#builderQuizFeedbackBody{overflow-wrap:anywhere;white-space:normal}
 #builderView{padding:2px 0}
+.builder-assumption-list{display:grid;gap:9px;margin:18px 0}
+.builder-assumption-item{border:1px solid var(--line);border-radius:11px;background:#fff;padding:11px 13px;font-weight:700;line-height:1.4;overflow-wrap:anywhere}
 @media (max-width:600px){
   .builder-row{padding:9px 8px;gap:7px}
   .builder-handle{display:none}
@@ -313,11 +315,12 @@ select,input[type="number"],input[type="search"]{width:100%;padding:10px 11px;bo
             <h2 id="builderTitle"></h2>
             <p id="builderDescription"></p>
             <h3 id="builderBlockTitle"></h3>
-            <p class="note">Put the rows in workbook order. Drag the handle, or use ↑ / ↓ on mobile. Section titles are already supplied.</p>
+            <p class="note" id="builderIntroNote">Put the rows in workbook order. Drag the handle, or use ↑ / ↓ on mobile. Section titles are already supplied.</p>
           </div>
 
           <div id="builderArrangePanel">
             <div class="builder-row-list" id="builderRows"></div>
+            <div class="builder-assumption-list hidden" id="builderAssumptionList"></div>
             <div class="builder-actions">
               <button class="btn" id="builderShuffleBtn">Shuffle</button>
               <button class="btn" id="builderHintBtn">Place one row</button>
@@ -645,6 +648,7 @@ select,input[type="number"],input[type="search"]{width:100%;padding:10px 11px;bo
   function builderModules(){ return builderData.modules || []; }
   function currentBuilderModule(){ return builderModules()[builderModuleIndex]; }
   function currentBuilderBlock(){ return currentBuilderModule().blocks[builderBlockIndex]; }
+  function isAssumptionBlock(block){ return /assumptions?/i.test((block && block.title) || ''); }
 
   function buildBuilderSelect(){
     const sel=$('builderModuleSelect');
@@ -692,6 +696,7 @@ select,input[type="number"],input[type="search"]{width:100%;padding:10px 11px;bo
 
   function renderBuilderBlock(){
     const mod=currentBuilderModule(), block=currentBuilderBlock();
+    const assumptionBlock=isAssumptionBlock(block);
     builderQuizIndex=0; builderQuizAnswered=false; builderOrderCompleted=false; builderBlockCorrectStart=builderCorrect;
     $('builderSchedulePill').textContent=mod.title;
     $('builderBlockPill').textContent=`Block ${builderBlockIndex+1} / ${mod.blocks.length}`;
@@ -700,11 +705,34 @@ select,input[type="number"],input[type="search"]{width:100%;padding:10px 11px;bo
     $('builderTitle').textContent=mod.title;
     $('builderDescription').textContent=mod.description;
     $('builderBlockTitle').textContent=block.title;
+    $('builderIntroNote').textContent=assumptionBlock
+      ? 'These assumptions are shown directly before the technical questions. Read them, then move on to the mechanics quiz.'
+      : 'Put the rows in workbook order. Drag the handle, or use ↑ / ↓ on mobile. Section titles are already supplied.';
     $('builderArrangePanel').classList.remove('hidden');
     $('builderQuizPanel').classList.add('hidden');
-    $('builderQuizStartBtn').classList.add('hidden');
+    $('builderRows').classList.toggle('hidden',assumptionBlock);
+    $('builderAssumptionList').classList.toggle('hidden',!assumptionBlock);
+    $('builderShuffleBtn').classList.toggle('hidden',assumptionBlock);
+    $('builderHintBtn').classList.toggle('hidden',assumptionBlock);
+    $('builderCheckBtn').classList.toggle('hidden',assumptionBlock);
+    $('builderQuizStartBtn').classList.toggle('hidden',!assumptionBlock);
+    $('builderQuizStartBtn').textContent=assumptionBlock?'Start technical questions':'Start mechanics quiz';
     setBuilderOrderFeedback('', '');
-    renderBuilderRows(shuffledBuilderRows(block.rows));
+    if(assumptionBlock){
+      renderBuilderAssumptions(block.rows);
+    } else {
+      renderBuilderRows(shuffledBuilderRows(block.rows));
+    }
+  }
+
+  function renderBuilderAssumptions(rows){
+    const host=$('builderAssumptionList'); host.innerHTML='';
+    rows.forEach((rowName,idx)=>{
+      const item=document.createElement('div');
+      item.className='builder-assumption-item';
+      item.innerHTML=`<strong>${idx+1}.</strong> ${escapeHtml(rowName)}`;
+      host.appendChild(item);
+    });
   }
 
   function renderBuilderRows(rows){

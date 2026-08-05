@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>A controlled comparison between two LBOs</title>
+  <link rel="stylesheet" href="assets/article.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <main class="workbook">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <div class="file-pill">Evan_Hassan_PersonalSite.xlsx</div>
+        </div>
+        <div class="topbar-right">Article view</div>
+      </header>
+      <div class="formula-wrap">
+        <div class="formula-bar">
+          <div class="name-box">D5</div>
+          <div class="formula-icon">ƒx</div>
+          <div class="formula-input">="Bojangles and Fogo De Chão"</div>
+        </div>
+      </div>
+      <section class="article-shell">
+        <article class="article-page">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <h1 class="article-title">A controlled comparison between two LBOs</h1>
+
+          <p>After doing some interviews I realized I do not have LBO fundamentals down well enough. Therefore, in order to improve, I’m going to perform a controlled analysis on two acquired food companies: Bojangles and Fogo De Chão. I intentionally stripped away almost all advanced LBO logic to see simply what would happen if two similarly valued companies are acquired at similar consideration mixes and EV/EBITDA ratios, but with different cash flow generation under the hood. Both transactions were announced in 2018. Bojangles had an implied enterprise value of approximately $703 million, while Fogo de Chao had an enterprise value of approximately $560 million. Acquisition happened in 2019 and 2018 respectively.</p>
+
+          <p>Their cash flow differs mainly because Fogo de Chão has much higher CapEx. It operates large, company-owned, full-service restaurants and must spend more on new locations, kitchen equipment, furniture, leasehold improvements, and renovations. Bojangles is more franchise-oriented, so franchisees fund more of the restaurant investment. That leaves Bojangles with higher free cash flow and faster debt paydown.</p>
+
+          <p>For this build I assumed the exact same growth numbers and constant margins. PLEASE NOTE (a bold this): this is not indicative at all of what I think will actually happen for these companies. The purpose of me doing this is to see what drives LBO returns when multiple expansion and EBITDA growth can be controlled. Debt Paydown is the answer, but I'm interested to see how differing cash flows create that.</p>
+
+          <div class="figure-block figure-full-bleed">
+            <div class="zoom-teaser">
+              <img class="zoomable-img" src="assets/projects/controlled-lbo/bojangles-financials.png" alt="Blurred Bojangles financials from the controlled LBO workbook" />
+            </div>
+          </div>
+
+          <div class="figure-block figure-full-bleed">
+            <div class="zoom-teaser">
+              <img class="zoomable-img" src="assets/projects/controlled-lbo/fogo-de-chao-financials.png" alt="Blurred Fogo De Chão financials from the controlled LBO workbook" />
+            </div>
+          </div>
+
+          <div class="figure-block figure-90">
+            <img src="assets/projects/controlled-lbo/bojangles-lbo.png" alt="Bojangles LBO model output" />
+          </div>
+
+          <div class="figure-block figure-90">
+            <img src="assets/projects/controlled-lbo/fogo-de-chao-lbo.png" alt="Fogo De Chão LBO model output" />
+          </div>
+
+          <p>The difference between the two models is quite staggering. Despite both companies growing 5% annually, and with similar sponsor equity/debt ratios, the Bojangles acquisition's IRR dwarfs the acquisition of Fogo de Chao's. This is largely due to Fogo de Chão's Capex being on average 4x higher than Bojangles.</p>
+
+          <p>This simple, unrealistic model, taught me a ton about what drives an LBO return and I am very glad I did it. I had to set an exit multiple to 12x to get a MOIC even equal to Bojangles, showing just how big of a difference debt paydown makes in creating an LBO return.</p>
+
+          <p>Finally, I couldn't help but wonder what drove Fogo De Chão's multiples, and the answer is growth. Rhône, the firm that bought Fogo De Chão, actually sold it in 2023 for a MOIC of at least 3.0x according to Reuters. My model fails because CapEx goes nowhere, as I keep revenue growth the exact same. In reality, Rhône was able to expand its restaurant base, and Fogo De Chão grew 15% annually before the sale. Out of the 3 LBO model drivers, EBITDA growth is what Rhône was betting on, and it seems they succeeded in doing so.</p>
+
+          <div class="downloads">
+            <div class="download-links">
+              <a href="assets/projects/controlled-lbo/Controlled_Lbo.xlsx" download>Download Excel</a>
+            </div>
+          </div>
+        </article>
+      </section>
+      <footer class="sheet-footer">
+        <nav class="sheet-tabs" aria-label="Workbook tabs">
+          <a class="sheet-tab" href="index.html#overview">Home</a>
+          <a class="sheet-tab active" href="index.html#projects">Projects</a>
+        </nav>
+        <div class="footer-note">2026 Evan Hassan</div>
+      </footer>
+    </main>
+  </div>
+  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+    <button class="image-lightbox-close" type="button">Close</button>
+    <img alt="Expanded chart view" />
+  </div>
+  <script>
+    (() => {
+      const lightbox = document.getElementById('image-lightbox');
+      if (!lightbox) return;
+      const lightboxImg = lightbox.querySelector('img');
+      const closeBtn = lightbox.querySelector('.image-lightbox-close');
+      const zoomables = document.querySelectorAll('.zoomable-img');
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.removeAttribute('src');
+      };
+
+      zoomables.forEach((img) => {
+        img.addEventListener('click', () => {
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.classList.add('open');
+          lightbox.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeLightbox();
+      });
+    })();
+  </script>
+</body>
+</html>

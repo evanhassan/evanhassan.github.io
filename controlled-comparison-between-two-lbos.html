@@ -96,6 +96,11 @@
 
       zoomables.forEach((img) => {
         img.addEventListener('click', () => {
+          const isSameImageOpen = lightbox.classList.contains('open') && lightboxImg.src === img.src;
+          if (isSameImageOpen) {
+            closeLightbox();
+            return;
+          }
           lightboxImg.src = img.src;
           lightboxImg.alt = img.alt;
           lightbox.classList.add('open');

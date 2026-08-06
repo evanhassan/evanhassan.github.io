@@ -33,7 +33,14 @@
 
           <p>This transaction interested me because of how much information was disclosed. Both companies are public, so I decided to create a comprehensive merger model with standalone three-statement forecasts for both companies, D&amp;A, debt, and equity schedules, a pro forma opening balance sheet, synergies, consolidated financial statements, PPA &amp; goodwill, a transaction &amp; refinancing debt tab, and a summary tab at the end. This builds off models I’ve made in the past, but it also forced me to learn a couple new things.</p>
 
-          <p class="spreadsheet-callout" style="text-align: center;">It is highly recommended that you download this <a href="assets/projects/olin-huntsman-merger/Olin_Huntsman_Merger_Hassan.xlsm" download>spreadsheet</a>.</p>
+          <h2 class="article-subhead">Thesis</h2>
+          <p>The transaction is initially dilutive due to weak earnings, elevated interest expense, integration costs, and substantial share issuance. Accretion emerges over time as cost synergies are realized, margins recover, and free cash flow reduces net debt.</p>
+          <p>This deal depends extremely heavily on the joint companies’ ability to live up to synergy estimations. The merger expands Olin’s existing upstream epoxy integration much farther downstream into Huntsman’s higher-value advanced materials portfolio. However, the benefits of vertical integration can only be realized if cost synergies are correctly implemented.</p>
+          <div class="figure-block figure-90">
+            <img src="assets/projects/olin-huntsman-merger/synergies.png" alt="Synergy bridge for the Olin / Huntsman merger workbook" />
+          </div>
+
+          <p class="spreadsheet-callout" style="text-align: center;">It is highly recommended that you download this <a href="assets/projects/olin-huntsman-merger/Olin&Huntsman_Hassan.xlsm" download>spreadsheet</a>.</p>
 
           <p>Part of the reason I made the spreadsheet so extensive is so that I can use it as a template going forward. This particular spreadsheet took me nearly as long as the other projects combined. It was fun.</p>
           <div class="figure-block figure-90">
@@ -52,37 +59,26 @@
           <p class="article-minorhead">Build / Results</p>
           <p>For my model, the pro forma year is 2027. Even though the closing date is projected to be around the first half of 2027, I still use 2027 as the pro forma year because it is the first forecast year that actually shows the combined company in the output. The deal is all stock. Total sources in this deal are $2,981, with roughly $500 of that mostly coming from debt refinancing, which was stated in the S-4.</p>
 
-          <h2 class="article-subhead">Standalone Schedules</h2>
-          <p class="article-minorhead">Data</p>
-          <p>I’ve become all too familiar with Mergent Market Data, because it is the best financial-data resource readily available to me through the University of Utah library. I’m glad they standardize statements, because it makes Excel Index &amp; Match templates much easier to use. That said, there were some real nuances I had to deal with:</p>
-          <ul>
-            <li>Mergent’s D&amp;A is baked into COGS, which makes standalone D&amp;A schedules harder to project. Simply taking Normalized EBITDA less EBIT and adding that back into cash flow from operations is not enough to fully back into the historical amount, so I chose not to force a residual forecast that was not consequential.</li>
-            <li>Mergent’s long-term debt presentation is not split cleanly into gross debt and interest-expense drivers. That becomes a problem when trying to avoid overstating forecast debt and when cleaning up the cash-flow statement.</li>
-            <li>Mergent’s change in operating net working capital is not just <em>(current assets - cash) - (current liabilities - short-term debt)</em>. They reconcile other cash movements that I cannot realistically forecast, so for projected years I use a more standard ONWC formulation that still tracks historical behavior well enough.</li>
-          </ul>
-          <div class="figure-block figure-90">
-            <img src="assets/projects/olin-huntsman-merger/mergent-pic.png" alt="Mergent data export used for the Olin / Huntsman merger model" />
-          </div>
+          <h2 class="article-subhead">Olin/Huntsman Standalones</h2>
+          <p>Olin is an upstream chemical company that operates 3 core business drivers. Epoxy, chlor alkali / vinyl products, and Winchester, which is an ammunition company.</p>
 
-          <p class="article-minorhead">Build</p>
-          <p>With all of that out of the way, I kept most assumptions fairly constant but leaned on management guidance for revenue growth and margin direction at both companies. Some of those margin improvements looked aggressive, so I shaved a few points off rather than just copying management’s case. D&amp;A, debt, and equity are all plugged from their own schedules. The last thing worth noting is that most balance-sheet accounts do not directly drive individual expense lines in my model. I forecast the movements, reflect the cash impact in the cash flow statement, and let that roll through to cash and the balance sheet. A good example is Other Assets and Other Liabilities: because those balances were nontrivial, I projected them as a percent of revenue and then reconciled the related cash-flow impact through a dedicated line item.</p>
+          <p>My assumptions and reasoning follows. For Olin revenue, I expect a moderate revenue increase in 2026, as pricing power has gone up for Olin due to a growing demand in local manufacturing. In Europe, Olin is one of the only integrated epoxy producers left. In the US, increased transatlantic transportation costs have helped the epoxy arm substantially. Furthermore, Asian manufacturers rely on oil in order to make chlor alkali products. It is worth noting that chlor alkali production coproduces two chemicals in fixed proportions: chlorine and caustic soda. Due to an uptick in oil prices and trade enforcement preventing Asian producers from accessing discounted sanctioned crude, annual global vinyl capacity has decreased 6-9% on the market in Q1 2026 (and subsequently chlorine has seen a hit as well). Asian producers are also reliant on naphtha (derived from oil) as an input, while Olin uses natural gas, further creating a competitive advantage. I don’t have much to comment on about Winchester as it is relatively stable, however they continue to benefit from government contracts.</p>
 
-          <p>I’m not going to include screenshots of every workbook component in this writeup, but here are a few of the Olin schedules I thought were worth showing. One thing that surprised me was just how massive D&amp;A is for these businesses. I did not expect chemical companies to depreciate this heavily, but then again gross PP&amp;E is enormous. In many years, D&amp;A is the difference between positive and negative FCF. Gross PP&amp;E also climbed faster than revenue, which initially felt backward to me until I spent more time thinking about capital intensity in chemical manufacturing.</p>
+          <p>In terms of margins, Olin’s management is incredibly optimistic. While I do agree there is a margin increase primarily from an increase in pricing, I am hesitant about Olin’s asset reliability. A chemical plant in Texas cost the company millions in revenue after an unplanned outage in May 2026. Management promises less reliance on contractors, a more efficient workforce, and preventative measures to stop equipment failure before they occur. Furthermore, they are reducing capacity and even closing plants to reduce overcapacity. It has been borrowing cash to finance needs, while already being highly levered at 5.0x net debt / adjusted EBITDA. Finally, management initiated massive buybacks in 2023 and 2024, prioritizing shareholder returns over debt paydowns. In retrospect this was a foolish decision... their stock price has gone down 60% in 5 years, they have a crushing debt expense, and just partook in an all-stock merger. Because of all these factors, I expect margins to artificially increase the most in 2026 due to market demand, while slowly tapering off to an amount close to FYE 2024.</p>
           <div class="figure-block figure-full-bleed">
             <div class="zoom-teaser">
               <img class="zoomable-img" src="assets/projects/olin-huntsman-merger/olin-cfs.png" alt="Blurred Olin cash flow statement from the merger workbook" />
             </div>
           </div>
 
-          <p>The balance sheet is mostly standard, except for the debt-issuance-cost amortization row, which I added because those costs were grouped historically into long-term debt and still need to be reconciled through interest expense and cash flow. One broad shortcoming of the model is that change in working capital is not exactly equivalent to the way Mergent presents it. That may be common practice, but I thought it was worth flagging because it affects how tightly the historical bridge works.</p>
+          <p>On the other hand, Huntsman specializes in polyurethanes (used for houses and cars), specialized products for the industry, and advanced materials. Advanced materials are the most interesting arm, as they are used for electric vehicles, aerospace, etc.</p>
+
+          <p>The case for Huntsman revenue increasing is less bullish than Olin. Polyurethane is still produced relatively cheaply as countries like China have flooded the market in recent years. Wanhua Chemical especially, which is a state-backed Chinese giant that has been flooding the market with cheap supply. Although a recent antidumping policy has hurt Wanhua imports, they still impose a massive threat to Huntsman. Furthermore, demand is dependent on US housing market sales. Although advanced materials have seen the most growth and will continue to do so, the other two arms won’t generate a ton of momentum. Cutting costs is more compelling. Huntsman is already cutting costs, on track to close seven sites in Europe, and cut dividends in Q3 of 2025. Management has stated their desire to cut costs and so far nothing has gotten in the way of that, while the cost-cutting plan installed in 2024 has largely gone to plan. Therefore, I project a strong increase in gross margin. Last bit worth mentioning is that this company is also highly levered - 5.4x EV / adjusted EBITDA.</p>
           <div class="figure-block figure-full-bleed">
             <div class="zoom-teaser">
               <img class="zoomable-img" src="assets/projects/olin-huntsman-merger/olin-balance-sheet.png" alt="Blurred Olin balance sheet from the merger workbook" />
             </div>
           </div>
-
-          <p class="article-minorhead">Results</p>
-          <p>Using assumptions anchored to management expectations but toned down where necessary, both standalone companies still look financially healthy. 2023 stands out as a rough year for the chemical industry, but the forecasts point to stronger cash flow and still-manageable balance sheets. D&amp;A remains a massive drag, yet projected margin improvement more than offsets it in the base case.</p>
 
           <h2 class="article-subhead">Debt Schedules</h2>
           <p class="article-minorhead">Data</p>
@@ -186,7 +182,7 @@
 
           <div class="downloads">
             <div class="download-links">
-              <a href="assets/projects/olin-huntsman-merger/Olin_Huntsman_Merger_Hassan.xlsm" download>Download Excel</a>
+              <a href="assets/projects/olin-huntsman-merger/Olin&Huntsman_Hassan.xlsm" download>Download Excel</a>
             </div>
           </div>
         </article>
@@ -220,6 +216,10 @@
 
       zoomables.forEach((img) => {
         img.addEventListener('click', () => {
+          if (lightbox.classList.contains('open') && lightboxImg.src === img.src) {
+            closeLightbox();
+            return;
+          }
           lightboxImg.src = img.src;
           lightboxImg.alt = img.alt;
           lightbox.classList.add('open');

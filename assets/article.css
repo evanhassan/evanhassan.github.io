@@ -271,12 +271,6 @@ img {
   max-width: 100%;
   margin-left: auto;
   transform: none;
-  filter: blur(2.2px);
-  transition: filter 180ms ease, transform 180ms ease, opacity 180ms ease;
-}
-
-.zoom-teaser:hover img {
-  filter: blur(1.6px);
 }
 
 .zoom-teaser::after {

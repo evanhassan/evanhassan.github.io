@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Geographic Runaway for PetVet365</title>
+  <link rel="stylesheet" href="assets/article.css" />
+</head>
+<body>
+  <div class="site-shell">
+    <main class="workbook">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <div class="file-pill">Evan_Hassan_PersonalSite.xlsx</div>
+        </div>
+        <div class="topbar-right">Article view</div>
+      </header>
+      <div class="formula-wrap">
+        <div class="formula-bar">
+          <div class="name-box">F4</div>
+          <div class="formula-icon">ƒx</div>
+          <div class="formula-input">="PetVet365 / Geographic Runaway"</div>
+        </div>
+      </div>
+      <section class="article-shell">
+        <article class="article-page">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <h1 class="article-title">Geographic Runaway for PetVet365</h1>
+
+          <p>PetVet365 is a portfolio company of Cimarron Healthcare Capital. For this project, I wanted to answer a pretty simple question: if PetVet365 wants to keep expanding, where does the map actually look open?</p>
+
+          <p>Instead of just eyeballing big states, I built a county-level screen around veterinary supply. The goal was to compare actual veterinary establishment density with what local market characteristics would suggest, then see where the biggest gaps showed up. I would treat this as a screening tool, not a final site-selection memo, but it is a good way to narrow the map before doing real diligence.</p>
+
+          <h2 class="article-subhead">Starting with veterinary supply</h2>
+          <p>At a high level, the supply picture is uneven. The state map below looks at population per vet establishment, which is a clean first way to see where access already looks tighter versus where the market appears more supplied. It does not make the expansion decision by itself, but it gives useful context before getting into county-level opportunity.</p>
+          <div class="figure-block figure-full-bleed">
+            <img src="assets/projects/petvet365/state-supply-map.png" alt="Population per vet establishment by state for PetVet365 expansion screen" />
+          </div>
+
+          <h2 class="article-subhead">What the county screen is actually picking up</h2>
+          <p>Once I moved down to the county level, the model leaned most heavily on pet store density, bachelor’s degree share, population density, detached housing share, household size, total population, median home value, median age, homeownership rate, and poverty rate. I like this chart because it makes the screen less hand-wavy. You can see which local variables are actually doing the work instead of pretending every county is just a population story.</p>
+          <div class="figure-block figure-compact">
+            <img src="assets/projects/petvet365/top-feature-importance.png" alt="Top feature importance table for PetVet365 expansion model" />
+          </div>
+
+          <h2 class="article-subhead">Where the white space looks largest</h2>
+          <p>This is the main output. The blue shading shows counties where predicted vet establishments per 100k exceed actual vet establishments per 100k, while the red dots mark PetVet365’s current footprint. That makes the map useful for two reasons: first, it shows where the screen thinks supply is light, and second, it shows whether those opportunities sit anywhere near where PetVet365 already operates.</p>
+          <div class="figure-block figure-full-bleed">
+            <img src="assets/projects/petvet365/opportunistic-counties-map.png" alt="County-level opportunity map for PetVet365 with current locations overlaid" />
+          </div>
+
+          <p>What I like here is that the output is not just screaming for the same obvious major metros. Some of the strongest gaps show up in places that would be easy to miss if you only looked at raw population or broad regional growth narratives. That is exactly why I wanted the county-level view.</p>
+
+          <h2 class="article-subhead">Counties that float to the top</h2>
+          <p>The bar chart gives a cleaner read on the most undersupplied counties from the screen. Sussex County, Delaware ranks first, followed by Greene County, Ohio and Rensselaer County, New York. Imperial County, California and Cass County, North Dakota also show up near the top, along with Collier County, Florida and Charles County, Maryland.</p>
+          <div class="figure-block">
+            <img src="assets/projects/petvet365/most-undersupplied-counties.png" alt="Most undersupplied U.S. veterinary markets for PetVet365" />
+          </div>
+
+          <p>My takeaway is not that PetVet365 should blindly drop pins into the top twelve counties and call it a strategy. It is that this screen gives a defensible first pass at where expansion conversations should start. If I were pushing the work further, the next step would be layering in more operator-specific filters like adjacency to current locations, local income mix, competitive clinic quality, and how realistic each county is from an execution standpoint. But as a first cut, this narrows the map in a way that feels much more useful than generic population-growth screening.</p>
+        </article>
+      </section>
+      <footer class="sheet-footer">
+        <nav class="sheet-tabs" aria-label="Workbook tabs">
+          <a class="sheet-tab" href="index.html#overview">Home</a>
+          <a class="sheet-tab active" href="index.html#projects">Projects</a>
+        </nav>
+        <div class="footer-note">2026 Evan Hassan</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

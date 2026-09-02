@@ -76,8 +76,11 @@
             <img src="assets/projects/hb-fuller-ancora/debt-schedule.png" alt="Debt schedule for the H.B. Fuller / Ancora model" />
           </div>
           <p>Unlike previous models, I did not use a VBA macro for this. It felt too complicated for 3 generalized debt tranches. Interest rates were assumptions and partly determined from Ancora’s other outstanding debt, as they have mezz at 11.25%. From 2026 to 2031, debt decreased from $716.5M originally to $447.3M, a 38% decrease.</p>
-          <div class="figure-block figure-90">
-            <img src="assets/projects/hb-fuller-ancora/sources-and-uses.png" alt="Sources and uses schedule for the H.B. Fuller / Ancora model" />
+          <div class="figure-block figure-compact figure-full-bleed">
+            <div class="zoom-teaser" style="width: min(56%, 480px);">
+              <img class="zoomable-img" src="assets/projects/hb-fuller-ancora/sources-and-uses.png" alt="Sources and uses schedule for the H.B. Fuller / Ancora model" />
+            </div>
+            <p class="zoom-caption" style="width: min(56%, 480px);">Click to expand.</p>
           </div>
           <p>Total Uses sums to $1,274.5M, factoring in separation costs from the carveout tab, transaction fees, and a minimum cash balance of $25M, which is ~3% of revenue. For sources, after finding the plug sponsor equity, Ancora Group Holdings would enter the deal with $568.8M of sponsor equity at a Debt / Total Capital of 55% and a Debt / EBITDA of 5.9x.</p>
 
@@ -111,5 +114,46 @@
       </footer>
     </main>
   </div>
+  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
+    <button class="image-lightbox-close" type="button">Close</button>
+    <img alt="Expanded chart view" />
+  </div>
+  <script>
+    (() => {
+      const lightbox = document.getElementById('image-lightbox');
+      if (!lightbox) return;
+      const lightboxImg = lightbox.querySelector('img');
+      const closeBtn = lightbox.querySelector('.image-lightbox-close');
+      const zoomables = document.querySelectorAll('.zoomable-img');
+
+      const closeLightbox = () => {
+        lightbox.classList.remove('open');
+        lightbox.setAttribute('aria-hidden', 'true');
+        lightboxImg.removeAttribute('src');
+      };
+
+      zoomables.forEach((img) => {
+        img.addEventListener('click', () => {
+          const isSameImageOpen = lightbox.classList.contains('open') && lightboxImg.src === img.src;
+          if (isSameImageOpen) {
+            closeLightbox();
+            return;
+          }
+          lightboxImg.src = img.src;
+          lightboxImg.alt = img.alt;
+          lightbox.classList.add('open');
+          lightbox.setAttribute('aria-hidden', 'false');
+        });
+      });
+
+      closeBtn.addEventListener('click', closeLightbox);
+      lightbox.addEventListener('click', (event) => {
+        if (event.target === lightbox) closeLightbox();
+      });
+      document.addEventListener('keydown', (event) => {
+        if (event.key === 'Escape') closeLightbox();
+      });
+    })();
+  </script>
 </body>
 </html>

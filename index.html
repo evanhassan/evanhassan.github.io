@@ -324,6 +324,82 @@
       max-width: 10ch;
     }
 
+    .hero-intro-shell .section-frame {
+      display: grid;
+      grid-template-columns: minmax(0, 1.45fr) minmax(280px, 360px);
+      align-items: stretch;
+      gap: 34px;
+      padding: 34px 30px;
+    }
+
+    .hero-copy {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      gap: 16px;
+      min-width: 0;
+      text-align: left;
+    }
+
+    .hero-kicker {
+      margin: 0;
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .hero-copy .body-copy {
+      max-width: 34ch;
+      font-size: 17px;
+      line-height: 1.6;
+    }
+
+    .hero-headshot-wrap {
+      display: flex;
+      justify-content: flex-end;
+      align-items: stretch;
+    }
+
+    .hero-portrait-card {
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+      width: min(100%, 332px);
+      margin-left: auto;
+      padding: 12px;
+      border: 1px solid var(--grid-strong);
+      background: linear-gradient(180deg, #ffffff 0%, #f7faf6 100%);
+      box-shadow: 0 16px 32px rgba(31, 42, 32, 0.10);
+    }
+
+    .hero-portrait-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-size: 10px;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--muted);
+    }
+
+    .hero-portrait-index {
+      color: var(--excel-green-dark);
+    }
+
+    .hero-headshot {
+      display: block;
+      width: 100%;
+      aspect-ratio: 4 / 5;
+      object-fit: cover;
+      object-position: center 20%;
+      border: 1px solid var(--grid-strong);
+      background: #dfe5de;
+    }
+
     .body-copy,
     .project-copy,
     .note-copy {
@@ -756,10 +832,10 @@
 
     .hero-meta-strip {
       display: flex;
-      justify-content: center;
-      margin-top: auto;
+      justify-content: flex-start;
+      margin-top: 6px;
       width: 100%;
-      padding-top: 10px;
+      padding-top: 0;
     }
 
     .advisor-logos {
@@ -810,10 +886,10 @@
     }
 
     .hero-intro-shell .section-frame {
-      align-items: center;
-      padding: 28px 22px;
-      gap: 14px;
-      text-align: center;
+      align-items: stretch;
+      padding: 34px 30px;
+      gap: 34px;
+      text-align: left;
     }
 
     .hero-intro-shell .hero-title,
@@ -849,15 +925,24 @@
     @media (max-width: 960px) {
       .site-shell { padding: 12px; }
       .ribbon { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+      .hero-intro-shell .section-frame {
+        grid-template-columns: 1fr;
+      }
+      .hero-headshot-wrap {
+        justify-content: flex-start;
+      }
+      .hero-headshot {
+        width: min(100%, 260px);
+      }
       .project-link {
         flex: 0 0 auto;
       }
       .tabs-bar {
-        align-items: flex-start;
         flex-direction: column;
+        align-items: flex-start;
       }
-      .footer-note { text-align: left; }
     }
+
 
     @media (max-width: 720px) {
       .topbar,
@@ -975,12 +1060,20 @@
           <div class="row-head">1</div>
           <section class="cell cell-muted hero-intro-shell" style="grid-column: 2 / span 8; min-height: 276px; padding: 0;" id="overview">
             <div class="section-frame">
-              <h1 class="hero-title">Evan's Portfolio</h1>
-              <p class="body-copy">
-                I am a University of Utah student who loves to uncover insights and evaluate ideas. That interest gradually pulled me toward finance, where I’ve been working for the past couple of years. I love analyzing companies, developing my own perspectives, and using data to support them.
-              </p>
-              <div class="hero-meta-strip">
-                <img class="utah-logo" src="assets/utah-logo-cropped.png" alt="University of Utah logo" />
+              <div class="hero-copy">
+                <p class="hero-kicker">University of Utah · Finance + data</p>
+                <h1 class="hero-title">Evan's Portfolio</h1>
+                <p class="body-copy">
+                  I am a University of Utah student who loves to uncover insights and evaluate ideas. That interest gradually pulled me toward finance, where I’ve been working for the past couple of years. I love analyzing companies, developing my own perspectives, and using data to support them. I am specifically interested in the chemical industry and the broader industrial sector.
+                </p>
+                <div class="hero-meta-strip">
+                  <img class="utah-logo" src="assets/utah-logo-cropped.png" alt="University of Utah logo" />
+                </div>
+              </div>
+              <div class="hero-headshot-wrap">
+                <div class="hero-portrait-card" aria-label="Portrait panel">
+                  <img class="hero-headshot" src="assets/headshots/evan-hassan-headshot.jpg" alt="Portrait of Evan Hassan" />
+                </div>
               </div>
             </div>
           </section>

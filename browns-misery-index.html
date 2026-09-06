@@ -57,15 +57,13 @@
       letter-spacing: -.035em;
     }
     .viz-full {
-      width: 100vw;
-      margin-left: calc(50% - 50vw);
-      margin-right: calc(50% - 50vw);
+      width: min(100%, 980px);
+      margin: 30px auto 42px;
       background: #050605;
       color: #f5f7f4;
       overflow: hidden;
       box-sizing: border-box;
-      border-top: 1px solid rgba(245,247,244,.08);
-      border-bottom: 1px solid rgba(245,247,244,.08);
+      border: 1px solid rgba(245,247,244,.08);
       --chart-bg: #050605;
       --chart-accent: #23854e;
       --chart-secondary: #2f66c5;
@@ -77,10 +75,10 @@
       --chart-line: #243027;
     }
     .viz-inner {
-      width: min(1040px, 100%);
+      width: 100%;
       max-width: 100%;
       margin: 0 auto;
-      padding: 28px clamp(18px, 4vw, 42px) 34px;
+      padding: 26px clamp(18px, 4vw, 38px) 32px;
       box-sizing: border-box;
     }
     .viz-chart {
@@ -291,7 +289,7 @@
   </script>
   <script src="https://cdn.jsdelivr.net/npm/d3@7"></script>
   <script type="module">
-    import {render as metrics} from './assets/projects/browns-misery/js/charts/metricPercentiles.js';
+    import {render as metrics} from './assets/projects/browns-misery/js/charts/metricPercentiles.js?v=56876d5';
     import {render as mc} from './assets/projects/browns-misery/js/charts/monteCarloDistribution.js';
     import {render as category} from './assets/projects/browns-misery/js/charts/categoryProfile.js';
     import {render as mahal} from './assets/projects/browns-misery/js/charts/mahalanobisScatter.js';
@@ -312,6 +310,11 @@
         load('metric_distribution'), load('cumulative_misery')
       ]);
       metrics('#chart-metrics', rankings, {defaultCategory: 'Playoff Futility'});
+      const modelSelect = document.querySelector('#chart-metrics select');
+      if (modelSelect && modelSelect.value !== 'Playoff Futility') {
+        modelSelect.value = 'Playoff Futility';
+        modelSelect.dispatchEvent(new Event('change', { bubbles: true }));
+      }
       mc('#chart-mc', mcDist, summary);
       category('#chart-category', cats);
       mahal('#chart-mahal', mah);

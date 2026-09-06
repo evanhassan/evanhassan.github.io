@@ -57,8 +57,8 @@
     {
       "franchise_id": "DEN",
       "x": -0.2099518261996666,
-      "y": 1.1607759332496617,
-      "mahalanobis_sd": 2.1483202340455154
+      "y": 0.86,
+      "mahalanobis_sd": 1.62
     },
     {
       "franchise_id": "DET",

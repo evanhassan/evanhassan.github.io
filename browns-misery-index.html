@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>The Cleveland Browns Misery Index</title>
+  <link rel="stylesheet" href="assets/article.css" />
+  <style>
+    .browns-embed-wrap {
+      margin: 26px calc(50% - 50vw);
+      padding: 0 24px;
+    }
+    .browns-embed {
+      width: 100%;
+      min-height: 6200px;
+      border: 1px solid var(--grid-strong);
+      background: #0b0b0b;
+      box-shadow: 0 18px 44px rgba(31,42,32,.14);
+    }
+    .article-note {
+      color: var(--muted);
+      font-size: 14px;
+      margin-top: -8px;
+    }
+    @media (max-width: 780px) {
+      .browns-embed-wrap { margin-left: -18px; margin-right: -18px; padding: 0; }
+      .browns-embed { min-height: 7600px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <main class="workbook">
+      <header class="topbar">
+        <div class="topbar-left">
+          <div class="window-dots"><span></span><span></span><span></span></div>
+          <div class="file-pill">Evan_Hassan_PersonalSite.xlsx</div>
+        </div>
+        <div class="topbar-right">Article view</div>
+      </header>
+      <div class="formula-wrap">
+        <div class="formula-bar">
+          <div class="name-box">C8</div>
+          <div class="formula-icon">ƒx</div>
+          <div class="formula-input">="Cleveland Browns Misery Index"</div>
+        </div>
+      </div>
+      <section class="article-shell">
+        <article class="article-page">
+          <a class="back-link" href="index.html#projects">← Back to projects</a>
+          <h1 class="article-title">The Cleveland Browns Misery Index</h1>
+
+          <p>I have been a fan of the Cleveland Browns for my whole life. A large portion of my family is from Cleveland, and my dad convinced me to be a Browns fan at a young age.</p>
+
+          <p>What a terrible decision. The irony is that it somehow gets worse every year. The NFL season starts in one week, and in order to prepare, we paid the largest guaranteed contract in history to a washed quarterback with 24 civil lawsuits against him, and traded the best player in the league away.</p>
+
+          <p>As a Data Science major, I’m interested to see just how miserable being a Cleveland Browns fan over the last 20 years has been. ESPN, PFF, and other sporting sites have a statistic called the “Misery Index,” or how miserable a team has been for its fanbase. Oftentimes this is calculated qualitatively, like how the New York Times does it, but ESPN does it quantitatively, ranking championships, playoff berths, playoff wins, heartbreaks, and rival comparison as the main misery factors.</p>
+
+          <p>My problem with this approach is that from personal experience ESPN’s methodology is too light, and has overlooked factors that have contributed to my anguish as a Cleveland Browns fan. A good example of this is sending away three years of future draft picks for a QB with 24 legal cases against him. Or starting 42 different quarterbacks since 1999, having a slight glimmer of hope for each one and crushing disappointment once they inevitably don’t pan out. Or not winning a single game. We won zero games, the second team ever to do so, in 2017.</p>
+
+          <p>In order to weigh all these factors, and not come up with arbitrary numbers, I am coming up with a misery index average ranking. So instead of another misery index, it is a robust analysis of misery: across all combinations of “misery,” how many of them result in the Cleveland Browns still being the most miserable franchise in the last 20 or so years.</p>
+
+          <p>Here is an illustrative example. Person A may say misery is 40% losing, 30% zero playoff berths, and 30% heartbreaking chokes. Person B may disagree, and say that misery is 100% losing. The point is there are many different weighting schemes of misery one can come up with. Using data from nflverse, I randomly sampled as many different weights as possible and determined where the Browns rank under each person’s definition of misery, and on average across them.</p>
+
+          <p>Because I didn’t feel like coming up with every conceivable metric possible for this analysis, I used ChatGPT. The more metrics we can come up with to give my Cleveland Browns a chance at not being last in something, the better. Here are some of the main misery index parameters I used, sorted by category. Out of 32 NFL teams, I’ve listed what percentile the Cleveland Browns place in each of these statistics. Spoiler alert: we are terrible.</p>
+
+          <p>Here is the final result. Out of 5,000 different weighting schemes across seven categories — sustained losing, playoff futility, collapse trauma, close-game pain, turnover self-destruction, hope/season collapse, and draft/personnel turnover — the Cleveland Browns rank as the most miserable franchise in 64.1% of instances. Ironically, hope/season collapse is our best metric, probably because we have no hope to begin with. There is nothing to collapse if the building is never constructed.</p>
+
+          <p>In simulations where Cleveland isn’t the worst, sustained losing averages only 7.5% of the total weight. Which means the only scenarios in which the Cleveland Browns aren’t the most miserable NFL franchise are ones where losing is less important. I can see this being heartbreaking for some franchises that win a lot in the regular season just to lose heartbreakingly in the playoffs, like the Toronto Maple Leafs or our fellow Lake Erie Buffalo Bills, but I’d argue losing so much that you don’t even have opportunities of success is worse.</p>
+
+          <p>Furthermore, the model places the Browns outside a top-ten miserable franchise in only a small slice of weighting schemes. To get the Browns out of last, the formula has to turn down sustained losing, playoff futility, and draft/personnel turnover enormously.</p>
+
+          <p>Trades are another story. I used tradeverdicts.com, a database of NFL trades, in order to determine how good or bad a trade was for an organization. Because rating trades requires context that the numbers in nflverse don’t provide, this seemed like the easier move to make. Trades are graded A–F on the site, so instead of leaning on average letter grades, I used trade-loss rate, D/F trade rate, and a bad trade score weighted by the estimated assets surrendered. Big surprise: we suck.</p>
+
+          <p class="article-note">Approximate interactive article state below. I am keeping the full chart shell embedded for this preview so we can see the actual D3 behavior on the live site before tightening the final prose/layout.</p>
+
+          <div class="browns-embed-wrap">
+            <iframe class="browns-embed" src="assets/projects/browns-misery/index.html" title="Interactive Cleveland Browns Misery Index charts"></iframe>
+          </div>
+        </article>
+      </section>
+      <footer class="sheet-footer">
+        <nav class="sheet-tabs" aria-label="Workbook tabs">
+          <a class="sheet-tab" href="index.html#overview">Home</a>
+          <a class="sheet-tab active" href="index.html#projects">Projects</a>
+        </nav>
+        <div class="footer-note">2026 Evan Hassan</div>
+      </footer>
+    </main>
+  </div>
+</body>
+</html>

@@ -1,0 +1,170 @@
+[
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Sustained Losing",
+    "avg_weight": 0.16174497241510777,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Postseason Futility",
+    "avg_weight": 0.15800207799787763,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Collapse Trauma",
+    "avg_weight": 0.13377661579816197,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Close-Game Pain",
+    "avg_weight": 0.15260460625361918,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Turnover Self-Destruction",
+    "avg_weight": 0.13536567550233938,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Hope/Season Collapse",
+    "avg_weight": 0.10306216649214751,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "1\u20133",
+    "category": "Draft / Personnel Turnover",
+    "avg_weight": 0.15544388554074628,
+    "n": 3985
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Sustained Losing",
+    "avg_weight": 0.07979743311656753,
+    "n": 780
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Postseason Futility",
+    "avg_weight": 0.08829814185624241,
+    "n": 780
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Collapse Trauma",
+    "avg_weight": 0.18047561769441514,
+    "n": 780
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Close-Game Pain",
+    "avg_weight": 0.13083075731447563,
+    "n": 780
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Turnover Self-Destruction",
+    "avg_weight": 0.1612694229860803,
+    "n": 780
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Hope/Season Collapse",
+    "avg_weight": 0.2593051604306185,
+    "n": 780
+  },
+  {
+    "rank_bucket": "4\u201310",
+    "category": "Draft / Personnel Turnover",
+    "avg_weight": 0.10002346660160014,
+    "n": 780
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Sustained Losing",
+    "avg_weight": 0.04626136053576082,
+    "n": 229
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Postseason Futility",
+    "avg_weight": 0.055328959782731085,
+    "n": 229
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Collapse Trauma",
+    "avg_weight": 0.15433935487883194,
+    "n": 229
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Close-Game Pain",
+    "avg_weight": 0.07306437471476623,
+    "n": 229
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Turnover Self-Destruction",
+    "avg_weight": 0.17667100026424037,
+    "n": 229
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Hope/Season Collapse",
+    "avg_weight": 0.39861012078435615,
+    "n": 229
+  },
+  {
+    "rank_bucket": "11\u201320",
+    "category": "Draft / Personnel Turnover",
+    "avg_weight": 0.0957248290393131,
+    "n": 229
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Sustained Losing",
+    "avg_weight": 0.026877132775440484,
+    "n": 6
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Postseason Futility",
+    "avg_weight": 0.0362044295232408,
+    "n": 6
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Collapse Trauma",
+    "avg_weight": 0.023571358476520313,
+    "n": 6
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Close-Game Pain",
+    "avg_weight": 0.027313772968203583,
+    "n": 6
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Turnover Self-Destruction",
+    "avg_weight": 0.15450037173519518,
+    "n": 6
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Hope/Season Collapse",
+    "avg_weight": 0.70294872112337,
+    "n": 6
+  },
+  {
+    "rank_bucket": "21+",
+    "category": "Draft / Personnel Turnover",
+    "avg_weight": 0.028584213398029367,
+    "n": 6
+  }
+]

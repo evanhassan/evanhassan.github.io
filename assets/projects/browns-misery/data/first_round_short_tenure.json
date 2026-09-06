@@ -1,0 +1,194 @@
+[
+  {
+    "franchise_id": "CHI",
+    "first_round_picks": 22,
+    "first_round_out_within_3": 5,
+    "first_round_short_tenure_rate": 0.22727272727272727
+  },
+  {
+    "franchise_id": "LV",
+    "first_round_picks": 28,
+    "first_round_out_within_3": 6,
+    "first_round_short_tenure_rate": 0.21428571428571427
+  },
+  {
+    "franchise_id": "SEA",
+    "first_round_picks": 24,
+    "first_round_out_within_3": 5,
+    "first_round_short_tenure_rate": 0.20833333333333334
+  },
+  {
+    "franchise_id": "MIN",
+    "first_round_picks": 31,
+    "first_round_out_within_3": 6,
+    "first_round_short_tenure_rate": 0.1935483870967742
+  },
+  {
+    "franchise_id": "KC",
+    "first_round_picks": 22,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.18181818181818182
+  },
+  {
+    "franchise_id": "NYG",
+    "first_round_picks": 28,
+    "first_round_out_within_3": 5,
+    "first_round_short_tenure_rate": 0.17857142857142858
+  },
+  {
+    "franchise_id": "PHI",
+    "first_round_picks": 24,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.16666666666666666
+  },
+  {
+    "franchise_id": "DET",
+    "first_round_picks": 32,
+    "first_round_out_within_3": 5,
+    "first_round_short_tenure_rate": 0.15625
+  },
+  {
+    "franchise_id": "IND",
+    "first_round_picks": 20,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.15
+  },
+  {
+    "franchise_id": "ARI",
+    "first_round_picks": 28,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.14285714285714285
+  },
+  {
+    "franchise_id": "CLE",
+    "first_round_picks": 28,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.14285714285714285
+  },
+  {
+    "franchise_id": "JAX",
+    "first_round_picks": 29,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.13793103448275862
+  },
+  {
+    "franchise_id": "TB",
+    "first_round_picks": 22,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.13636363636363635
+  },
+  {
+    "franchise_id": "HOU",
+    "first_round_picks": 22,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.13636363636363635
+  },
+  {
+    "franchise_id": "SF",
+    "first_round_picks": 31,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.12903225806451613
+  },
+  {
+    "franchise_id": "NE",
+    "first_round_picks": 24,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.125
+  },
+  {
+    "franchise_id": "WAS",
+    "first_round_picks": 24,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.125
+  },
+  {
+    "franchise_id": "DEN",
+    "first_round_picks": 24,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.125
+  },
+  {
+    "franchise_id": "CAR",
+    "first_round_picks": 24,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.125
+  },
+  {
+    "franchise_id": "NYJ",
+    "first_round_picks": 33,
+    "first_round_out_within_3": 4,
+    "first_round_short_tenure_rate": 0.12121212121212122
+  },
+  {
+    "franchise_id": "TEN",
+    "first_round_picks": 25,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.12
+  },
+  {
+    "franchise_id": "GB",
+    "first_round_picks": 27,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.1111111111111111
+  },
+  {
+    "franchise_id": "CIN",
+    "first_round_picks": 27,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.1111111111111111
+  },
+  {
+    "franchise_id": "NO",
+    "first_round_picks": 28,
+    "first_round_out_within_3": 3,
+    "first_round_short_tenure_rate": 0.10714285714285714
+  },
+  {
+    "franchise_id": "DAL",
+    "first_round_picks": 23,
+    "first_round_out_within_3": 2,
+    "first_round_short_tenure_rate": 0.08695652173913043
+  },
+  {
+    "franchise_id": "ATL",
+    "first_round_picks": 25,
+    "first_round_out_within_3": 2,
+    "first_round_short_tenure_rate": 0.08
+  },
+  {
+    "franchise_id": "PIT",
+    "first_round_picks": 25,
+    "first_round_out_within_3": 2,
+    "first_round_short_tenure_rate": 0.08
+  },
+  {
+    "franchise_id": "LAC",
+    "first_round_picks": 26,
+    "first_round_out_within_3": 2,
+    "first_round_short_tenure_rate": 0.07692307692307693
+  },
+  {
+    "franchise_id": "BAL",
+    "first_round_picks": 28,
+    "first_round_out_within_3": 2,
+    "first_round_short_tenure_rate": 0.07142857142857142
+  },
+  {
+    "franchise_id": "MIA",
+    "first_round_picks": 23,
+    "first_round_out_within_3": 1,
+    "first_round_short_tenure_rate": 0.043478260869565216
+  },
+  {
+    "franchise_id": "LA",
+    "first_round_picks": 23,
+    "first_round_out_within_3": 1,
+    "first_round_short_tenure_rate": 0.043478260869565216
+  },
+  {
+    "franchise_id": "BUF",
+    "first_round_picks": 26,
+    "first_round_out_within_3": 1,
+    "first_round_short_tenure_rate": 0.038461538461538464
+  }
+]

@@ -1,0 +1,10 @@
+import {C,fmt,tooltip,svgBox,axisBottom,axisLeft,note} from '../shared/helpers.js';
+const d3=window.d3;
+export function render(sel,data){
+ const rows=data.map(d=>({experiment:d.experiment.replaceAll('_',' ').replace('dirichlet ','baseline weights '), median:d.median_mc_rank, bottom3:d.prob_rank_le_3, bottom5:d.prob_rank_le_5}));
+ const box=svgBox(sel,{height:440,margin:{top:22,right:18,bottom:46,left:260}}),{g,innerW,innerH}=box,t=tooltip(); const cols=['median','bottom3','bottom5']; const x=d3.scaleBand().domain(cols).range([0,innerW]).padding(.1), y=d3.scaleBand().domain(rows.map(d=>d.experiment)).range([0,innerH]).padding(.08); const color=d3.scaleLinear().domain([0,1]).range(['#172017',C.accent]); const medColor=d3.scaleLinear().domain([1,10]).range([C.accent,C.peer]);
+ g.selectAll('rect').data(rows.flatMap(r=>cols.map(c=>({row:r,col:c,value:r[c]})))).join('rect').attr('x',d=>x(d.col)).attr('y',d=>y(d.row.experiment)).attr('width',x.bandwidth()).attr('height',y.bandwidth()).attr('fill',d=>d.col==='median'?medColor(d.value):color(d.value)).attr('opacity',.86).on('mousemove',(e,d)=>t.show(`<b>${d.row.experiment}</b><br>${d.col==='median'?'Median rank':d.col==='bottom3'?'P(bottom 3)':'P(bottom 5)'}: ${d.col==='median'?fmt.num(d.value):d3.format('.1%')(d.value)}`,e)).on('mouseleave',t.hide);
+ g.selectAll('text.cell').data(rows.flatMap(r=>cols.map(c=>({row:r,col:c,value:r[c]})))).join('text').attr('x',d=>x(d.col)+x.bandwidth()/2).attr('y',d=>y(d.row.experiment)+y.bandwidth()/2+4).attr('text-anchor','middle').attr('fill',C.text).attr('font-size',12).attr('font-weight',600).text(d=>d.col==='median'?d3.format('.1f')(d.value):d3.format('.0%')(d.value));
+ axisLeft(g,y); g.append('g').attr('class','axis').attr('transform',`translate(0,${innerH})`).call(d3.axisBottom(x).tickFormat(d=>d==='median'?'Median rank':d==='bottom3'?'P bottom 3':'P bottom 5'));
+ note(sel,'Rows include baseline weighting models and leave-one-category-out robustness checks; lower median rank means more miserable.');
+}

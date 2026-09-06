@@ -1,0 +1,322 @@
+[
+  {
+    "franchise_id": "ARI",
+    "Sustained Losing": 1.063566337455604,
+    "Postseason Futility": 0.4981877353859415,
+    "Collapse Trauma": -0.9736137355411866,
+    "Close-Game Pain": -0.6867915734236084,
+    "Turnover Self-Destruction": 0.2006470812500952,
+    "Hope/Season Collapse": -0.2564917077175201,
+    "Draft / Personnel Turnover": -0.8324384571589747
+  },
+  {
+    "franchise_id": "ATL",
+    "Sustained Losing": 0.4046825816329318,
+    "Postseason Futility": 0.3072680617312451,
+    "Collapse Trauma": 0.4716315542218149,
+    "Close-Game Pain": -0.6063497336074074,
+    "Turnover Self-Destruction": 0.303005221143505,
+    "Hope/Season Collapse": 0.2479217090308856,
+    "Draft / Personnel Turnover": -0.1076810523767602
+  },
+  {
+    "franchise_id": "BAL",
+    "Sustained Losing": -1.4044165295939284,
+    "Postseason Futility": -1.1776673794462404,
+    "Collapse Trauma": 0.3642078565878415,
+    "Close-Game Pain": -0.0485778433418768,
+    "Turnover Self-Destruction": 0.6602349184492216,
+    "Hope/Season Collapse": -1.4221181912720189,
+    "Draft / Personnel Turnover": -0.5941564669005412
+  },
+  {
+    "franchise_id": "BUF",
+    "Sustained Losing": 0.1633078849530948,
+    "Postseason Futility": 0.7966523631506202,
+    "Collapse Trauma": 1.5043434871064558,
+    "Close-Game Pain": 0.6060738540547694,
+    "Turnover Self-Destruction": -0.1698128035980199,
+    "Hope/Season Collapse": -0.2235103249099475,
+    "Draft / Personnel Turnover": -0.2947897331166629
+  },
+  {
+    "franchise_id": "CAR",
+    "Sustained Losing": 0.6698125574926362,
+    "Postseason Futility": 0.0662977793018464,
+    "Collapse Trauma": -0.0417475266675186,
+    "Close-Game Pain": 0.9700834186887044,
+    "Turnover Self-Destruction": 0.0957607793508777,
+    "Hope/Season Collapse": 0.5369112007074435,
+    "Draft / Personnel Turnover": 0.5488550517622269
+  },
+  {
+    "franchise_id": "CHI",
+    "Sustained Losing": 0.3983703810889781,
+    "Postseason Futility": 0.7482476684674966,
+    "Collapse Trauma": -0.0766151251723266,
+    "Close-Game Pain": 0.336534563420462,
+    "Turnover Self-Destruction": 0.7957231551500196,
+    "Hope/Season Collapse": 0.7032212597658418,
+    "Draft / Personnel Turnover": 0.2882898966203235
+  },
+  {
+    "franchise_id": "CIN",
+    "Sustained Losing": 0.2681226329281269,
+    "Postseason Futility": 0.3770201780932109,
+    "Collapse Trauma": 1.00878280753986,
+    "Close-Game Pain": 0.5486803188402966,
+    "Turnover Self-Destruction": -0.0758489119010829,
+    "Hope/Season Collapse": -1.05373072184307,
+    "Draft / Personnel Turnover": -0.5830576480113931
+  },
+  {
+    "franchise_id": "CLE",
+    "Sustained Losing": 2.2863034312844728,
+    "Postseason Futility": 1.7942069617046728,
+    "Collapse Trauma": 0.0865110270412672,
+    "Close-Game Pain": 1.234468828012991,
+    "Turnover Self-Destruction": -0.0120731934874074,
+    "Hope/Season Collapse": -0.5713494308835572,
+    "Draft / Personnel Turnover": 1.1249242040500496
+  },
+  {
+    "franchise_id": "DAL",
+    "Sustained Losing": -0.607748699341353,
+    "Postseason Futility": 0.365959843043265,
+    "Collapse Trauma": 0.5193899731867141,
+    "Close-Game Pain": 0.213081938920846,
+    "Turnover Self-Destruction": 0.5481754536705605,
+    "Hope/Season Collapse": 0.1606278251545499,
+    "Draft / Personnel Turnover": 0.3779614088138359
+  },
+  {
+    "franchise_id": "DEN",
+    "Sustained Losing": -0.2099518261996666,
+    "Postseason Futility": 0.1893311100172867,
+    "Collapse Trauma": 0.2600437677146,
+    "Close-Game Pain": 0.045911431568761,
+    "Turnover Self-Destruction": 0.4635865266522259,
+    "Hope/Season Collapse": 0.2011927175585634,
+    "Draft / Personnel Turnover": 1.1607759332496617
+  },
+  {
+    "franchise_id": "DET",
+    "Sustained Losing": 1.3701556125495231,
+    "Postseason Futility": 1.2082124419922984,
+    "Collapse Trauma": -0.3157969917654269,
+    "Close-Game Pain": 1.2852617718762114,
+    "Turnover Self-Destruction": -0.1793813352910459,
+    "Hope/Season Collapse": 0.6708160308278628,
+    "Draft / Personnel Turnover": 0.5310511273484796
+  },
+  {
+    "franchise_id": "GB",
+    "Sustained Losing": -1.396082709263191,
+    "Postseason Futility": -1.0414440642208378,
+    "Collapse Trauma": -0.6424768420215474,
+    "Close-Game Pain": -1.1497683011952675,
+    "Turnover Self-Destruction": -0.7335317532788633,
+    "Hope/Season Collapse": -0.7434985962735958,
+    "Draft / Personnel Turnover": -0.975555474731114
+  },
+  {
+    "franchise_id": "HOU",
+    "Sustained Losing": 0.5476851386673793,
+    "Postseason Futility": 0.3353728424187762,
+    "Collapse Trauma": -0.5160635393051021,
+    "Close-Game Pain": 0.362932310053898,
+    "Turnover Self-Destruction": -1.0173598604023248,
+    "Hope/Season Collapse": 1.1690888272210995,
+    "Draft / Personnel Turnover": 0.5563475955663169
+  },
+  {
+    "franchise_id": "IND",
+    "Sustained Losing": -1.124303398253609,
+    "Postseason Futility": -0.7103517892618441,
+    "Collapse Trauma": -0.2694405384168574,
+    "Close-Game Pain": -1.5738692280536073,
+    "Turnover Self-Destruction": -0.0146266165638441,
+    "Hope/Season Collapse": -1.822631353737814,
+    "Draft / Personnel Turnover": 0.2593035648646072
+  },
+  {
+    "franchise_id": "JAX",
+    "Sustained Losing": 1.0927903497696394,
+    "Postseason Futility": 0.4981877353859415,
+    "Collapse Trauma": -1.3547009161530297,
+    "Close-Game Pain": 1.2187502428343562,
+    "Turnover Self-Destruction": -0.3844092020518667,
+    "Hope/Season Collapse": 1.478850972970616,
+    "Draft / Personnel Turnover": 0.5750606250916007
+  },
+  {
+    "franchise_id": "KC",
+    "Sustained Losing": -0.7728872592806204,
+    "Postseason Futility": -1.1195467539550086,
+    "Collapse Trauma": 0.8422620459985196,
+    "Close-Game Pain": -0.1768564279786323,
+    "Turnover Self-Destruction": -0.6618567561700102,
+    "Hope/Season Collapse": -1.737027060543399,
+    "Draft / Personnel Turnover": -0.6940320734883392
+  },
+  {
+    "franchise_id": "LA",
+    "Sustained Losing": 0.5036217917183103,
+    "Postseason Futility": -0.2671482531803101,
+    "Collapse Trauma": -1.3307316689191926,
+    "Close-Game Pain": 0.1038063576141412,
+    "Turnover Self-Destruction": 1.0052944477733383,
+    "Hope/Season Collapse": -0.8024157788068395,
+    "Draft / Personnel Turnover": -0.6441887723660757
+  },
+  {
+    "franchise_id": "LAC",
+    "Sustained Losing": -0.4121894842255418,
+    "Postseason Futility": 0.3160491020082416,
+    "Collapse Trauma": 1.513900610787876,
+    "Close-Game Pain": 1.8963755217855711,
+    "Turnover Self-Destruction": 0.2796470411948892,
+    "Hope/Season Collapse": 0.4429706838884734,
+    "Draft / Personnel Turnover": -1.0818183145601612
+  },
+  {
+    "franchise_id": "LV",
+    "Sustained Losing": 1.2548997220450109,
+    "Postseason Futility": 0.8993561871315985,
+    "Collapse Trauma": -1.229373354331469,
+    "Close-Game Pain": 0.1318719111269082,
+    "Turnover Self-Destruction": 0.1212640938277744,
+    "Hope/Season Collapse": -0.4015573488195273,
+    "Draft / Personnel Turnover": 0.7647258818431921
+  },
+  {
+    "franchise_id": "MIA",
+    "Sustained Losing": -0.1047750899294669,
+    "Postseason Futility": 0.9629656063132102,
+    "Collapse Trauma": -0.0061972649761164,
+    "Close-Game Pain": -0.212409343324181,
+    "Turnover Self-Destruction": 0.6417491927617373,
+    "Hope/Season Collapse": -0.1065899559652078,
+    "Draft / Personnel Turnover": 0.6291227961692667
+  },
+  {
+    "franchise_id": "MIN",
+    "Sustained Losing": -0.6534236173201192,
+    "Postseason Futility": 0.0429913010316181,
+    "Collapse Trauma": -0.3887776495203285,
+    "Close-Game Pain": -0.7776932957076576,
+    "Turnover Self-Destruction": 1.1564037710506516,
+    "Hope/Season Collapse": -0.6544864951512537,
+    "Draft / Personnel Turnover": 0.0376933409264724
+  },
+  {
+    "franchise_id": "NE",
+    "Sustained Losing": -1.5200970790955566,
+    "Postseason Futility": -2.095563033003161,
+    "Collapse Trauma": 0.6395072264145452,
+    "Close-Game Pain": -2.0873779735289184,
+    "Turnover Self-Destruction": -1.2031742817989592,
+    "Hope/Season Collapse": -0.3690752722832262,
+    "Draft / Personnel Turnover": -0.0753143326649706
+  },
+  {
+    "franchise_id": "NO",
+    "Sustained Losing": -0.6495032012294881,
+    "Postseason Futility": -0.3006501323107782,
+    "Collapse Trauma": -0.0519014408213324,
+    "Close-Game Pain": -0.3456455731821043,
+    "Turnover Self-Destruction": 0.1769920519498032,
+    "Hope/Season Collapse": 0.7491389237702817,
+    "Draft / Personnel Turnover": 0.5120126344976057
+  },
+  {
+    "franchise_id": "NYG",
+    "Sustained Losing": 0.3284611339071515,
+    "Postseason Futility": -0.4596662916288809,
+    "Collapse Trauma": -0.3664829622543337,
+    "Close-Game Pain": 0.1604887646389794,
+    "Turnover Self-Destruction": 0.5281230824412746,
+    "Hope/Season Collapse": -0.0888911893670911,
+    "Draft / Personnel Turnover": -0.2036546947141034
+  },
+  {
+    "franchise_id": "NYJ",
+    "Sustained Losing": 0.9218947524038714,
+    "Postseason Futility": 0.7031927588449411,
+    "Collapse Trauma": -0.0664755954920205,
+    "Close-Game Pain": 0.1190749651873508,
+    "Turnover Self-Destruction": -0.1618711722337252,
+    "Hope/Season Collapse": 0.7837990920252382,
+    "Draft / Personnel Turnover": 0.480282006899727
+  },
+  {
+    "franchise_id": "PHI",
+    "Sustained Losing": -1.1042546170781218,
+    "Postseason Futility": -1.336108057974302,
+    "Collapse Trauma": 1.6426159700833756,
+    "Close-Game Pain": -0.3550335969986606,
+    "Turnover Self-Destruction": 0.7629522576210535,
+    "Hope/Season Collapse": 0.1935747587826294,
+    "Draft / Personnel Turnover": -0.0216481704357242
+  },
+  {
+    "franchise_id": "PIT",
+    "Sustained Losing": -1.6441314409512937,
+    "Postseason Futility": -1.023766488676167,
+    "Collapse Trauma": 0.0020811698581608,
+    "Close-Game Pain": -1.2634707978148874,
+    "Turnover Self-Destruction": -0.3688581149643182,
+    "Hope/Season Collapse": -0.7055079103086861,
+    "Draft / Personnel Turnover": -1.3368839586937482
+  },
+  {
+    "franchise_id": "SEA",
+    "Sustained Losing": -0.8399448237370702,
+    "Postseason Futility": -0.8501153713627005,
+    "Collapse Trauma": -0.2373325026163038,
+    "Close-Game Pain": -0.9522545373738236,
+    "Turnover Self-Destruction": -1.6938319806039508,
+    "Hope/Season Collapse": -0.1439564858535586,
+    "Draft / Personnel Turnover": -0.0881954465757077
+  },
+  {
+    "franchise_id": "SF",
+    "Sustained Losing": 0.3887037657678326,
+    "Postseason Futility": -0.3907148512834742,
+    "Collapse Trauma": 0.3648795870697385,
+    "Close-Game Pain": 0.4352915996515209,
+    "Turnover Self-Destruction": -0.1760636120450117,
+    "Hope/Season Collapse": 1.5874566617889123,
+    "Draft / Personnel Turnover": -0.0967598042342173
+  },
+  {
+    "franchise_id": "TB",
+    "Sustained Losing": 0.2432367535229724,
+    "Postseason Futility": 0.0659885471656499,
+    "Collapse Trauma": -0.3992755070338873,
+    "Close-Game Pain": 0.4900931695275096,
+    "Turnover Self-Destruction": -0.1132933070149979,
+    "Hope/Season Collapse": 0.1478675283883863,
+    "Draft / Personnel Turnover": -0.7011881268276783
+  },
+  {
+    "franchise_id": "TEN",
+    "Sustained Losing": -0.0980579867731549,
+    "Postseason Futility": 0.1349405257250104,
+    "Collapse Trauma": -0.5295538697338448,
+    "Close-Game Pain": -0.3196640484505319,
+    "Turnover Self-Destruction": -1.0265238093239764,
+    "Hope/Season Collapse": 0.7807955667254705,
+    "Draft / Personnel Turnover": -0.407893577318513
+  },
+  {
+    "franchise_id": "WAS",
+    "Sustained Losing": 0.6361529350846457,
+    "Postseason Futility": 0.4623137173908264,
+    "Collapse Trauma": -0.4236000528689395,
+    "Close-Game Pain": 0.3969813061778862,
+    "Turnover Self-Destruction": 0.2529576364423826,
+    "Hope/Season Collapse": 1.2486040651300572,
+    "Draft / Personnel Turnover": 0.8928500364713182
+  }
+]

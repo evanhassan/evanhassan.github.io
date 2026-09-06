@@ -1,0 +1,314 @@
+[
+  {
+    "season": 1999,
+    "category": "Loss rate",
+    "score": 2.040632035541345,
+    "rank": null
+  },
+  {
+    "season": 1999,
+    "category": "Point differential",
+    "score": 2.0885846549714517,
+    "rank": null
+  },
+  {
+    "season": 2000,
+    "category": "Loss rate",
+    "score": 1.6126596482021858,
+    "rank": null
+  },
+  {
+    "season": 2000,
+    "category": "Point differential",
+    "score": 2.247156418051098,
+    "rank": null
+  },
+  {
+    "season": 2001,
+    "category": "Loss rate",
+    "score": 0.31222472152211095,
+    "rank": null
+  },
+  {
+    "season": 2001,
+    "category": "Point differential",
+    "score": 0.35241569776692677,
+    "rank": null
+  },
+  {
+    "season": 2002,
+    "category": "Loss rate",
+    "score": -0.36865597336895023,
+    "rank": null
+  },
+  {
+    "season": 2002,
+    "category": "Point differential",
+    "score": -0.27482242251676264,
+    "rank": null
+  },
+  {
+    "season": 2003,
+    "category": "Loss rate",
+    "score": 0.9931270663228415,
+    "rank": null
+  },
+  {
+    "season": 2003,
+    "category": "Point differential",
+    "score": 0.7005657261647547,
+    "rank": null
+  },
+  {
+    "season": 2004,
+    "category": "Loss rate",
+    "score": 1.319657758147716,
+    "rank": null
+  },
+  {
+    "season": 2004,
+    "category": "Point differential",
+    "score": 1.2673220102961358,
+    "rank": null
+  },
+  {
+    "season": 2005,
+    "category": "Loss rate",
+    "score": 0.5996253511966891,
+    "rank": null
+  },
+  {
+    "season": 2005,
+    "category": "Point differential",
+    "score": 0.6622171473573933,
+    "rank": null
+  },
+  {
+    "season": 2006,
+    "category": "Loss rate",
+    "score": 1.403292830891247,
+    "rank": null
+  },
+  {
+    "season": 2006,
+    "category": "Point differential",
+    "score": 1.295676909404896,
+    "rank": null
+  },
+  {
+    "season": 2007,
+    "category": "Loss rate",
+    "score": -0.611775290321498,
+    "rank": null
+  },
+  {
+    "season": 2007,
+    "category": "Point differential",
+    "score": -0.17469622614329045,
+    "rank": null
+  },
+  {
+    "season": 2008,
+    "category": "Loss rate",
+    "score": 1.238610879067607,
+    "rank": null
+  },
+  {
+    "season": 2008,
+    "category": "Point differential",
+    "score": 1.1182103040764566,
+    "rank": null
+  },
+  {
+    "season": 2009,
+    "category": "Loss rate",
+    "score": 0.9457324874869207,
+    "rank": null
+  },
+  {
+    "season": 2009,
+    "category": "Point differential",
+    "score": 1.1070497146371234,
+    "rank": null
+  },
+  {
+    "season": 2010,
+    "category": "Loss rate",
+    "score": 1.0178267156159653,
+    "rank": null
+  },
+  {
+    "season": 2010,
+    "category": "Point differential",
+    "score": 0.6390566579231156,
+    "rank": null
+  },
+  {
+    "season": 2011,
+    "category": "Loss rate",
+    "score": 1.2418408411301325,
+    "rank": null
+  },
+  {
+    "season": 2011,
+    "category": "Point differential",
+    "score": 0.8205139442402462,
+    "rank": null
+  },
+  {
+    "season": 2012,
+    "category": "Loss rate",
+    "score": 0.9884075243132211,
+    "rank": null
+  },
+  {
+    "season": 2012,
+    "category": "Point differential",
+    "score": 0.6021405326867849,
+    "rank": null
+  },
+  {
+    "season": 2013,
+    "category": "Loss rate",
+    "score": 1.3233031480803847,
+    "rank": null
+  },
+  {
+    "season": 2013,
+    "category": "Point differential",
+    "score": 0.9527115621226895,
+    "rank": null
+  },
+  {
+    "season": 2014,
+    "category": "Loss rate",
+    "score": 0.32870417274183583,
+    "rank": null
+  },
+  {
+    "season": 2014,
+    "category": "Point differential",
+    "score": 0.3865845217212846,
+    "rank": null
+  },
+  {
+    "season": 2015,
+    "category": "Loss rate",
+    "score": 1.6666666666666667,
+    "rank": null
+  },
+  {
+    "season": 2015,
+    "category": "Point differential",
+    "score": 1.6044713640975194,
+    "rank": null
+  },
+  {
+    "season": 2016,
+    "category": "Loss rate",
+    "score": 2.2337949281804086,
+    "rank": null
+  },
+  {
+    "season": 2016,
+    "category": "Point differential",
+    "score": 2.212023045458544,
+    "rank": null
+  },
+  {
+    "season": 2017,
+    "category": "Loss rate",
+    "score": 2.5377650742980613,
+    "rank": null
+  },
+  {
+    "season": 2017,
+    "category": "Point differential",
+    "score": 1.8032559722947346,
+    "rank": null
+  },
+  {
+    "season": 2018,
+    "category": "Loss rate",
+    "score": 0.021931723165325635,
+    "rank": null
+  },
+  {
+    "season": 2018,
+    "category": "Point differential",
+    "score": 0.34823647673901115,
+    "rank": null
+  },
+  {
+    "season": 2019,
+    "category": "Loss rate",
+    "score": 0.6579769769707664,
+    "rank": null
+  },
+  {
+    "season": 2019,
+    "category": "Point differential",
+    "score": 0.5471622024297179,
+    "rank": null
+  },
+  {
+    "season": 2020,
+    "category": "Loss rate",
+    "score": -0.8790645691038987,
+    "rank": null
+  },
+  {
+    "season": 2020,
+    "category": "Point differential",
+    "score": 0.11004402641761234,
+    "rank": null
+  },
+  {
+    "season": 2021,
+    "category": "Loss rate",
+    "score": 0.18857485893125484,
+    "rank": null
+  },
+  {
+    "season": 2021,
+    "category": "Point differential",
+    "score": 0.1985303064717924,
+    "rank": null
+  },
+  {
+    "season": 2022,
+    "category": "Loss rate",
+    "score": 0.5198955015615926,
+    "rank": null
+  },
+  {
+    "season": 2022,
+    "category": "Point differential",
+    "score": 0.24995363991130312,
+    "rank": null
+  },
+  {
+    "season": 2023,
+    "category": "Loss rate",
+    "score": -0.9245003270420483,
+    "rank": null
+  },
+  {
+    "season": 2023,
+    "category": "Point differential",
+    "score": -0.3451798885632222,
+    "rank": null
+  },
+  {
+    "season": 2024,
+    "category": "Loss rate",
+    "score": 1.5074151616205693,
+    "rank": null
+  },
+  {
+    "season": 2024,
+    "category": "Point differential",
+    "score": 1.6042588927362038,
+    "rank": null
+  }
+]

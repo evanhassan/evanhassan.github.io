@@ -1,0 +1,1822 @@
+[
+  {
+    "franchise_id": "CLE",
+    "season": 1999,
+    "loss_pct": 0.875,
+    "pdpg": -13.75,
+    "loss_pain_z": 2.040632035541345,
+    "margin_pain_z": 2.0885846549714517,
+    "season_misery": 2.0646083452563984,
+    "cumulative_misery": 2.0646083452563984
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2000,
+    "loss_pct": 0.8125,
+    "pdpg": -16.125,
+    "loss_pain_z": 1.6126596482021858,
+    "margin_pain_z": 2.247156418051098,
+    "season_misery": 1.929908033126642,
+    "cumulative_misery": 3.9945163783830404
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2001,
+    "loss_pct": 0.5625,
+    "pdpg": -2.125,
+    "loss_pain_z": 0.31222472152211095,
+    "margin_pain_z": 0.35241569776692677,
+    "season_misery": 0.33232020964451886,
+    "cumulative_misery": 4.326836588027559
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2002,
+    "loss_pct": 0.4375,
+    "pdpg": 1.5,
+    "loss_pain_z": -0.36865597336895023,
+    "margin_pain_z": -0.27482242251676264,
+    "season_misery": -0.32173919794285644,
+    "cumulative_misery": 4.0050973900847024
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2003,
+    "loss_pct": 0.6875,
+    "pdpg": -4.25,
+    "loss_pain_z": 0.9931270663228415,
+    "margin_pain_z": 0.7005657261647547,
+    "season_misery": 0.8468463962437981,
+    "cumulative_misery": 4.851943786328501
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2004,
+    "loss_pct": 0.75,
+    "pdpg": -7.125,
+    "loss_pain_z": 1.319657758147716,
+    "margin_pain_z": 1.2673220102961358,
+    "season_misery": 1.293489884221926,
+    "cumulative_misery": 6.145433670550426
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2005,
+    "loss_pct": 0.625,
+    "pdpg": -4.3125,
+    "loss_pain_z": 0.5996253511966891,
+    "margin_pain_z": 0.6622171473573933,
+    "season_misery": 0.6309212492770413,
+    "cumulative_misery": 6.776354919827468
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2006,
+    "loss_pct": 0.75,
+    "pdpg": -7.375,
+    "loss_pain_z": 1.403292830891247,
+    "margin_pain_z": 1.295676909404896,
+    "season_misery": 1.3494848701480715,
+    "cumulative_misery": 8.12583978997554
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2007,
+    "loss_pct": 0.375,
+    "pdpg": 1.25,
+    "loss_pain_z": -0.611775290321498,
+    "margin_pain_z": -0.17469622614329045,
+    "season_misery": -0.3932357582323942,
+    "cumulative_misery": 7.732604031743145
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2008,
+    "loss_pct": 0.75,
+    "pdpg": -7.375,
+    "loss_pain_z": 1.238610879067607,
+    "margin_pain_z": 1.1182103040764566,
+    "season_misery": 1.1784105915720318,
+    "cumulative_misery": 8.911014623315177
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2009,
+    "loss_pct": 0.6875,
+    "pdpg": -8.125,
+    "loss_pain_z": 0.9457324874869207,
+    "margin_pain_z": 1.1070497146371234,
+    "season_misery": 1.0263911010620221,
+    "cumulative_misery": 9.9374057243772
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2010,
+    "loss_pct": 0.6875,
+    "pdpg": -3.8125,
+    "loss_pain_z": 1.0178267156159653,
+    "margin_pain_z": 0.6390566579231156,
+    "season_misery": 0.8284416867695404,
+    "cumulative_misery": 10.76584741114674
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2011,
+    "loss_pct": 0.75,
+    "pdpg": -5.5625,
+    "loss_pain_z": 1.2418408411301325,
+    "margin_pain_z": 0.8205139442402462,
+    "season_misery": 1.0311773926851893,
+    "cumulative_misery": 11.79702480383193
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2012,
+    "loss_pct": 0.6875,
+    "pdpg": -4.125,
+    "loss_pain_z": 0.9884075243132211,
+    "margin_pain_z": 0.6021405326867849,
+    "season_misery": 0.7952740285000031,
+    "cumulative_misery": 12.592298832331933
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2013,
+    "loss_pct": 0.75,
+    "pdpg": -6.125,
+    "loss_pain_z": 1.3233031480803847,
+    "margin_pain_z": 0.9527115621226895,
+    "season_misery": 1.138007355101537,
+    "cumulative_misery": 13.730306187433468
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2014,
+    "loss_pct": 0.5625,
+    "pdpg": -2.375,
+    "loss_pain_z": 0.32870417274183583,
+    "margin_pain_z": 0.3865845217212846,
+    "season_misery": 0.35764434723156024,
+    "cumulative_misery": 14.08795053466503
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2015,
+    "loss_pct": 0.8125,
+    "pdpg": -9.625,
+    "loss_pain_z": 1.6666666666666667,
+    "margin_pain_z": 1.6044713640975194,
+    "season_misery": 1.6355690153820932,
+    "cumulative_misery": 15.723519550047122
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2016,
+    "loss_pct": 0.9375,
+    "pdpg": -11.75,
+    "loss_pain_z": 2.2337949281804086,
+    "margin_pain_z": 2.212023045458544,
+    "season_misery": 2.2229089868194762,
+    "cumulative_misery": 17.9464285368666
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2017,
+    "loss_pct": 1.0,
+    "pdpg": -11.0,
+    "loss_pain_z": 2.5377650742980613,
+    "margin_pain_z": 1.8032559722947346,
+    "season_misery": 2.170510523296398,
+    "cumulative_misery": 20.116939060163
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2018,
+    "loss_pct": 0.5,
+    "pdpg": -2.0625,
+    "loss_pain_z": 0.021931723165325635,
+    "margin_pain_z": 0.34823647673901115,
+    "season_misery": 0.1850840999521684,
+    "cumulative_misery": 20.302023160115166
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2019,
+    "loss_pct": 0.625,
+    "pdpg": -3.625,
+    "loss_pain_z": 0.6579769769707664,
+    "margin_pain_z": 0.5471622024297179,
+    "season_misery": 0.6025695897002421,
+    "cumulative_misery": 20.904592749815407
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2020,
+    "loss_pct": 0.3125,
+    "pdpg": -0.6875,
+    "loss_pain_z": -0.8790645691038987,
+    "margin_pain_z": 0.11004402641761234,
+    "season_misery": -0.3845102713431432,
+    "cumulative_misery": 20.520082478472265
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2021,
+    "loss_pct": 0.5294117647058824,
+    "pdpg": -1.2941176470588236,
+    "loss_pain_z": 0.18857485893125484,
+    "margin_pain_z": 0.1985303064717924,
+    "season_misery": 0.19355258270152362,
+    "cumulative_misery": 20.713635061173786
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2022,
+    "loss_pct": 0.5882352941176471,
+    "pdpg": -1.1764705882352942,
+    "loss_pain_z": 0.5198955015615926,
+    "margin_pain_z": 0.24995363991130312,
+    "season_misery": 0.38492457073644787,
+    "cumulative_misery": 21.098559631910234
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2023,
+    "loss_pct": 0.35294117647058826,
+    "pdpg": 2.0,
+    "loss_pain_z": -0.9245003270420483,
+    "margin_pain_z": -0.3451798885632222,
+    "season_misery": -0.6348401078026352,
+    "cumulative_misery": 20.4637195241076
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2024,
+    "loss_pct": 0.8235294117647058,
+    "pdpg": -10.411764705882353,
+    "loss_pain_z": 1.5074151616205693,
+    "margin_pain_z": 1.6042588927362038,
+    "season_misery": 1.5558370271783866,
+    "cumulative_misery": 22.019556551285987
+  },
+  {
+    "franchise_id": "DET",
+    "season": 1999,
+    "loss_pct": 0.5,
+    "pdpg": -0.0625,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": 0.009493566613506598,
+    "season_misery": 0.004746783306753299,
+    "cumulative_misery": 0.004746783306753299
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2000,
+    "loss_pct": 0.4375,
+    "pdpg": 0.0,
+    "loss_pain_z": -0.32253192964043714,
+    "margin_pain_z": -0.0,
+    "season_misery": -0.16126596482021857,
+    "cumulative_misery": -0.15651918151346528
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2001,
+    "loss_pct": 0.875,
+    "pdpg": -9.625,
+    "loss_pain_z": 1.8733483291326658,
+    "margin_pain_z": 1.5962358075325507,
+    "season_misery": 1.7347920683326081,
+    "cumulative_misery": 1.578272886819143
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2002,
+    "loss_pct": 0.8125,
+    "pdpg": -9.0625,
+    "loss_pain_z": 1.9146326358839028,
+    "margin_pain_z": 1.6603854693721076,
+    "season_misery": 1.787509052628005,
+    "cumulative_misery": 3.3657819394471478
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2003,
+    "loss_pct": 0.6875,
+    "pdpg": -6.8125,
+    "loss_pain_z": 0.9931270663228415,
+    "margin_pain_z": 1.1229656492935038,
+    "season_misery": 1.0580463578081727,
+    "cumulative_misery": 4.423828297255321
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2004,
+    "loss_pct": 0.625,
+    "pdpg": -3.375,
+    "loss_pain_z": 0.659828879073858,
+    "margin_pain_z": 0.6003104259297485,
+    "season_misery": 0.6300696525018032,
+    "cumulative_misery": 5.053897949757124
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2005,
+    "loss_pct": 0.6875,
+    "pdpg": -5.6875,
+    "loss_pain_z": 0.8994380267950337,
+    "margin_pain_z": 0.8733588465148231,
+    "season_misery": 0.8863984366549285,
+    "cumulative_misery": 5.940296386412053
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2006,
+    "loss_pct": 0.8125,
+    "pdpg": -5.8125,
+    "loss_pain_z": 1.7541160386140586,
+    "margin_pain_z": 1.0211690896157233,
+    "season_misery": 1.3876425641148908,
+    "cumulative_misery": 7.327938950526943
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2007,
+    "loss_pct": 0.5625,
+    "pdpg": -6.125,
+    "loss_pain_z": 0.305887645160749,
+    "margin_pain_z": 0.8560115081021231,
+    "season_misery": 0.5809495766314361,
+    "cumulative_misery": 7.908888527158379
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2008,
+    "loss_pct": 1.0,
+    "pdpg": -15.5625,
+    "loss_pain_z": 2.4676201234137594,
+    "margin_pain_z": 2.359613268771506,
+    "season_misery": 2.4136166960926326,
+    "cumulative_misery": 10.322505223251012
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2009,
+    "loss_pct": 0.875,
+    "pdpg": -14.5,
+    "loss_pain_z": 1.8914649749738415,
+    "margin_pain_z": 1.975657952275482,
+    "season_misery": 1.9335614636246619,
+    "cumulative_misery": 12.256066686875673
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2010,
+    "loss_pct": 0.625,
+    "pdpg": -0.4375,
+    "loss_pain_z": 0.6785511437439767,
+    "margin_pain_z": 0.07333437058134114,
+    "season_misery": 0.37594275716265896,
+    "cumulative_misery": 12.632009444038333
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2011,
+    "loss_pct": 0.375,
+    "pdpg": 5.4375,
+    "loss_pain_z": -0.6209204205650662,
+    "margin_pain_z": -0.8020754286393417,
+    "season_misery": -0.711497924602204,
+    "cumulative_misery": 11.920511519436129
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2012,
+    "loss_pct": 0.75,
+    "pdpg": -4.0625,
+    "loss_pain_z": 1.3144801096536651,
+    "margin_pain_z": 0.5930171912824397,
+    "season_misery": 0.9537486504680524,
+    "cumulative_misery": 12.874260169904181
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2013,
+    "loss_pct": 0.5625,
+    "pdpg": 1.1875,
+    "loss_pain_z": 0.33851940997405194,
+    "margin_pain_z": -0.18470938449317448,
+    "season_misery": 0.07690501274043873,
+    "cumulative_misery": 12.95116518264462
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2014,
+    "loss_pct": 0.3125,
+    "pdpg": 2.4375,
+    "loss_pain_z": -0.946269588196194,
+    "margin_pain_z": -0.3967577986086868,
+    "season_misery": -0.6715136934024404,
+    "cumulative_misery": 12.27965148924218
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2015,
+    "loss_pct": 0.5625,
+    "pdpg": -2.625,
+    "loss_pain_z": 0.3333333333333333,
+    "margin_pain_z": 0.4375830992993235,
+    "season_misery": 0.3854582163163284,
+    "cumulative_misery": 12.665109705558509
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2016,
+    "loss_pct": 0.4375,
+    "pdpg": -0.75,
+    "loss_pain_z": -0.2965214506434171,
+    "margin_pain_z": 0.1411929603484177,
+    "season_misery": -0.07766424514749971,
+    "cumulative_misery": 12.587445460411008
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2017,
+    "loss_pct": 0.4375,
+    "pdpg": 2.125,
+    "loss_pain_z": -0.31722063428725766,
+    "margin_pain_z": -0.34835626737511916,
+    "season_misery": -0.3327884508311884,
+    "cumulative_misery": 12.25465700957982
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2018,
+    "loss_pct": 0.625,
+    "pdpg": -2.25,
+    "loss_pain_z": 0.723746864455746,
+    "margin_pain_z": 0.37989433826073943,
+    "season_misery": 0.5518206013582427,
+    "cumulative_misery": 12.806477610938062
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2019,
+    "loss_pct": 0.75,
+    "pdpg": -5.125,
+    "loss_pain_z": 1.3058312312189055,
+    "margin_pain_z": 0.7735741482627047,
+    "season_misery": 1.039702689740805,
+    "cumulative_misery": 13.846180300678867
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2020,
+    "loss_pct": 0.6875,
+    "pdpg": -8.875,
+    "loss_pain_z": 0.8975711916113492,
+    "margin_pain_z": 1.4205683410273593,
+    "season_misery": 1.1590697663193543,
+    "cumulative_misery": 15.005250066998222
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2021,
+    "loss_pct": 0.7647058823529411,
+    "pdpg": -8.352941176470589,
+    "loss_pain_z": 1.6084326202959942,
+    "margin_pain_z": 1.2814228872270237,
+    "season_misery": 1.444927753761509,
+    "cumulative_misery": 16.45017782075973
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2022,
+    "loss_pct": 0.47058823529411764,
+    "pdpg": 1.5294117647058822,
+    "loss_pain_z": -0.13816753131735782,
+    "margin_pain_z": -0.31043742407641806,
+    "season_misery": -0.22430247769688794,
+    "cumulative_misery": 16.225875343062842
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2023,
+    "loss_pct": 0.29411764705882354,
+    "pdpg": 3.8823529411764706,
+    "loss_pain_z": -1.2943004578588677,
+    "margin_pain_z": -0.670055077799196,
+    "season_misery": -0.9821777678290319,
+    "cumulative_misery": 15.243697575233812
+  },
+  {
+    "franchise_id": "DET",
+    "season": 2024,
+    "loss_pct": 0.11764705882352941,
+    "pdpg": 13.058823529411764,
+    "loss_pain_z": -1.7814906455515822,
+    "margin_pain_z": -2.012121323092866,
+    "season_misery": -1.896805984322224,
+    "cumulative_misery": 13.346891590911587
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 1999,
+    "loss_pct": 0.125,
+    "pdpg": 11.1875,
+    "loss_pain_z": -2.040632035541345,
+    "margin_pain_z": -1.6993484238176813,
+    "season_misery": -1.8699902296795132,
+    "cumulative_misery": -1.8699902296795132
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2000,
+    "loss_pct": 0.5625,
+    "pdpg": 2.5,
+    "loss_pain_z": 0.32253192964043714,
+    "margin_pain_z": -0.3483963438838912,
+    "season_misery": -0.012932207121727018,
+    "cumulative_misery": -1.8829224368012403
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2001,
+    "loss_pct": 0.625,
+    "pdpg": 0.5,
+    "loss_pain_z": 0.6244494430442219,
+    "margin_pain_z": -0.08292134065104159,
+    "season_misery": 0.27076405119659014,
+    "cumulative_misery": -1.61215838560465
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2002,
+    "loss_pct": 0.625,
+    "pdpg": 0.8125,
+    "loss_pain_z": 0.7729883312574762,
+    "margin_pain_z": -0.1488621455299131,
+    "season_misery": 0.3120630928637816,
+    "cumulative_misery": -1.3000952927408684
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2003,
+    "loss_pct": 0.6875,
+    "pdpg": -3.4375,
+    "loss_pain_z": 0.9931270663228415,
+    "margin_pain_z": 0.5666340432214927,
+    "season_misery": 0.7798805547721671,
+    "cumulative_misery": -0.5202147379687014
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2004,
+    "loss_pct": 0.4375,
+    "pdpg": -1.1875,
+    "loss_pain_z": -0.329914439536929,
+    "margin_pain_z": 0.21122033504935597,
+    "season_misery": -0.059347052243786516,
+    "cumulative_misery": -0.579561790212488
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2005,
+    "loss_pct": 0.25,
+    "pdpg": 5.75,
+    "loss_pain_z": -1.1992507023933783,
+    "margin_pain_z": -0.8829561964765245,
+    "season_misery": -1.0411034494349514,
+    "cumulative_misery": -1.6206652396474395
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2006,
+    "loss_pct": 0.5,
+    "pdpg": 6.0625,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": -1.065090340781991,
+    "season_misery": -0.5325451703909955,
+    "cumulative_misery": -2.153210410038435
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2007,
+    "loss_pct": 0.3125,
+    "pdpg": 6.6875,
+    "loss_pain_z": -0.9176629354822471,
+    "margin_pain_z": -0.9346248098666039,
+    "season_misery": -0.9261438726744256,
+    "cumulative_misery": -3.07935428271286
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2008,
+    "loss_pct": 0.6875,
+    "pdpg": -4.0625,
+    "loss_pain_z": 0.9313585679810688,
+    "margin_pain_z": 0.6159633030929634,
+    "season_misery": 0.7736609355370161,
+    "cumulative_misery": -2.3056933471758443
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2009,
+    "loss_pct": 0.5625,
+    "pdpg": -5.625,
+    "loss_pain_z": 0.31524416249564025,
+    "margin_pain_z": 0.7664190332103162,
+    "season_misery": 0.5408315978529783,
+    "cumulative_misery": -1.7648617493228658
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2010,
+    "loss_pct": 0.5,
+    "pdpg": -4.125,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": 0.6914383511955021,
+    "season_misery": 0.34571917559775106,
+    "cumulative_misery": -1.4191425737251149
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2011,
+    "loss_pct": 0.6875,
+    "pdpg": -5.375,
+    "loss_pain_z": 0.9313806308475994,
+    "margin_pain_z": 0.7928561708388895,
+    "season_misery": 0.8621184008432444,
+    "cumulative_misery": -0.5570241728818703
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2012,
+    "loss_pct": 0.875,
+    "pdpg": -11.8125,
+    "loss_pain_z": 1.9666252803345534,
+    "margin_pain_z": 1.7243115254212478,
+    "season_misery": 1.8454684028779007,
+    "cumulative_misery": 1.2884442299960304
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2013,
+    "loss_pct": 0.75,
+    "pdpg": -12.625,
+    "loss_pain_z": 1.3233031480803847,
+    "margin_pain_z": 1.963752403559013,
+    "season_misery": 1.6435277758196989,
+    "cumulative_misery": 2.9319720058157293
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2014,
+    "loss_pct": 0.8125,
+    "pdpg": -10.1875,
+    "loss_pain_z": 1.6036779336798657,
+    "margin_pain_z": 1.658244132646563,
+    "season_misery": 1.6309610331632143,
+    "cumulative_misery": 4.562933038978944
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2015,
+    "loss_pct": 0.6875,
+    "pdpg": -4.5,
+    "loss_pain_z": 1.0,
+    "margin_pain_z": 0.7501424559416975,
+    "season_misery": 0.8750712279708488,
+    "cumulative_misery": 5.438004266949792
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2016,
+    "loss_pct": 0.8125,
+    "pdpg": -5.125,
+    "loss_pain_z": 1.6012158334744524,
+    "margin_pain_z": 0.9648185623808542,
+    "season_misery": 1.2830171979276532,
+    "cumulative_misery": 6.721021464877445
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2017,
+    "loss_pct": 0.375,
+    "pdpg": 9.3125,
+    "loss_pain_z": -0.6344412685745153,
+    "margin_pain_z": -1.5266201129086103,
+    "season_misery": -1.0805306907415628,
+    "cumulative_misery": 5.640490774135882
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2018,
+    "loss_pct": 0.6875,
+    "pdpg": -4.4375,
+    "loss_pain_z": 1.0746544351009562,
+    "margin_pain_z": 0.7492360560142362,
+    "season_misery": 0.9119452455575962,
+    "cumulative_misery": 6.552436019693479
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2019,
+    "loss_pct": 0.625,
+    "pdpg": -6.0625,
+    "loss_pain_z": 0.6579769769707664,
+    "margin_pain_z": 0.9150816144083214,
+    "season_misery": 0.7865292956895439,
+    "cumulative_misery": 7.338965315383023
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2020,
+    "loss_pct": 0.9375,
+    "pdpg": -11.625,
+    "loss_pain_z": 2.081995032088181,
+    "margin_pain_z": 1.8607444466978085,
+    "season_misery": 1.9713697393929948,
+    "cumulative_misery": 9.310335054776017
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2021,
+    "loss_pct": 0.8235294117647058,
+    "pdpg": -12.0,
+    "loss_pain_z": 1.9633970606371793,
+    "margin_pain_z": 1.840917387283893,
+    "season_misery": 1.9021572239605362,
+    "cumulative_misery": 11.212492278736553
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2022,
+    "loss_pct": 0.47058823529411764,
+    "pdpg": 3.176470588235294,
+    "loss_pain_z": -0.13816753131735782,
+    "margin_pain_z": -0.651545028242857,
+    "season_misery": -0.3948562797801074,
+    "cumulative_misery": 10.817635998956446
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2023,
+    "loss_pct": 0.47058823529411764,
+    "pdpg": 0.35294117647058826,
+    "loss_pain_z": -0.18490006540840973,
+    "margin_pain_z": -0.060914097981745075,
+    "season_misery": -0.1229070816950774,
+    "cumulative_misery": 10.694728917261369
+  },
+  {
+    "franchise_id": "JAX",
+    "season": 2024,
+    "loss_pct": 0.7647058823529411,
+    "pdpg": -6.764705882352941,
+    "loss_pain_z": 1.2333396776895567,
+    "margin_pain_z": 1.0423150998003583,
+    "season_misery": 1.1378273887449575,
+    "cumulative_misery": 11.832556306006326
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 1999,
+    "loss_pct": 0.5,
+    "pdpg": -2.9375,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": 0.4461976308348101,
+    "season_misery": 0.22309881541740506,
+    "cumulative_misery": 0.22309881541740506
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2000,
+    "loss_pct": 0.9375,
+    "pdpg": -10.6875,
+    "loss_pain_z": 2.25772350748306,
+    "margin_pain_z": 1.4893943701036347,
+    "season_misery": 1.8735589387933473,
+    "cumulative_misery": 2.0966577542107525
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2001,
+    "loss_pct": 0.6875,
+    "pdpg": 0.6875,
+    "loss_pain_z": 0.9366741645663329,
+    "margin_pain_z": -0.11401684339518219,
+    "season_misery": 0.4113286605855754,
+    "cumulative_misery": 2.507986414796328
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2002,
+    "loss_pct": 0.5,
+    "pdpg": -2.125,
+    "loss_pain_z": 0.011892128173191942,
+    "margin_pain_z": 0.3893317652320804,
+    "season_misery": 0.20061194670263618,
+    "cumulative_misery": 2.708598361498964
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2003,
+    "loss_pct": 0.75,
+    "pdpg": -8.0,
+    "loss_pain_z": 1.3241694217637887,
+    "margin_pain_z": 1.3187119551336557,
+    "season_misery": 1.3214406884487222,
+    "cumulative_misery": 4.030039049947686
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2004,
+    "loss_pct": 0.25,
+    "pdpg": 8.3125,
+    "loss_pain_z": -1.319657758147716,
+    "margin_pain_z": -1.4785423453454918,
+    "season_misery": -1.399100051746604,
+    "cumulative_misery": 2.6309389982010822
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2005,
+    "loss_pct": 0.4375,
+    "pdpg": 6.625,
+    "loss_pain_z": -0.29981267559834457,
+    "margin_pain_z": -1.0173190959403435,
+    "season_misery": -0.658565885769344,
+    "cumulative_misery": 1.9723731124317383
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2006,
+    "loss_pct": 0.125,
+    "pdpg": 11.8125,
+    "loss_pain_z": -2.1049392463368704,
+    "margin_pain_z": -2.075279117606147,
+    "season_misery": -2.090109181971509,
+    "cumulative_misery": -0.11773606953977067
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2007,
+    "loss_pct": 0.3125,
+    "pdpg": 8.0,
+    "loss_pain_z": -0.9176629354822471,
+    "margin_pain_z": -1.1180558473170588,
+    "season_misery": -1.017859391399653,
+    "cumulative_misery": -1.1355954609394237
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2008,
+    "loss_pct": 0.5,
+    "pdpg": 5.75,
+    "loss_pain_z": 0.009601634721454318,
+    "margin_pain_z": -0.8718249828392713,
+    "season_misery": -0.4311116740589085,
+    "cumulative_misery": -1.5667071349983321
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2009,
+    "loss_pct": 0.1875,
+    "pdpg": 8.375,
+    "loss_pain_z": -1.5762208124782013,
+    "margin_pain_z": -1.1411127827798042,
+    "season_misery": -1.3586667976290028,
+    "cumulative_misery": -2.925373932627335
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2010,
+    "loss_pct": 0.4375,
+    "pdpg": 7.4375,
+    "loss_pain_z": -0.33927557187198837,
+    "margin_pain_z": -1.2466842998827994,
+    "season_misery": -0.7929799358773939,
+    "cumulative_misery": -3.718353868504729
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2011,
+    "loss_pct": 0.5,
+    "pdpg": 1.8125,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": -0.2673584762131139,
+    "season_misery": -0.13367923810655696,
+    "cumulative_misery": -3.8520331066112856
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2012,
+    "loss_pct": 0.5625,
+    "pdpg": 0.0,
+    "loss_pain_z": 0.336262353632333,
+    "margin_pain_z": -0.0,
+    "season_misery": 0.1681311768161665,
+    "cumulative_misery": -3.683901929795119
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2013,
+    "loss_pct": 0.4375,
+    "pdpg": 3.0,
+    "loss_pain_z": -0.31800308209683664,
+    "margin_pain_z": -0.4666342345090724,
+    "season_misery": -0.39231865830295454,
+    "cumulative_misery": -4.0762205880980735
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2014,
+    "loss_pct": 0.4375,
+    "pdpg": 0.0,
+    "loss_pain_z": -0.3087827077271791,
+    "margin_pain_z": -0.0,
+    "season_misery": -0.15439135386358954,
+    "cumulative_misery": -4.230611941961663
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2015,
+    "loss_pct": 0.75,
+    "pdpg": -4.875,
+    "loss_pain_z": 1.3333333333333333,
+    "margin_pain_z": 0.8126543272701723,
+    "season_misery": 1.0729938303017528,
+    "cumulative_misery": -3.157618111659911
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2016,
+    "loss_pct": 0.6875,
+    "pdpg": -0.8125,
+    "loss_pain_z": 0.9686367387684959,
+    "margin_pain_z": 0.1529590403774525,
+    "season_misery": 0.5607978895729742,
+    "cumulative_misery": -2.5968202220869365
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2017,
+    "loss_pct": 0.4375,
+    "pdpg": 5.1875,
+    "loss_pain_z": -0.31722063428725766,
+    "margin_pain_z": -0.850399123298085,
+    "season_misery": -0.5838098787926713,
+    "cumulative_misery": -3.1806301008796076
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2018,
+    "loss_pct": 0.25,
+    "pdpg": 6.1875,
+    "loss_pain_z": -1.381698559415515,
+    "margin_pain_z": -1.0447094302170334,
+    "season_misery": -1.2132039948162743,
+    "cumulative_misery": -4.393834095695882
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2019,
+    "loss_pct": 0.6875,
+    "pdpg": -0.5,
+    "loss_pain_z": 0.981904104094836,
+    "margin_pain_z": 0.07547064861099557,
+    "season_misery": 0.5286873763529157,
+    "cumulative_misery": -3.8651467193429663
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2020,
+    "loss_pct": 0.5625,
+    "pdpg": -2.625,
+    "loss_pain_z": 0.3053592713729332,
+    "margin_pain_z": 0.4201681008672471,
+    "season_misery": 0.36276368612009013,
+    "cumulative_misery": -3.502383033222876
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2021,
+    "loss_pct": 0.47058823529411764,
+    "pdpg": 0.8823529411764706,
+    "loss_pain_z": -0.16638958140993018,
+    "margin_pain_z": -0.1353615725944039,
+    "season_misery": -0.15087557700216703,
+    "cumulative_misery": -3.653258610225043
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2022,
+    "loss_pct": 0.4117647058823529,
+    "pdpg": 0.4117647058823529,
+    "loss_pain_z": -0.4671990477568331,
+    "margin_pain_z": -0.07897154982062018,
+    "season_misery": -0.2730852987887266,
+    "cumulative_misery": -3.9263439090137697
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2023,
+    "loss_pct": 0.7058823529411765,
+    "pdpg": -3.0588235294117645,
+    "loss_pain_z": 1.2943004578588682,
+    "margin_pain_z": 0.5279221825084575,
+    "season_misery": 0.9111113201836628,
+    "cumulative_misery": -3.015232588830107
+  },
+  {
+    "franchise_id": "LAC",
+    "season": 2024,
+    "loss_pct": 0.35294117647058826,
+    "pdpg": 5.9411764705882355,
+    "loss_pain_z": -0.6851887098275316,
+    "margin_pain_z": -0.9154245659116191,
+    "season_misery": -0.8003066378695753,
+    "cumulative_misery": -3.8155392266996824
+  },
+  {
+    "franchise_id": "LV",
+    "season": 1999,
+    "loss_pct": 0.5,
+    "pdpg": 3.8125,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": -0.5791075634239026,
+    "season_misery": -0.2895537817119513,
+    "cumulative_misery": -0.2895537817119513
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2000,
+    "loss_pct": 0.25,
+    "pdpg": 11.25,
+    "loss_pain_z": -1.2901277185617486,
+    "margin_pain_z": -1.5677835474775104,
+    "season_misery": -1.4289556330196294,
+    "cumulative_misery": -1.7185094147315807
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2001,
+    "loss_pct": 0.375,
+    "pdpg": 4.5,
+    "loss_pain_z": -0.6244494430442219,
+    "margin_pain_z": -0.7462920658593742,
+    "season_misery": -0.6853707544517981,
+    "cumulative_misery": -2.403880169183379
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2002,
+    "loss_pct": 0.3125,
+    "pdpg": 9.125,
+    "loss_pain_z": -1.1297521764532346,
+    "margin_pain_z": -1.6718364036436393,
+    "season_misery": -1.400794290048437,
+    "cumulative_misery": -3.8046744592318156
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2003,
+    "loss_pct": 0.75,
+    "pdpg": -6.8125,
+    "loss_pain_z": 1.3241694217637887,
+    "margin_pain_z": 1.1229656492935038,
+    "season_misery": 1.2235675355286464,
+    "cumulative_misery": -2.581106923703169
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2004,
+    "loss_pct": 0.6875,
+    "pdpg": -7.625,
+    "loss_pain_z": 0.989743318610787,
+    "margin_pain_z": 1.3562568882116541,
+    "season_misery": 1.1730001034112205,
+    "cumulative_misery": -1.4081068202919487
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2005,
+    "loss_pct": 0.75,
+    "pdpg": -5.8125,
+    "loss_pain_z": 1.1992507023933783,
+    "margin_pain_z": 0.8925535464382258,
+    "season_misery": 1.045902124415802,
+    "cumulative_misery": -0.3622046958761467
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2006,
+    "loss_pct": 0.875,
+    "pdpg": -10.25,
+    "loss_pain_z": 2.1049392463368704,
+    "margin_pain_z": 1.8007712978169743,
+    "season_misery": 1.9528552720769223,
+    "cumulative_misery": 1.5906505762007757
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2007,
+    "loss_pct": 0.75,
+    "pdpg": -7.1875,
+    "loss_pain_z": 1.223550580642996,
+    "margin_pain_z": 1.00450330032392,
+    "season_misery": 1.1140269404834582,
+    "cumulative_misery": 2.704677516684234
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2008,
+    "loss_pct": 0.6875,
+    "pdpg": -7.8125,
+    "loss_pain_z": 0.9313585679810688,
+    "margin_pain_z": 1.1845448136403143,
+    "season_misery": 1.0579516908106914,
+    "cumulative_misery": 3.7626292074949252
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2009,
+    "loss_pct": 0.6875,
+    "pdpg": -11.375,
+    "loss_pain_z": 0.9457324874869207,
+    "margin_pain_z": 1.549869600491973,
+    "season_misery": 1.247801043989447,
+    "cumulative_misery": 5.010430251484372
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2010,
+    "loss_pct": 0.5,
+    "pdpg": 2.4375,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": -0.4085772075246149,
+    "season_misery": -0.20428860376230745,
+    "cumulative_misery": 4.806141647722065
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2011,
+    "loss_pct": 0.5,
+    "pdpg": -4.625,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": 0.682225077233463,
+    "season_misery": 0.3411125386167315,
+    "cumulative_misery": 5.147254186338796
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2012,
+    "loss_pct": 0.75,
+    "pdpg": -9.5625,
+    "loss_pain_z": 1.3144801096536651,
+    "margin_pain_z": 1.3958712348648195,
+    "season_misery": 1.3551756722592423,
+    "cumulative_misery": 6.502429858598038
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2013,
+    "loss_pct": 0.75,
+    "pdpg": -8.1875,
+    "loss_pain_z": 1.3233031480803847,
+    "margin_pain_z": 1.2735225983476768,
+    "season_misery": 1.2984128732140308,
+    "cumulative_misery": 7.800842731812069
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2014,
+    "loss_pct": 0.8125,
+    "pdpg": -12.4375,
+    "loss_pain_z": 1.6036779336798657,
+    "margin_pain_z": 2.024482100593043,
+    "season_misery": 1.8140800171364544,
+    "cumulative_misery": 9.614922748948523
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2015,
+    "loss_pct": 0.5625,
+    "pdpg": -2.5,
+    "loss_pain_z": 0.3333333333333333,
+    "margin_pain_z": 0.4167458088564986,
+    "season_misery": 0.3750395710949159,
+    "cumulative_misery": 9.989962320043439
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2016,
+    "loss_pct": 0.25,
+    "pdpg": 1.9375,
+    "loss_pain_z": -1.2453900927023518,
+    "margin_pain_z": -0.364748480900079,
+    "season_misery": -0.8050692868012154,
+    "cumulative_misery": 9.184893033242224
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2017,
+    "loss_pct": 0.625,
+    "pdpg": -4.5,
+    "loss_pain_z": 0.6344412685745153,
+    "margin_pain_z": 0.7376956250296641,
+    "season_misery": 0.6860684468020897,
+    "cumulative_misery": 9.870961480044313
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2018,
+    "loss_pct": 0.75,
+    "pdpg": -11.0625,
+    "loss_pain_z": 1.4255620057461662,
+    "margin_pain_z": 1.867813829781969,
+    "season_misery": 1.6466879177640676,
+    "cumulative_misery": 11.51764939780838
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2019,
+    "loss_pct": 0.5625,
+    "pdpg": -6.625,
+    "loss_pain_z": 0.3340498498466968,
+    "margin_pain_z": 0.9999860940956914,
+    "season_misery": 0.6670179719711941,
+    "cumulative_misery": 12.184667369779575
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2020,
+    "loss_pct": 0.5,
+    "pdpg": -2.75,
+    "loss_pain_z": 0.00925331125372525,
+    "margin_pain_z": 0.44017610567044935,
+    "season_misery": 0.2247147084620873,
+    "cumulative_misery": 12.409382078241663
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2021,
+    "loss_pct": 0.4117647058823529,
+    "pdpg": -3.823529411764706,
+    "loss_pain_z": -0.5213540217511152,
+    "margin_pain_z": 0.5865668145757503,
+    "season_misery": 0.03260639641231755,
+    "cumulative_misery": 12.44198847465398
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2022,
+    "loss_pct": 0.6470588235294118,
+    "pdpg": -1.3529411764705883,
+    "loss_pain_z": 0.8489270180010678,
+    "margin_pain_z": 0.2865008832148501,
+    "season_misery": 0.5677139506079589,
+    "cumulative_misery": 13.009702425261938
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2023,
+    "loss_pct": 0.5294117647058824,
+    "pdpg": 0.058823529411764705,
+    "loss_pain_z": 0.18490006540840973,
+    "margin_pain_z": -0.010152349663624162,
+    "season_misery": 0.08737385787239278,
+    "cumulative_misery": 13.097076283134331
+  },
+  {
+    "franchise_id": "LV",
+    "season": 2024,
+    "loss_pct": 0.7647058823529411,
+    "pdpg": -7.352941176470588,
+    "loss_pain_z": 1.2333396776895567,
+    "margin_pain_z": 1.132951195435172,
+    "season_misery": 1.1831454365623644,
+    "cumulative_misery": 14.280221719696696
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 1999,
+    "loss_pct": 0.5,
+    "pdpg": -0.0625,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": 0.009493566613506598,
+    "season_misery": 0.004746783306753299,
+    "cumulative_misery": 0.004746783306753299
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2000,
+    "loss_pct": 0.4375,
+    "pdpg": 0.0,
+    "loss_pain_z": -0.32253192964043714,
+    "margin_pain_z": -0.0,
+    "season_misery": -0.16126596482021857,
+    "cumulative_misery": -0.15651918151346528
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2001,
+    "loss_pct": 0.375,
+    "pdpg": 0.8125,
+    "loss_pain_z": -0.6244494430442219,
+    "margin_pain_z": -0.13474717855794258,
+    "season_misery": -0.37959831080108225,
+    "cumulative_misery": -0.5361174923145475
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2002,
+    "loss_pct": 0.4375,
+    "pdpg": 1.4375,
+    "loss_pain_z": -0.36865597336895023,
+    "margin_pain_z": -0.2633714882452309,
+    "season_misery": -0.31601373080709055,
+    "cumulative_misery": -0.852131223121638
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2003,
+    "loss_pct": 0.625,
+    "pdpg": -1.0,
+    "loss_pain_z": 0.6620847108818944,
+    "margin_pain_z": 0.16483899439170696,
+    "season_misery": 0.4134618526368007,
+    "cumulative_misery": -0.4386693704848374
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2004,
+    "loss_pct": 0.375,
+    "pdpg": 4.5,
+    "loss_pain_z": -0.659828879073858,
+    "margin_pain_z": -0.8004139012396647,
+    "season_misery": -0.7301213901567614,
+    "cumulative_misery": -1.1687907606415988
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2005,
+    "loss_pct": 0.75,
+    "pdpg": -7.1875,
+    "loss_pain_z": 1.1992507023933783,
+    "margin_pain_z": 1.1036952455956557,
+    "season_misery": 1.151472973994517,
+    "cumulative_misery": -0.017317786647081723
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2006,
+    "loss_pct": 0.375,
+    "pdpg": 1.3125,
+    "loss_pain_z": -0.7016464154456235,
+    "margin_pain_z": -0.23058656862290525,
+    "season_misery": -0.46611649203426436,
+    "cumulative_misery": -0.4834342786813461
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2007,
+    "loss_pct": 0.75,
+    "pdpg": -5.4375,
+    "loss_pain_z": 1.223550580642996,
+    "margin_pain_z": 0.7599285837233134,
+    "season_misery": 0.9917395821831547,
+    "cumulative_misery": 0.5083053035018086
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2008,
+    "loss_pct": 0.4375,
+    "pdpg": 3.0625,
+    "loss_pain_z": -0.2976506763650838,
+    "margin_pain_z": -0.4643415669470032,
+    "season_misery": -0.38099612165604346,
+    "cumulative_misery": 0.12730918184576512
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2009,
+    "loss_pct": 0.4375,
+    "pdpg": 7.0,
+    "loss_pain_z": -0.31524416249564025,
+    "margin_pain_z": -0.9537659079950602,
+    "season_misery": -0.6345050352453503,
+    "cumulative_misery": -0.5071958533995852
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2010,
+    "loss_pct": 0.3125,
+    "pdpg": 3.9375,
+    "loss_pain_z": -1.0178267156159653,
+    "margin_pain_z": -0.6600093352320702,
+    "season_misery": -0.8389180254240177,
+    "cumulative_misery": -1.346113878823603
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2011,
+    "loss_pct": 0.5,
+    "pdpg": 0.875,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": -0.12906960920633084,
+    "season_misery": -0.06453480460316542,
+    "cumulative_misery": -1.4106486834267684
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2012,
+    "loss_pct": 0.625,
+    "pdpg": -5.875,
+    "loss_pain_z": 0.6623349389727771,
+    "margin_pain_z": 0.8575940920084513,
+    "season_misery": 0.7599645154906142,
+    "cumulative_misery": -0.6506841679361541
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2013,
+    "loss_pct": 0.5,
+    "pdpg": -6.0625,
+    "loss_pain_z": 0.010258163938607635,
+    "margin_pain_z": 0.9429900155704171,
+    "season_misery": 0.47662408975451237,
+    "cumulative_misery": -0.17406007818164176
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2014,
+    "loss_pct": 0.75,
+    "pdpg": -7.375,
+    "loss_pain_z": 1.2849344934453582,
+    "margin_pain_z": 1.2004466727134626,
+    "season_misery": 1.2426905830794104,
+    "cumulative_misery": 1.0686305048977687
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2015,
+    "loss_pct": 0.375,
+    "pdpg": 4.5625,
+    "loss_pain_z": -0.6666666666666666,
+    "margin_pain_z": -0.7605611011631099,
+    "season_misery": -0.7136138839148882,
+    "cumulative_misery": 0.35501662098288045
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2016,
+    "loss_pct": 0.6875,
+    "pdpg": -8.375,
+    "loss_pain_z": 0.9686367387684959,
+    "margin_pain_z": 1.576654723890664,
+    "season_misery": 1.27264573132958,
+    "cumulative_misery": 1.6276623523124605
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2017,
+    "loss_pct": 0.6875,
+    "pdpg": -5.25,
+    "loss_pain_z": 0.951661902861773,
+    "margin_pain_z": 0.8606448958679415,
+    "season_misery": 0.9061533993648572,
+    "cumulative_misery": 2.5338157516773174
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2018,
+    "loss_pct": 0.75,
+    "pdpg": -6.75,
+    "loss_pain_z": 1.4255620057461662,
+    "margin_pain_z": 1.1396830147822183,
+    "season_misery": 1.2826225102641922,
+    "cumulative_misery": 3.81643826194151
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2019,
+    "loss_pct": 0.5625,
+    "pdpg": -5.1875,
+    "loss_pain_z": 0.3340498498466968,
+    "margin_pain_z": 0.7830079793390791,
+    "season_misery": 0.5585289145928879,
+    "cumulative_misery": 4.374967176534398
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2020,
+    "loss_pct": 0.875,
+    "pdpg": -13.375,
+    "loss_pain_z": 1.7858890719689733,
+    "margin_pain_z": 2.14085651394264,
+    "season_misery": 1.9633727929558065,
+    "cumulative_misery": 6.338339969490204
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2021,
+    "loss_pct": 0.7647058823529411,
+    "pdpg": -11.411764705882353,
+    "loss_pain_z": 1.6084326202959942,
+    "margin_pain_z": 1.7506763388876239,
+    "season_misery": 1.679554479591809,
+    "cumulative_misery": 8.017894449082013
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2022,
+    "loss_pct": 0.5882352941176471,
+    "pdpg": -1.1764705882352942,
+    "loss_pain_z": 0.5198955015615926,
+    "margin_pain_z": 0.24995363991130312,
+    "season_misery": 0.38492457073644787,
+    "cumulative_misery": 8.40281901981846
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2023,
+    "loss_pct": 0.5882352941176471,
+    "pdpg": -5.117647058823529,
+    "loss_pain_z": 0.5547001962252293,
+    "margin_pain_z": 0.8832544207353037,
+    "season_misery": 0.7189773084802664,
+    "cumulative_misery": 9.121796328298727
+  },
+  {
+    "franchise_id": "NYJ",
+    "season": 2024,
+    "loss_pct": 0.7058823529411765,
+    "pdpg": -3.8823529411764706,
+    "loss_pain_z": 0.9592641937585445,
+    "margin_pain_z": 0.5981982311897709,
+    "season_misery": 0.7787312124741577,
+    "cumulative_misery": 9.900527540772885
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 1999,
+    "loss_pct": 0.375,
+    "pdpg": 4.125,
+    "loss_pain_z": -0.6802106785137816,
+    "margin_pain_z": -0.6265753964914355,
+    "season_misery": -0.6533930375026085,
+    "cumulative_misery": -0.6533930375026085
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2000,
+    "loss_pct": 0.5,
+    "pdpg": 0.75,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": -0.10451890316516735,
+    "season_misery": -0.052259451582583674,
+    "cumulative_misery": -0.7056524890851922
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2001,
+    "loss_pct": 0.5,
+    "pdpg": -2.9375,
+    "loss_pain_z": 0.0,
+    "margin_pain_z": 0.4871628763248693,
+    "season_misery": 0.24358143816243466,
+    "cumulative_misery": -0.46207105092275746
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2002,
+    "loss_pct": 0.5625,
+    "pdpg": -3.625,
+    "loss_pain_z": 0.3924402297153341,
+    "margin_pain_z": 0.664154187748843,
+    "season_misery": 0.5282972087320885,
+    "cumulative_misery": 0.06622615780933105
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2003,
+    "loss_pct": 0.6875,
+    "pdpg": -5.3125,
+    "loss_pain_z": 0.9931270663228415,
+    "margin_pain_z": 0.8757071577059433,
+    "season_misery": 0.9344171120143925,
+    "cumulative_misery": 1.0006432698237235
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2004,
+    "loss_pct": 0.625,
+    "pdpg": -1.5625,
+    "loss_pain_z": 0.659828879073858,
+    "margin_pain_z": 0.2779214934859947,
+    "season_misery": 0.46887518627992636,
+    "cumulative_misery": 1.4695184561036498
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2005,
+    "loss_pct": 0.375,
+    "pdpg": 4.125,
+    "loss_pain_z": -0.5996253511966891,
+    "margin_pain_z": -0.6334250974722894,
+    "season_misery": -0.6165252243344892,
+    "cumulative_misery": 0.8529932317691606
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2006,
+    "loss_pct": 0.6875,
+    "pdpg": -4.3125,
+    "loss_pain_z": 1.0524696231684352,
+    "margin_pain_z": 0.7576415826181172,
+    "season_misery": 0.9050556028932761,
+    "cumulative_misery": 1.7580488346624368
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2007,
+    "loss_pct": 0.4375,
+    "pdpg": 1.5,
+    "loss_pain_z": -0.305887645160749,
+    "margin_pain_z": -0.20963547137194855,
+    "season_misery": -0.2577615582663488,
+    "cumulative_misery": 1.500287276396088
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2008,
+    "loss_pct": 0.5,
+    "pdpg": -1.9375,
+    "loss_pain_z": 0.009601634721454318,
+    "margin_pain_z": 0.29376711378279796,
+    "season_misery": 0.15168437425212614,
+    "cumulative_misery": 1.651971650648214
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2009,
+    "loss_pct": 0.75,
+    "pdpg": -4.375,
+    "loss_pain_z": 1.260976649982561,
+    "margin_pain_z": 0.5961036924969126,
+    "season_misery": 0.9285401712397368,
+    "cumulative_misery": 2.580511821887951
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2010,
+    "loss_pct": 0.625,
+    "pdpg": -4.6875,
+    "loss_pain_z": 0.6785511437439767,
+    "margin_pain_z": 0.7857253990857979,
+    "season_misery": 0.7321382714148873,
+    "cumulative_misery": 3.312650093302838
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2011,
+    "loss_pct": 0.6875,
+    "pdpg": -4.9375,
+    "loss_pain_z": 0.9313806308475994,
+    "margin_pain_z": 0.7283213662357241,
+    "season_misery": 0.8298509985416618,
+    "cumulative_misery": 4.1425010918445
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2012,
+    "loss_pct": 0.375,
+    "pdpg": 3.0,
+    "loss_pain_z": -0.6419554023889993,
+    "margin_pain_z": -0.4379203874085708,
+    "season_misery": -0.5399378948987851,
+    "cumulative_misery": 3.602563196945715
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2013,
+    "loss_pct": 0.8125,
+    "pdpg": -9.0,
+    "loss_pain_z": 1.6515643941158291,
+    "margin_pain_z": 1.3999027035272171,
+    "season_misery": 1.5257335488215231,
+    "cumulative_misery": 5.128296745767238
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2014,
+    "loss_pct": 0.75,
+    "pdpg": -8.5625,
+    "loss_pain_z": 1.2849344934453582,
+    "margin_pain_z": 1.393738933574105,
+    "season_misery": 1.3393367135097316,
+    "cumulative_misery": 6.4676334592769695
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2015,
+    "loss_pct": 0.4375,
+    "pdpg": 0.5625,
+    "loss_pain_z": -0.3333333333333333,
+    "margin_pain_z": -0.09376780699271219,
+    "season_misery": -0.21355057016302276,
+    "cumulative_misery": 6.254082889113946
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2016,
+    "loss_pct": 0.4375,
+    "pdpg": 0.8125,
+    "loss_pain_z": -0.2965214506434171,
+    "margin_pain_z": -0.1529590403774525,
+    "season_misery": -0.2247402455104348,
+    "cumulative_misery": 6.029342643603512
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2017,
+    "loss_pct": 0.5625,
+    "pdpg": -2.875,
+    "loss_pain_z": 0.31722063428725766,
+    "margin_pain_z": 0.4713055382133965,
+    "season_misery": 0.3942630862503271,
+    "cumulative_misery": 6.423605729853839
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2018,
+    "loss_pct": 0.5625,
+    "pdpg": -4.875,
+    "loss_pain_z": 0.37283929381053577,
+    "margin_pain_z": 0.8231043995649355,
+    "season_misery": 0.5979718466877356,
+    "cumulative_misery": 7.021577576541574
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2019,
+    "loss_pct": 0.8125,
+    "pdpg": -10.5625,
+    "loss_pain_z": 1.629758358342975,
+    "margin_pain_z": 1.5943174519072816,
+    "season_misery": 1.6120379051251283,
+    "cumulative_misery": 8.633615481666704
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2020,
+    "loss_pct": 0.5625,
+    "pdpg": 0.375,
+    "loss_pain_z": 0.3053592713729332,
+    "margin_pain_z": -0.06002401440960673,
+    "season_misery": 0.12266762848166325,
+    "cumulative_misery": 8.756283110148367
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2021,
+    "loss_pct": 0.5882352941176471,
+    "pdpg": -5.823529411764706,
+    "loss_pain_z": 0.5435392992724398,
+    "margin_pain_z": 0.8933863791230657,
+    "season_misery": 0.7184628391977528,
+    "cumulative_misery": 9.474745949346119
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2022,
+    "loss_pct": 0.47058823529411764,
+    "pdpg": -1.2941176470588236,
+    "loss_pain_z": -0.13816753131735782,
+    "margin_pain_z": 0.2743184687803345,
+    "season_misery": 0.06807546873148834,
+    "cumulative_misery": 9.542821418077608
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2023,
+    "loss_pct": 0.7647058823529411,
+    "pdpg": -11.117647058823529,
+    "loss_pain_z": 1.664100588675687,
+    "margin_pain_z": 1.9187940864249702,
+    "season_misery": 1.7914473375503286,
+    "cumulative_misery": 11.334268755627935
+  },
+  {
+    "franchise_id": "WAS",
+    "season": 2024,
+    "loss_pct": 0.29411764705882354,
+    "pdpg": 5.529411764705882,
+    "loss_pain_z": -0.9592641937585442,
+    "margin_pain_z": -0.8519792989672494,
+    "season_misery": -0.9056217463628968,
+    "cumulative_misery": 10.428647009265038
+  }
+]

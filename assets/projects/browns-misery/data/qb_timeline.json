@@ -1,0 +1,464 @@
+[
+  {
+    "franchise_id": "CLE",
+    "season": 1999,
+    "qb_id": "00-0003535",
+    "qb_name": "T.Couch",
+    "starts": 13
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 1999,
+    "qb_id": "00-0004230",
+    "qb_name": "T.Detmer",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2000,
+    "qb_id": "00-0003535",
+    "qb_name": "T.Couch",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2000,
+    "qb_id": "00-0012726",
+    "qb_name": "D.Pederson",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2000,
+    "qb_id": "00-0019553",
+    "qb_name": "S.Wynn",
+    "starts": 2
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2001,
+    "qb_id": "00-0003535",
+    "qb_name": "T.Couch",
+    "starts": 16
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2002,
+    "qb_id": "00-0003535",
+    "qb_name": "T.Couch",
+    "starts": 13
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2002,
+    "qb_id": "00-0007576",
+    "qb_name": "K.Holcomb",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2003,
+    "qb_id": "00-0003535",
+    "qb_name": "T.Couch",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2003,
+    "qb_id": "00-0007576",
+    "qb_name": "K.Holcomb",
+    "starts": 9
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2004,
+    "qb_id": "00-0005755",
+    "qb_name": "J.Garcia",
+    "starts": 10
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2004,
+    "qb_id": "00-0007576",
+    "qb_name": "K.Holcomb",
+    "starts": 2
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2004,
+    "qb_id": "00-0022864",
+    "qb_name": "L.McCown",
+    "starts": 4
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2005,
+    "qb_id": "00-0004293",
+    "qb_name": "T.Dilfer",
+    "starts": 11
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2005,
+    "qb_id": "00-0023502",
+    "qb_name": "C.Frye",
+    "starts": 5
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2006,
+    "qb_id": "00-0023502",
+    "qb_name": "C.Frye",
+    "starts": 12
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2006,
+    "qb_id": "00-0023645",
+    "qb_name": "D.Anderson",
+    "starts": 4
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2007,
+    "qb_id": "00-0023645",
+    "qb_name": "D.Anderson",
+    "starts": 16
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2008,
+    "qb_id": "00-0022039",
+    "qb_name": "K.Dorsey",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2008,
+    "qb_id": "00-0023645",
+    "qb_name": "D.Anderson",
+    "starts": 9
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2008,
+    "qb_id": "00-0024408",
+    "qb_name": "B.Gradkowski",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2008,
+    "qb_id": "00-0025409",
+    "qb_name": "B.Quinn",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2009,
+    "qb_id": "00-0023645",
+    "qb_name": "D.Anderson",
+    "starts": 8
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2009,
+    "qb_id": "00-0025409",
+    "qb_name": "B.Quinn",
+    "starts": 8
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2010,
+    "qb_id": "00-0004161",
+    "qb_name": "J.Delhomme",
+    "starts": 5
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2010,
+    "qb_id": "00-0022055",
+    "qb_name": "S.Wallace",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2010,
+    "qb_id": "00-0027688",
+    "qb_name": "C.McCoy",
+    "starts": 8
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2011,
+    "qb_id": "00-0022055",
+    "qb_name": "S.Wallace",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2011,
+    "qb_id": "00-0027688",
+    "qb_name": "C.McCoy",
+    "starts": 13
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2012,
+    "qb_id": "00-0027253",
+    "qb_name": "T.Lewis",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2012,
+    "qb_id": "00-0029677",
+    "qb_name": "B.Weeden",
+    "starts": 15
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2013,
+    "qb_id": "00-0023460",
+    "qb_name": "J.Campbell",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2013,
+    "qb_id": "00-0026625",
+    "qb_name": "B.Hoyer",
+    "starts": 2
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2013,
+    "qb_id": "00-0029677",
+    "qb_name": "B.Weeden",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2014,
+    "qb_id": "00-0026625",
+    "qb_name": "B.Hoyer",
+    "starts": 14
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2014,
+    "qb_id": "00-0030661",
+    "qb_name": "C.Shaw",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2014,
+    "qb_id": "00-0031409",
+    "qb_name": "J.Manziel",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2015,
+    "qb_id": "00-0021206",
+    "qb_name": "J.McCown",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2015,
+    "qb_id": "00-0028957",
+    "qb_name": "A.Davis",
+    "starts": 2
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2015,
+    "qb_id": "00-0031409",
+    "qb_name": "J.Manziel",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2016,
+    "qb_id": "00-0021206",
+    "qb_name": "J.McCown",
+    "starts": 4
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2016,
+    "qb_id": "00-0024296",
+    "qb_name": "C.Whitehurst",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2016,
+    "qb_id": "00-0029665",
+    "qb_name": "R.Griffin III",
+    "starts": 5
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2016,
+    "qb_id": "00-0032784",
+    "qb_name": "K.Hogan",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2016,
+    "qb_id": "00-0033104",
+    "qb_name": "C.Kessler",
+    "starts": 5
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2017,
+    "qb_id": "00-0032784",
+    "qb_name": "K.Hogan",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2017,
+    "qb_id": "00-0033104",
+    "qb_name": "C.Kessler",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2017,
+    "qb_id": "00-0033899",
+    "qb_name": "D.Kizer",
+    "starts": 14
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2018,
+    "qb_id": "00-0028118",
+    "qb_name": "T.Taylor",
+    "starts": 2
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2018,
+    "qb_id": "00-0034855",
+    "qb_name": "B.Mayfield",
+    "starts": 14
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2019,
+    "qb_id": "00-0034855",
+    "qb_name": "B.Mayfield",
+    "starts": 16
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2020,
+    "qb_id": "00-0034855",
+    "qb_name": "B.Mayfield",
+    "starts": 16
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2021,
+    "qb_id": "00-0028986",
+    "qb_name": "C.Keenum",
+    "starts": 2
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2021,
+    "qb_id": "00-0033319",
+    "qb_name": "N.Mullens",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2021,
+    "qb_id": "00-0034855",
+    "qb_name": "B.Mayfield",
+    "starts": 14
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2022,
+    "qb_id": "00-0033119",
+    "qb_name": "J.Brissett",
+    "starts": 11
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2022,
+    "qb_id": "00-0033537",
+    "qb_name": "D.Watson",
+    "starts": 6
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2023,
+    "qb_id": "00-0026158",
+    "qb_name": "J.Flacco",
+    "starts": 5
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2023,
+    "qb_id": "00-0032436",
+    "qb_name": "J.Driskel",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2023,
+    "qb_id": "00-0033275",
+    "qb_name": "P.Walker",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2023,
+    "qb_id": "00-0033537",
+    "qb_name": "D.Watson",
+    "starts": 5
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2023,
+    "qb_id": "00-0038583",
+    "qb_name": "D.Thompson-Robinson",
+    "starts": 3
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2024,
+    "qb_id": "00-0031503",
+    "qb_name": "J.Winston",
+    "starts": 7
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2024,
+    "qb_id": "00-0033537",
+    "qb_name": "D.Watson",
+    "starts": 6
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2024,
+    "qb_id": "00-0038108",
+    "qb_name": "B.Zappe",
+    "starts": 1
+  },
+  {
+    "franchise_id": "CLE",
+    "season": 2024,
+    "qb_id": "00-0038583",
+    "qb_name": "D.Thompson-Robinson",
+    "starts": 3
+  }
+]

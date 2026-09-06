@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>The Cleveland Browns Misery Index</title>
+  <title>The misery-misery index: why I hate being a Cleveland Browns fan</title>
   <link rel="stylesheet" href="assets/article.css" />
   <style>
     .article-page { overflow: visible; }
@@ -49,12 +49,21 @@
     }
     .article-chart-title {
       max-width: 760px;
-      margin: 54px 0 18px;
-      color: var(--ink);
-      font-family: Georgia, "Times New Roman", serif;
-      font-size: clamp(28px, 4vw, 46px);
-      line-height: 1.08;
-      letter-spacing: -.035em;
+      margin: 46px 0 14px;
+      color: var(--excel-green);
+      font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      font-size: clamp(15px, 1.8vw, 20px);
+      line-height: 1.25;
+      letter-spacing: .035em;
+      text-transform: uppercase;
+      font-weight: 750;
+    }
+    .article-divider {
+      width: 100%;
+      height: 1px;
+      margin: 54px 0 44px;
+      background: linear-gradient(90deg, transparent, var(--excel-green), transparent);
+      opacity: .55;
     }
     .viz-full {
       width: min(100%, 980px);
@@ -166,13 +175,13 @@
         <div class="formula-bar">
           <div class="name-box">C8</div>
           <div class="formula-icon">ƒx</div>
-          <div class="formula-input">="Cleveland Browns Misery Index"</div>
+          <div class="formula-input">="The misery-misery index"</div>
         </div>
       </div>
       <section class="article-shell">
         <article class="article-page">
           <a class="back-link" href="index.html#projects">← Back to projects</a>
-          <h1 class="article-title">The Cleveland Browns Misery Index</h1>
+          <h1 class="article-title">The misery-misery index: why I hate being a Cleveland Browns fan</h1>
 
           <p>I have been a fan of the Cleveland Browns for my whole life. A large portion of my family is from Cleveland, and my dad convinced me to be a Browns fan at a young age.</p>
 
@@ -184,13 +193,13 @@
 
           <p>My problem with this approach is that from personal experience ESPN’s methodology is too light, and has overlooked factors that have contributed to my anguish as a Cleveland Browns fan. A good example of this is sending away 3 years of future draft picks for a QB with 24 legal cases against him. Or starting 42 different quarterbacks since 1999, having a slight glimmer of hope for each one and crushing disappointment once they inevitably don’t pan out. Or not winning a single game. We won zero games, the second team ever to do so, in 2017.</p>
 
-          <p>In order to weigh all these factors, and not come up with arbitrary numbers, I am coming up with a misery index average ranking. So instead of another misery index, it is a robust analysis of misery: across all combinations of “misery”, how many of them result in the Cleveland Browns still being the most miserable franchise in the last 20 or so years.</p>
+          <p>In order to weigh all these factors, and not come up with arbitrary numbers, I am coming up with a misery index average ranking. So instead of another misery index, it is a robust analysis of misery: across all combinations of “misery”, how many of them result in the Cleveland Browns still being the most miserable franchise in the last 20 or so years. Or, the misery-misery index.</p>
 
           <img class="article-img" src="assets/projects/browns-misery/misery-illustration.png" alt="Misery weighting illustration" />
 
           <p>Here is an illustrative example. Person A may say “misery” weights of 40% of losing, 30% of zero playoff berths, and 30% of heartbreaking chokes. Person B may disagree, and say that “misery” weighs 100% of losing. The point is there are many different weighting schemes of misery one can come up with. Using data from nflverse, I am going to randomly sample as many different weights as possible, and determine where the browns rank under each different person's definition of misery, and on average across them.</p>
 
-          <p>Because I didn’t feel like coming up with every conceivable metric possible for this analysis, I used ChatGPT. Before anyone rages at me for doing this, I spend 5x as much time deleting the meaningless metrics in order to audit the work. The more metrics we can come up with to give my Cleveland Browns a chance at not being last in something, the better. Here are some of the main misery index parameters I used, sorted by category. Out of 32 NFL teams, I’ve listed what percentile the Cleveland Browns place in each of these statistics. Spoiler alert: we are terrible.</p>
+          <p>Because I didn’t feel like coming up with every conceivable metric possible for this analysis, I used ChatGPT. I spent more five-times as much time auditing and deleting out the noise. The more metrics we can come up with to give my Cleveland Browns a chance at not being last in something, the better. Here are some of the main misery index parameters I used, sorted by category. Out of 32 NFL teams, I’ve listed what percentile the Cleveland Browns place in each of these statistics. Spoiler alert: we are terrible.</p>
 
           <h2 class="article-chart-title">Model metrics</h2>
           <section class="viz-full">
@@ -198,8 +207,7 @@
               <div id="chart-metrics" class="viz-chart compact"><div class="chart-loading">Loading chart…</div></div>
             </div>
           </section>
-
-          <p>Here is the final result. Out of 5,000 different weighting schemes across seven categories: sustained losing, playoff futility, collapse trauma, close-game pain, turnover self-destruction, hope/season collapse, and draft/personnel turnover, the Cleveland Browns rank as the most miserable franchise in 64% of instances. Ironically, hope/season collapse is our best metric, probably because we have no hope to begin with. There is nothing to collapse if the building is never constructed.</p>
+          <div class="article-divider"></div>
 
           <h2 class="article-chart-title">Weighting schemes where Cleveland is the bottom.</h2>
           <section class="viz-full">
@@ -207,6 +215,8 @@
               <div id="chart-mc" class="viz-chart compact"><div class="chart-loading">Loading chart…</div></div>
             </div>
           </section>
+
+          <p>Here is the final result. Out of 5,000 different weighting schemes across seven categories: sustained losing, playoff futility, collapse trauma, close-game pain, turnover self-destruction, hope/season collapse, and draft/personnel turnover, the Cleveland Browns rank as the most miserable franchise in 64% of instances. Ironically, hope/season collapse is our best metric, probably because we have no hope to begin with. There is nothing to collapse if the building is never constructed.</p>
 
           <h2 class="article-chart-title">Cleveland’s bucket rankings</h2>
           <section class="viz-full">

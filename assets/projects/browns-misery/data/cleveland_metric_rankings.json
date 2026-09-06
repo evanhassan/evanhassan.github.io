@@ -136,7 +136,7 @@
   },
   {
     "category": "Losing / Performance",
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "cleveland_raw_value": 1.1285714285714286,
     "league_mean": 0.9253219871942926,
@@ -147,7 +147,7 @@
     "z_score": 2.271990154503825,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Interceptions thrown by Browns passers"
+    "short_interpretation": "Interceptions thrown by passers"
   },
   {
     "category": "Losing / Performance",
@@ -357,7 +357,7 @@
     "z_score": 1.848549057006566,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Turnovers / Self-Inflicted Pain",
@@ -372,7 +372,7 @@
     "z_score": 1.6986297169361106,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Close-Game Pain",
@@ -447,7 +447,7 @@
     "z_score": 1.5474299272041852,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Close-Game Pain",
@@ -480,21 +480,6 @@
     "short_interpretation": "Basic count/rate: players out within three years"
   },
   {
-    "category": "QB Misery",
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "cleveland_raw_value": 0.0380952380952381,
-    "league_mean": 0.040058727127688,
-    "league_median": 0.0404761904761904,
-    "cleveland_percentile": 90.625,
-    "cleveland_rank": 1,
-    "number_franchises_compared": 32,
-    "z_score": 1.7426745244384014,
-    "direction": "lower worse",
-    "data_coverage": "1999-2024",
-    "short_interpretation": "Estimated from the passer with the most QB dropbacks in each game"
-  },
-  {
     "category": "Losing / Performance",
     "metric": "Games lost by 20+",
     "variable": "games_lost_by_20plus",
@@ -523,21 +508,6 @@
     "direction": "higher worse",
     "data_coverage": "1999-2024",
     "short_interpretation": "Basic count/rate: players out within three years"
-  },
-  {
-    "category": "Turnovers / Self-Inflicted Pain",
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "cleveland_raw_value": 16.235296440341173,
-    "league_mean": 15.180235700371348,
-    "league_median": 15.269862668777458,
-    "cleveland_percentile": 87.5,
-    "cleveland_rank": 5,
-    "number_franchises_compared": 32,
-    "z_score": 0.9173850954252531,
-    "direction": "higher worse",
-    "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
   },
   {
     "category": "Losing / Performance",
@@ -676,21 +646,6 @@
   },
   {
     "category": "Collapse / WP Trauma",
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "cleveland_raw_value": 0.2320903829402267,
-    "league_mean": 0.2241002335187542,
-    "league_median": 0.221913304356735,
-    "cleveland_percentile": 65.625,
-    "cleveland_rank": 12,
-    "number_franchises_compared": 32,
-    "z_score": 0.3095245380069202,
-    "direction": "higher worse",
-    "data_coverage": "1999-2024",
-    "short_interpretation": "Blown win probability pain"
-  },
-  {
-    "category": "Collapse / WP Trauma",
     "metric": "Average highest win probability in games still lost",
     "variable": "avg_peak_wp_loss",
     "cleveland_raw_value": 0.682000149126765,
@@ -777,7 +732,7 @@
     "z_score": 0.1616048008809793,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Collapse / WP Trauma",
@@ -852,7 +807,7 @@
     "z_score": -0.5944126916616922,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Turnovers / Self-Inflicted Pain",
@@ -867,7 +822,7 @@
     "z_score": -0.4453515017388529,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Penalty / Discipline Misery",
@@ -912,7 +867,7 @@
     "z_score": -0.9453729914301624,
     "direction": "higher worse",
     "data_coverage": "1999-2024",
-    "short_interpretation": "Turnovers committed by the Browns offense"
+    "short_interpretation": "Turnovers committed by the offense"
   },
   {
     "category": "Special Teams / Weird Loss Pain",

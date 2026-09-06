@@ -3168,7 +3168,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "ARI",
@@ -3179,7 +3179,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "ATL",
@@ -3190,7 +3190,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "BAL",
@@ -3201,7 +3201,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "BUF",
@@ -3212,7 +3212,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "CAR",
@@ -3223,7 +3223,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "CHI",
@@ -3234,7 +3234,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "CIN",
@@ -3245,7 +3245,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "CLE",
@@ -3256,7 +3256,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "DAL",
@@ -3267,7 +3267,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "DEN",
@@ -3278,7 +3278,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "DET",
@@ -3289,7 +3289,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "GB",
@@ -3300,7 +3300,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "HOU",
@@ -3311,7 +3311,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "IND",
@@ -3322,7 +3322,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "JAX",
@@ -3333,7 +3333,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "KC",
@@ -3344,7 +3344,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "LA",
@@ -3355,7 +3355,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "LAC",
@@ -3366,7 +3366,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "LV",
@@ -3377,7 +3377,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "MIA",
@@ -3388,7 +3388,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "MIN",
@@ -3399,7 +3399,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "NE",
@@ -3410,7 +3410,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "NO",
@@ -3421,7 +3421,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "NYG",
@@ -3432,7 +3432,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "NYJ",
@@ -3443,7 +3443,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "PHI",
@@ -3454,7 +3454,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "PIT",
@@ -3465,7 +3465,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "SEA",
@@ -3476,7 +3476,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "SF",
@@ -3487,7 +3487,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "TB",
@@ -3498,7 +3498,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "TEN",
@@ -3509,7 +3509,7 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Browns-thrown interceptions per game",
+    "metric": "Thrown interceptions per game",
     "variable": "ints_per_game",
     "category": "Losing / Performance",
     "team": "WAS",
@@ -11264,358 +11264,6 @@
     "direction": "higher worse"
   },
   {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "ARI",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "ATL",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "BAL",
-    "raw_value": 0.0405727923627685,
-    "misery_percentile": 17.1875,
-    "rank": 25.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "BUF",
-    "raw_value": 0.0406698564593301,
-    "misery_percentile": 6.25,
-    "rank": 31.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "CAR",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "CHI",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "CIN",
-    "raw_value": 0.0405727923627685,
-    "misery_percentile": 17.1875,
-    "rank": 25.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "CLE",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "DAL",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "DEN",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "DET",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "GB",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "HOU",
-    "raw_value": 0.043010752688172,
-    "misery_percentile": 3.125,
-    "rank": 32.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "IND",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "JAX",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "KC",
-    "raw_value": 0.0405727923627685,
-    "misery_percentile": 17.1875,
-    "rank": 25.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "LA",
-    "raw_value": 0.0405727923627685,
-    "misery_percentile": 17.1875,
-    "rank": 25.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "LAC",
-    "raw_value": 0.0405727923627685,
-    "misery_percentile": 17.1875,
-    "rank": 25.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "LV",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "MIA",
-    "raw_value": 0.0405727923627685,
-    "misery_percentile": 17.1875,
-    "rank": 25.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "MIN",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "NE",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "NO",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "NYG",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "NYJ",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "PHI",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "PIT",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "SEA",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "SF",
-    "raw_value": 0.0380952380952381,
-    "misery_percentile": 90.625,
-    "rank": 1.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "TB",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "TEN",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
-    "metric": "Main QB share of all starts",
-    "variable": "qb_starts_concentration",
-    "category": "QB Misery",
-    "team": "WAS",
-    "raw_value": 0.0404761904761904,
-    "misery_percentile": 53.125,
-    "rank": 8.0,
-    "cleveland_rank": 1,
-    "direction": "lower worse"
-  },
-  {
     "metric": "Games lost by 20+",
     "variable": "games_lost_by_20plus",
     "category": "Losing / Performance",
@@ -12317,358 +11965,6 @@
     "misery_percentile": 54.6875,
     "rank": 9.0,
     "cleveland_rank": 2,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "ARI",
-    "raw_value": 17.077700886576373,
-    "misery_percentile": 100.0,
-    "rank": 1.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "ATL",
-    "raw_value": 15.14016152909954,
-    "misery_percentile": 43.75,
-    "rank": 19.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "BAL",
-    "raw_value": 15.085380011751289,
-    "misery_percentile": 40.625,
-    "rank": 20.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "BUF",
-    "raw_value": 14.749259517027378,
-    "misery_percentile": 31.25,
-    "rank": 23.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "CAR",
-    "raw_value": 15.9565282861865,
-    "misery_percentile": 78.125,
-    "rank": 8.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "CHI",
-    "raw_value": 16.59865021690743,
-    "misery_percentile": 93.75,
-    "rank": 3.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "CIN",
-    "raw_value": 15.046548219588583,
-    "misery_percentile": 37.5,
-    "rank": 21.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "CLE",
-    "raw_value": 16.235296440341173,
-    "misery_percentile": 87.5,
-    "rank": 5.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "DAL",
-    "raw_value": 16.075365904217474,
-    "misery_percentile": 84.375,
-    "rank": 6.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "DEN",
-    "raw_value": 15.70510052582062,
-    "misery_percentile": 62.5,
-    "rank": 13.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "DET",
-    "raw_value": 15.667878391590092,
-    "misery_percentile": 59.375,
-    "rank": 14.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "GB",
-    "raw_value": 13.309957240784488,
-    "misery_percentile": 12.5,
-    "rank": 29.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "HOU",
-    "raw_value": 14.561930738274016,
-    "misery_percentile": 25.0,
-    "rank": 25.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "IND",
-    "raw_value": 15.244258099189604,
-    "misery_percentile": 50.0,
-    "rank": 17.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "JAX",
-    "raw_value": 14.272892701704734,
-    "misery_percentile": 15.625,
-    "rank": 28.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "KC",
-    "raw_value": 12.71735359703631,
-    "misery_percentile": 6.25,
-    "rank": 31.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "LA",
-    "raw_value": 16.998045783798513,
-    "misery_percentile": 96.875,
-    "rank": 2.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "LAC",
-    "raw_value": 14.294681840122454,
-    "misery_percentile": 18.75,
-    "rank": 27.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "LV",
-    "raw_value": 15.740165594013648,
-    "misery_percentile": 65.625,
-    "rank": 12.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "MIA",
-    "raw_value": 15.901931422626088,
-    "misery_percentile": 75.0,
-    "rank": 9.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "MIN",
-    "raw_value": 16.53326087398597,
-    "misery_percentile": 90.625,
-    "rank": 4.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "NE",
-    "raw_value": 12.4178367269786,
-    "misery_percentile": 3.125,
-    "rank": 32.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "NO",
-    "raw_value": 15.549434601562515,
-    "misery_percentile": 56.25,
-    "rank": 15.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "NYG",
-    "raw_value": 15.957090355890852,
-    "misery_percentile": 81.25,
-    "rank": 7.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "NYJ",
-    "raw_value": 15.191918409556362,
-    "misery_percentile": 46.875,
-    "rank": 18.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "PHI",
-    "raw_value": 15.850644002964865,
-    "misery_percentile": 68.75,
-    "rank": 11.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "PIT",
-    "raw_value": 14.313284096980665,
-    "misery_percentile": 21.875,
-    "rank": 26.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "SEA",
-    "raw_value": 12.849846847419949,
-    "misery_percentile": 9.375,
-    "rank": 30.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "SF",
-    "raw_value": 14.965352800186317,
-    "misery_percentile": 34.375,
-    "rank": 22.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "TB",
-    "raw_value": 15.893275167242903,
-    "misery_percentile": 71.875,
-    "rank": 10.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "TEN",
-    "raw_value": 14.571044344092488,
-    "misery_percentile": 28.125,
-    "rank": 24.0,
-    "cleveland_rank": 5,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Estimated damage from high-leverage turnovers per game",
-    "variable": "high_leverage_turnover_epa_per_game",
-    "category": "Turnovers / Self-Inflicted Pain",
-    "team": "WAS",
-    "raw_value": 15.295467238365312,
-    "misery_percentile": 53.125,
-    "rank": 16.0,
-    "cleveland_rank": 5,
     "direction": "higher worse"
   },
   {
@@ -15836,358 +15132,6 @@
     "raw_value": 6.314285714285714,
     "misery_percentile": 50.0,
     "rank": 17.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "ARI",
-    "raw_value": 0.1969389843179753,
-    "misery_percentile": 18.75,
-    "rank": 27.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "ATL",
-    "raw_value": 0.2494877688788748,
-    "misery_percentile": 84.375,
-    "rank": 6.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "BAL",
-    "raw_value": 0.2367358811551505,
-    "misery_percentile": 68.75,
-    "rank": 11.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "BUF",
-    "raw_value": 0.2638834493156662,
-    "misery_percentile": 96.875,
-    "rank": 2.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "CAR",
-    "raw_value": 0.2218407790044444,
-    "misery_percentile": 50.0,
-    "rank": 17.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "CHI",
-    "raw_value": 0.229381989454916,
-    "misery_percentile": 59.375,
-    "rank": 14.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "CIN",
-    "raw_value": 0.2397721403257622,
-    "misery_percentile": 75.0,
-    "rank": 9.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "CLE",
-    "raw_value": 0.2320903829402267,
-    "misery_percentile": 65.625,
-    "rank": 12.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "DAL",
-    "raw_value": 0.2448726805558489,
-    "misery_percentile": 78.125,
-    "rank": 8.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "DEN",
-    "raw_value": 0.2219858297090255,
-    "misery_percentile": 53.125,
-    "rank": 16.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "DET",
-    "raw_value": 0.2169257276719406,
-    "misery_percentile": 43.75,
-    "rank": 19.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "GB",
-    "raw_value": 0.196880896214856,
-    "misery_percentile": 15.625,
-    "rank": 28.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "HOU",
-    "raw_value": 0.179600728365658,
-    "misery_percentile": 6.25,
-    "rank": 31.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "IND",
-    "raw_value": 0.2378211018157287,
-    "misery_percentile": 71.875,
-    "rank": 10.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "JAX",
-    "raw_value": 0.1753916646652945,
-    "misery_percentile": 3.125,
-    "rank": 32.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "KC",
-    "raw_value": 0.2624539772043527,
-    "misery_percentile": 93.75,
-    "rank": 3.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "LA",
-    "raw_value": 0.1956448570044005,
-    "misery_percentile": 12.5,
-    "rank": 29.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "LAC",
-    "raw_value": 0.2863149201455082,
-    "misery_percentile": 100.0,
-    "rank": 1.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "LV",
-    "raw_value": 0.1820820102409893,
-    "misery_percentile": 9.375,
-    "rank": 30.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "MIA",
-    "raw_value": 0.2059249554073947,
-    "misery_percentile": 25.0,
-    "rank": 25.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "MIN",
-    "raw_value": 0.2095405350130218,
-    "misery_percentile": 31.25,
-    "rank": 23.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "NE",
-    "raw_value": 0.2533550828343152,
-    "misery_percentile": 87.5,
-    "rank": 5.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "NO",
-    "raw_value": 0.2267668152122873,
-    "misery_percentile": 56.25,
-    "rank": 15.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "NYG",
-    "raw_value": 0.2180555330178369,
-    "misery_percentile": 46.875,
-    "rank": 18.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "NYJ",
-    "raw_value": 0.2045176472135438,
-    "misery_percentile": 21.875,
-    "rank": 26.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "PHI",
-    "raw_value": 0.2590365792362448,
-    "misery_percentile": 90.625,
-    "rank": 4.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "PIT",
-    "raw_value": 0.2307674357101795,
-    "misery_percentile": 62.5,
-    "rank": 13.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "SEA",
-    "raw_value": 0.2147692350374669,
-    "misery_percentile": 40.625,
-    "rank": 20.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "SF",
-    "raw_value": 0.2455521543699348,
-    "misery_percentile": 81.25,
-    "rank": 7.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "TB",
-    "raw_value": 0.2136943212235527,
-    "misery_percentile": 37.5,
-    "rank": 21.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "TEN",
-    "raw_value": 0.2105850521930689,
-    "misery_percentile": 34.375,
-    "rank": 22.0,
-    "cleveland_rank": 12,
-    "direction": "higher worse"
-  },
-  {
-    "metric": "Average blown win-probability pain per loss",
-    "variable": "collapse_severity_per_loss",
-    "category": "Collapse / WP Trauma",
-    "team": "WAS",
-    "raw_value": 0.2085363571446679,
-    "misery_percentile": 28.125,
-    "rank": 24.0,
     "cleveland_rank": 12,
     "direction": "higher worse"
   },

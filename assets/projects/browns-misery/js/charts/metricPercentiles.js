@@ -1,6 +1,6 @@
 import {C,fmt,tooltip,svgBox,gridX,axisBottom,axisLeft,wrapText,note} from '../shared/helpers.js';
 const d3=window.d3;
-export function render(sel,data,{onlyWorst=false}={}){
+export function render(sel,data,{onlyWorst=false,defaultCategory='All'}={}){
  const root=d3.select(sel);root.selectAll('*').remove();
  function groupedRows(rows){
   const counts=d3.rollup(rows,v=>v.length,d=>d.category);
@@ -9,7 +9,7 @@ export function render(sel,data,{onlyWorst=false}={}){
  data=groupedRows(data);
  const categorySeed=onlyWorst?groupedRows(data.filter(d=>d.cleveland_rank===1)):data;
  const cats=['All',...Array.from(new Set(categorySeed.map(d=>d.display_category)))];
- const ctrl=root.append('div').attr('class','control');ctrl.append('span').text('Filter');ctrl.append('select').selectAll('option').data(cats).join('option').text(d=>d);
+ const ctrl=root.append('div').attr('class','control');ctrl.append('span').text('Filter');const select=ctrl.append('select');select.selectAll('option').data(cats).join('option').text(d=>d);
  const chart=root.append('div').attr('class','chart');
  function draw(cat='All'){
   let rows=data.filter(d=>!onlyWorst||d.cleveland_rank===1);
@@ -26,5 +26,5 @@ export function render(sel,data,{onlyWorst=false}={}){
   g.selectAll('text.val').data(rows).join('text').attr('x',d=>Math.min(innerW+4,x(d.cleveland_percentile)+11)).attr('y',d=>y(d.metric)+4).attr('fill',d=>d.cleveland_percentile>=90?C.text:C.muted).attr('font-size',12).text(d=>`${Math.round(d.cleveland_percentile)} · ${fmt.rank(d.cleveland_rank,d.number_franchises_compared)}`);
   note(chart.node(),onlyWorst?'Cleveland-only view: metrics where CLE ranks #1 worst. Axis shows misery percentile where 100 = worst in league.':'Axis shows Cleveland misery percentile for each metric; 100 = worst in league. Hover for raw values and rank.');
  }
- ctrl.select('select').on('change',e=>draw(e.target.value)); draw();
+ const initial=cats.includes(defaultCategory)?defaultCategory:'All';select.property('value',initial).on('change',e=>draw(e.target.value)); draw(initial);
 }

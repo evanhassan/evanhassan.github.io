@@ -16,7 +16,9 @@ export const QB_PALETTE=[
 const QB_COLOR_OVERRIDES={
  'C.Keenum':'#E07A5F',
  'B.Hoyer':'#8E6BBE',
- 'J.Delhomme':'#8B5A2B'
+ 'J.Delhomme':'#8B5A2B',
+ 'L.McCown':'#C95045',
+ 'J.McCown':'#4A2A16'
 };
 
 export function assignQbSegmentColors(rows){

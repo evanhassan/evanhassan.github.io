@@ -111,7 +111,7 @@
           <p class="article-minorhead">Data / Build</p>
           <p>I’m consolidating data and build here because, in this case, the historical data pretty much explains the schedule logic. Of everything in the model, these two schedules affect the standalones the most. I start with Normalized EBITDA less Normalized EBIT to derive total D&amp;A, use change in intangibles to estimate amortization, and back into depreciation from there. Because CapEx plus gross PP&amp;E does not cleanly reconcile to net PP&amp;E, I added a PP&amp;E FX plug, and I did something similar for accumulated depreciation to capture disposals or other noise.</p>
 
-          <p>My least favorite thing about this model is how sensitive everything becomes to depreciation. A small tweak can move results more than I want. Because of that, I used an implied-depreciation memo row in assumptions so I could keep the rate grounded in recent history rather than just throwing in a round number. I landed at 5.8%, which is above the prior year but still optimistic enough to reflect management’s growth case.</p>
+          <p>My least favorite thing about this model is how sensitive everything becomes to depreciation. A small tweak can move results more than I want. Because of that, I used an implied-depreciation memo row in assumptions so I could keep the rate grounded in recent history rather than just throwing in a round number. I landed at 5.8%.</p>
           <div class="figure-block figure-full-bleed">
             <div class="zoom-teaser">
               <img class="zoomable-img" src="assets/projects/olin-huntsman-merger/olin-da.png" alt="Blurred Olin depreciation and amortization schedule from the merger workbook" />

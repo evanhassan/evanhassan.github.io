@@ -18,7 +18,7 @@
       </header>
       <div class="formula-wrap">
         <div class="formula-bar">
-          <div class="name-box">A5</div>
+          <div class="name-box">A6</div>
           <div class="formula-icon">ƒx</div>
           <div class="formula-input">="Everbridge / Thoma Bravo"</div>
         </div>
@@ -34,11 +34,10 @@
 
           <p>I used Mergent Market Atlas through the University of Utah library to pull financials. God bless our university for supplying us with these resources. I’ve tried to pull data through LLMs and it hallucinates badly for middle-market transactions. The thought of being able to work with Bloomberg/Pitchbook instead of being scrappy is euphoric. I decided to project the data out 10 years until 2033, the data ends at 2023, until terminal value stability is reached. I’ve realized this makes for far better DCFs. Something I noticed immediately when pulling the financials is that operating income was negative for the 5 years of data I pulled. Net operating loss is interesting to model because it can offset future taxable income. This makes a big difference in the DCF, as unlevered cash flow is shielded through taxes. Everbridge does not begin to pay taxes until 2033, when its modeled NOL balance is exhausted.</p>
           <div class="figure-block figure-full-bleed">
-            <img class="zoomable-img" src="assets/projects/everbridge-thoma-bravo/revenue-build-truncated.png" alt="Revenue build for Everbridge / Thoma Bravo" />
-            <p class="zoom-caption">Click to expand.</p>
+            <img src="assets/projects/everbridge-thoma-bravo/revenue-build-truncated.png" alt="Revenue build for Everbridge / Thoma Bravo" />
           </div>
           <div class="figure-block figure-full-bleed">
-            <img class="zoomable-img" src="assets/projects/everbridge-thoma-bravo/consolidated-financials.png" alt="Consolidated financials for Everbridge / Thoma Bravo" />
+            <img src="assets/projects/everbridge-thoma-bravo/consolidated-financials.png" alt="Consolidated financials for Everbridge / Thoma Bravo" />
           </div>
 
           <p>Spoiler alert: my results were very pessimistic. However, let me explain my modeling a bit, and what I learned from it. Everbridge’s EBITDA, calculated as operating income + D&amp;A, remained negative throughout the five historical years reviewed. That already represents substantial operating improvement. Furthermore, year-over-year growth slowed to just 3.9% in 2023. Even with optimistic expectations for model drivers and a 2.6% terminal growth rate, the implied share price is only $24.16. Unlevered free cash flow hits $106.6 in 2033, and with a discount rate of 10.5%, warranted enterprise value becomes $1.2B.</p>
@@ -86,41 +85,5 @@
       </footer>
     </main>
   </div>
-  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
-    <button class="image-lightbox-close" type="button">Close</button>
-    <img alt="Expanded chart view" />
-  </div>
-  <script>
-    (() => {
-      const lightbox = document.getElementById('image-lightbox');
-      if (!lightbox) return;
-      const lightboxImg = lightbox.querySelector('img');
-      const closeBtn = lightbox.querySelector('.image-lightbox-close');
-      const zoomables = document.querySelectorAll('.zoomable-img');
-
-      const closeLightbox = () => {
-        lightbox.classList.remove('open');
-        lightbox.setAttribute('aria-hidden', 'true');
-        lightboxImg.removeAttribute('src');
-      };
-
-      zoomables.forEach((img) => {
-        img.addEventListener('click', () => {
-          lightboxImg.src = img.src;
-          lightboxImg.alt = img.alt;
-          lightbox.classList.add('open');
-          lightbox.setAttribute('aria-hidden', 'false');
-        });
-      });
-
-      closeBtn.addEventListener('click', closeLightbox);
-      lightbox.addEventListener('click', (event) => {
-        if (event.target === lightbox) closeLightbox();
-      });
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') closeLightbox();
-      });
-    })();
-  </script>
 </body>
 </html>

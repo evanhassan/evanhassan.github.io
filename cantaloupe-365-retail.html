@@ -18,7 +18,7 @@
       </header>
       <div class="formula-wrap">
         <div class="formula-bar">
-          <div class="name-box">D6</div>
+          <div class="name-box">D7</div>
           <div class="formula-icon">ƒx</div>
           <div class="formula-input">="365 Retail Markets / Cantaloupe"</div>
         </div>
@@ -34,7 +34,7 @@
 
           <p>Unfortunately I am not currently in Utah, and therefore cannot use the University of Utah Bloomberg terminal to pay data. Luckily, the library gives us access to Mergent, a database that had the last 5 years of Cantaloupe financials. After doing some filtering, I exported Cantaloupe’s financials as a CSV into Excel. After doing some data cleanup, I was able to project 5 years of Cantaloupe’s data.</p>
           <div class="figure-block figure-full-bleed">
-            <img class="zoomable-img" src="assets/projects/cantaloupe-365-retail/financials-build.png" alt="Projected financials build for 365 Retail Markets / Cantaloupe" />
+            <img src="assets/projects/cantaloupe-365-retail/financials-build.png" alt="Projected financials build for 365 Retail Markets / Cantaloupe" />
           </div>
 
           <p>The rationale for my projections follows. I forecast 13.5% growth in 2026, fading gradually until 5.0%. I expect both hardware and software to be major sales of Cantaloupe initially, with growth gradually slowing to 5.0% by 2030 as the company becomes larger and more mature. I expect modest benefits of scale, hence the increase in gross margin. D&amp;A and CapEx also decline as a percentage of total revenue, due to the same reason as revenue growth. Finally, standard EBITDA should rise, as operating leverage increases.</p>
@@ -74,41 +74,5 @@
       </footer>
     </main>
   </div>
-  <div class="image-lightbox" id="image-lightbox" aria-hidden="true">
-    <button class="image-lightbox-close" type="button">Close</button>
-    <img alt="Expanded chart view" />
-  </div>
-  <script>
-    (() => {
-      const lightbox = document.getElementById('image-lightbox');
-      if (!lightbox) return;
-      const lightboxImg = lightbox.querySelector('img');
-      const closeBtn = lightbox.querySelector('.image-lightbox-close');
-      const zoomables = document.querySelectorAll('.zoomable-img');
-
-      const closeLightbox = () => {
-        lightbox.classList.remove('open');
-        lightbox.setAttribute('aria-hidden', 'true');
-        lightboxImg.removeAttribute('src');
-      };
-
-      zoomables.forEach((img) => {
-        img.addEventListener('click', () => {
-          lightboxImg.src = img.src;
-          lightboxImg.alt = img.alt;
-          lightbox.classList.add('open');
-          lightbox.setAttribute('aria-hidden', 'false');
-        });
-      });
-
-      closeBtn.addEventListener('click', closeLightbox);
-      lightbox.addEventListener('click', (event) => {
-        if (event.target === lightbox) closeLightbox();
-      });
-      document.addEventListener('keydown', (event) => {
-        if (event.key === 'Escape') closeLightbox();
-      });
-    })();
-  </script>
 </body>
 </html>

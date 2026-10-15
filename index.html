@@ -184,6 +184,13 @@
       text-align: center;
     }
 
+    .menu-icon {
+      display: none;
+      font-size: 21px;
+      line-height: 1;
+      color: var(--excel-green-dark);
+    }
+
     .formula-wrap {
       padding: 12px 14px;
       background: var(--surface);
@@ -260,6 +267,10 @@
       align-items: center;
       justify-content: center;
       min-height: 44px;
+    }
+
+    .mobile-col-head {
+      display: none;
     }
 
     .row-head {
@@ -358,7 +369,7 @@
 
     .hero-headshot-wrap {
       display: flex;
-      justify-content: flex-end;
+      justify-content: center;
       align-items: stretch;
     }
 
@@ -366,8 +377,9 @@
       display: flex;
       flex-direction: column;
       gap: 12px;
+      align-items: center;
       width: min(100%, 332px);
-      margin-left: auto;
+      margin: 0 auto;
       padding: 12px;
       border: 1px solid var(--grid-strong);
       background: linear-gradient(180deg, #ffffff 0%, #f7faf6 100%);
@@ -392,12 +404,20 @@
 
     .hero-headshot {
       display: block;
-      width: 100%;
+      width: min(100%, 210px);
       aspect-ratio: 4 / 5;
       object-fit: cover;
       object-position: center 20%;
       border: 1px solid var(--grid-strong);
       background: #dfe5de;
+    }
+
+    .hero-portrait-logo {
+      display: block;
+      align-self: flex-end;
+      width: auto;
+      height: 34px;
+      object-fit: contain;
     }
 
     .body-copy,
@@ -936,7 +956,7 @@
         justify-content: flex-start;
       }
       .hero-headshot {
-        width: min(100%, 260px);
+        width: min(100%, 190px);
       }
       .project-link {
         flex: 0 0 auto;
@@ -954,12 +974,38 @@
         flex-wrap: wrap;
       }
 
-      .ribbon { grid-template-columns: 1fr; }
+      .ribbon {
+        grid-template-columns: repeat(4, minmax(0, 1fr));
+      }
+      .ribbon-group.menu-group {
+        padding: 5px;
+      }
+      .menu-button {
+        min-height: 52px;
+        padding: 8px 4px;
+      }
+      .menu-button .ribbon-label,
+      .menu-button .menu-icon {
+        display: none;
+      }
+      .menu-button .ribbon-value {
+        display: block;
+        font-size: 11px;
+        line-height: 1.1;
+        white-space: nowrap;
+      }
       .sheet-grid {
-        grid-template-columns: 44px repeat(3, minmax(0, 1fr));
+        grid-template-columns: repeat(10, minmax(0, 1fr));
         min-width: 0;
       }
-      .sheet-grid > .col-head:nth-child(n + 5) {
+      .sheet-grid > .corner,
+      .sheet-grid > .row-head {
+        display: none;
+      }
+      .sheet-grid > .mobile-col-head {
+        display: flex;
+      }
+      .sheet-grid > .cell[aria-hidden="true"] {
         display: none;
       }
       .sheet-grid > section#overview,
@@ -968,7 +1014,13 @@
       .sheet-grid > section#resume,
       .sheet-grid > section#contact,
       .sheet-grid > article.cell {
-        grid-column: 2 / span 3 !important;
+        grid-column: 1 / span 10 !important;
+      }
+      .section-frame,
+      #projects .section-frame,
+      #resume .section-frame,
+      #contact .section-frame {
+        --ants-inset: 0;
       }
       .hero-title { font-size: 42px; }
       .project-card {
@@ -1013,29 +1065,33 @@
           </div>
         </div>
 
-        <div class="ribbon" aria-hidden="true">
+        <div class="ribbon">
           <div class="ribbon-group menu-group">
-            <a class="menu-button active" href="#overview" data-section="overview">
+            <a class="menu-button active" href="#overview" data-section="overview" aria-label="Home">
               <span class="ribbon-label">Home</span>
               <span class="ribbon-value">Home</span>
+              <span class="menu-icon">⌂</span>
             </a>
           </div>
           <div class="ribbon-group menu-group">
-            <a class="menu-button" href="#projects" data-section="projects">
+            <a class="menu-button" href="#projects" data-section="projects" aria-label="Projects">
               <span class="ribbon-label">Projects</span>
               <span class="ribbon-value">Projects</span>
+              <span class="menu-icon">▦</span>
             </a>
           </div>
           <div class="ribbon-group menu-group">
-            <a class="menu-button" href="#resume" data-section="resume">
+            <a class="menu-button" href="#resume" data-section="resume" aria-label="Resume">
               <span class="ribbon-label">Resume</span>
               <span class="ribbon-value">Resume</span>
+              <span class="menu-icon">▤</span>
             </a>
           </div>
           <div class="ribbon-group menu-group">
-            <a class="menu-button" href="#contact" data-section="contact">
+            <a class="menu-button" href="#contact" data-section="contact" aria-label="Contact">
               <span class="ribbon-label">Contact</span>
               <span class="ribbon-value">Contact</span>
+              <span class="menu-icon">@</span>
             </a>
           </div>
         </div>
@@ -1060,6 +1116,8 @@
           <div class="col-head">F</div>
           <div class="col-head">G</div>
           <div class="col-head">H</div>
+          <div class="col-head mobile-col-head">I</div>
+          <div class="col-head mobile-col-head">J</div>
 
           <div class="row-head">1</div>
           <section class="cell cell-muted hero-intro-shell" style="grid-column: 2 / span 8; min-height: 276px; padding: 0;" id="overview">
@@ -1070,12 +1128,10 @@
                 <p class="body-copy">
                   I am a University of Utah student who loves to uncover insights and evaluate ideas. That interest gradually pulled me toward finance, where I’ve been working for the past couple of years. I love analyzing companies, developing my own perspectives, and using data to support them. I am specifically interested in the chemical industry and the broader industrial sector.
                 </p>
-                <div class="hero-meta-strip">
-                  <img class="utah-logo" src="assets/utah-logo-cropped.png" alt="University of Utah logo" />
-                </div>
               </div>
               <div class="hero-headshot-wrap">
                 <div class="hero-portrait-card" aria-label="Portrait panel">
+                  <img class="hero-portrait-logo" src="assets/utah-logo-cropped.png" alt="University of Utah logo" />
                   <img class="hero-headshot" src="assets/headshots/evan-hassan-headshot.jpg" alt="Portrait of Evan Hassan" />
                 </div>
               </div>
@@ -1419,9 +1475,12 @@
       const formulaInput = document.getElementById('formula-input');
       const menuButtons = Array.from(document.querySelectorAll('.menu-button'));
       const tabButtons = Array.from(document.querySelectorAll('.sheet-tab'));
+      const projectCells = Array.from(document.querySelectorAll('.sheet-grid > article.cell'));
+      const mobileQuery = window.matchMedia('(max-width: 720px)');
       let activeHighlight = null;
       let highlightTimer = null;
       let activeOverlay = null;
+      let mobileProjectObserver = null;
 
       const formulaMap = {
         overview: {
@@ -1465,6 +1524,41 @@
         const next = formulaMap[sectionId] || formulaMap.overview;
         nameBox.textContent = next.cell;
         formulaInput.textContent = next.formula;
+      };
+
+      const updateMobileProjectFormula = (projectCell) => {
+        const index = projectCells.indexOf(projectCell);
+        if (index < 0) return;
+        const title = projectCell.querySelector('.project-title')?.textContent.trim() || 'Project';
+        nameBox.textContent = `A${index + 3}`;
+        formulaInput.textContent = `=PROJECT("${title.replaceAll('"', '""')}")`;
+      };
+
+      const setupMobileProjectTracking = () => {
+        if (mobileProjectObserver) {
+          mobileProjectObserver.disconnect();
+          mobileProjectObserver = null;
+        }
+
+        projectCells.forEach((projectCell) => {
+          projectCell.removeEventListener('click', projectCell.mobileCellClick);
+        });
+
+        if (!mobileQuery.matches) return;
+
+        projectCells.forEach((projectCell) => {
+          projectCell.mobileCellClick = () => updateMobileProjectFormula(projectCell);
+          projectCell.addEventListener('click', projectCell.mobileCellClick);
+        });
+
+        mobileProjectObserver = new IntersectionObserver((entries) => {
+          const visible = entries
+            .filter((entry) => entry.isIntersecting)
+            .sort((a, b) => Math.abs(a.boundingClientRect.top) - Math.abs(b.boundingClientRect.top));
+          if (visible[0]) updateMobileProjectFormula(visible[0].target);
+        }, { rootMargin: '-20% 0px -58% 0px', threshold: 0 });
+
+        projectCells.forEach((projectCell) => mobileProjectObserver.observe(projectCell));
       };
 
       const updateActiveNav = (sectionId) => {
@@ -1558,6 +1652,12 @@
       const bootId = (location.hash || '#overview').slice(1);
       updateFormulaBar(bootId || 'overview');
       updateActiveNav(bootId || 'overview');
+      setupMobileProjectTracking();
+      if (mobileQuery.addEventListener) {
+        mobileQuery.addEventListener('change', setupMobileProjectTracking);
+      } else if (mobileQuery.addListener) {
+        mobileQuery.addListener(setupMobileProjectTracking);
+      }
     })();
   </script>
 </body>
